@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Angka: Puluhan dan Satuan</title>
+    <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-02">
+    <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+
+    <section class="page active" data-page="1">
+        <div class="cover">
+            <div class="cover-icon">🏠</div>
+            <h1>Rumah Angka: Puluhan dan Satuan</h1>
+            <p class="subtitle">Matematika — Kelas 2</p>
+            <p class="deskripsi-singkat">Mari belajar nilai tempat dengan koin dan rumah angka!</p>
+            <button class="btn-next" type="button" onclick="goPage(2)">Mulai Belajar ➡️</button>
+        </div>
+    </section>
+
+    <section class="page" data-page="2">
+        <h2>🎯 Tujuan Kita Hari Ini</h2>
+        <ul class="tujuan-list">
+            <li>Mengenal nilai tempat Puluhan</li>
+            <li>Mengenal nilai tempat Satuan</li>
+            <li>Menyusun angka puluhan dan satuan menjadi satu bilangan</li>
+        </ul>
+        <div class="nav-buttons">
+            <button type="button" onclick="goPage(1)">⬅️ Kembali</button>
+            <button type="button" onclick="goPage(3)">Lanjut ➡️</button>
+        </div>
+    </section>
+
+    <section class="page" data-page="3">
+        <h2>🪙 Mengenal Puluhan</h2>
+        <p>Setiap angka punya rumahnya sendiri. Angka yang berkelompok sepuluh tinggal di rumah <strong>Puluhan</strong>.</p>
+        <div class="example-box">
+            <div class="example-title">💡 Contoh:</div>
+            <p>Anton punya uang koin Rp10-an.</p>
+            <div class="visual">🪙🪙🪙 = 30</div>
+            <p>Tiga koin 10-an berarti <strong>3 puluhan</strong> atau 30.</p>
+        </div>
+        <div class="nav-buttons">
+            <button type="button" onclick="goPage(2)">⬅️ Kembali</button>
+            <button type="button" onclick="goPage(4)">Lanjut ➡️</button>
+        </div>
+    </section>
+
+    <section class="page" data-page="4">
+        <h2>🪙 Mengenal Satuan</h2>
+        <p>Angka yang tidak sampai sepuluh tinggal di rumah <strong>Satuan</strong>.</p>
+        <div class="example-box">
+            <div class="example-title">💡 Contoh:</div>
+            <p>Anton juga punya uang koin Rp1-an.</p>
+            <div class="visual">🪙🪙🪙🪙🪙 = 5</div>
+            <p>Lima koin 1-an berarti <strong>5 satuan</strong> atau 5.</p>
+        </div>
+        <div class="nav-buttons">
+            <button type="button" onclick="goPage(3)">⬅️ Kembali</button>
+            <button type="button" onclick="goPage(5)">Lanjut ➡️</button>
+        </div>
+    </section>
+
+    <section class="page" data-page="5">
+        <h2>🏠 Menggabungkan Rumah Angka</h2>
+        <p>Jika Anton menggabungkan uangnya, berapa totalnya?</p>
+        <div class="example-box">
+            <div class="example-title">Gabungan:</div>
+            <p><strong>3 Puluhan</strong> dan <strong>5 Satuan</strong></p>
+            <div class="number-strip">
+                <span class="number-chip" style="background:#e0f7fa">30</span>
+                <span style="font-size:24px; font-weight:bold;">+</span>
+                <span class="number-chip" style="background:#fce4ec">5</span>
+                <span style="font-size:24px; font-weight:bold;">=</span>
+                <span class="number-chip" style="background:#fff9c4">35</span>
+            </div>
+            <p>Jadi, bilangannya adalah <strong>35</strong>.</p>
+        </div>
+        <div class="nav-buttons">
+            <button type="button" onclick="goPage(4)">⬅️ Kembali</button>
+            <button type="button" onclick="goPage(6)">Lanjut ➡️</button>
+        </div>
+    </section>
+
+    <section class="page" data-page="6">
+        <h2>🎯 Coba Yuk!</h2>
+        <div class="quiz-container">
+            <div class="quiz-item" data-soal-id="k2-mtk-02-q1" data-correct="c">
+                <p class="soal">1. Pada angka 35, angka 3 menempati nilai tempat apa?</p>
+                <div class="options">
+                    <button type="button" class="quiz-option" data-jawaban="a">Satuan</button>
+                    <button type="button" class="quiz-option" data-jawaban="b">Ratusan</button>
+                    <button type="button" class="quiz-option" data-jawaban="c">Puluhan</button>
+                </div>
+                <div class="feedback hidden"></div>
+            </div>
+            <div class="quiz-item" data-soal-id="k2-mtk-02-q2" data-correct="a" style="margin-top:20px;">
+                <p class="soal">2. Nilai dari angka 7 pada bilangan 27 adalah...</p>
+                <div class="options">
+                    <button type="button" class="quiz-option" data-jawaban="a">7</button>
+                    <button type="button" class="quiz-option" data-jawaban="b">70</button>
+                    <button type="button" class="quiz-option" data-jawaban="c">17</button>
+                </div>
+                <div class="feedback hidden"></div>
+            </div>
+            <div class="quiz-item" data-soal-id="k2-mtk-02-q3" data-correct="b" style="margin-top:20px;">
+                <p class="soal">3. 4 puluhan dan 2 satuan menjadi angka berapa?</p>
+                <div class="options">
+                    <button type="button" class="quiz-option" data-jawaban="a">24</button>
+                    <button type="button" class="quiz-option" data-jawaban="b">42</button>
+                    <button type="button" class="quiz-option" data-jawaban="c">402</button>
+                </div>
+                <div class="feedback hidden"></div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button type="button" onclick="goPage(5)">⬅️ Kembali</button>
+            <button type="button" onclick="goPage(7)">Lanjut ➡️</button>
+        </div>
+    </section>
+
+    <section class="page" data-page="7">
+        <h2>✏️ Latihan Ekstra</h2>
+        <div class="quiz-container">
+            <div class="quiz-item" data-soal-id="k2-mtk-02-q4" data-correct="a">
+                <p class="soal">1. Bentuk panjang dari 48 adalah...</p>
+                <div class="options">
+                    <button type="button" class="quiz-option" data-jawaban="a">40 + 8</button>
+                    <button type="button" class="quiz-option" data-jawaban="b">4 + 8</button>
+                    <button type="button" class="quiz-option" data-jawaban="c">80 + 4</button>
+                </div>
+                <div class="feedback hidden"></div>
+            </div>
+            <div class="quiz-item" data-soal-id="k2-mtk-02-q5" data-correct="b" style="margin-top:20px;">
+                <p class="soal">2. Dari bilangan 36, 42, 28, manakah yang memiliki puluhan paling besar?</p>
+                <div class="options">
+                    <button type="button" class="quiz-option" data-jawaban="a">36</button>
+                    <button type="button" class="quiz-option" data-jawaban="b">42</button>
+                    <button type="button" class="quiz-option" data-jawaban="c">28</button>
+                </div>
+                <div class="feedback hidden"></div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button type="button" onclick="goPage(6)">⬅️ Kembali</button>
+            <button type="button" onclick="goPage(8)">Lanjut ➡️</button>
+        </div>
+    </section>
+
+    <section class="page" data-page="8">
+        <h2>⭐ Kamu Hebat!</h2>
+        <div class="badge">🏅 Master Puluhan</div>
+        <div class="ringkasan">
+            <h3>📋 Yang sudah kamu pelajari:</h3>
+            <ul>
+                <li>Memahami nilai tempat puluhan</li>
+                <li>Memahami nilai tempat satuan</li>
+                <li>Menyusun angka puluhan dan satuan</li>
+            </ul>
+        </div>
+
+        <div class="selesai-start">
+            <button class="btn-selesai" type="button" onclick="selesaiMateri()">Selesai Belajar 🎉</button>
+            <div class="nav-buttons">
+                <button type="button" onclick="goPage(7)">⬅️ Ulangi Latihan</button>
+            </div>
+        </div>
+
+        <div class="selesai-actions hidden">
+            <p style="text-align:center;font-weight:700;margin:0 0 4px;">Mau ngapain sekarang?</p>
+            <button class="btn-action btn-action-primary" type="button" onclick="bacaUlang()">📖 Baca ulang materi</button>
+            <button class="btn-action btn-action-success" type="button" onclick="keDashboard()">🏠 Kembali ke Dashboard</button>
+            <button class="btn-action btn-action-muted" type="button" onclick="tutupBuku()">👋 Tutup</button>
+        </div>
+    </section>
+
+    <script src="/assets/book-engine.js"></script>
+</body>
+</html>
