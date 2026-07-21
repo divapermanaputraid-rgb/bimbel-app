@@ -1,5 +1,7 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 type Assignment = {
   id: string;
   due_date: string | null;
@@ -12,6 +14,8 @@ type Assignment = {
 };
 
 export function TaskList({ assignments }: { assignments: Assignment[] }) {
+  const router = useRouter();
+
   if (assignments.length === 0) {
     return (
       <div className="rounded-2xl bg-white p-6 text-center text-slate-500 shadow-sm border border-slate-100 mb-6">
@@ -53,7 +57,7 @@ export function TaskList({ assignments }: { assignments: Assignment[] }) {
           <li key={task.id}>
             <button
               type="button"
-              onClick={() => window.open(task.material.file_path, "_blank")}
+              onClick={() => router.push("/dashboard/siswa/latihan/" + task.id)}
               className="flex w-full items-start justify-between gap-3 rounded-2xl bg-white p-4 text-left shadow-sm border border-slate-100 hover:border-indigo-300 transition-colors"
             >
               <div className="flex gap-3">
