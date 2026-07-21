@@ -1,0 +1,33 @@
+--- supabase/migrations/001_foundation.sql
++++ supabase/migrations/001_foundation.sql
+@@ -69,14 +69,21 @@
+   AFTER INSERT ON auth.users
+   FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
+ 
++CREATE OR REPLACE FUNCTION public.is_guru()
++RETURNS boolean
++LANGUAGE sql
++SECURITY DEFINER
++SET search_path = public
++STABLE
++AS $$
++  SELECT EXISTS (
++    SELECT 1 FROM public.users WHERE id = auth.uid() AND role = 'guru'
++  );
++$$;
++
+ ALTER TABLE public.users ENABLE ROW LEVEL SECURITY;
+ ALTER TABLE public.subjects ENABLE ROW LEVEL SECURITY;
+ ALTER TABLE public.materials ENABLE ROW LEVEL SECURITY;
+ ALTER TABLE public.questions ENABLE ROW LEVEL SECURITY;
+ 
+ CREATE POLICY "users_select_own_or_guru"
+   ON public.users FOR SELECT
+-  USING (
+-    auth.uid() = id
+-    OR EXISTS (
+-      SELECT 1 FROM public.users u
+-      WHERE u.id = auth.uid() AND u.role = 'guru'
+-    )
+-  );
++  USING (auth.uid() = id OR public.is_guru());
