@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.env*.local
+.env.local
+.DS_Store
+*.db
+.superpowers/
+bimbel-app/node_modules/
+bimbel-app/.next/
+docs/
+qa/
+konteks/
+.superpowers/
