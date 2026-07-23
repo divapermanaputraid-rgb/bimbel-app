@@ -70,4 +70,4 @@ INSERT INTO public.questions (material_id, soal, pilihan, jawaban_benar, level, 
 ('k2-mtk-20', 'Senin ada 3 buku 📚📚📚, Selasa 2 buku 📚📚. Hari apa yang paling sedikit?', '{"a":"Senin","b":"Selasa","c":"Rabu","d":"Kamis"}', 'b', 2, 'Selasa hanya 2.'),
 ('k2-mtk-20', 'Jika 1 gambar 🏀 mewakili 2 bola. Ada 3 gambar 🏀🏀🏀. Berapa jumlah bola?', '{"a":"3 bola","b":"5 bola","c":"6 bola","d":"8 bola"}', 'c', 3, '3 x 2 = 6.'),
 ('k2-mtk-20', 'Tabel menunjukkan Apel 5, Jeruk 3. Manakah piktogram yang benar?', '{"a":"Apel 🍎🍎🍎🍎🍎, Jeruk 🍊🍊🍊","b":"Apel 🍎🍎🍎, Jeruk 🍊🍊🍊🍊🍊","c":"Apel 🍎🍎, Jeruk 🍊🍊","d":"Apel 🍎, Jeruk 🍊"}', 'a', 3, 'Sesuai dengan jumlahnya masing-masing.')
-ON CONFLICT DO NOTHING;
+

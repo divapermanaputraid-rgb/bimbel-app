@@ -23,7 +23,7 @@ INSERT INTO public.questions (material_id, soal, pilihan, jawaban_benar, level, 
 ('k2-mtk-03', 'Anton punya 20 apel, Siti punya 25 apel. Siapa yang punya lebih sedikit?', '{"a":"Anton","b":"Siti","c":"Sama saja","d":"Tidak tahu"}', 'a', 2, '20 < 25, jadi Anton lebih sedikit.'),
 ('k2-mtk-03', 'Bilangan genap antara 15 dan 19 yang lebih kecil dari 18 adalah?', '{"a":"16","b":"17","c":"18","d":"20"}', 'a', 3, 'Di antara 15 & 19 genapnya 16 dan 18. Yang lebih kecil dari 18 adalah 16.'),
 
--- k2-mtk-04
+-- k2-mtk-04/
 ('k2-mtk-04', '14 + 4 = ...', '{"a":"17","b":"18","c":"19","d":"20"}', 'b', 1, 'Habis 14 hitung 4 lagi: 15, 16, 17, 18.'),
 ('k2-mtk-04', '20 + 10 = ...', '{"a":"20","b":"30","c":"40","d":"50"}', 'b', 1, 'Dua puluhan + satu puluhan = tiga puluhan (30).'),
 ('k2-mtk-04', '15 + 7 = ...', '{"a":"21","b":"22","c":"23","d":"24"}', 'b', 2, 'Menyimpan 1 puluhan.'),
@@ -71,4 +71,5 @@ INSERT INTO public.questions (material_id, soal, pilihan, jawaban_benar, level, 
 ('k2-mtk-10', 'Kalau kita menghadap Utara, belakang kita arah?', '{"a":"Barat","b":"Timur","c":"Selatan","d":"Utara"}', 'c', 2, 'Kebalikan utara adalah selatan.'),
 ('k2-mtk-10', 'Rumah sakit ada di sebelah ... kantor polisi (lihat peta panah ke kiri)', '{"a":"Kanan","b":"Kiri","c":"Atas","d":"Bawah"}', 'b', 2, 'Kiri arah panah.'),
 ('k2-mtk-10', 'Budi berdiri, tangan memegang pensil. Tangan manakah itu?', '{"a":"Kanan","b":"Kiri","c":"Dua-duanya","d":"Kaki"}', 'a', 3, 'Umumnya menulis pakai tangan kanan.')
-ON CONFLICT DO NOTHING;
+
+;

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pct = Math.min(100, Math.floor((progress / totalSections) * 100));
     document.querySelector('.progress-fill').style.width = pct + '%';
     
-    // [FIX: Progress Bypass] Enable finish button ONLY when all quizzes are correctly answered
+    // Enable finish button ONLY when all quizzes are correctly answered
     if (progress >= totalSections) {
       const btn = document.getElementById('btn-selesai');
       if (btn) {
@@ -40,7 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const qIdx = parseInt(quizBox.dataset.idx);
       const optIdx = parseInt(this.dataset.opt);
       
+      // Validasi dari variable JS memori, bukan atribut DOM
       const isCorrect = (optIdx === answers[qIdx]);
+      
       this.classList.add(isCorrect ? 'benar' : 'salah');
       
       const feedback = this.parentElement.nextElementSibling;
@@ -63,17 +65,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const materiId = document.body.dataset.materi;
     alert("Hore! Kamu sudah menyelesaikan materi ini! 🏆");
     if (navigator.onLine) {
-      await fetch('/api/progress', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ materialId: materiId, status: "completed", skor: 100 })
-      });
+      try {
+        await fetch('/api/progress', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ materialId: materiId, status: "completed", skor: 100 })
+        });
+      } catch (err) {
+        console.error("Progress save error", err);
+      }
     }
   };
 
   // AI Tutor Toggle
   window.toggleChat = () => {
-    document.querySelector('.ai-panel').classList.toggle('open');
+    const panel = document.querySelector('.ai-panel');
+    if (panel) panel.classList.toggle('open');
   };
 
   window.sendToAI = async () => {
@@ -101,10 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       const data = await res.json();
       
-      document.getElementById(typingId).remove();
+      const typingElem = document.getElementById(typingId);
+      if (typingElem) typingElem.remove();
       msgsContainer.innerHTML += `<div class="msg ai">${data.reply || "Maaf AI sedang istirahat."}</div>`;
     } catch (e) {
-      document.getElementById(typingId).remove();
+      const typingElem = document.getElementById(typingId);
+      if (typingElem) typingElem.remove();
       msgsContainer.innerHTML += `<div class="msg ai">Koneksi terputus. Coba lagi ya!</div>`;
     }
     msgsContainer.scrollTop = msgsContainer.scrollHeight;

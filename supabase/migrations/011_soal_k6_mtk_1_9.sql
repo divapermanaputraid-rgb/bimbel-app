@@ -61,4 +61,5 @@ INSERT INTO public.questions (material_id, soal, pilihan, jawaban_benar, level, 
 ('k6-mtk-09', 'Lengkapi rasio senilai: 3:5 = 9:__', '{"a":"10","b":"12","c":"15","d":"25"}', 'c', 2, 'Karena 3x3=9, maka 5x3=15.'),
 ('k6-mtk-09', 'Campuran cat biru:putih = 2:3. Untuk 8 liter cat biru butuh putih berapa?', '{"a":"10","b":"12","c":"15","d":"6"}', 'b', 2, '2 dikali 4 jadi 8. Maka 3 x 4 = 12 liter.'),
 ('k6-mtk-09', 'Dalam peta 1 cm = 50 km (1:5.000.000). Jarak asli 150 km, berapa cm di peta?', '{"a":"2 cm","b":"3 cm","c":"4 cm","d":"5 cm"}', 'b', 3, '150 dibagi 50 = 3 cm.')
-ON CONFLICT DO NOTHING;
+
+;
