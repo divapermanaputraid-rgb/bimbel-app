@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petualangan Anton dan Kelereng — Kelas 2</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-06">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">📖</div>
+        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Petualangan Anton dan Kelereng</h1>
+        <p style="color: #666;">Matematika — Kelas 2</p>
+        <p style="margin-top: 16px;">Membaca cerita dan berhitung! 🕵️‍♂️</p>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body">
+        <ul style="padding-left: 20px;">
+          <li>Mengerjakan soal cerita tambah</li><li>Mengerjakan soal cerita kurang</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Kelereng Anton <span>▼</span></div>
+      <div class="section-body">
+        <p>Anton menang 8 kelereng. Awalnya dia punya 15. Jadi: 15 + 8 = 23 kelereng! 🔴</p>
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Siti punya 10 buku, lalu dibeli lagi 2 buku. Total buku Siti?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">12 buku</button><button class="quiz-opt" data-opt="1">8 buku</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Permen Budi Berkurang <span>▼</span></div>
+      <div class="section-body">
+        <p>Budi punya 30 permen, dibagikan 12 ke temannya. Sisa permen Budi adalah 18! 🍬</p>
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Ibu bawa 20 telur, pecah 4 di jalan. Sisa telur Ibu?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">16 telur</button><button class="quiz-opt" data-opt="1">24 telur</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 64px; margin: 16px 0;">📖</div>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Detektif Cerita</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-msgs">
+        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Petualangan Anton dan Kelereng? 😊</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    // [FIX: Hide answers from DOM]
+    window._QUIZ_ANSWERS = [0,0];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
