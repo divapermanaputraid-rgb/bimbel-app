@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berat Benda — Kelas 2</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-15">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">⚖️</div>
+        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Berat Benda</h1>
+        <p style="color: #666;">Matematika — Kelas 2</p>
+        <p style="margin-top: 16px;">Mana yang lebih berat? Gajah atau Semut? 🐘🐭</p>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body">
+        <ul style="padding-left: 20px;">
+          <li>Membandingkan berat</li><li>Kenal satuan baku (kg, g, ons)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Membandingkan Berat <span>▼</span></div>
+      <div class="section-body">
+        <p>Buku pelajaran jauh lebih berat daripada sebatang pensil. Setuju? 📚 > ✏️</p>
+        <div class="quiz-box" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Manakah benda yang lebih ringan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-correct="false">Sepeda</button><button class="quiz-opt" data-correct="true">Sepatu</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Satuan Berat: Kg dan Ons <span>▼</span></div>
+      <div class="section-body">
+        <p>Biasanya ibu beli beras 5 Kilo (kg). 1 kg itu sama dengan 10 ons lho! ⚖️</p>
+        <div class="quiz-box" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>2 kilogram sama dengan berapa ons?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-correct="true">20 ons</button><button class="quiz-opt" data-correct="false">200 ons</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 64px; margin: 16px 0;">⚖️</div>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Juru Timbang</p>
+        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-msgs">
+        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Berat Benda? 😊</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
