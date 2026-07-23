@@ -1,184 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mengurangi dengan Berbagai Cara</title>
-    <link rel="stylesheet" href="/assets/book-theme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengurangi dengan Mudah — Kelas 2</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-05">
-    <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">➖</div>
+        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Mengurangi dengan Mudah</h1>
+        <p style="color: #666;">Matematika — Kelas 2</p>
+        <p style="margin-top: 16px;">Kalau permennya dimakan, sisanya berapa ya? 😋</p>
+      </div>
+    </div>
 
-    <section class="page active" data-page="1">
-        <div class="cover">
-            <div class="cover-icon">➖</div>
-            <h1>Mengurangi dengan Berbagai Cara</h1>
-            <p class="subtitle">Matematika — Kelas 2</p>
-            <p class="deskripsi-singkat">Yuk belajar cara mengurangi angka bersusun bersama Anton!</p>
-            <button class="btn-next" type="button" onclick="goPage(2)">Mulai Belajar ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="2">
-        <h2>🎯 Tujuan Kita Hari Ini</h2>
-        <ul class="tujuan-list">
-            <li>Mengurangi angka dengan benda konkret</li>
-            <li>Belajar pengurangan bersusun ke bawah tanpa meminjam</li>
-            <li>Belajar pengurangan bersusun dengan meminjam</li>
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body">
+        <ul style="padding-left: 20px;">
+          <li>Mengurang tanpa pinjam</li><li>Mengurang dengan pinjam</li>
         </ul>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(1)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(3)">Lanjut ➡️</button>
-        </div>
-    </section>
+      </div>
+    </div>
 
-    <section class="page" data-page="3">
-        <h2>➖ Mengurangi Benda</h2>
-        <p>Anton punya 15 permen. Dimakan 4. Berapa sisa permen Anton sekarang?</p>
-        <div class="example-box">
-            <div class="example-title">💡 Cara 1: Menghitung Sisa</div>
-            <div class="visual" style="font-size: 1.5rem;">🍬15 - 🍬4 = 🍬11</div>
-            <p>15 dikurangi 4 sama dengan <strong>11</strong>.</p>
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Mengurang Tanpa Pinjam <span>▼</span></div>
+      <div class="section-body">
+        <p>Punya 20 donat, dimakan 8. Sisa 12! 🍩</p>
+        <div class="quiz-box" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Berapa 15 - 5?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-correct="true">10</button><button class="quiz-opt" data-correct="false">20</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(2)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(4)">Lanjut ➡️</button>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Mengurang Dengan Pinjam <span>▼</span></div>
+      <div class="section-body">
+        <p>Kalau 32 - 15, pinjam 1 puluhan dari 3, jadi sisanya 17. 🛡️</p>
+        <div class="quiz-box" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Berapa 24 - 8?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-correct="true">16</button><button class="quiz-opt" data-correct="false">14</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
-    </section>
+      </div>
+    </div>
+    
 
-    <section class="page" data-page="4">
-        <h2>📝 Pengurangan Bersusun</h2>
-        <p>Untuk angka yang lebih besar, kita bisa menguranginya dengan cara bersusun ke bawah.</p>
-        <div class="example-box">
-            <div class="example-title">💡 Cara 2: Bersusun (Tanpa Meminjam)</div>
-            <p>Kurangi <strong>38 - 15</strong>.</p>
-            <div style="font-family: monospace; font-size: 24px; text-align: center; margin: 10px 0; background: #fff; padding: 10px; border-radius: 8px;">
-                &nbsp;38<br>
-                &nbsp;15<br>
-                ---- -<br>
-                &nbsp;23
-            </div>
-            <p>Satuan: 8 - 5 = 3<br>Puluhan: 3 - 1 = 2<br>Hasilnya: <strong>23</strong></p>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(3)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(5)">Lanjut ➡️</button>
-        </div>
-    </section>
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 64px; margin: 16px 0;">➖</div>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Juru Kurang</p>
+        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+      </div>
+    </div>
+  </div>
 
-    <section class="page" data-page="5">
-        <h2>🎒 Pengurangan Meminjam</h2>
-        <p>Bagaimana kalau satuan yang di atas lebih kecil dari yang di bawah?</p>
-        <div class="example-box">
-            <div class="example-title">💡 Cara 3: Bersusun (Dengan Meminjam)</div>
-            <p>Kurangi <strong>42 - 18</strong>.</p>
-            <div style="font-family: monospace; font-size: 24px; text-align: center; margin: 10px 0; background: #fff; padding: 10px; border-radius: 8px;">
-                &nbsp;³ ¹²<br>
-                &nbsp;4 2<br>
-                &nbsp;1 8<br>
-                ---- -<br>
-                &nbsp;2 4
-            </div>
-            <p>Satuan: 2 tidak bisa dikurangi 8. Pinjam 1 puluhan dari 4. Jadi 12 - 8 = 4.<br>Puluhan: Sisa 3 (karena dipinjam 1). 3 - 1 = 2.<br>Hasilnya: <strong>24</strong></p>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(4)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(6)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="6">
-        <h2>🎯 Coba Yuk!</h2>
-        <div class="quiz-container">
-            <div class="quiz-item" data-soal-id="k2-mtk-05-q1" data-correct="b">
-                <p class="soal">1. Hasil dari 15 - 4 adalah...</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">10</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">11</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">12</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-05-q2" data-correct="a" style="margin-top:20px;">
-                <p class="soal">2. 30 - 10 = ?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">20</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">10</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">40</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-05-q3" data-correct="a" style="margin-top:20px;">
-                <p class="soal">3. Berapa hasil dari 38 - 15?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">23</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">13</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">33</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(5)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(7)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="7">
-        <h2>✏️ Latihan Ekstra</h2>
-        <div class="quiz-container">
-            <div class="quiz-item" data-soal-id="k2-mtk-05-q4" data-correct="b">
-                <p class="soal">1. Ada 25 burung. 12 terbang. Sisa burung?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">12</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">13</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">14</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-05-q5" data-correct="a" style="margin-top:20px;">
-                <p class="soal">2. 42 - 18 = ? (Gunakan pinjam puluhan)</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">24</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">34</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">26</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(6)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(8)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="8">
-        <h2>⭐ Kamu Hebat!</h2>
-        <div class="badge">🏅 Ahli Pengurangan</div>
-        <div class="ringkasan">
-            <h3>📋 Yang sudah kamu pelajari:</h3>
-            <ul>
-                <li>Mengurangkan angka secara langsung</li>
-                <li>Mengurang bersusun ke bawah tanpa meminjam</li>
-                <li>Mengurang bersusun dengan meminjam puluhan</li>
-            </ul>
-        </div>
-
-        <div class="selesai-start">
-            <button class="btn-selesai" type="button" onclick="selesaiMateri()">Selesai Belajar 🎉</button>
-            <div class="nav-buttons">
-                <button type="button" onclick="goPage(7)">⬅️ Ulangi Latihan</button>
-            </div>
-        </div>
-
-        <div class="selesai-actions hidden">
-            <p style="text-align:center;font-weight:700;margin:0 0 4px;">Mau ngapain sekarang?</p>
-            <button class="btn-action btn-action-primary" type="button" onclick="bacaUlang()">📖 Baca ulang materi</button>
-            <button class="btn-action btn-action-success" type="button" onclick="keDashboard()">🏠 Kembali ke Dashboard</button>
-            <button class="btn-action btn-action-muted" type="button" onclick="tutupBuku()">👋 Tutup</button>
-        </div>
-    </section>
-
-    <script src="/assets/book-engine.js"></script>
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-msgs">
+        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Mengurangi dengan Mudah? 😊</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/book-engine.js"></script>
 </body>
 </html>

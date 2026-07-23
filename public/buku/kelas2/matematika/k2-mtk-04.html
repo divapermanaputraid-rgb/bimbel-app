@@ -1,184 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menambah dengan Berbagai Cara</title>
-    <link rel="stylesheet" href="/assets/book-theme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menambah dengan Senang Hati — Kelas 2</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-04">
-    <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">➕</div>
+        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Menambah dengan Senang Hati</h1>
+        <p style="color: #666;">Matematika — Kelas 2</p>
+        <p style="margin-top: 16px;">Budi punya permen, lalu dikasih Anton. Berapa totalnya? 🍬</p>
+      </div>
+    </div>
 
-    <section class="page active" data-page="1">
-        <div class="cover">
-            <div class="cover-icon">➕</div>
-            <h1>Menambah dengan Berbagai Cara</h1>
-            <p class="subtitle">Matematika — Kelas 2</p>
-            <p class="deskripsi-singkat">Mari belajar menjumlahkan angka bersusun bersama Anton!</p>
-            <button class="btn-next" type="button" onclick="goPage(2)">Mulai Belajar ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="2">
-        <h2>🎯 Tujuan Kita Hari Ini</h2>
-        <ul class="tujuan-list">
-            <li>Menjumlahkan angka dengan benda konkret</li>
-            <li>Belajar penjumlahan bersusun ke bawah tanpa menyimpan</li>
-            <li>Belajar penjumlahan bersusun dengan menyimpan</li>
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body">
+        <ul style="padding-left: 20px;">
+          <li>Menjumlah tanpa simpan</li><li>Menjumlah dengan simpan</li>
         </ul>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(1)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(3)">Lanjut ➡️</button>
-        </div>
-    </section>
+      </div>
+    </div>
 
-    <section class="page" data-page="3">
-        <h2>➕ Menambah Benda</h2>
-        <p>Anton punya 15 apel. Ibunya membelikan 12 apel lagi. Berapa total apel Anton sekarang?</p>
-        <div class="example-box">
-            <div class="example-title">💡 Cara 1: Menghitung Langsung</div>
-            <div class="visual" style="font-size: 1.5rem;">🍎15 + 🍎12 = 🍎27</div>
-            <p>15 ditambah 12 sama dengan <strong>27</strong>.</p>
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Menjumlah Tanpa Simpan <span>▼</span></div>
+      <div class="section-body">
+        <p>12 apel ditambah 5 apel jadi 17 apel! 🍎🍏</p>
+        <div class="quiz-box" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Berapa 10 + 6?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-correct="true">16</button><button class="quiz-opt" data-correct="false">15</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(2)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(4)">Lanjut ➡️</button>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Menjumlah Dengan Simpan <span>▼</span></div>
+      <div class="section-body">
+        <p>Kalau 18 + 7, kita butuh simpan puluhan baru, totalnya jadi 25! 💡</p>
+        <div class="quiz-box" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Berapa 15 + 6?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-correct="true">21</button><button class="quiz-opt" data-correct="false">20</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
-    </section>
+      </div>
+    </div>
+    
 
-    <section class="page" data-page="4">
-        <h2>📝 Penjumlahan Bersusun</h2>
-        <p>Untuk angka yang lebih besar, kita bisa menjumlahkannya dengan cara bersusun ke bawah.</p>
-        <div class="example-box">
-            <div class="example-title">💡 Cara 2: Bersusun (Tanpa Menyimpan)</div>
-            <p>Tambahkan <strong>24 + 13</strong>.</p>
-            <div style="font-family: monospace; font-size: 24px; text-align: center; margin: 10px 0; background: #fff; padding: 10px; border-radius: 8px;">
-                &nbsp;24<br>
-                &nbsp;13<br>
-                +---<br>
-                &nbsp;37
-            </div>
-            <p>Satuan: 4 + 3 = 7<br>Puluhan: 2 + 1 = 3<br>Hasilnya: <strong>37</strong></p>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(3)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(5)">Lanjut ➡️</button>
-        </div>
-    </section>
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 64px; margin: 16px 0;">➕</div>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Juru Tambah</p>
+        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+      </div>
+    </div>
+  </div>
 
-    <section class="page" data-page="5">
-        <h2>🎒 Penjumlahan Menyimpan</h2>
-        <p>Bagaimana kalau satuannya lebih dari 9?</p>
-        <div class="example-box">
-            <div class="example-title">💡 Cara 3: Bersusun (Dengan Menyimpan)</div>
-            <p>Tambahkan <strong>18 + 25</strong>.</p>
-            <div style="font-family: monospace; font-size: 24px; text-align: center; margin: 10px 0; background: #fff; padding: 10px; border-radius: 8px;">
-                &nbsp;¹<br>
-                &nbsp;18<br>
-                &nbsp;25<br>
-                +---<br>
-                &nbsp;43
-            </div>
-            <p>Satuan: 8 + 5 = 13. Tulis 3, simpan 1 di puluhan.<br>Puluhan: 1 (simpanan) + 1 + 2 = 4.<br>Hasilnya: <strong>43</strong></p>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(4)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(6)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="6">
-        <h2>🎯 Coba Yuk!</h2>
-        <div class="quiz-container">
-            <div class="quiz-item" data-soal-id="k2-mtk-04-q1" data-correct="b">
-                <p class="soal">1. Hasil dari 12 + 5 adalah...</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">16</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">17</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">18</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-04-q2" data-correct="c" style="margin-top:20px;">
-                <p class="soal">2. 20 + 10 = ?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">20</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">40</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">30</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-04-q3" data-correct="a" style="margin-top:20px;">
-                <p class="soal">3. Berapa hasil dari 24 + 13?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">37</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">47</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">36</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(5)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(7)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="7">
-        <h2>✏️ Latihan Ekstra</h2>
-        <div class="quiz-container">
-            <div class="quiz-item" data-soal-id="k2-mtk-04-q4" data-correct="a">
-                <p class="soal">1. Anton punya 15 apel. Beli lagi 12 apel. Totalnya?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">27</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">37</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">28</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-04-q5" data-correct="b" style="margin-top:20px;">
-                <p class="soal">2. 18 + 25 = ? (Gunakan simpan puluhan)</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">33</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">43</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">44</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(6)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(8)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="8">
-        <h2>⭐ Kamu Hebat!</h2>
-        <div class="badge">🏅 Master Penjumlahan</div>
-        <div class="ringkasan">
-            <h3>📋 Yang sudah kamu pelajari:</h3>
-            <ul>
-                <li>Menjumlahkan angka secara langsung</li>
-                <li>Menjumlah bersusun ke bawah tanpa meminjam</li>
-                <li>Menjumlah bersusun dengan menyimpan puluhan</li>
-            </ul>
-        </div>
-
-        <div class="selesai-start">
-            <button class="btn-selesai" type="button" onclick="selesaiMateri()">Selesai Belajar 🎉</button>
-            <div class="nav-buttons">
-                <button type="button" onclick="goPage(7)">⬅️ Ulangi Latihan</button>
-            </div>
-        </div>
-
-        <div class="selesai-actions hidden">
-            <p style="text-align:center;font-weight:700;margin:0 0 4px;">Mau ngapain sekarang?</p>
-            <button class="btn-action btn-action-primary" type="button" onclick="bacaUlang()">📖 Baca ulang materi</button>
-            <button class="btn-action btn-action-success" type="button" onclick="keDashboard()">🏠 Kembali ke Dashboard</button>
-            <button class="btn-action btn-action-muted" type="button" onclick="tutupBuku()">👋 Tutup</button>
-        </div>
-    </section>
-
-    <script src="/assets/book-engine.js"></script>
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-msgs">
+        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Menambah dengan Senang Hati? 😊</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/book-engine.js"></script>
 </body>
 </html>

@@ -1,185 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petualangan Anton dan Kelereng</title>
-    <link rel="stylesheet" href="/assets/book-theme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petualangan Anton dan Kelereng — Kelas 2</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-06">
-    <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">📖</div>
+        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Petualangan Anton dan Kelereng</h1>
+        <p style="color: #666;">Matematika — Kelas 2</p>
+        <p style="margin-top: 16px;">Membaca cerita dan berhitung! 🕵️‍♂️</p>
+      </div>
+    </div>
 
-    <section class="page active" data-page="1">
-        <div class="cover">
-            <div class="cover-icon">📖</div>
-            <h1>Petualangan Anton dan Kelereng</h1>
-            <p class="subtitle">Matematika — Kelas 2</p>
-            <p class="deskripsi-singkat">Ayo pecahkan teka-teki cerita bersama Anton!</p>
-            <button class="btn-next" type="button" onclick="goPage(2)">Mulai Belajar ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="2">
-        <h2>🎯 Tujuan Kita Hari Ini</h2>
-        <ul class="tujuan-list">
-            <li>Membaca dan memahami soal cerita</li>
-            <li>Menentukan kapan harus menambah (➕)</li>
-            <li>Menentukan kapan harus mengurang (➖)</li>
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body">
+        <ul style="padding-left: 20px;">
+          <li>Mengerjakan soal cerita tambah</li><li>Mengerjakan soal cerita kurang</li>
         </ul>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(1)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(3)">Lanjut ➡️</button>
-        </div>
-    </section>
+      </div>
+    </div>
 
-    <section class="page" data-page="3">
-        <h2>➕ Kapan Kita Menambah?</h2>
-        <p>Dalam soal cerita, kita menggunakan <strong>penjumlahan</strong> (tambah) jika jumlah benda menjadi lebih banyak.</p>
-        <div class="example-box">
-            <div class="example-title">💡 Kata Kunci Ditambah:</div>
-            <ul>
-                <li>Membeli lagi</li>
-                <li>Diberi</li>
-                <li>Menang</li>
-                <li>Datang lagi</li>
-            </ul>
-            <p><strong>Contoh:</strong> Budi punya 10 pensil, Ayah membelikan 5 pensil lagi. Berapa total pensil Budi?<br>
-            <strong>Jawab:</strong> 10 + 5 = 15 pensil.</p>
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Kelereng Anton <span>▼</span></div>
+      <div class="section-body">
+        <p>Anton menang 8 kelereng. Awalnya dia punya 15. Jadi: 15 + 8 = 23 kelereng! 🔴</p>
+        <div class="quiz-box" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Siti punya 10 buku, lalu dibeli lagi 2 buku. Total buku Siti?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-correct="true">12 buku</button><button class="quiz-opt" data-correct="false">8 buku</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(2)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(4)">Lanjut ➡️</button>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Permen Budi Berkurang <span>▼</span></div>
+      <div class="section-body">
+        <p>Budi punya 30 permen, dibagikan 12 ke temannya. Sisa permen Budi adalah 18! 🍬</p>
+        <div class="quiz-box" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Ibu bawa 20 telur, pecah 4 di jalan. Sisa telur Ibu?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-correct="true">16 telur</button><button class="quiz-opt" data-correct="false">24 telur</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
-    </section>
+      </div>
+    </div>
+    
 
-    <section class="page" data-page="4">
-        <h2>➖ Kapan Kita Mengurang?</h2>
-        <p>Kita menggunakan <strong>pengurangan</strong> (kurang) jika jumlah benda menjadi lebih sedikit.</p>
-        <div class="example-box">
-            <div class="example-title">💡 Kata Kunci Dikurang:</div>
-            <ul>
-                <li>Dimakan / Terjual</li>
-                <li>Hilang / Rusak</li>
-                <li>Kalah</li>
-                <li>Diberikan kepada orang lain</li>
-            </ul>
-            <p><strong>Contoh:</strong> Ibu punya 20 kue, dimakan adik 5. Berapa sisa kue?<br>
-            <strong>Jawab:</strong> 20 - 5 = 15 kue.</p>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(3)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(5)">Lanjut ➡️</button>
-        </div>
-    </section>
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 64px; margin: 16px 0;">📖</div>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Detektif Cerita</p>
+        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+      </div>
+    </div>
+  </div>
 
-    <section class="page" data-page="5">
-        <h2>🧩 Campuran</h2>
-        <p>Bagaimana jika ceritanya berturut-turut?</p>
-        <div class="example-box">
-            <div class="example-title">💡 Petualangan Kelereng Anton</div>
-            <p>Anton punya 45 kelereng. Hilang 12 kelereng. Lalu Ibu memberinya 8 kelereng. Berapa totalnya sekarang?</p>
-            <p><strong>Langkah 1 (Hilang):</strong> 45 - 12 = 33 kelereng.</p>
-            <p><strong>Langkah 2 (Diberi Ibu):</strong> 33 + 8 = 41 kelereng.</p>
-            <p>Jadi total kelereng Anton sekarang adalah <strong>41</strong>.</p>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(4)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(6)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="6">
-        <h2>🎯 Coba Yuk!</h2>
-        <div class="quiz-container">
-            <div class="quiz-item" data-soal-id="k2-mtk-06-q1" data-correct="b">
-                <p class="soal">1. Ibu punya 20 kue, dimakan adik 5. Apakah ini ditambah atau dikurang?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">Ditambah</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">Dikurang</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">Sama saja</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-06-q2" data-correct="b" style="margin-top:20px;">
-                <p class="soal">2. Budi punya 10 pensil, Ayah membelikan 5 pensil lagi. Berapa total pensil Budi?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">5</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">15</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">20</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-06-q3" data-correct="b" style="margin-top:20px;">
-                <p class="soal">3. Di toko ada 35 permen. Terjual 12 permen. Sisa permen sekarang?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">47</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">23</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">25</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(5)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(7)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="7">
-        <h2>✏️ Latihan Ekstra</h2>
-        <div class="quiz-container">
-            <div class="quiz-item" data-soal-id="k2-mtk-06-q4" data-correct="a">
-                <p class="soal">1. Anton punya 18 kelereng. Menang main kelereng 11 butir. Berapa kelerengnya sekarang?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">29</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">7</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">28</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-            <div class="quiz-item" data-soal-id="k2-mtk-06-q5" data-correct="b" style="margin-top:20px;">
-                <p class="soal">2. Anton punya 45 kelereng. Hilang 12 kelereng. Lalu Ibu memberinya 8 kelereng. Berapa totalnya sekarang?</p>
-                <div class="options">
-                    <button type="button" class="quiz-option" data-jawaban="a">33</button>
-                    <button type="button" class="quiz-option" data-jawaban="b">41</button>
-                    <button type="button" class="quiz-option" data-jawaban="c">35</button>
-                </div>
-                <div class="feedback hidden"></div>
-            </div>
-        </div>
-        <div class="nav-buttons">
-            <button type="button" onclick="goPage(6)">⬅️ Kembali</button>
-            <button type="button" onclick="goPage(8)">Lanjut ➡️</button>
-        </div>
-    </section>
-
-    <section class="page" data-page="8">
-        <h2>⭐ Kamu Hebat!</h2>
-        <div class="badge">🏅 Master Cerita Kelereng</div>
-        <div class="ringkasan">
-            <h3>📋 Yang sudah kamu pelajari:</h3>
-            <ul>
-                <li>Memahami cerita matematika</li>
-                <li>Tahu kapan harus menambah</li>
-                <li>Tahu kapan harus mengurang</li>
-            </ul>
-        </div>
-
-        <div class="selesai-start">
-            <button class="btn-selesai" type="button" onclick="selesaiMateri()">Selesai Belajar 🎉</button>
-            <div class="nav-buttons">
-                <button type="button" onclick="goPage(7)">⬅️ Ulangi Latihan</button>
-            </div>
-        </div>
-
-        <div class="selesai-actions hidden">
-            <p style="text-align:center;font-weight:700;margin:0 0 4px;">Mau ngapain sekarang?</p>
-            <button class="btn-action btn-action-primary" type="button" onclick="bacaUlang()">📖 Baca ulang materi</button>
-            <button class="btn-action btn-action-success" type="button" onclick="keDashboard()">🏠 Kembali ke Dashboard</button>
-            <button class="btn-action btn-action-muted" type="button" onclick="tutupBuku()">👋 Tutup</button>
-        </div>
-    </section>
-
-    <script src="/assets/book-engine.js"></script>
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-msgs">
+        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Petualangan Anton dan Kelereng? 😊</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/book-engine.js"></script>
 </body>
 </html>
