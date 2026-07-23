@@ -4,3 +4,6 @@ node_modules/
 .env.local
 .DS_Store
 *.db
+.agents/
+.claude/skills/
+skills-lock.json
