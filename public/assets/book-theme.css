@@ -65,3 +65,23 @@ body {
 .msg { margin-bottom: 8px; padding: 8px 12px; border-radius: 12px; max-width: 80%; }
 .msg.user { background: #E3F2FD; margin-left: auto; }
 .msg.ai { background: #f1f1f1; margin-right: auto; }
+
+/* --- TEMA KELAS 6 --- */
+body.kelas6 {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Inter', 'Nunito', sans-serif;
+}
+body.kelas6 .btn {
+  border-radius: 8px; /* Lebih mature rounded-lg */
+  padding: 12px;
+}
+body.kelas6 .ai-header {
+  background: #4f46e5; /* Indigo dewasa */
+}
+body.kelas6 .ai-toggle {
+  background: #4f46e5;
+}
+body.kelas6 .progress-fill {
+  background: #4f46e5;
+}

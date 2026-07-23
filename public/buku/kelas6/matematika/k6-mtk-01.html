@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perkalian Bilangan Asli × Pecahan — Kelas 6</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas6" data-kelas="6" data-pelajaran="mtk" data-materi="k6-mtk-01">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">✖️</div>
+        <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Perkalian Bilangan Asli × Pecahan</h1>
+        <p style="color: #666;">Matematika — Kelas 6</p>
+        <p style="margin-top: 16px;">Mengalikan bilangan bulat dengan pecahan. Mari kita pelajari konsep dasarnya! 💡</p>
+        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,300)">Mulai Belajar! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body">
+        <ul style="padding-left: 20px;">
+          <li>Memahami konsep perkalian bilangan asli dengan pecahan</li><li>Menerapkan strategi perkalian pembilang dan penyebut</li><li>Menyederhanakan hasil pecahan</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Konsep Perkalian <span>▼</span></div>
+      <div class="section-body">
+        <p>Perkalian bilangan asli dengan pecahan bisa dibayangkan sebagai pengulangan. Contoh: <code>3 × ½</code> sama dengan memiliki 3 bagian, di mana tiap bagian bernilai ½. Hasilnya adalah <code>1½</code> atau <code>3/2</code>.</p>
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Berapa hasil dari 4 × ¼ ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">1</button><button class="quiz-opt" data-opt="1">4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Strategi Menghitung <span>▼</span></div>
+      <div class="section-body">
+        <p>Cara paling mudah adalah mengubah bilangan asli menjadi pecahan biasa dengan menyebutnya per-satu. Misalnya, 3 menjadi <code>3/1</code>. Lalu kalikan <code>(3/1) × (1/2) = 3/2</code>.</p>
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Dalam pecahan biasa, angka 5 ditulis sebagai...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5/5</button><button class="quiz-opt" data-opt="1">5/1</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 3: Menyederhanakan Hasil <span>▼</span></div>
+      <div class="section-body">
+        <p>Terkadang hasilnya besar, contohnya <code>4 × 2/6 = 8/6</code>. Jangan lupa disederhanakan dengan membagi atas dan bawah dengan angka yang sama (dibagi 2), menjadi <code>4/3</code> atau <code>1⅓</code>.</p>
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Pecahan 6/4 jika disederhanakan menjadi?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">3/2</button><button class="quiz-opt" data-opt="1">1/4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 64px; margin: 16px 0;">🔢</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Juru Kali Pecahan</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-msgs">
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Perkalian Bilangan Asli × Pecahan lebih dalam? Mari kita diskusikan. 💡</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [0,1,0];
+    window._TOTAL_SECTIONS = 3;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

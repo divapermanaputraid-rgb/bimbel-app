@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membandingkan & Mengurutkan Desimal — Kelas 6</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas6" data-kelas="6" data-pelajaran="mtk" data-materi="k6-mtk-06">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">⚖️</div>
+        <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Membandingkan &amp; Mengurutkan Desimal</h1>
+        <p style="color: #666;">Matematika — Kelas 6</p>
+        <p style="margin-top: 16px;">Menentukan mana nilai desimal yang lebih berat, tinggi, atau berharga. 💸</p>
+        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,300)">Mulai Belajar! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body">
+        <ul style="padding-left: 20px;">
+          <li>Membandingkan dua desimal</li><li>Mengurutkan urutan desimal</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Membandingkan Angka di Belakang Koma <span>▼</span></div>
+      <div class="section-body">
+        <p>Perhatikan baik-baik: <code>0.3</code> itu SAMA dengan <code>0.30</code>. Jadi <code>0.3</code> lebih besar daripada <code>0.25</code>!</p>
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Manakah yang lebih besar: 0.5 atau 0.45?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0.45</button><button class="quiz-opt" data-opt="1">0.5</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Mengurutkan Data <span>▼</span></div>
+      <div class="section-body">
+        <p>Urutan dari terkecil: <code>0.05</code>, lalu <code>0.5</code>, <code>0.55</code>, hingga <code>5.0</code>.</p>
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p>Siapa yang paling berat? Budi 45.2 kg atau Andi 45.15 kg?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Budi</button><button class="quiz-opt" data-opt="1">Andi</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 64px; margin: 16px 0;">⚖️</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Juru Banding Desimal</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-msgs">
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Membandingkan &amp; Mengurutkan Desimal lebih dalam? Mari kita diskusikan. 💡</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [1,0];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
