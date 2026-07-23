@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bimbel Interaktif SD
 
-## Getting Started
+Aplikasi bimbel interaktif untuk siswa SD Kelas 2 & 6 — buku matematika HTML ringan, dashboard siswa/guru, dan tutor AI.
 
-First, run the development server:
+## Stack
+
+- Next.js 14 (App Router)
+- Tailwind CSS
+- Supabase (Auth + PostgreSQL)
+- Groq (AI tutor API)
+- PWA service worker (offline books after first open)
+
+## Fitur
+
+- Buku interaktif Kelas 2 & Kelas 6 (`public/buku`)
+- Login + dashboard siswa & guru
+- Assign tugas, progress, XP/streak (sesuai migrasi DB)
+- AI tutor lewat `/api/ai-tutor`
+- Offline: aset buku yang pernah dibuka bisa dibaca tanpa jaringan
+
+## Setup lokal
 
 ```bash
+npm install
+cp .env.local.example .env.local
+# isi URL/key Supabase + key Groq
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Database
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Migrasi SQL ada di `supabase/migrations/`. Terapkan lewat Supabase SQL Editor atau CLI yang sudah di-link ke project.
 
-## Learn More
+Urutan: foundation → dashboard/gamification → materi/soal per batch.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy (Vercel)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Import repo ke Vercel (framework Next.js)
+2. Set environment variables sama seperti `.env.local`
+3. Deploy production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`vercel.json` mengatur header `sw.js` agar service worker tidak di-cache agresif.
 
-## Deploy on Vercel
+**Jangan** pakai `output: 'export'` — API routes butuh runtime server.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Cara pakai singkat
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Guru:** login → dashboard guru → assign tugas → pantau status.
+
+**Siswa:** login → dashboard siswa → buka tugas/buku → kerjakan kuis → selesai menyimpan progress saat online.
+
+## Checklist uji manual
+
+- [ ] Login siswa & guru redirect benar
+- [ ] Buku HTML terbuka, kuis inline jalan, tombol selesai aktif setelah kuis
+- [ ] Progress/API tidak error di network tab saat online
+- [ ] AI tutor membalas (atau pesan fallback jika key kosong)
+- [ ] DevTools → Application → Manifest terbaca
+- [ ] Service worker terdaftar
+- [ ] Buka satu buku online, lalu offline: buku itu masih bisa dibuka
+- [ ] Banner offline muncul saat jaringan diputus
+- [ ] `npm run build` lulus
+
+## Struktur penting
+
+```
+src/app/          # routes + API
+src/components/   # SW register, offline indicator
+public/buku/      # HTML buku
+public/assets/    # book-theme + book-engine
+public/sw.js      # service worker
+supabase/migrations/
+```
