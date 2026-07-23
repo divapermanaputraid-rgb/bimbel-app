@@ -62,3 +62,4 @@ INSERT INTO public.questions (material_id, soal, pilihan, jawaban_benar, level, 
 ('k6-mtk-18', 'Di kantin ada 5 mie ayam, 15 nasi goreng. Peluang pelanggan selanjutnya pesan nasi goreng?', '{"a":"15/20 (3/4)","b":"5/20 (1/4)","c":"15/5 (3)","d":"1/2"}', 'a', 2, 'Mayoritas suka nasi goreng, rasionya 15 dari 20.'),
 ('k6-mtk-18', 'Peluang mesin A rusak 1/100, mesin B rusak 1/50. Mesin mana yang lebih bagus?', '{"a":"Mesin A","b":"Mesin B","c":"Sama","d":"Tidak bisa dibandingkan"}', 'a', 2, 'Peluang rusak Mesin A lebih kecil (1/100 < 1/50).'),
 ('k6-mtk-18', 'Anton mencoba ikut undian yang peluang menangnya 1 dari sejuta. Artinya?', '{"a":"Ia pasti menang besok","b":"Sebaiknya ia tidak berharap menang","c":"Peluangnya besar","d":"Ia akan menang setelah 1 juta kali main"}', 'b', 3, 'Sangat mustahil / hampir mustahil terjadi.');
+;
