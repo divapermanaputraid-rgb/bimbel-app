@@ -9,6 +9,7 @@ Aplikasi bimbel interaktif untuk siswa SD Kelas 2 & 6 — buku matematika HTML r
 - Supabase (Auth + PostgreSQL)
 - Groq (AI tutor API)
 - PWA service worker (offline books after first open)
+- Capacitor 6 (Android native wrapper)
 
 ## Fitur
 
@@ -17,6 +18,31 @@ Aplikasi bimbel interaktif untuk siswa SD Kelas 2 & 6 — buku matematika HTML r
 - Assign tugas, progress, XP/streak (sesuai migrasi DB)
 - AI tutor lewat `/api/ai-tutor`
 - Offline: aset buku yang pernah dibuka bisa dibaca tanpa jaringan
+
+## 📱 Aplikasi Android
+
+### Build APK
+```bash
+npm run build:apk
+```
+APK akan muncul di `android/app/release/app-release.apk`
+
+### Build App Bundle (Play Store)
+```bash
+npm run build:aab
+```
+
+### Install ke HP
+```bash
+adb install android/app/release/app-release.apk
+```
+
+### Fitur Native
+- ✅ Offline mode (buku tersimpan lokal)
+- ✅ Push notification (tugas baru, deadline)
+- ✅ Splash screen & icon custom
+- ✅ Deep linking dari URL tugas
+- ✅ Back button Android native
 
 ## Setup lokal
 
@@ -43,7 +69,7 @@ Urutan: foundation → dashboard/gamification → materi/soal per batch.
 
 `vercel.json` mengatur header `sw.js` agar service worker tidak di-cache agresif.
 
-**Jangan** pakai `output: 'export'` — API routes butuh runtime server.
+**Jangan** pakai `output: 'export'` — API routes butuh runtime server. (Kecuali untuk build Capacitor di mana kita ganti sementara menjadi static export di `next.config.mjs`).
 
 ## Cara pakai singkat
 

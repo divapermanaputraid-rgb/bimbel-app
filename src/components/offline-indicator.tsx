@@ -1,18 +1,34 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Network } from '@capacitor/network';
 
 export function OfflineIndicator() {
   const [offline, setOffline] = useState(false);
 
   useEffect(() => {
-    const sync = () => setOffline(!navigator.onLine);
-    sync();
-    window.addEventListener("online", sync);
-    window.addEventListener("offline", sync);
+    // Check initial native status
+    Network.getStatus().then((status) => {
+      setOffline(!status.connected);
+    }).catch(() => {
+      // Fallback to web if native fails (e.g. running in browser)
+      setOffline(!navigator.onLine);
+    });
+
+    // Native listener
+    const nativeListener = Network.addListener('networkStatusChange', (status) => {
+      setOffline(!status.connected);
+    });
+
+    // Web listeners as fallback
+    const syncWeb = () => setOffline(!navigator.onLine);
+    window.addEventListener("online", syncWeb);
+    window.addEventListener("offline", syncWeb);
+    
     return () => {
-      window.removeEventListener("online", sync);
-      window.removeEventListener("offline", sync);
+      nativeListener.then(l => l.remove());
+      window.removeEventListener("online", syncWeb);
+      window.removeEventListener("offline", syncWeb);
     };
   }, []);
 

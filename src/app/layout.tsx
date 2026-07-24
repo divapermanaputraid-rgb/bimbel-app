@@ -1,35 +1,58 @@
-import type { Metadata, Viewport } from "next";
+"use client";
 import "./globals.css";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { OfflineIndicator } from "@/components/offline-indicator";
-
-export const metadata: Metadata = {
-  title: "Bimbel Interaktif",
-  description: "Bimbel interaktif SD Kelas 2 & 6",
-  manifest: "/manifest.json",
-  appleWebApp: {
-    capable: true,
-    title: "BimbelSD",
-    statusBarStyle: "default",
-  },
-  icons: {
-    icon: "/icons/icon-192.png",
-    apple: "/icons/icon-192.png",
-  },
-};
-
-export const viewport: Viewport = {
-  themeColor: "#4F46E5",
-};
+import { useEffect } from "react";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    // Only run in browser/capacitor environment
+    if (typeof window !== "undefined") {
+      import("@capacitor/status-bar").then(({ StatusBar }) => {
+        StatusBar.setBackgroundColor({ color: "#4F46E5" }).catch(() => {});
+        StatusBar.setStyle({ style: "DARK" as any }).catch(() => {});
+      });
+
+      import("@capacitor/splash-screen").then(({ SplashScreen }) => {
+        SplashScreen.hide().catch(() => {});
+      });
+      
+      import("@capacitor/app").then(({ App }) => {
+        App.addListener('backButton', ({ canGoBack }) => {
+          if (canGoBack) {
+            window.history.back();
+          } else {
+            App.exitApp();
+          }
+        });
+        
+        App.addListener('appUrlOpen', (data) => {
+          const url = new URL(data.url);
+          if (url.pathname) {
+            window.location.href = url.pathname;
+          }
+        });
+      });
+    }
+  }, []);
+
   return (
     <html lang="id">
-      <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
+      <head>
+        <title>Bimbel Interaktif</title>
+        <meta name="description" content="Bimbel interaktif SD Kelas 2 & 6" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#4F46E5" />
+        <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+      </head>
+      <body 
+        className="min-h-screen bg-slate-50 text-slate-900 antialiased"
+        style={{ paddingTop: 'env(safe-area-inset-top)' }}
+      >
         <OfflineIndicator />
         <ServiceWorkerRegister />
         {children}
