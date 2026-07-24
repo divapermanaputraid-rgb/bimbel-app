@@ -8,7 +8,7 @@
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-07">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
     <!-- Cover -->
     <div class="section-card expanded">
@@ -36,32 +36,83 @@
     <div class="section-card">
       <div class="section-header">📚 Bagian 1: Bentuk Datar <span>▼</span></div>
       <div class="section-body">
-        <p>Roda sepeda itu lingkaran ⭕, buku tulis itu persegi panjang ⬜.</p>
+        
+          <p>Pernahkah kamu memperhatikan benda-benda di sekelilingmu? Roda sepeda ayah berbentuk Lingkaran ⭕ yang mulus tanpa sudut!</p>
+          <p>Sedangkan buku tulismu berbentuk Persegi Panjang ⬜, yang panjang di dua sisinya tapi lebih pendek di dua sisi lainnya.</p>
+        
+
+        
         <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
           <p>Papan tulis di kelas biasanya berbentuk apa?</p>
           <div class="quiz-options">
             <button class="quiz-opt" data-opt="0">Persegi panjang</button><button class="quiz-opt" data-opt="1">Lingkaran</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
+        
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Bentuk koin Rp 500 adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button><button class="quiz-opt" data-opt="1">Segitiga</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+        
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Potongan piza bentuknya mirip apa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Segitiga</button><button class="quiz-opt" data-opt="1">Persegi</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+        
       </div>
     </div>
     
     <div class="section-card">
       <div class="section-header">📚 Bagian 2: Sisi dan Sudut <span>▼</span></div>
       <div class="section-body">
-        <p>Segitiga punya 3 sisi dan 3 sudut. Persegi punya 4 lho! 🔺</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Lingkaran punya berapa sudut?</p>
+        
+          <p>Sisi adalah garis lurus yang membatasi bentuk. Sudut adalah pojokannya yang tajam! 🔺</p>
+          <p>Sesuai namanya, Segi Tiga punya 3 sisi dan 3 sudut. Kalau Persegi punya 4 sisi yang SAMA panjang.</p>
+        
+
+        
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Berapa banyak sudut yang ada pada lingkaran?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">Tidak ada</button><button class="quiz-opt" data-opt="1">1 sudut</button>
+            <button class="quiz-opt" data-opt="0">0 (Tidak ada)</button><button class="quiz-opt" data-opt="1">1</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
+        
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Persegi mempunyai berapa sisi?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">4</button><button class="quiz-opt" data-opt="1">3</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+        
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Bangun datar 4 sisi yang panjang dan lebarnya beda disebut?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi panjang</button><button class="quiz-opt" data-opt="1">Persegi</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+        
       </div>
     </div>
+    
+
+    <!-- Evaluasi Akhir Bab (Optional) -->
     
 
     <!-- Ringkasan -->
@@ -72,7 +123,7 @@
         <div style="font-size: 64px; margin: 16px 0;">📐</div>
         <p style="font-weight:bold; color: #667eea; font-size: 20px;">Penjelajah Bentuk</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis dulu ya)</p>
       </div>
     </div>
   </div>
@@ -93,8 +144,8 @@
   </div>
   <script>
     // [FIX: Hide answers from DOM]
-    window._QUIZ_ANSWERS = [0,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [0,0,0,0,0,0];
+    window._TOTAL_QUIZZES = 6;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>

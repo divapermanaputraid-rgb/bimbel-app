@@ -1,16 +1,17 @@
 // bimbel-app/public/assets/book-engine.js
 document.addEventListener('DOMContentLoaded', () => {
   let progress = 0;
-  const totalSections = window._TOTAL_SECTIONS || 1;
+  // Fallback ke _TOTAL_SECTIONS untuk k6 yang belum pakai _TOTAL_QUIZZES
+  const totalRequired = window._TOTAL_QUIZZES || window._TOTAL_SECTIONS || 1;
   const answers = window._QUIZ_ANSWERS || [];
 
   function updateProgress() {
     progress += 1;
-    const pct = Math.min(100, Math.floor((progress / totalSections) * 100));
+    const pct = Math.min(100, Math.floor((progress / totalRequired) * 100));
     document.querySelector('.progress-fill').style.width = pct + '%';
     
-    // Enable finish button ONLY when all quizzes are correctly answered
-    if (progress >= totalSections) {
+    // Enable finish button ONLY when all required checks are correctly answered
+    if (progress >= totalRequired) {
       const btn = document.getElementById('btn-selesai');
       if (btn) {
         btn.disabled = false;
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Finish Book
   window.finishBook = async () => {
-    if (progress < totalSections) return; // double check
+    if (progress < totalRequired) return; // double check
 
     const materiId = document.body.dataset.materi;
     alert("Hore! Kamu sudah menyelesaikan materi ini! 🏆");

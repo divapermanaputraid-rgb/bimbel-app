@@ -8,7 +8,7 @@
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-08">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
     <!-- Cover -->
     <div class="section-card expanded">
@@ -36,32 +36,83 @@
     <div class="section-card">
       <div class="section-header">📚 Bagian 1: Menguraikan Bentuk <span>▼</span></div>
       <div class="section-body">
-        <p>Persegi kalau dipotong dua miring, bisa jadi 2 segitiga! ✂️</p>
+        
+          <p>Mari bermain sulap kertas! ✂️ Siapkan kertas berbentuk Persegi. Coba lipat dari ujung ke ujung miring (diagonal) lalu gunting.</p>
+          <p>Wah! Persegi yang tadi sekarang berubah jadi 2 buah Segitiga. Ajaib, kan?</p>
+        
+
+        
         <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Kalau kertas persegi digunting diagonal (miring), jadi bentuk apa?</p>
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Kalau kertas persegi digunting miring (diagonal), jadi bentuk apa?</p>
           <div class="quiz-options">
             <button class="quiz-opt" data-opt="0">Dua segitiga</button><button class="quiz-opt" data-opt="1">Dua lingkaran</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
+        
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Kalau kertas persegi panjang dilipat tepat di tengah, jadi apa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Dua persegi/persegi panjang kecil</button><button class="quiz-opt" data-opt="1">Satu lingkaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+        
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Bisa nggak gunting lingkaran jadi persegi dengan satu potongan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Tidak bisa</button><button class="quiz-opt" data-opt="1">Bisa</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+        
       </div>
     </div>
     
     <div class="section-card">
       <div class="section-header">📚 Bagian 2: Menyusun Segitiga <span>▼</span></div>
       <div class="section-body">
-        <p>Dua segitiga disatukan juga bisa dikembalikan jadi satu persegi lagi. Ajaib kan? ✨</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Apakah 4 kotak kecil bisa disusun jadi kotak (persegi) besar?</p>
+        
+          <p>Sekarang ambil 2 segitiga hasil guntinganmu tadi. Kalau sisi panjangnya disatukan kembali, taraaa... jadi Persegi lagi! ✨</p>
+          <p>Ini seperti menyusun puzzle. Beberapa bentuk kecil bisa merakit bentuk yang besar.</p>
+        
+
+        
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Apakah 4 kotak (persegi) kecil bisa disusun jadi 1 kotak (persegi) besar?</p>
           <div class="quiz-options">
             <button class="quiz-opt" data-opt="0">Bisa</button><button class="quiz-opt" data-opt="1">Tidak bisa</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
+        
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>2 buah segitiga bisa dirakit menjadi...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Segiempat (Persegi / Persegi panjang)</button><button class="quiz-opt" data-opt="1">Lingkaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+        
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Mainan balok-balok susun memanfaatkan bentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Bangun ruang / datar</button><button class="quiz-opt" data-opt="1">Air</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+        
       </div>
     </div>
+    
+
+    <!-- Evaluasi Akhir Bab (Optional) -->
     
 
     <!-- Ringkasan -->
@@ -72,7 +123,7 @@
         <div style="font-size: 64px; margin: 16px 0;">🧩</div>
         <p style="font-weight:bold; color: #667eea; font-size: 20px;">Master Puzzle</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis dulu ya)</p>
       </div>
     </div>
   </div>
@@ -93,8 +144,8 @@
   </div>
   <script>
     // [FIX: Hide answers from DOM]
-    window._QUIZ_ANSWERS = [0,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [0,0,0,0,0,0];
+    window._TOTAL_QUIZZES = 6;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
