@@ -10,3 +10,8 @@ skills-lock.json
 .superpowers
 .docs/superpowers
 .konteks
+# AI and Planning Docs
+.superpowers/
+docs/superpowers/
+konteks/
+QA_NOTES.md
