@@ -68,15 +68,13 @@ self.addEventListener("fetch", (event) => {
       fetch(request)
         .then((response) => response)
         .catch(() =>
-          caches
-            .match("/manifest.json")
-            .then(
-              () =>
-                new Response(
-                  "<!doctype html><meta charset=utf-8><title>Offline</title><p>Offline. Buku yang sudah dibuka masih bisa dibuka dari riwayat/tab.</p>",
-                  { status: 503, headers: { "Content-Type": "text/html; charset=utf-8" } }
-                )
-            )
+          caches.match(request).then((cached) => {
+            if (cached) return cached;
+            return new Response(
+              "<!doctype html><meta charset=utf-8><title>Offline</title><p>Offline. Buku yang sudah dibuka masih bisa dibuka dari riwayat/tab.</p>",
+              { status: 503, headers: { "Content-Type": "text/html; charset=utf-8" } }
+            );
+          })
         )
     );
     return;
