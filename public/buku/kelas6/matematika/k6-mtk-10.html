@@ -10,106 +10,248 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">📏</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">🏃‍♂️</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Rasio Satuan</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Menyederhanakan perbandingan hingga paling kecil! 🏃‍♂️</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy({ top: 300, behavior: 'smooth' });">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Menyederhanakan perbandingan hingga angka belakangnya menjadi 1! 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Menyederhanakan rasio ke bentuk 1:n atau n:1</li><li>Menyelesaikan soal cerita harga dan kecepatan</li>
+          <li>Memahami apa itu Rasio Satuan (angka kedua adalah 1)</li>
+          <li>Menghitung harga satuan per 1 barang</li>
+          <li>Menghitung kecepatan kendaraan (km per 1 jam)</li>
+          <li>Membandingkan harga di toko untuk mencari yang paling hemat</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Rasio ke Bentuk Satuan <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Apa itu Rasio Satuan? <span>▼</span></div>
       <div class="section-body">
-        <p>Bentuk satuan artinya salah satu angkanya adalah 1. Contoh: <code>4:12</code> disederhanakan (dibagi 4) menjadi <code>1:3</code>.</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Rasio satuan dari 15:5 adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">3:1</button><button class="quiz-opt" data-opt="1">1:3</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Kapan Pakai 1:n vs n:1? <span>▼</span></div>
-      <div class="section-body">
-        <p>Tergantung pertanyaan! Kalau mencari harga 1 buku dari 5 buku (Rp 25.000), kita cari rasionya <code>1 : 5.000</code>. Satuan buku (1) diletakkan di depan.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>2 kg apel harganya Rp 40.000. Rasio kg : rupiah adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">1 : 20.000</button><button class="quiz-opt" data-opt="1">20.000 : 1</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 3: Kecepatan sebagai Rasio <span>▼</span></div>
-      <div class="section-body">
-        <p>Dalam 3 jam, Andi bersepeda sejauh 45 km. Rasio jarak:waktu adalah <code>45 : 3</code>, yang disederhanakan jadi <code>15 : 1</code>. Artinya 15 km per jam!</p>
-        <div class="quiz-box" data-idx="2" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Mobil menempuh 100 km dalam 2 jam. Kecepatannya?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">200 km/jam</button><button class="quiz-opt" data-opt="1">50 km/jam</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p><strong>Rasio Satuan</strong> adalah perbandingan di mana angka kedua (pembandingnya) bernilai tepat <strong>1 (satu)</strong>.</p>
+        <p>Kata kunci yang sering dipakai adalah <strong>"per"</strong> atau <strong>"untuk setiap 1"</strong>.</p>
+        <p>Tujuannya supaya kita gampang membayangkan nilainya untuk satu buah benda saja.</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Kecepatan motor: 40 km <strong>per jam</strong> (artinya 40 km : 1 jam).</li>
+            <li>Harga buku: Rp5.000 <strong>per buah</strong> (Rp5.000 : 1 buku).</li>
+            <li>Denak jantung: 80 detak <strong>per menit</strong> (80 : 1 menit).</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Manakah di bawah ini yang merupakan contoh Rasio Satuan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">10 meter : 2 detik</button>
+            <button class="quiz-opt" data-opt="1">5 meter : 1 detik</button>
+            <button class="quiz-opt" data-opt="2">15 meter : 3 detik</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Kata "per" dalam "Harga Rp2.000 per pensil" artinya sama dengan...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Untuk setiap 10 pensil</button>
+            <button class="quiz-opt" data-opt="1">Untuk setiap 1 pensil</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Menghitung Harga Satuan <span>▼</span></div>
+      <div class="section-body">
+        <p>Bagaimana cara mengubah rasio biasa menjadi rasio satuan? Gampang: <strong>bagilah kedua angka dengan angka yang kedua!</strong></p>
+        <p>Misal kamu beli 4 kue seharga Rp20.000. Berapa harga 1 kuenya?</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Langkah demi langkah:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Tulis rasionya: <code>Rp20.000 : 4 kue</code>.</li>
+            <li>Supaya angka 4 kue berubah jadi 1 kue, bagilah dengan 4! (4 ÷ 4 = 1).</li>
+            <li>Maka uangnya JUGA WAJIB dibagi 4: <code>20.000 ÷ 4 = 5.000</code>.</li>
+            <li>Rasio satuan = <strong>Rp5.000 : 1 kue</strong> (Rp5.000 per kue).</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Jika 3 buah apel harganya Rp15.000, berapa harga satuan (per 1 apel)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Rp3.000</button>
+            <button class="quiz-opt" data-opt="1">Rp5.000</button>
+            <button class="quiz-opt" data-opt="2">Rp10.000</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Anton membeli 5 kotak pensil seharga Rp25.000. Untuk mencari harga 1 kotak pensil, angka 25.000 harus dibagi dengan angka...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5</button>
+            <button class="quiz-opt" data-opt="1">10</button>
+            <button class="quiz-opt" data-opt="2">25</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Kecepatan (Jarak per Waktu) <span>▼</span></div>
+      <div class="section-body">
+        <p>Selain uang, rasio satuan paling sering dipakai untuk menghitung <strong>kecepatan</strong>.</p>
+        <p>Kecepatan adalah jarak yang ditempuh dalam waktu <strong>1 jam</strong> (atau 1 menit / 1 detik).</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Contoh mobil travel:</strong></p>
+          <p>Mobil travel menempuh jarak 120 km dalam waktu 2 jam (<code>120 km : 2 jam</code>).</p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Bagi kedua angka dengan 2 agar waktunya jadi 1 jam.</li>
+            <li>120 ÷ 2 = 60 km.</li>
+            <li>2 ÷ 2 = 1 jam.</li>
+            <li>Kecepatan mobil = <strong>60 km/jam</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Siti bersebeda sejauh 15 km dalam waktu 3 jam. Berapa kecepatan Siti per 1 jam?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">3 km/jam</button>
+            <button class="quiz-opt" data-opt="1">5 km/jam</button>
+            <button class="quiz-opt" data-opt="2">15 km/jam</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Seekor cheetah berlari sejauh 80 meter dalam 4 detik. Berapa meter jarak yang ditempuhnya dalam <strong>1 detik</strong>?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">20 meter/detik</button>
+            <button class="quiz-opt" data-opt="1">40 meter/detik</button>
+            <button class="quiz-opt" data-opt="2">80 meter/detik</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Memilih Belanja Terhemat <span>▼</span></div>
+      <div class="section-body">
+        <p>Rasio satuan sangat berguna untuk ibumu saat belanja di supermarket!</p>
+        <p>Kalau ada 2 paket barang dengan isi dan harga yang beda, hitung dulu <strong>harga per 1 buah</strong> barangnya. Pilih yang harga satuannya paling murah!</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh susu kotak:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li><strong>Paket A:</strong> Isi 3 kotak harganya Rp12.000 → 12.000 ÷ 3 = <strong>Rp4.000 per kotak</strong>.</li>
+            <li><strong>Paket B:</strong> Isi 5 kotak harganya Rp15.000 → 15.000 ÷ 5 = <strong>Rp3.000 per kotak</strong>.</li>
+            <li>Kesimpulan: Paket B jauh lebih hemat!</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Toko A menjual 2 buku seharga Rp8.000 (Rp4.000/buku). Toko B menjual 4 buku seharga Rp12.000 (Rp3.000/buku). Toko mana yang lebih murah harga satuannya?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Toko A</button>
+            <button class="quiz-opt" data-opt="1">Toko B</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Bila 1 kg mangga di Toko X seharga Rp15.000 dan di Toko Y 2 kg seharga Rp32.000 (Rp16.000/kg), mana yang kamu pilih agar hemat?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Toko X</button>
+            <button class="quiz-opt" data-opt="1">Toko Y</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur tentang rasio satuan! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Jika sebuah mesin fotokopi mencetak 60 lembar dalam 3 menit, berapa lembar yang dicetak dalam <strong>1 menit</strong>?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">10 lembar</button>
+            <button class="quiz-opt" data-opt="1">20 lembar</button>
+            <button class="quiz-opt" data-opt="2">30 lembar</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Untuk mengubah rasio <code>300 meter : 6 menit</code> menjadi rasio satuan (per 1 menit), angka 300 harus dibagi dengan...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">3</button>
+            <button class="quiz-opt" data-opt="1">6</button>
+            <button class="quiz-opt" data-opt="2">10</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">📏</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Master Satuan</p>
+        <div style="font-size: 64px; margin: 16px 0;">🏃‍♂️</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Master Kecepatan</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Rasio Satuan lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi rasio satuan per barang/jam? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,0,1];
-    window._TOTAL_SECTIONS = 3;
+    window._QUIZ_ANSWERS = [1, 1, 1, 0, 1, 0, 1, 0, 1, 1];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
