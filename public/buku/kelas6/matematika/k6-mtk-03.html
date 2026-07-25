@@ -10,91 +10,239 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">➗</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">🔪</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Pembagian Pecahan ÷ Bilangan Asli</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Membagi pecahan jadi bagian yang lebih kecil lagi! 🔪</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,300)">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Memotong sisa pecahan menjadi bagian lebih kecil! 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Memahami konsep pembagian pecahan dengan bilangan asli</li><li>Menggunakan invers perkalian</li>
+          <li>Mengerti logika membagi potongan pecahan untuk orang lain</li>
+          <li>Mengubah soal pembagian jadi perkalian yang dibalik</li>
+          <li>Menyelesaikan cerita pembagian warisan/kue</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Konsep Pembagian Pecahan <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Pizza Sisa Dibagi <span>▼</span></div>
       <div class="section-body">
-        <p>Bayangkan kamu punya <code>½ loyang pizza</code>. Jika pizza itu dibagi rata untuk 2 orang, maka tiap orang mendapat <code>¼ loyang</code>. Secara matematis: <code>½ ÷ 2 = ¼</code>.</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Jika ⅓ kue dibagi 2, tiap orang mendapat?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">1/6</button><button class="quiz-opt" data-opt="1">1/5</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Trik Cepat Menghitung <span>▼</span></div>
-      <div class="section-body">
-        <p>Trik paling mudah: ubah tanda pembagian <code>÷</code> menjadi perkalian <code>×</code>, lalu balik angka aslinya. <code>½ ÷ 2</code> menjadi <code>½ × ½ = ¼</code>.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Bentuk perkalian dari ¼ ÷ 3 adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">¼ × 3/1</button><button class="quiz-opt" data-opt="1">¼ × ⅓</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Bisa membayangkan ada pizza yang tinggal <strong>½ (setengah) loyang</strong>?</p>
+        <p>Anton ingin membagi ½ loyang itu rata berdua untuk dirinya dan adik. Berapa potong yang didapat adik kalau diukur dari seluruh loyang awal?</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Coba dilogika:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Potong separuh pizza itu jadi dua lagi.</li>
+            <li>Hasil irisannya jadi kecil-kecil, kan?</li>
+            <li>Potongan kecil itu seukuran ¼ dari loyang utuh!</li>
+            <li>Matematikanya: <code>½ ÷ 2 = ¼</code>.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Logikanya, kalau sisa ¼ kue coklat dibagi berdua dengan teman, potongan tiap anak akan menjadi...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lebih besar</button>
+            <button class="quiz-opt" data-opt="1">Makin kecil (jadi ⅛)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Jika ¾ air di botol dituang rata ke 3 gelas, masing-masing gelas akan berisi...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">¼ air</button>
+            <button class="quiz-opt" data-opt="1">½ air</button>
+            <button class="quiz-opt" data-opt="2">2/4 air</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Rumus Ubah ke Perkalian <span>▼</span></div>
+      <div class="section-body">
+        <p>Dunia matematika punya trik ajaib yang dihafal jutaan orang:</p>
+        <p><strong>Bagi pecahan itu sama dengan Dikalikan dengan yang sudah dibalik.</strong></p>
+        <p>Ingat: angka bulat (misal 5) aslinya punya penyebut tersembunyi, yaitu <code>5/1</code>.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal langkah demi langkah: <code>⅘ ÷ 2</code></strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Ubah bulat jadi pecahan tersembunyi: <code>⅘ ÷ 2/1</code></li>
+            <li>Ubah tanda <code>÷</code> jadi <code>×</code>.</li>
+            <li>Balik angka di belakangnya: <code>2/1</code> dibalik jadi <code>1/2</code>.</li>
+            <li>Maka bentuk akhirnya: <code>⅘ × ½</code>.</li>
+            <li>Tinggal kalikan atas dengan atas, bawah dengan bawah! (4×1 = 4, 5×2 = 10). Hasil <strong>4/10</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Sesuai trik sulap di atas, operasi <code>⅔ ÷ 4</code> bentuk perkaliannya menjadi...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">⅔ × 4/1</button>
+            <button class="quiz-opt" data-opt="1">⅔ × ¼</button>
+            <button class="quiz-opt" data-opt="2">3/2 × ¼</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Berapa hasil atas×atas dan bawah×bawah dari operasi <code>⅗ × ⅙</code> ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">3/30</button>
+            <button class="quiz-opt" data-opt="1">8/11</button>
+            <button class="quiz-opt" data-opt="2">3/11</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Coret Menyederhanakan <span>▼</span></div>
+      <div class="section-body">
+        <p>Pada soal <code>⅘ ÷ 2</code> tadi, dapatnya <strong>4/10</strong>. Bisa disederhanakan!</p>
+        <p>Dua-duanya sama-sama angka genap, jadi bisa sama-sama dibagi 2 atas bawah. 4÷2 = 2. 10÷2 = 5. Jadi <strong>⅖</strong>.</p>
+        <p>Atau kamu bisa coret dari awal saat posisi <code>⅘ × ½</code>. Angka 4 di atas dan angka 2 di bawah bisa dicoret (dibagi 2), langsung jadi 2/5!</p>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Sederhanakan hasil 6/15 dengan membagi angka 3 atas bawah!</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">2/3</button>
+            <button class="quiz-opt" data-opt="1">3/5</button>
+            <button class="quiz-opt" data-opt="2">2/5</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Berapa hasil dari <code>½ ÷ 3</code> ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">1/6</button>
+            <button class="quiz-opt" data-opt="1">3/2</button>
+            <button class="quiz-opt" data-opt="2">1/5</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Soal Cerita Tanah Warisan <span>▼</span></div>
+      <div class="section-body">
+        <p>Kakek meninggalkan warisan sawah sebesar <strong>¾ hektar</strong>. Sawah itu akan dibagikan kepada <strong>3 anaknya</strong> sama luas.</p>
+        
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Pemecahan:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Operasinya adalah: ¾ ÷ 3</li>
+            <li>Ubah posisi sulap: ¾ × ⅓</li>
+            <li>Kalikan atas dan bawah: 3/12</li>
+            <li>Sederhanakan (bagi 3 atas bawah): <strong>¼ hektar per anak</strong>!</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Ibu punya sirup sisa ⅘ botol. Beliau menuangkannya rata ke dalam 4 gelas. Isi tiap gelas adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">⅕ botol</button>
+            <button class="quiz-opt" data-opt="1">1/4 botol</button>
+            <button class="quiz-opt" data-opt="2">4/5 botol</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Sepotong pita panjangnya ⅞ meter, digunting jadi 2 sama panjang. Panjang satu potong pita baru adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">7/16 meter</button>
+            <button class="quiz-opt" data-opt="1">14/8 meter</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Ayo uji kemampuanmu sekarang secara campur-campur!</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Hasil dari <code>⅚ ÷ 2</code> adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5/12</button>
+            <button class="quiz-opt" data-opt="1">10/6</button>
+            <button class="quiz-opt" data-opt="2">5/3</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Kalau kita membagi pecahan dengan bilangan bulat utuh, bentuk hasil potongannya akan selalu...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lebih besar</button>
+            <button class="quiz-opt" data-opt="1">Lebih kecil</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">➗</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Juru Bagi Pecahan</p>
+        <div style="font-size: 64px; margin: 16px 0;">🔪</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Ninja Pembagi Pecahan</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Pembagian Pecahan ÷ Bilangan Asli lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi membagi pecahan? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,1];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [1, 0, 1, 0, 2, 0, 0, 0, 0, 1];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
