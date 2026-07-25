@@ -10,91 +10,243 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">🧮</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">⚖️</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Penerapan Rasio: Bagian vs Keseluruhan</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Menghitung bagian dari total menggunakan rasio. ⚖️</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy({ top: 300, behavior: 'smooth' });">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Memecahkan misteri rasio untuk mencari jumlah total! 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Menghitung satu kelompok dari total rasio</li><li>Menyelesaikan rasio tiga bagian</li>
+          <li>Membedakan rasio antar bagian dengan rasio ke total (keseluruhan)</li>
+          <li>Mengetahui jumlah total dari angka rasio</li>
+          <li>Mencari jumlah sebenarnya jika nilai rasio diketahui</li>
+          <li>Menyelesaikan soal cerita campuran rasio</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Bagian dari Keseluruhan <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Bagian vs Bagian <span>▼</span></div>
       <div class="section-body">
-        <p>Perbandingan laki-laki : perempuan = <code>2:3</code>. Berarti total bagian = <code>2 + 3 = 5</code>. Jika total siswa 25, laki-laki ada <code>2/5 × 25 = 10</code> siswa.</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Merah:Biru = 1:4. Total bola 20. Berapa bola merah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">4 bola</button><button class="quiz-opt" data-opt="1">5 bola</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Masalah Tiga Bagian <span>▼</span></div>
-      <div class="section-body">
-        <p>Bagaimana jika 3 bagian? Merah:Biru:Kuning = <code>2:3:5</code>. Total bagian = 10. Jika ada 20 liter, warna biru = <code>3/10 × 20 = 6</code> liter.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>A:B:C = 1:2:3. Total 30 buah. Berapa banyak B?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">15 buah</button><button class="quiz-opt" data-opt="1">10 buah</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Selama ini kita sering membandingkan satu jenis benda dengan benda lainnya. Contohnya membandingkan Kucing dan Anjing peliharaan.</p>
+        <p>Itu disebut <strong>rasio bagian terhadap bagian</strong>.</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Siti punya 3 kucing dan 2 anjing.</li>
+            <li>Rasio Kucing : Anjing = <code>3 : 2</code>.</li>
+            <li>Ini disebut rasio bagian (kucing) ke bagian lain (anjing).</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Jika ada 4 mobil merah dan 5 mobil putih, berapakah rasio mobil merah terhadap mobil putih?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">4 : 5</button>
+            <button class="quiz-opt" data-opt="1">5 : 4</button>
+            <button class="quiz-opt" data-opt="2">9 : 4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Apakah rasio "Kucing : Anjing" sama bentuknya dengan "Mobil Merah : Mobil Putih"?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ya, sama-sama rasio antar bagian</button>
+            <button class="quiz-opt" data-opt="1">Beda, yang satu hewan yang satu kendaraan</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Bagian vs Keseluruhan <span>▼</span></div>
+      <div class="section-body">
+        <p>Tapi kadang, kita mau tahu perbandingan satu benda terhadap <strong>semua (total)</strong> benda yang ada di situ.</p>
+        <p>Caranya: jumlahkan dulu rasio-rasionya!</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal:</strong></p>
+          <p>Dari cerita Siti yang punya 3 kucing dan 2 anjing (rasio <code>3 : 2</code>).</p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Jumlah rasio total = 3 + 2 = <strong>5</strong>.</li>
+            <li>Rasio Kucing terhadap Total Hewan = <strong>3 : 5</strong>.</li>
+            <li>Rasio Anjing terhadap Total Hewan = <strong>2 : 5</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Dari cerita 4 mobil merah dan 5 mobil putih, berapakah jumlah rasio TOTAL mobil?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">4</button>
+            <button class="quiz-opt" data-opt="1">5</button>
+            <button class="quiz-opt" data-opt="2">9</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Maka, rasio mobil putih terhadap KESELURUHAN mobil adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5 : 9</button>
+            <button class="quiz-opt" data-opt="1">4 : 9</button>
+            <button class="quiz-opt" data-opt="2">5 : 4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Mencari Jumlah Sebenarnya <span>▼</span></div>
+      <div class="section-body">
+        <p>Di ujian matematika, soal rasio yang paling sering keluar adalah menebak <strong>jumlah sebenarnya</strong> benda kalau baru diketahui angka rasionya.</p>
+        <p>Rahasianya ada di "nilai satu porsi/bagian"!</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Contoh Soal Rahasia:</strong></p>
+          <p>Rasio buku Anton : Budi adalah <code>2 : 3</code>. Jumlah <strong>total</strong> buku mereka berdua adalah <strong>20 buah</strong>. Berapa buku Anton?</p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Cari rasio total dulu: 2 + 3 = <strong>5</strong> bagian.</li>
+            <li>Cari nilai 1 bagian: Total buku sebenarnya dibagi rasio total → 20 ÷ 5 = <strong>4 buku per 1 bagian</strong>.</li>
+            <li>Karena rasio Anton adalah 2, maka kalikan: 2 × 4 = <strong>8 buku</strong>!</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Dari cerita di atas, berapa jumlah buku Budi? (Rasio Budi = 3. Nilai 1 bagian = 4 buku).</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">12 buku</button>
+            <button class="quiz-opt" data-opt="1">9 buku</button>
+            <button class="quiz-opt" data-opt="2">15 buku</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Cek kebenaran: kalau buku Anton 8 dan buku Budi 12, jumlah totalnya adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">15</button>
+            <button class="quiz-opt" data-opt="1">20</button>
+            <button class="quiz-opt" data-opt="2">25</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Latihan Soal Cerita <span>▼</span></div>
+      <div class="section-body">
+        <p>Ayo kita latihan satu soal lagi dengan langkah mandiri.</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Soal Uang Tabungan:</strong></p>
+          <p>Rasio uang tabungan Siti dan Dayu adalah <code>1 : 4</code>. Total uang mereka berdua jika digabungkan adalah <strong>Rp50.000</strong>.</p>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Berapa total rasio mereka gabungkan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">3</button>
+            <button class="quiz-opt" data-opt="1">5</button>
+            <button class="quiz-opt" data-opt="2">4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Berapa nilai untuk 1 bagian rasio tersebut? (Uang total dibagi total rasio).</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Rp10.000</button>
+            <button class="quiz-opt" data-opt="1">Rp5.000</button>
+            <button class="quiz-opt" data-opt="2">Rp20.000</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur tentang penerapan rasio! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Menyambung soal Kuis 8 (nilai 1 bagian = 10.000). Karena rasio uang Siti adalah 1, maka uang tabungan Siti adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Rp10.000</button>
+            <button class="quiz-opt" data-opt="1">Rp40.000</button>
+            <button class="quiz-opt" data-opt="2">Rp50.000</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Uang tabungan Dayu (rasio 4) adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Rp20.000</button>
+            <button class="quiz-opt" data-opt="1">Rp40.000</button>
+            <button class="quiz-opt" data-opt="2">Rp10.000</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">🧮</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Juru Perhitungan</p>
+        <div style="font-size: 64px; margin: 16px 0;">⚖️</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Master Porsi Total</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Penerapan Rasio: Bagian vs Keseluruhan lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi penerapan rasio ke total jumlah? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,1];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [0, 0, 2, 0, 0, 1, 1, 0, 0, 1];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
