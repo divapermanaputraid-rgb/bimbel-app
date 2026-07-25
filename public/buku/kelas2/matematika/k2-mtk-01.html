@@ -8,7 +8,7 @@
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-01">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
     <!-- Cover -->
     <div class="section-card expanded">
@@ -17,7 +17,7 @@
         <div style="font-size: 80px; margin-bottom: 16px;">🔢</div>
         <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Bermain dengan Bilangan 1–50</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Yuk, kita berhitung bersama Anton! 🎈</p>
+        <p style="margin-top: 16px;">Yuk, kita berhitung bersama Anton! Modul ini berisi 5 pertemuan. 🎈</p>
       </div>
     </div>
 
@@ -26,43 +26,52 @@
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Membaca bilangan 1 sampai 50</li><li>Menulis bilangan 1 sampai 50</li><li>Mengurutkan bilangan</li>
+          <li>Membaca dan menulis bilangan 1 sampai 50</li>
+          <li>Mengurutkan bilangan naik dan turun</li>
+          <li>Membandingkan bilangan mana yang lebih besar/kecil</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Menghitung Bersama Anton <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Bilangan 1 sampai 20 <span>▼</span></div>
       <div class="section-body">
-        <p>Anton punya 23 kelereng. Coba sebutkan: <strong>Dua puluh tiga</strong>. Wah, banyak ya! 😱</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Bagaimana cara membaca angka 35?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="false">Tiga lima</button><button class="quiz-opt" data-correct="true">Tiga puluh lima</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
+        <!-- Content added in next task -->
       </div>
     </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Mengurutkan Angka <span>▼</span></div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Bilangan 21 sampai 50 <span>▼</span></div>
       <div class="section-body">
-        <p>Kalau berhitung naik: 10, 11, 12... Kalau turun: 15, 14, 13... Mudah kan? 🧗‍♂️</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Setelah angka 29 adalah...</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">30</button><button class="quiz-opt" data-correct="false">28</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
+        <!-- Content added in next task -->
       </div>
     </div>
-    
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Urutan Naik dan Turun <span>▼</span></div>
+      <div class="section-body">
+        <!-- Content added in next task -->
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Membandingkan Bilangan <span>▼</span></div>
+      <div class="section-body">
+        <!-- Content added in next task -->
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <!-- Content added in next task -->
+      </div>
+    </div>
 
     <!-- Ringkasan -->
     <div class="section-card">
@@ -71,7 +80,8 @@
         <p>Kamu mendapatkan badge:</p>
         <div style="font-size: 64px; margin: 16px 0;">🎯</div>
         <p style="font-weight:bold; color: #667eea; font-size: 20px;">Penjelajah Angka</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
@@ -82,7 +92,7 @@
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Bermain dengan Bilangan 1–50? 😊</div>
+        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal bilangan 1–50? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +100,12 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // 10 quizzes total (idx 0 to 9)
+    window._QUIZ_ANSWERS = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; // Placeholder, updated in next tasks
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>
