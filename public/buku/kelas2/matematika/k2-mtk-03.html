@@ -8,81 +8,259 @@
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-03">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
         <div style="font-size: 80px; margin-bottom: 16px;">⚖️</div>
         <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Siapa yang Lebih Besar?</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Mari bandingkan angka-angka! 🐘 vs 🐭</p>
+        <p style="margin-top: 16px;">Belajar tanda > (lebih besar), < (lebih kecil), dan = (sama dengan). 5 pertemuan. ⚖️</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Menggunakan tanda >, <, dan =</li><li>Membandingkan 2 bilangan</li>
+          <li>Memakai tanda >, <, dan =</li>
+          <li>Membandingkan benda dan angka</li>
+          <li>Mengurutkan tiga angka atau lebih</li>
+          <li>Mencari angka yang berada di antara dua batas</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Lebih Besar atau Lebih Kecil? <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Lebih Banyak dan Sedikit <span>▼</span></div>
       <div class="section-body">
-        <p>Mulut buaya selalu menghadap ke angka yang lebih besar! 🐊 27 > 15.</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Tanda yang tepat untuk 30 ... 45 adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true"><</button><button class="quiz-opt" data-correct="false">></button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        <p>Halo! Anton punya 15 permen. Budi punya 25 permen. Siapa yang punya lebih banyak?</p>
+        <p>Tentu saja Budi! <strong>25 lebih banyak dari 15</strong>. Atau bisa dibilang <strong>15 lebih sedikit dari 25</strong>.</p>
+        
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Uang Rp5.000 lebih banyak dari Rp2.000.</li>
+            <li>Umur adik 5 tahun lebih sedikit dari umur kakak 10 tahun.</li>
+          </ul>
         </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Garis Bilangan <span>▼</span></div>
-      <div class="section-body">
-        <p>Semakin ke kanan di garis bilangan, angkanya semakin besar lho! 📏</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Manakah yang paling besar: 15, 25, 20?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="false">20</button><button class="quiz-opt" data-correct="true">25</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
 
-    <!-- Ringkasan -->
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Cara ingat:</strong></p>
+          <p>Kalau angkanya lebih besar, berarti bendanya lebih banyak. Lihat puluhannya dulu: 25 vs 15. Puluhan 2 lebih besar dari puluhan 1.</p>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Mana yang paling banyak: 15 permen atau 25 permen?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">15 permen</button>
+            <button class="quiz-opt" data-opt="1">25 permen</button>
+            <button class="quiz-opt" data-opt="2">Sama saja</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Anton punya 20 apel, Siti punya 25 apel. Siapa yang punya lebih sedikit?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Anton</button>
+            <button class="quiz-opt" data-opt="1">Siti</button>
+            <button class="quiz-opt" data-opt="2">Sama saja</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Mulut Buaya (>, <, =) <span>▼</span></div>
+      <div class="section-body">
+        <p>Di matematika, ada tanda khusus biar nulisnya lebih cepat:</p>
+        <ul style="padding-left: 20px;">
+          <li><code>></code> artinya <strong>lebih besar</strong>.</li>
+          <li><code><</code> artinya <strong>lebih kecil</strong>.</li>
+          <li><code>=</code> artinya <strong>sama dengan</strong>.</li>
+        </ul>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Bayangkan mulut buaya! 🐊</strong></p>
+          <p>Buaya selalu rakus, mulutnya terbuka <strong>makan angka yang lebih besar</strong>.</p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>38 dan 42. Buaya makan 42. Jadi <code>38 < 42</code>. (dibaca: 38 lebih kecil dari 42).</li>
+            <li>50 dan 10. Buaya makan 50. Jadi <code>50 > 10</code>. (dibaca: 50 lebih besar dari 10).</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Tanda yang tepat untuk 38 ... 42 adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">></button>
+            <button class="quiz-opt" data-opt="1">=</button>
+            <button class="quiz-opt" data-opt="2"><</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Tanda yang tepat: 20 ... 15</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">></button>
+            <button class="quiz-opt" data-opt="1"><</button>
+            <button class="quiz-opt" data-opt="2">=</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Mengurutkan Banyak Angka <span>▼</span></div>
+      <div class="section-body">
+        <p>Kadang kita harus menyusun lebih dari 2 angka.</p>
+        <p><strong>Urutan terkecil:</strong> cari yang paling kecil dulu, lalu dicoret, cari lagi yang paling kecil dari sisanya.</p>
+        <p><strong>Urutan terbesar:</strong> kebalikannya, cari yang paling besar dulu.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal urutkan dari terkecil: 24, 18, 31</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Lihat puluhannya: 2, 1, 3.</li>
+            <li>Paling kecil puluhan 1 (angka 18). Tulis pertama.</li>
+            <li>Sisa 24 dan 31. Paling kecil puluhan 2 (angka 24).</li>
+            <li>Terakhir 31. Jadi urutannya: <strong>18, 24, 31</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Urutkan dari yang terkecil: 24, 18, 31</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">18, 24, 31</button>
+            <button class="quiz-opt" data-opt="1">31, 24, 18</button>
+            <button class="quiz-opt" data-opt="2">18, 31, 24</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>25, 26, 27. Angka yang paling besar adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">25</button>
+            <button class="quiz-opt" data-opt="1">26</button>
+            <button class="quiz-opt" data-opt="2">27</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Angka di Antara <span>▼</span></div>
+      <div class="section-body">
+        <p>Angka "di antara" berarti angka yang ada di tengah-tengah dua batas.</p>
+        <p>Misalnya, di antara angka 10 dan 12 ada angka <strong>11</strong>.</p>
+        <p>Angka tersebut lebih besar dari batas bawah, dan lebih kecil dari batas atas.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal soal cerita:</strong></p>
+          <p>"Anton punya kelereng lebih banyak dari 23 tapi kurang dari 25."</p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Lebih banyak dari 23 → hitung maju: 24.</li>
+            <li>Kurang dari 25 → 24 itu kurang dari 25. Cocok!</li>
+            <li>Jawabannya: <strong>24</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Angka di antara 39 dan 41 adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">38</button>
+            <button class="quiz-opt" data-opt="1">40</button>
+            <button class="quiz-opt" data-opt="2">42</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Anton punya 23 kelereng. Budi punya lebih banyak dari Anton tapi kurang dari 25. Berapa kelereng Budi?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">22</button>
+            <button class="quiz-opt" data-opt="1">24</button>
+            <button class="quiz-opt" data-opt="2">26</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Ringkas dulu:</p>
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <ul style="margin:0; padding-left: 20px;">
+            <li><code>></code> buaya makan depan (depan lebih besar).</li>
+            <li><code><</code> buaya makan belakang (belakang lebih besar).</li>
+            <li>Urutkan: selalu lihat puluhan dulu baru satuan.</li>
+            <li>Di antara: hitung maju 1 dari angka yang kecil.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Tanda yang tepat: 12 ... 32</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">></button>
+            <button class="quiz-opt" data-opt="1"><</button>
+            <button class="quiz-opt" data-opt="2">=</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Bilangan genap antara 15 dan 19 yang lebih kecil dari 18 adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">16</button>
+            <button class="quiz-opt" data-opt="1">17</button>
+            <button class="quiz-opt" data-opt="2">18</button>
+            <button class="quiz-opt" data-opt="3">20</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
         <div style="font-size: 64px; margin: 16px 0;">⚖️</div>
-        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Juru Banding</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Hakim Angka</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Siapa yang Lebih Besar?? 😊</div>
+        <div class="msg ai">Halo! Mau tanya soal lebih besar dan lebih kecil? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +268,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 0, 2, 0, 0, 2, 1, 1, 1, 0];
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>
