@@ -10,91 +10,243 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
         <div style="font-size: 80px; margin-bottom: 16px;">⚖️</div>
-        <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Membandingkan &amp; Mengurutkan Desimal</h1>
+        <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Membandingkan & Mengurutkan Desimal</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Menentukan mana nilai desimal yang lebih berat, tinggi, atau berharga. 💸</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,300)">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Menentukan mana nilai desimal yang lebih besar atau kecil! 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Membandingkan dua desimal</li><li>Mengurutkan urutan desimal</li>
+          <li>Mengerti nilai tempat di belakang koma (persepuluhan, perseratusan)</li>
+          <li>Menyamakan panjang digit desimal (menambah nol)</li>
+          <li>Menggunakan tanda &gt;, &lt;, dan = pada desimal</li>
+          <li>Mengurutkan desimal dari yang terkecil sampai terbesar</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Membandingkan Angka di Belakang Koma <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Nilai Tempat di Belakang Koma <span>▼</span></div>
       <div class="section-body">
-        <p>Perhatikan baik-baik: <code>0.3</code> itu SAMA dengan <code>0.30</code>. Jadi <code>0.3</code> lebih besar daripada <code>0.25</code>!</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Manakah yang lebih besar: 0.5 atau 0.45?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">0.45</button><button class="quiz-opt" data-opt="1">0.5</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Mengurutkan Data <span>▼</span></div>
-      <div class="section-body">
-        <p>Urutan dari terkecil: <code>0.05</code>, lalu <code>0.5</code>, <code>0.55</code>, hingga <code>5.0</code>.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Siapa yang paling berat? Budi 45.2 kg atau Andi 45.15 kg?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">Budi</button><button class="quiz-opt" data-opt="1">Andi</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Di bilangan biasa, kamu tahu kalau <code>50</code> lebih besar dari <code>5</code>. Tapi di bilangan desimal, posisinya menentukan nilai!</p>
+        <p>Angka pertama tepat di belakang koma disebut <strong>persepuluhan</strong> (contoh: <code>0,5</code>). Angka kedua disebut <strong>perseratusan</strong> (contoh: <code>0,05</code>).</p>
+        <p>Semakin jauh ke kanan, nilainya <strong>semakin kecil</strong>! Sama seperti uang receh vs lembaran.</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Jarak <code>0,5</code> km itu 500 meter.</li>
+            <li>Jarak <code>0,05</code> km itu cuma 50 meter!</li>
+            <li>Jelas 0,5 lebih besar dari 0,05.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Pada bilangan <code>0,38</code>, angka 3 menempati nilai tempat apa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Satuan</button>
+            <button class="quiz-opt" data-opt="1">Persepuluhan</button>
+            <button class="quiz-opt" data-opt="2">Perseratusan</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Mana yang nilainya lebih KECIL antara persepuluhan dan perseratusan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persepuluhan</button>
+            <button class="quiz-opt" data-opt="1">Perseratusan</button>
+            <button class="quiz-opt" data-opt="2">Sama saja</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Trik Menyamakan Koma <span>▼</span></div>
+      <div class="section-body">
+        <p>Banyak siswa tertipu saat disuruh membandingkan <code>0,5</code> dan <code>0,25</code>.</p>
+        <p>Mereka pikir 25 lebih besar dari 5, jadi 0,25 pasti menang. <strong>SALAH BESAR!</strong></p>
+        <p>Trik rahasianya: <strong>Samakan jumlah angka di belakang koma dengan menambahkan angka nol (0)</strong>.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal bandingkan <code>0,5</code> dan <code>0,25</code>:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>0,25 punya 2 angka di belakang koma.</li>
+            <li>0,5 baru punya 1 angka. Tambahkan nol di belakangnya!</li>
+            <li>0,5 berubah menjadi <strong>0,50</strong>.</li>
+            <li>Sekarang jelas! 50 lebih besar dari 25. Jadi <code>0,5 > 0,25</code>.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Angka <code>0,7</code> jika ditambahi satu angka nol agar adil (sama panjang dengan desimal lain) menjadi...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0,07</button>
+            <button class="quiz-opt" data-opt="1">0,70</button>
+            <button class="quiz-opt" data-opt="2">7,0</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Manakah dari pilihan di bawah ini yang nilainya PALING BESAR?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0,3</button>
+            <button class="quiz-opt" data-opt="1">0,29</button>
+            <button class="quiz-opt" data-opt="2">0,09</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Tanda >, <, dan = <span>▼</span></div>
+      <div class="section-body">
+        <p>Sama seperti bilangan bulat, kita gunakan tanda mulut buaya untuk desimal!</p>
+        <p>Bandingkan <code>1,4</code> dan <code>1,40</code>. Kalau disamakan, jadinya 1,40 vs 1,40. Oh ternyata mereka <strong>SAMA BESAR (=)</strong>!</p>
+        <p>Menambah nol di ujung kanan desimal TIDAK mengubah nilainya.</p>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Tanda yang tepat untuk <code>0,6 ... 0,60</code> adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">></button>
+            <button class="quiz-opt" data-opt="1"><</button>
+            <button class="quiz-opt" data-opt="2">=</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Tanda yang tepat untuk <code>2,1 ... 2,05</code> adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">></button>
+            <button class="quiz-opt" data-opt="1"><</button>
+            <button class="quiz-opt" data-opt="2">=</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Mengurutkan dalam Cerita <span>▼</span></div>
+      <div class="section-body">
+        <p>Seringkali desimal muncul saat menimbang berat atau mengukur waktu lomba lari. Catatan waktu tercepat berarti angkanya paling kecil!</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Pemecahan: Mengurutkan Berat 3 Apel</strong></p>
+          <p>Apel A = 0,25 kg. Apel B = 0,3 kg. Apel C = 0,2 kg.</p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Samakan panjang koma: A=0,25 / B=0,30 / C=0,20.</li>
+            <li>Bandingkan angkanya: 20, 25, 30.</li>
+            <li>Urutan dari yang teringan: Apel C (0,2), Apel A (0,25), Apel B (0,3).</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Siti punya tinggi badan 1,45 meter. Lani 1,5 meter. Dayu 1,4 meter. Siapa yang paling tinggi?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Siti (1,45)</button>
+            <button class="quiz-opt" data-opt="1">Lani (1,5)</button>
+            <button class="quiz-opt" data-opt="2">Dayu (1,4)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Dalam lomba lari 100m, Anton mencatat 12,5 detik, Budi 12,05 detik, Coki 12,15 detik. Siapa yang juara 1 (waktu paling KECIL)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Anton</button>
+            <button class="quiz-opt" data-opt="1">Budi</button>
+            <button class="quiz-opt" data-opt="2">Coki</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Ayo uji kemampuanmu sekarang secara campur-campur! 🧠</p>
+        <p>Ingat: Samakan panjang koma dulu sebelum menjawab!</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Manakah urutan yang BENAR dari yang terkecil sampai yang terbesar?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0,15 -> 0,2 -> 0,25</button>
+            <button class="quiz-opt" data-opt="1">0,2 -> 0,15 -> 0,25</button>
+            <button class="quiz-opt" data-opt="2">0,25 -> 0,2 -> 0,15</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Angka desimal yang nilainya LEBIH KECIL dari <code>0,5</code> adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0,55</button>
+            <button class="quiz-opt" data-opt="1">0,50</button>
+            <button class="quiz-opt" data-opt="2">0,49</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
         <div style="font-size: 64px; margin: 16px 0;">⚖️</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Juru Banding Desimal</p>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Hakim Desimal</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Membandingkan &amp; Mengurutkan Desimal lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi membandingkan desimal? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [1,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [1, 1, 1, 0, 2, 0, 1, 1, 0, 2];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
