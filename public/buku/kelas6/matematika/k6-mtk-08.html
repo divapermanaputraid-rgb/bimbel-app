@@ -10,91 +10,242 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">📝</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">📏</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Pengertian Rasio</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Belajar menuliskan notasi perbandingan secara matematis. 📏</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,300)">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Belajar menuliskan notasi perbandingan secara matematis. 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Membaca notasi rasio a:b</li><li>Menulis rasio dalam bentuk pecahan</li>
+          <li>Menulis rasio menggunakan titik dua (:)</li>
+          <li>Menulis rasio menggunakan bentuk pecahan (per)</li>
+          <li>Membedakan cara membaca rasio vs pecahan biasa</li>
+          <li>Menentukan bagian suatu benda dari total kelompok (keseluruhan)</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Notasi Rasio <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Menulis dengan Titik Dua (:) <span>▼</span></div>
       <div class="section-body">
-        <p>Tinggi pintu 200 cm, lebar 100 cm. Rasio panjang terhadap lebar adalah <code>200 : 100</code>, atau <code>2:1</code>.</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Rasio laki-laki 15 orang dan perempuan 20 orang adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">15:20</button><button class="quiz-opt" data-opt="1">20:15</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Rasio sebagai Pecahan <span>▼</span></div>
-      <div class="section-body">
-        <p>Rasio <code>3:2</code> bisa ditulis sebagai pecahan <code>3/2</code>. Artinya bagian pertama 3 porsi, bagian kedua 2 porsi.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Rasio 4:5 dalam bentuk pecahan adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">5/4</button><button class="quiz-opt" data-opt="1">4/5</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Kata "banding" dalam matematika punya lambang khusus, yaitu <strong>titik dua ( : )</strong>.</p>
+        <p>Kalau kamu mau menulis "Perbandingan 3 banding 2", kamu cukup menuliskannya: <code>3 : 2</code>.</p>
+        <p>Sangat singkat dan menghemat waktu, kan?</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal langkah demi langkah:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Hitung benda A (contoh: 5 mobil merah).</li>
+            <li>Hitung benda B (contoh: 8 mobil hitam).</li>
+            <li>Tulis angkanya dipisah titik dua: <strong>5 : 8</strong>.</li>
+            <li>Selesai! Itu sudah jadi rasio matematis.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Penulisan rasio "12 banding 5" yang benar menggunakan lambang matematika adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">12 - 5</button>
+            <button class="quiz-opt" data-opt="1">12 : 5</button>
+            <button class="quiz-opt" data-opt="2">12 = 5</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Jika ada 9 ayam dan 4 sapi, penulisan rasio jumlah sapi terhadap ayam adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">9 : 4</button>
+            <button class="quiz-opt" data-opt="1">4 : 9</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Menulis seperti Pecahan <span>▼</span></div>
+      <div class="section-body">
+        <p>Selain titik dua, rasio juga bisa ditulis menggunakan <strong>garis pecahan ( / atau per )</strong>.</p>
+        <p>Jadi, rasio 3 banding 2 bisa ditulis <code>3/2</code>.</p>
+        <p>Angka pertama yang disebut ditaruh di ATAS (pembilang), dan angka kedua di BAWAH (penyebut).</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Perbandingan gula dan tepung = 1 banding 4.</li>
+            <li>Ditulis pakai titik dua: <code>1 : 4</code></li>
+            <li>Ditulis pakai pecahan: <code>1/4</code></li>
+            <li>Keduanya BENAR dan PUNYA ARTI YANG SAMA!</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Penulisan bentuk pecahan dari rasio 7 banding 10 adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">7/10</button>
+            <button class="quiz-opt" data-opt="1">10/7</button>
+            <button class="quiz-opt" data-opt="2">17/10</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Bentuk rasio <code>5/8</code> sama artinya dengan penulisan...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">8 : 5</button>
+            <button class="quiz-opt" data-opt="1">5 : 8</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Beda Baca Pecahan vs Rasio <span>▼</span></div>
+      <div class="section-body">
+        <p>Walau rasio bisa ditulis seperti pecahan, cara membacanya kadang dibedakan agar orang tidak bingung.</p>
+        <p>Kalau kita melihat <code>3/4</code>:</p>
+        <ul style="padding-left: 20px;">
+          <li>Sebagai <strong>pecahan biasa</strong>, dibaca: <em>"Tiga per empat"</em> (Artinya 1 kue dipotong 4, kamu ambil 3).</li>
+          <li>Sebagai <strong>rasio</strong>, dibaca: <em>"Tiga banding empat"</em> (Artinya 3 anak laki-laki melawan 4 anak perempuan).</li>
+        </ul>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Jika kita sedang membandingkan jumlah pensil biru dan merah yang ditulis sebagai <code>5/2</code>, cara bacanya yang paling tepat adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lima per dua</button>
+            <button class="quiz-opt" data-opt="1">Lima banding dua</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Apakah rasio boleh ditulis menggunakan garis pecahan miring (/) atau garis mendatar (—) ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Boleh, sama saja</button>
+            <button class="quiz-opt" data-opt="1">Tidak boleh, harus titik dua</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Bagian vs Keseluruhan <span>▼</span></div>
+      <div class="section-body">
+        <p>Kadang soal tidak cuma minta "A banding B", tapi "A banding <strong>TOTAL (Keseluruhan)</strong>".</p>
+        <p>Caranya gampang: <strong>tambahkan dulu</strong> semua benda yang ada, baru pakai angka total itu sebagai pembandingnya!</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal:</strong></p>
+          <p>Di kelas ada 10 siswa laki-laki dan 15 siswa perempuan.</p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Rasio Laki-laki ke Perempuan = <code>10 : 15</code>.</li>
+            <li>TOTAL siswa = 10 + 15 = 25 orang.</li>
+            <li>Rasio Laki-laki terhadap <strong>Seluruh Siswa</strong> = <code>10 : 25</code>.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Anton bawa 2 kelereng merah dan 3 kelereng putih. Berapa total seluruh kelerengnya?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5</button>
+            <button class="quiz-opt" data-opt="1">6</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Lanjutan dari Kuis 7: Berarti rasio kelereng putih terhadap <strong>seluruh kelereng</strong> adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">3 : 2</button>
+            <button class="quiz-opt" data-opt="1">3 : 5</button>
+            <button class="quiz-opt" data-opt="2">2 : 5</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Penulisan matematis rasio dari cerita "Setiap 1 mobil terdapat 4 ban" adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">1 : 4</button>
+            <button class="quiz-opt" data-opt="1">4 : 1</button>
+            <button class="quiz-opt" data-opt="2">4 / 4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Siti beli 4 kue donat dan 6 kue bolu. Rasio kue donat terhadap <strong>TOTAL semua kue Siti</strong> jika ditulis bentuk pecahan adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">4/6</button>
+            <button class="quiz-opt" data-opt="1">6/10</button>
+            <button class="quiz-opt" data-opt="2">4/10</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">📝</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Master Notasi</p>
+        <div style="font-size: 64px; margin: 16px 0;">📏</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Penulis Kode Rasio</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Pengertian Rasio lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi pengertian rasio? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,1];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [1, 1, 0, 1, 1, 0, 0, 1, 0, 2];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
