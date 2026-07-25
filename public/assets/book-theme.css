@@ -19,7 +19,8 @@ body {
   line-height: 1.8;
   color: #333;
 }
-.progress-container {
+.progress-container,
+.progress-bar {
   position: fixed;
   top: var(--sat);
   left: 0;
