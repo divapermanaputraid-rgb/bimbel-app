@@ -10,91 +10,243 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">🎲</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">🌧️</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Skala Peluang (0 sampai 1)</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Seberapa besar kemungkinan sesuatu terjadi? 🌧️</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy({ top: 300, behavior: 'smooth' });">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Seberapa besar kemungkinan sesuatu terjadi? 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Memahami skala 0 sampai 1</li><li>Menghitung peluang sederhana pecahan</li>
+          <li>Mengenal apa itu kejadian yang Pasti, Mungkin, dan Mustahil</li>
+          <li>Memahami bahwa peluang mentok di angka 0 dan 1</li>
+          <li>Mengerti makna peluang pecahan (misal ½)</li>
+          <li>Menentukan letak kejadian di dalam garis skala peluang</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Skala Peluang <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Pasti, Mungkin, Mustahil <span>▼</span></div>
       <div class="section-body">
-        <p>Kejadian yang mustahil peluangnya = <code>0</code>. Kejadian yang pasti terjadi peluangnya = <code>1</code>.</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Peluang matahari terbit di barat adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">0</button><button class="quiz-opt" data-opt="1">1</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Menghitung Peluang Sederhana <span>▼</span></div>
-      <div class="section-body">
-        <p>Dalam kantong ada 3 bola merah, 2 bola biru (Total 5). Peluang mengambil bola merah secara acak adalah <code>3/5</code>.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Peluang terambilnya bola biru pada contoh di atas?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">2/5</button><button class="quiz-opt" data-opt="1">1/5</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Setiap hari kita menebak-nebak masa depan. "Apakah besok hujan?", "Apakah aku menang undian?"</p>
+        <p>Dalam matematika, tebak-tebakan kejadian dibagi tiga tingkat:</p>
+        <ol style="padding-left: 20px;">
+          <li><strong>Pasti (Selalu terjadi)</strong>: Tidak mungkin meleset.</li>
+          <li><strong>Mungkin (Bisa ya, bisa tidak)</strong>: Peluangnya berada di tengah-tengah.</li>
+          <li><strong>Mustahil (Tidak akan pernah terjadi)</strong>: Benar-benar nol harapan.</li>
+        </ol>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Matahari terbit dari timur besok pagi → <strong>Pasti</strong>.</li>
+            <li>Nanti sore akan turun hujan → <strong>Mungkin</strong>.</li>
+            <li>Sapi bisa terbang pakai sayap → <strong>Mustahil</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Jika kamu melempar batu ke atas, kejadian "batu itu akan jatuh kembali ke tanah" adalah kejadian yang...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Mungkin</button>
+            <button class="quiz-opt" data-opt="1">Pasti</button>
+            <button class="quiz-opt" data-opt="2">Mustahil</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Kejadian "seorang manusia bisa bernapas di dalam air tanpa alat bantuan sama sekali" termasuk ke dalam...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Pasti</button>
+            <button class="quiz-opt" data-opt="1">Mungkin</button>
+            <button class="quiz-opt" data-opt="2">Mustahil</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Angka 0 dan Angka 1 <span>▼</span></div>
+      <div class="section-body">
+        <p>Matematika suka dengan angka! Tiga kata tadi (Pasti, Mungkin, Mustahil) bisa diubah jadi angka yang disebut <strong>Skala Peluang</strong>.</p>
+        
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Rumus Skala:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Kejadian <strong>Mustahil</strong> diberi nilai tepat <strong>0</strong>.</li>
+            <li>Kejadian <strong>Pasti</strong> diberi nilai tepat <strong>1</strong>.</li>
+            <li>Kejadian <strong>Mungkin</strong> berada di <strong>antara 0 dan 1</strong> (artinya bentuknya PECAHAN atau DESIMAL seperti 0,3 atau ½).</li>
+          </ul>
+        </div>
+        <p>Jadi, angka peluang <strong>TIDAK BISA</strong> lebih kecil dari 0 (minus) dan <strong>TIDAK BISA</strong> lebih besar dari 1 (misal 2 atau 5).</p>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Jika peluang besok kiamat adalah mustahil, maka nilai peluangnya secara angka matematika adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0</button>
+            <button class="quiz-opt" data-opt="1">½</button>
+            <button class="quiz-opt" data-opt="2">1</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Apakah mungkin ada suatu peluang kejadian yang bernilai 3?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Mungkin saja, kalau sangat pasti</button>
+            <button class="quiz-opt" data-opt="1">Tidak mungkin, peluang maksimal hanya sampai 1</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Peluang Seimbang (Setengah) <span>▼</span></div>
+      <div class="section-body">
+        <p>Nah, bagaimana dengan kejadian yang sangat adil? Peluang berhasil dan gagalnya sama kuat.</p>
+        <p>Nilainya tepat berada di tengah-tengah antara 0 dan 1. Yaitu <strong>½ (Setengah)</strong> atau <strong>0,5</strong>!</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata: Melempar Koin</strong></p>
+          <p>Koin punya 2 sisi: sisi Angka dan sisi Gambar (Garuda).</p>
+          <p>Saat kamu melempar koin ke udara, peluang muncul sisi Angka persis sama kuatnya dengan sisi Gambar. Peluang muncul Angka adalah <strong>½</strong>.</p>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Dalam pertandingan sepak bola bola, wasit melempar koin untuk menentukan tim mana yang menendang bola duluan. Peluang Tim A menang lemparan koin itu adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">1 (Pasti menang)</button>
+            <button class="quiz-opt" data-opt="1">0,5 (Setengah)</button>
+            <button class="quiz-opt" data-opt="2">0 (Mustahil)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Anton menebak hari lahir adiknya. Ada yang lahir siang, ada yang lahir malam. Jika kemungkinannya seimbang, berapa angka peluang adiknya lahir siang hari?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">½</button>
+            <button class="quiz-opt" data-opt="1">¼</button>
+            <button class="quiz-opt" data-opt="2">1</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Garis Skala Peluang <span>▼</span></div>
+      <div class="section-body">
+        <p>Mari kita gabungkan semuanya dalam satu garis penggaris rahasia:</p>
+        <pre style="margin: 12px 0; padding: 12px; background: #eef2ff; border-radius: 8px; font-size: 16px; overflow-x: auto;">
+0 ----------------- ½ ----------------- 1
+Mustahil        Seimbang              Pasti
+        </pre>
+        <p>Semakin angkanya <strong>mendekati 1</strong> (misal: 0,9 atau 90%), berarti kejadiannya <em>sangat mungkin (hampir pasti)</em> terjadi.</p>
+        <p>Semakin angkanya <strong>mendekati 0</strong> (misal: 0,1 atau 10%), berarti kejadiannya <em>sangat jarang (hampir mustahil)</em> terjadi.</p>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Badan cuaca bilang besok peluang turun salju di gurun pasir adalah <code>0,01</code>. Artinya hujan salju itu...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Sangat sering terjadi</button>
+            <button class="quiz-opt" data-opt="1">Sangat jarang / hampir mustahil</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Jika nilai suatu peluang adalah <code>0,99</code>, kejadian ini paling dekat dengan...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Kejadian Pasti (1)</button>
+            <button class="quiz-opt" data-opt="1">Kejadian Mustahil (0)</button>
+            <button class="quiz-opt" data-opt="2">Kejadian Seimbang (0,5)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur tentang skala peluang! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Manakah angka di bawah ini yang BUKAN merupakan angka peluang yang sah (valid) dalam matematika?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0,7</button>
+            <button class="quiz-opt" data-opt="1">1</button>
+            <button class="quiz-opt" data-opt="2">1,5</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Kejadian "semua siswa kelas 6 akan bertambah usianya tahun depan" berada di angka skala...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0</button>
+            <button class="quiz-opt" data-opt="1">0,5</button>
+            <button class="quiz-opt" data-opt="2">1</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">🎲</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Master Peluang</p>
+        <div style="font-size: 64px; margin: 16px 0;">🌧️</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Pembaca Masa Depan</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Skala Peluang (0 sampai 1) lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi skala peluang? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [1, 2, 0, 1, 1, 0, 1, 0, 2, 2];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
