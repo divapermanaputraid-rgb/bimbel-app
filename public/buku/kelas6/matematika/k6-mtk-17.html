@@ -10,91 +10,245 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">🎰</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">🎲</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Membandingkan Peluang dalam Permainan</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Dadu vs Koin: siapa yang lebih gampang ditebak? 🪙</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy({ top: 300, behavior: 'smooth' });">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Dadu vs Koin vs Rolet, siapa yang lebih gampang ditebak? 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Menghitung peluang permainan</li><li>Membandingkan besaran dua peluang</li>
+          <li>Menghitung peluang pada lemparan koin (½)</li>
+          <li>Menghitung peluang pada lemparan dadu 6 sisi (⅙)</li>
+          <li>Membandingkan permainan mana yang punya peluang menang lebih besar</li>
+          <li>Menganalisis roda putar (rolet) berdasarkan luas warnanya</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Dadu dan Koin <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Koin vs Dadu <span>▼</span></div>
       <div class="section-body">
-        <p>Peluang muncul angka genap di dadu (2,4,6) adalah <code>3/6</code> atau <code>½</code>. Peluang muncul Gambar di koin adalah <code>½</code>.</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Peluang muncul angka 6 saat lempar satu dadu adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">1/6</button><button class="quiz-opt" data-opt="1">6/6</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Mana yang Lebih Mungkin? <span>▼</span></div>
-      <div class="section-body">
-        <p>Peluang muncul angka 1 di dadu (<code>1/6</code>). Peluang muncul Angka di koin (<code>½</code>). Jadi, koin lebih mungkin terjadi!</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Manakah yang peluangnya 1/2?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">Dapat dadu ganjil</button><button class="quiz-opt" data-opt="1">Dapat dadu 5</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Dalam permainan ular tangga atau monopoli, kita sering memakai koin atau dadu.</p>
+        <p><strong>Koin</strong> punya 2 sisi (Angka dan Gambar). Peluang keluar sisi Angka = <code>1 dari 2</code> = <strong>½ (50%)</strong>.</p>
+        <p><strong>Dadu</strong> punya 6 sisi (mata 1 sampai 6). Peluang keluar mata dadu "6" = <code>1 dari 6</code> = <strong>⅙</strong>.</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Coba bandingkan:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Peluang koin ½ (0,5) jauh lebih BESAR dibanding peluang dadu ⅙ (0,16).</li>
+            <li>Artinya, kamu jauh lebih gampang menebak hasil lemparan koin dibanding menebak 1 angka tepat di dadu!</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Jika kamu disuruh memilih permainan supaya gampang menang: Pilih menebak koin atau menebak tepat angka dadu?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Menebak koin (karena peluangnya ½)</button>
+            <button class="quiz-opt" data-opt="1">Menebak dadu (karena peluangnya ⅙)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Mengapa peluang satu mata dadu nilainya <code>⅙</code> ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Karena dadu bentuknya kotak</button>
+            <button class="quiz-opt" data-opt="1">Karena yang dicari 1 sisi, dari total 6 sisi yang ada</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Peluang Ganda di Dadu <span>▼</span></div>
+      <div class="section-body">
+        <p>Bagaimana kalau aturan permainannya diubah?</p>
+        <p>Kamu menang jika yang keluar adalah <strong>Bilangan Genap (2, 4, atau 6)</strong> pada lemparan dadu!</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Ayo kita hitung peluangnya:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Angka genap di dadu ada 3 buah (2, 4, 6).</li>
+            <li>Total semua sisi dadu ada 6 buah.</li>
+            <li>Maka peluangmu = <code>3 dari 6</code> = <code>3/6</code>.</li>
+            <li>Sederhanakan (bagi 3 atas-bawah) = <strong>½ (Setengah)!</strong></li>
+          </ol>
+        </div>
+        <p>Wah, ternyata peluang menangmu sekarang jadi sama besarnya seperti menebak koin!</p>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Dalam lemparan dadu, ada berapa banyak angka ganjil (1, 3, 5)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">2 buah</button>
+            <button class="quiz-opt" data-opt="1">3 buah</button>
+            <button class="quiz-opt" data-opt="2">5 buah</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Jika kamu menang kalau dadu menunjukkan angka <strong>lebih besar dari 4 (yaitu 5 dan 6)</strong>, berapa peluangmu menang?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">2/6 (atau ⅓)</button>
+            <button class="quiz-opt" data-opt="1">4/6</button>
+            <button class="quiz-opt" data-opt="2">6/6</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Roda Putar (Rolet Warna) <span>▼</span></div>
+      <div class="section-body">
+        <p>Sering lihat papan roda putar berhadiah? Papan itu dibagi menjadi beberapa potongan warna seperti pizza.</p>
+        <p>Peluang jarum berhenti di suatu warna tergantung pada <strong>berapa banyak potongan warna itu</strong> dibanding total semua potongan!</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh Roda 8 Potong:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Ada <strong>4 potong Merah</strong>, <strong>3 potong Kuning</strong>, dan <strong>1 potong Hijau (Jackpot)</strong>.</li>
+            <li>Peluang kena Merah = 4/8 (sangat sering).</li>
+            <li>Peluang kena Hijau = 1/8 (sangat sulit / langka).</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Dari roda putar 8 potong di atas, warna apa yang paling HARAM kamu pilih kalau kamu ingin sering menang?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Merah (4/8)</button>
+            <button class="quiz-opt" data-opt="1">Kuning (3/8)</button>
+            <button class="quiz-opt" data-opt="2">Hijau (1/8)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Jika roda putar dibagi 10 potong sama besar, dan 5 potong berwarna Biru. Berapa peluang jarum menunjuk warna Biru?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5/10 (alias ½)</button>
+            <button class="quiz-opt" data-opt="1">1/10</button>
+            <button class="quiz-opt" data-opt="2">2/10</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Permainan Adil vs Tidak Adil <span>▼</span></div>
+      <div class="section-body">
+        <p>Sebagai pemain yang cerdas, kamu harus bisa membedakan apakah sebuah aturan permainan itu <strong>Adil (Fair)</strong> atau <strong>Curang (Unfair)</strong>!</p>
+        <p>Permainan adil adalah ketika semua pemain punya <strong>angka peluang menang yang sama besar</strong>.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Analisis Kasus:</strong></p>
+          <p>Anton dan Budi main kocok dadu.</p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Anton dapat poin kalau keluar angka <strong>1, 2, 3, 4</strong> (4 angka).</li>
+            <li>Budi dapat poin kalau keluar angka <strong>5 dan 6</strong> (2 angka).</li>
+            <li>Kesimpulan: Ini <strong>TIDAK ADIL!</strong> Peluang Anton (4/6) jauh lebih besar dari Budi (2/6).</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Pada kasus kocok dadu Anton dan Budi di atas, siapa yang kemungkinan besar akan memenangkan pertandingan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Anton (karena punya 4 angka pilihan)</button>
+            <button class="quiz-opt" data-opt="1">Budi (karena angkanya lebih besar yaitu 5 dan 6)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Bagaimana cara mengubah aturan dadu tadi supaya menjadi permainan yang ADIL untuk 2 anak?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Anak A pilih 3 angka ganjil, Anak B pilih 3 angka genap</button>
+            <button class="quiz-opt" data-opt="1">Anak A pilih angka 1-5, Anak B pilih angka 6 saja</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur tentang peluang permainan! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Mana yang punya peluang KELUAR LEBIH BESAR: melempar dadu dapat angka 6 (⅙) ATAU memutar roda 4 warna rata dapat warna merah (¼)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Dadu dapat angka 6 (⅙)</button>
+            <button class="quiz-opt" data-opt="1">Roda dapat warna merah (¼)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Jika kamu melempar dadu biasa (angka 1-6), berapa peluang munculnya angka <strong>7</strong> ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">⅙</button>
+            <button class="quiz-opt" data-opt="1">0 (Mustahil)</button>
+            <button class="quiz-opt" data-opt="2">1 (Pasti)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">🎰</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Juru Permainan</p>
+        <div style="font-size: 64px; margin: 16px 0;">🎲</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Master Peluang Game</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Membandingkan Peluang dalam Permainan lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi peluang pada koin dan dadu? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [0, 1, 1, 0, 2, 0, 0, 0, 1, 1];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
