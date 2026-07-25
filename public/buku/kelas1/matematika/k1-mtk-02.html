@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mengenal Bilangan 6–10 — Kelas 1</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="mtk" data-materi="k1-mtk-02">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">🔢</div>
+        <h1 style="color: #c2185b; margin:0 0 8px 0; font-size: 28px;">Mengenal Bilangan 6–10</h1>
+        <p style="color: #666; font-size: 20px;">Matematika — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Ayo kita berhitung 6 sampai 10 memakai jari tangan! 🎀🧸</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <ul style="padding-left: 20px;">
+          <li>Menghitung benda 6 sampai 10 🚗</li><li>Berhitung memakai sepuluh jari tangan 🖐️</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Ayo Menghitung 6 sampai 10! <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Kira punya mainan mobil-mobilan baru di kotak. 📦</p>
+<p>Banyak sekali! Mari kita hitung mobil-mobilan Kira bersama-sama! 🚗</p>
+<p class="emoji-large">🚗 🚗 🚗 🚗 🚗 🚗 🚗 🚗</p>
+<p>Ayo berhitung: satu, dua, tiga, empat, lima, enam, tujuh, delapan! Ada <strong>8</strong> mobil-mobilan!</p>
+<p>Wah, Kira bisa membuat balapan mobil yang seru! 🏁</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Tika memetik bunga cantik di taman. Coba hitung bunganya: 🌸 🌸 🌸 🌸 🌸 🌸. Ada berapa?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">6 bunga</button><button class="quiz-opt" data-opt="1">7 bunga</button><button class="quiz-opt" data-opt="2">8 bunga</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Berhitung dengan Jari Tangan <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Tangan kita punya sepuluh jari yang hebat! 🖐️</p>
+<p>Coba buka semua jari tangan kananmu. Ada 5 jari! 🖐️</p>
+<p>Sekarang buka jari tangan kirimu satu per satu: enam... tujuh... delapan... sembilan... sepuluh! 🖐️🖐️</p>
+<p>Yeeey! Kita punya 10 jari yang siap membantu berhitung kapan saja! 🌟</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Buka satu tangan penuh (5) dan tambah satu jari dari tangan lain. Ada berapa jari terbuka?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">5 jari</button><button class="quiz-opt" data-opt="1">6 jari</button><button class="quiz-opt" data-opt="2">7 jari</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">🔢</div>
+        <p style="font-weight:bold; color: #c2185b; font-size: 24px;">Master Sepuluh</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kirim! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 2)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku kakak kelasmu. Mau tanya soal Mengenal Bilangan 6–10? Yuk, kita hitung bareng-bareng! 🧸🎉</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [0, 1];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Membandingkan Banyak Benda — Kelas 1</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="mtk" data-materi="k1-mtk-03">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">⚖️</div>
+        <h1 style="color: #c2185b; margin:0 0 8px 0; font-size: 28px;">Membandingkan Banyak Benda</h1>
+        <p style="color: #666; font-size: 20px;">Matematika — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Belajar menentukan mana yang lebih banyak, sedikit, atau sama! 🎀🧸</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <ul style="padding-left: 20px;">
+          <li>Menentukan benda yang lebih banyak atau sedikit 🍭</li><li>Mengenal benda yang sama banyak 🌸</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Lebih Banyak dan Lebih Sedikit <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Upe punya 5 permen lolipop manis. 🍭🍭🍭🍭🍭</p>
+<p>Kira punya 3 permen lolipop manis. 🍭🍭🍭</p>
+<p>Siapa yang punya permen paling banyak? Upe! 🙋‍♀️</p>
+<p>Permen Upe <strong>lebih banyak</strong> dari permen Kira. Permen Kira <strong>lebih sedikit</strong> dari permen Upe. 👍</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Malosi punya 4 balon 🎈🎈🎈🎈. Tika punya 2 balon 🎈🎈. Balon Tika adalah...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Lebih banyak dari Malosi</button><button class="quiz-opt" data-opt="1">Lebih sedikit dari Malosi</button><button class="quiz-opt" data-opt="2">Sama banyak dengan Malosi</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Sama Banyak! <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Sekarang Upe punya 4 bunga pink. 🌸🌸🌸🌸</p>
+<p>Kira juga punya 4 bunga pink. 🌸🌸🌸🌸</p>
+<p>Jumlah bunga mereka tidak ada yang kurang dan tidak ada yang lebih. Semuanya pas!</p>
+<p>Artinya, bunga Upe dan Kira adalah <strong>sama banyak</strong>! 💖</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Di piring ada 3 donat 🍩🍩🍩. Di meja ada 3 donat 🍩🍩🍩. Donat di piring dan di meja adalah...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Lebih banyak</button><button class="quiz-opt" data-opt="1">Lebih sedikit</button><button class="quiz-opt" data-opt="2">Sama banyak</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">⚖️</div>
+        <p style="font-weight:bold; color: #c2185b; font-size: 24px;">Juru Banding Cilik</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kirim! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 2)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku kakak kelasmu. Mau tanya soal Membandingkan Banyak Benda? Yuk, kita hitung bareng-bareng! 🧸🎉</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [1, 2];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
