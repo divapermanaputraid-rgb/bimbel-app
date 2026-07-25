@@ -10,91 +10,250 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">📊</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">🏀</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Membandingkan Benda (Konsep Rasio)</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Berapa banyak banding berapa banyak? Itulah rasio! 🏀⚽</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,300)">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Berapa banding berapa? Yuk kenalan dengan Rasio! 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Melihat perbandingan konkret dua kumpulan benda</li><li>Menyederhanakan perbandingan</li>
+          <li>Memahami arti perbandingan antara dua jenis benda</li>
+          <li>Menggunakan kalimat "Untuk setiap... ada..."</li>
+          <li>Menentukan perbandingan dari gambar atau cerita</li>
+          <li>Membedakan urutan perbandingan (A ke B vs B ke A)</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Melihat Perbandingan Benda <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Membandingkan 2 Kelompok <span>▼</span></div>
       <div class="section-body">
-        <p>Andi punya 6 kelereng, Budi punya 4. Perbandingannya adalah 6 berbanding 4 (atau <code>6:4</code>).</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Ada 3 apel dan 5 jeruk. Rasio apel terhadap jeruk adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">3:5</button><button class="quiz-opt" data-opt="1">5:3</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Menyederhanakan Rasio <span>▼</span></div>
-      <div class="section-body">
-        <p>Rasio itu mirip pecahan. <code>6:4</code> bisa dibagi 2 atas dan bawah, menjadi rasio <code>3:2</code>.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Sederhanakan rasio 10:5!</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">2:1</button><button class="quiz-opt" data-opt="1">1:2</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Di kelas atau di rumah, kita sering melihat dua kelompok benda yang berbeda. Misalnya di keranjang ada <strong>3 apel</strong> dan <strong>2 jeruk</strong>.</p>
+        <p>Kalau kita ingin tahu perbandingannya, kita cukup melihat jumlah masing-masing: Apel berbanding Jeruk adalah 3 banding 2.</p>
+        <p>Inilah konsep dasar dari <strong>Rasio</strong> (Perbandingan).</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Dalam satu tim futsal mini, ada 4 pemain laki-laki dan 1 pemain perempuan.</li>
+            <li>Perbandingan laki-laki dan perempuan = 4 banding 1.</li>
+            <li>Di kotak pensil Anton ada 2 pensil merah dan 5 pensil biru (2 banding 5).</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Jika di meja ada 6 sendok dan 6 garpu, bagaimana perbandingan jumlah sendok dan garpu?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">6 banding 6 (sama banyak)</button>
+            <button class="quiz-opt" data-opt="1">6 banding 1</button>
+            <button class="quiz-opt" data-opt="2">1 banding 6</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Siti punya 3 kucing dan 2 kelinci. Perbandingan jumlah kucing berbanding kelinci adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">2 banding 3</button>
+            <button class="quiz-opt" data-opt="1">3 banding 2</button>
+            <button class="quiz-opt" data-opt="2">5 banding 3</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Kalimat "Untuk Setiap..." <span>▼</span></div>
+      <div class="section-body">
+        <p>Cara paling mudah menjelaskan rasio kepada orang lain adalah menggunakan kalimat ajaib: <strong>"Untuk setiap ... ada ..."</strong>.</p>
+        <p>Misalnya, perbandingan sirup dan air adalah 1 banding 4. Kita bisa katakan:</p>
+        <p><em>"<strong>Untuk setiap</strong> 1 gelas sirup, <strong>ada</strong> 4 gelas air putih."</em></p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal langkah demi langkah:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Lihat jumlah benda pertama (misal: 2 roda sepeda).</li>
+            <li>Lihat jumlah benda kedua (misal: 1 bingkai sepeda).</li>
+            <li>Buat kalimatnya: "Untuk setiap 1 sepeda, ada 2 roda."</li>
+            <li>Atau dibalik: "Untuk setiap 2 roda, terdapat 1 sepeda."</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Jika perbandingan guru dan siswa di kelas adalah 1 banding 20, kalimat yang tepat adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Untuk setiap 20 guru, ada 1 siswa</button>
+            <button class="quiz-opt" data-opt="1">Untuk setiap 1 guru, terdapat 20 siswa</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Dalam resep kue: "Untuk setiap 2 butir telur, masukkan 5 sendok terigu". Berarti perbandingan telur terhadap terigu adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">2 banding 5</button>
+            <button class="quiz-opt" data-opt="1">5 banding 2</button>
+            <button class="quiz-opt" data-opt="2">2 banding 7</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Urutan Sangat Penting! <span>▼</span></div>
+      <div class="section-body">
+        <p>Dalam rasio, kamu <strong>tidak boleh terbalik</strong> menyebutkan angkanya!</p>
+        <p>Kalau ditanya: "Perbandingan <strong>A terhadap B</strong>", maka angka A HARUS disebut duluan.</p>
+        <p>Kalau ditanya: "Perbandingan <strong>B terhadap A</strong>", maka angka B yang disebut duluan.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal contoh kelereng:</strong></p>
+          <p>Anton punya 3 kelereng merah dan 7 kelereng biru.</p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Perbandingan merah terhadap biru = <strong>3 banding 7</strong>.</li>
+            <li>Perbandingan biru terhadap merah = <strong>7 banding 3</strong>.</li>
+            <li>Kalau kamu jawab merah ke biru = 7 banding 3, itu <strong>SALAH</strong> karena terbalik!</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Di halaman ada 5 ayam dan 2 kambing. Perbandingan jumlah <strong>kambing terhadap ayam</strong> adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5 banding 2</button>
+            <button class="quiz-opt" data-opt="1">2 banding 5</button>
+            <button class="quiz-opt" data-opt="2">2 banding 7</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Kalau kita membalik urutan sebutan benda, apakah angka rasionya juga harus dibalik posisinya?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ya, harus dibalik posisinya</button>
+            <button class="quiz-opt" data-opt="1">Tidak, angkanya tetap di tempat</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Membandingkan dari Gambar/Tabel <span>▼</span></div>
+      <div class="section-body">
+        <p>Seringkali soal perbandingan disajikan dalam bentuk gambar kotak atau tabel.</p>
+        <p>Tugasmu cuma satu: <strong>Hitung dengan teliti</strong> jumlah masing-masing kelompok benda, lalu pasangkan angkanya!</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh tabel buah di toko:</strong></p>
+          <table style="width: 100%; text-align: left; border-collapse: collapse; margin-top: 6px;">
+            <tr style="border-bottom: 1px solid #ccc;"><th>Buah</th><th>Jumlah</th></tr>
+            <tr><td>Mangga</td><td>8 buah</td></tr>
+            <tr><td>Semangka</td><td>3 buah</td></tr>
+          </table>
+          <p style="margin-top:8px;">Dari tabel di atas, perbandingan Semangka terhadap Mangga adalah <strong>3 banding 8</strong>.</p>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Bayangkan gambar pola ini: 🔴🔴🔴🔵🔵. Perbandingan lingkaran merah berbanding lingkaran biru adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">2 banding 3</button>
+            <button class="quiz-opt" data-opt="1">3 banding 2</button>
+            <button class="quiz-opt" data-opt="2">3 banding 5</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Di tempat parkir ada 10 mobil dan 15 motor. Perbandingan mobil terhadap motor adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">10 banding 15</button>
+            <button class="quiz-opt" data-opt="1">15 banding 10</button>
+            <button class="quiz-opt" data-opt="2">10 banding 25</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur tentang konsep rasio! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>"Untuk setiap 1 porsi nasi goreng, diberi 3 irisan mentimun". Berarti rasio mentimun terhadap nasi goreng adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">1 banding 3</button>
+            <button class="quiz-opt" data-opt="1">3 banding 1</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Dalam kolam ada 7 ikan emas dan 4 ikan koi. Perbandingan jumlah <strong>ikan koi terhadap seluruh ikan</strong> di kolam adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">4 banding 7</button>
+            <button class="quiz-opt" data-opt="1">4 banding 11</button>
+            <button class="quiz-opt" data-opt="2">7 banding 11</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">⚖️</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Juru Banding Rasio</p>
+        <div style="font-size: 64px; margin: 16px 0;">🏀</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Detektif Perbandingan</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Membandingkan Benda (Konsep Rasio) lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi membandingkan benda (rasio)? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [0, 1, 1, 0, 1, 0, 1, 0, 1, 1];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
