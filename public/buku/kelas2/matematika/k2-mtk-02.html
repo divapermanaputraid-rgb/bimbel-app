@@ -8,81 +8,283 @@
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-02">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
         <div style="font-size: 80px; margin-bottom: 16px;">🏠</div>
         <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Rumah Angka: Puluhan dan Satuan</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Mengenal tempat puluhan dan satuan yuk! 🧱</p>
+        <p style="margin-top: 16px;">Angka 2 digit punya rumah puluhan dan satuan. 5 pertemuan. 🧱</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Paham nilai tempat</li><li>Bisa memecah bilangan</li>
+          <li>Menunjukkan mana digit puluhan dan mana digit satuan</li>
+          <li>Menyebut nilai tempat dari tiap digit</li>
+          <li>Memecah bilangan jadi puluhan + satuan (bentuk panjang)</li>
+          <li>Menyusun bilangan dari puluhan dan satuan</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Puluhan dan Satuan <span>▼</span></div>
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Dua Rumah di Angka <span>▼</span></div>
       <div class="section-body">
-        <p>Angka 35 itu sama dengan 3 kotak puluhan dan 5 kotak satuan. 📦📦📦 + 🧊🧊🧊🧊🧊</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+        <p>Hai! Anton bawa angka <code>35</code>. Angka ini punya <strong>2 digit</strong>. Digit kiri dan digit kanan tinggal di rumah berbeda.</p>
+        <p><strong>Rumah kiri = puluhan.</strong> <strong>Rumah kanan = satuan.</strong> Pada <code>35</code>: digit <code>3</code> di rumah puluhan, digit <code>5</code> di rumah satuan.</p>
+        <p>Jangan tertukar: digit depan (kiri) selalu puluhan, digit belakang (kanan) selalu satuan.</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Nomor sepatu <code>28</code>: 2 = puluhan, 8 = satuan.</li>
+            <li>Umur kakak <code>12</code>: 1 = puluhan, 2 = satuan.</li>
+            <li>Halaman buku <code>47</code>: 4 = puluhan, 7 = satuan.</li>
+          </ul>
+        </div>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal angka <code>42</code>:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Tulis dua kotak: [ puluhan ] [ satuan ].</li>
+            <li>Masukkan digit kiri <code>4</code> ke kotak puluhan.</li>
+            <li>Masukkan digit kanan <code>2</code> ke kotak satuan.</li>
+            <li>Jadi: 4 puluhan dan 2 satuan — bukan sebaliknya!</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Pada angka 35, digit mana yang di rumah puluhan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5</button>
+            <button class="quiz-opt" data-opt="1">3</button>
+            <button class="quiz-opt" data-opt="2">35</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
           <p>Angka 42 terdiri dari...</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">4 puluhan dan 2 satuan</button><button class="quiz-opt" data-correct="false">2 puluhan dan 4 satuan</button>
+            <button class="quiz-opt" data-opt="0">4 puluhan dan 2 satuan</button>
+            <button class="quiz-opt" data-opt="1">2 puluhan dan 4 satuan</button>
+            <button class="quiz-opt" data-opt="2">42 puluhan</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
       </div>
     </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Menyusun Angka Baru <span>▼</span></div>
+
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Nilai Tempat (Nilai Sebenarnya) <span>▼</span></div>
       <div class="section-body">
-        <p>Bagaimana kalau 5 puluhan digabung 1 satuan? Jadinya 51! 🚀</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
+        <p>Digit di rumah puluhan nilainya <strong>bukan</strong> cuma angka itu sendiri. Digit <code>3</code> di puluhan = <strong>30</strong>, bukan 3. Digit <code>5</code> di satuan = <strong>5</strong>.</p>
+        <p>Jadi <code>35</code> = 30 + 5. Itu namanya <strong>nilai tempat</strong>.</p>
+        <p>Rumus cepat: nilai puluhan = digit puluhan × 10. Nilai satuan = digit satuan × 1.</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>3 bungkus pensil isi 10 = 30 pensil. Digit 3 di puluhan = 30.</li>
+            <li>7 permen lepas = 7. Digit 7 di satuan = 7.</li>
+            <li>Gabungan: 3 bungkus + 7 lepas = 37 pensil.</li>
+          </ul>
+        </div>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal nilai digit 2 pada bilangan 27:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Digit 2 di kiri → rumah puluhan.</li>
+            <li>Nilai = 2 × 10 = <strong>20</strong>.</li>
+            <li>Bukan 2, bukan 27. Jawabannya 20.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Nilai angka 2 pada bilangan 27 adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">2</button>
+            <button class="quiz-opt" data-opt="1">20</button>
+            <button class="quiz-opt" data-opt="2">27</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Nilai angka 7 pada bilangan 27 adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">7</button>
+            <button class="quiz-opt" data-opt="1">70</button>
+            <button class="quiz-opt" data-opt="2">17</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Bentuk Panjang <span>▼</span></div>
+      <div class="section-body">
+        <p><strong>Bentuk panjang</strong> = memecah bilangan jadi penjumlahan nilai tempat. Contoh: 48 = 40 + 8.</p>
+        <p>Ini membantu kamu melihat berapa puluhan dan berapa satuan di dalam satu angka.</p>
+        <p>Bukan 4 + 8 (itu cuma digit, bukan nilai). Bukan 80 + 4 (itu kebalik).</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>36 stiker: 3 lembar isi 10 + 6 stiker lepas → 30 + 6.</li>
+            <li>50 kelereng: 5 kantong isi 10 + 0 lepas → 50 + 0.</li>
+            <li>19 pensil: 1 kotak isi 10 + 9 pensil → 10 + 9.</li>
+          </ul>
+        </div>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal pecah 48:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Digit puluhan 4 → nilai 40.</li>
+            <li>Digit satuan 8 → nilai 8.</li>
+            <li>Bentuk panjang: <strong>40 + 8</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Bentuk panjang dari 48 adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">40 + 8</button>
+            <button class="quiz-opt" data-opt="1">4 + 8</button>
+            <button class="quiz-opt" data-opt="2">80 + 4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Bentuk panjang dari 30 adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">3 + 0</button>
+            <button class="quiz-opt" data-opt="1">30 + 0</button>
+            <button class="quiz-opt" data-opt="2">10 + 3</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Menyusun dari Puluhan + Satuan <span>▼</span></div>
+      <div class="section-body">
+        <p>Kebalikan dari memecah: kalau punya 4 puluhan dan 2 satuan, gabung jadi angka <code>42</code>.</p>
+        <p>Cara: tulis digit puluhan di kiri, digit satuan di kanan. 4 dan 2 → 42.</p>
+        <p>Kalau 6 puluhan dan 0 satuan → 60. Satuan boleh 0!</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Budi punya 4 kotak pensil (isi 10) + 6 pensil lepas → 46 pensil.</li>
+            <li>5 kantong kelereng (isi 10) + 0 lepas → 50 kelereng.</li>
+            <li>1 bungkus stiker (10) + 9 lepas → 19 stiker.</li>
+          </ul>
+        </div>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal 5 puluhan + 1 satuan:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Tulis 5 di kiri.</li>
+            <li>Tulis 1 di kanan.</li>
+            <li>Hasil: <strong>51</strong>. Bukan 15, bukan 6.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
           <p>6 puluhan dan 0 satuan jadinya?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">60</button><button class="quiz-opt" data-correct="false">6</button>
+            <button class="quiz-opt" data-opt="0">6</button>
+            <button class="quiz-opt" data-opt="1">60</button>
+            <button class="quiz-opt" data-opt="2">600</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Budi punya 4 kotak pensil (isi 10) dan 6 pensil lepas. Berapa pensil Budi?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">64</button>
+            <button class="quiz-opt" data-opt="1">46</button>
+            <button class="quiz-opt" data-opt="2">10</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
       </div>
     </div>
-    
 
-    <!-- Ringkasan -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Ringkas dulu:</p>
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Kiri = puluhan, kanan = satuan.</li>
+            <li>Nilai digit puluhan = digit × 10.</li>
+            <li>Bentuk panjang: 48 = 40 + 8.</li>
+            <li>Susun: 4 puluhan + 6 satuan = 46.</li>
+          </ul>
+        </div>
+        <p>Kerjakan kuis campur di bawah. Kalau lupa, buka pertemuan di atas!</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Mana yang puluhan-nya paling besar?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">19</button>
+            <button class="quiz-opt" data-opt="1">28</button>
+            <button class="quiz-opt" data-opt="2">35</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>3 puluhan + 8 satuan = ...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">83</button>
+            <button class="quiz-opt" data-opt="1">38</button>
+            <button class="quiz-opt" data-opt="2">11</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
         <div style="font-size: 64px; margin: 16px 0;">🏠</div>
         <p style="font-weight:bold; color: #667eea; font-size: 20px;">Arsitek Angka</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Rumah Angka: Puluhan dan Satuan? 😊</div>
+        <div class="msg ai">Halo! Mau tanya soal puluhan dan satuan? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +292,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 0, 1, 0, 0, 1, 1, 1, 2, 1];
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>
