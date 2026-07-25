@@ -11,7 +11,8 @@
     "sync:android": "npx cap sync android",
     "open:android": "npx cap open android",
     "build:apk": "npm run build:web && npm run sync:android && cd android && ./gradlew assembleRelease",
-    "build:aab": "npm run build:web && npm run sync:android && cd android && ./gradlew bundleRelease"
+    "build:aab": "npm run build:web && npm run sync:android && cd android && ./gradlew bundleRelease",
+    "patch:book-viewport": "node scripts/patch-book-viewport.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.4.2",
@@ -40,4 +41,4 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
-}
+}\n
