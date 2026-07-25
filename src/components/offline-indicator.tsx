@@ -37,7 +37,8 @@ export function OfflineIndicator() {
   return (
     <div
       role="status"
-      className="fixed inset-x-0 top-0 z-[100] bg-amber-500 px-3 py-2 text-center text-sm font-medium text-amber-950"
+      className="fixed inset-x-0 z-[100] bg-amber-500 px-3 py-2 text-center text-sm font-medium text-amber-950"
+      style={{ top: "var(--sat)" }}
     >
       Offline — buku yang sudah dibuka masih bisa dibaca
     </div>
