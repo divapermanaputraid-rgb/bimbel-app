@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Membaca & Menulis Bilangan sampai 1.000 — Kelas 3</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas3" data-kelas="3" data-pelajaran="mtk" data-materi="k3-mtk-01" style="background-color: #E3F2FD; --bg: #E3F2FD;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">🔢</div>
+        <h1 style="color: #2e7d32; margin:0 0 8px 0; font-size: 26px;">Membaca & Menulis Bilangan sampai 1.000</h1>
+        <p style="color: #666; font-size: 17px;">Matematika — Kelas 3</p>
+        <p style="margin-top: 16px; font-size: 17px;">Ayo belajar bilangan 3 angka bersama Alfa dan Galih!</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Ayo Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <ul style="padding-left: 20px;">
+          <li>Membaca bilangan tiga angka</li><li>Menulis lambang bilangan dari kata</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Bilangan 3 Angka <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Alfa melihat nomor di depan rumah barunya: <code>671</code>.</p><p>Cara membacanya dipisah menjadi tiga bagian: ratusan, puluhan, dan satuan.</p><p><code>6</code> ratusan + <code>7</code> puluhan + <code>1</code> satuan = <strong>Enam ratus tujuh puluh satu</strong>. Keren!</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Bagaimana cara membaca angka 345?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Tiga ratus empat lima</button><button class="quiz-opt" data-opt="1">Tiga ratus empat puluh lima</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Angka Nol di Tengah <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Kalau ada angka 0 di tengah, bagian puluhan tidak perlu dibaca.</p><p>Misalnya, <code>405</code> dibaca <strong>Empat ratus lima</strong>. Jangan sebut nol-nya ya!</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Lambang bilangan dari &#039;Dua ratus tiga&#039; adalah...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">230</button><button class="quiz-opt" data-opt="1">203</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 17px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">🔢</div>
+        <p style="font-weight:bold; color: #2e7d32; font-size: 20px;">Juru Baca Ribuan</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 3)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku siap bantu kamu belajar. Mau tanya soal Membaca & Menulis Bilangan sampai 1.000? Ayo kita coba! 💪</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [1,1];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

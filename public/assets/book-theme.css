@@ -181,3 +181,73 @@ body.kelas1 .emoji-large {
   display: inline-block;
   margin: 0 4px;
 }
+
+/* --- TEMA KELAS 3 (Fase B - Remaja Kecil) --- */
+body.kelas3 {
+  font-size: 17px;
+  line-height: 1.8;
+  font-family: 'Comic Sans MS', 'Nunito', sans-serif;
+  --bg: #E3F2FD; /* Biru cerah default */
+}
+body.kelas3 .section-card {
+  border-radius: 16px;
+  border: 2px solid #bbdefb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+body.kelas3 .section-header {
+  background: #E8F5E9; /* Hijau cerah */
+  font-size: 19px;
+  padding: 16px;
+  color: #2e7d32;
+}
+body.kelas3 .btn {
+  font-size: 19px;
+  padding: 16px;
+  border-radius: 12px; /* rounded-lg */
+  background: #bbdefb;
+  color: #1565c0;
+  border: 2px solid #1565c0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+body.kelas3 .btn:active {
+  transform: scale(0.95);
+}
+body.kelas3 .quiz-box {
+  background: #FFF3E0; /* Oranye cerah */
+  border: 2px dashed #ffb74d;
+  border-radius: 16px;
+  padding: 16px;
+}
+body.kelas3 .quiz-opt {
+  font-size: 17px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 2px solid #cfd8dc;
+  background: white;
+  transition: transform 0.1s;
+}
+body.kelas3 .quiz-opt:active {
+  transform: scale(0.98);
+}
+body.kelas3 .quiz-opt.benar {
+  border-color: #4caf50;
+  background: #c8e6c9;
+  font-weight: bold;
+}
+body.kelas3 .quiz-opt.salah {
+  border-color: #f44336;
+  background: #ffcdd2;
+}
+body.kelas3 .ai-toggle {
+  background: #ab47bc; /* Ungu cerah */
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+}
+body.kelas3 .ai-header {
+  background: #ab47bc;
+}
+body.kelas3 .progress-fill {
+  background: linear-gradient(90deg, #42a5f5, #66bb6a, #ffa726, #ab47bc);
+}
