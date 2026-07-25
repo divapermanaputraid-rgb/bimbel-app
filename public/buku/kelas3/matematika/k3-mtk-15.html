@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Sudut pada Bangun Datar — Kelas 3</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas3" data-kelas="3" data-pelajaran="mtk" data-materi="k3-mtk-15" style="background-color: #FFF3E0; --bg: #FFF3E0;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">📙</div>
+        <h1 style="color: #2e7d32; margin:0 0 8px 0; font-size: 26px;">Sudut pada Bangun Datar</h1>
+        <p style="color: #666; font-size: 17px;">Matematika — Kelas 3</p>
+        <p style="margin-top: 16px; font-size: 17px;">Ternyata pojokan buku kita itu namanya sudut siku-siku!</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Ayo Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <ul style="padding-left: 20px;">
+          <li>Mengenal sudut siku-siku, lancip, dan tumpul</li><li>Menentukan jenis sudut pada bangun datar</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Tiga Jenis Sudut <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p><strong>Sudut</strong> adalah pertemuan dua buah sisi.</p><p>📐 <strong>Sudut Siku-Siku:</strong> tegak lurus seperti pojok buku tulis (besarnya 90°).</p><p>🔺 <strong>Sudut Lancip:</strong> lebih tajam/sempit dari sudut siku-siku.</p><p>🪑 <strong>Sudut Tumpul:</strong> lebih lebar/terbuka dari sudut siku-siku!</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Sudut yang bentuknya tegak lurus seperti pojokan meja disebut sudut...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Siku-siku</button><button class="quiz-opt" data-opt="1">Lancip</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Sudut pada Bangun Datar <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Persegi dan persegi panjang memiliki <strong>4 sudut siku-siku</strong>.</p><p>Sedangkan segitiga sama sisi memiliki 3 sudut lancip yang tajam!</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Berapa banyak sudut siku-siku yang dimiliki oleh sebuah persegi panjang?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">4 sudut</button><button class="quiz-opt" data-opt="1">2 sudut</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 17px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">📙</div>
+        <p style="font-weight:bold; color: #2e7d32; font-size: 20px;">Juru Sudut</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 3)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku siap bantu kamu belajar. Mau tanya soal Sudut pada Bangun Datar? Ayo kita coba! 💪</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [0,0];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Hubungan Antar Satuan Panjang — Kelas 3</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas3" data-kelas="3" data-pelajaran="mtk" data-materi="k3-mtk-11" style="background-color: #FFF3E0; --bg: #FFF3E0;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">🪜</div>
+        <h1 style="color: #2e7d32; margin:0 0 8px 0; font-size: 26px;">Hubungan Antar Satuan Panjang</h1>
+        <p style="color: #666; font-size: 17px;">Matematika — Kelas 3</p>
+        <p style="margin-top: 16px; font-size: 17px;">Ayo naik turun tangga satuan panjang bersama Galih!</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Ayo Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <ul style="padding-left: 20px;">
+          <li>Memahami hubungan 1 m = 100 cm dan 1 cm = 10 mm</li><li>Mengubah satuan panjang</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Tangga Satuan Panjang <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Ingat aturan tangga: setiap <strong>turun 1 tangga dikali 10</strong>, setiap <strong>naik 1 tangga dibagi 10</strong>!</p><p>Dari meter (m) ke sentimeter (cm) turun 2 tangga, jadi dikali 100. Maka <strong>1 m = 100 cm</strong>.</p><p>Dari cm ke milimeter (mm) turun 1 tangga, jadi <strong>1 cm = 10 mm</strong>.</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Tali panjangnya 3 meter. Berapa panjang tali dalam sentimeter?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">300 cm</button><button class="quiz-opt" data-opt="1">30 cm</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Soal Cerita Jarak <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Galih berlari keliling lapangan sepanjang 200 m, lalu berjalan 150 m lagi.</p><p>Total jarak yang ditempuh Galih adalah 200 m + 150 m = <strong>350 m</strong>!</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Pita 500 cm sama panjangnya dengan berapa meter?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">50 meter</button><button class="quiz-opt" data-opt="1">5 meter</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 17px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">🪜</div>
+        <p style="font-weight:bold; color: #2e7d32; font-size: 20px;">Master Tangga Panjang</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 3)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku siap bantu kamu belajar. Mau tanya soal Hubungan Antar Satuan Panjang? Ayo kita coba! 💪</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [0,1];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
