@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Pengurangan sampai 20 — Kelas 1</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="mtk" data-materi="k1-mtk-13" style="background-color: #F3E5F5; --bg: #F3E5F5;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">➖</div>
+        <h1 style="color: #c2185b; margin:0 0 8px 0; font-size: 28px;">Pengurangan sampai 20</h1>
+        <p style="color: #666; font-size: 20px;">Matematika — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Mengambil biskuit dan mainan. Pengurangan itu seru! 🎀🧸</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <ul style="padding-left: 20px;">
+          <li>Mengurangi angka belasan tanpa meminjam 🍪</li><li>Menggunakan trik pecah 10 untuk pengurangan ➖</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Kurang Belasan Tanpa Meminjam <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Malosi membawa 18 lolipop warna-warni. 🍭</p>
+<p>Lalu ia bagikan 5 lolipop kepada Tika. 🍭🍭🍭🍭🍭</p>
+<p>Berapa sisa lolipop Malosi? Ingat 18 di kepala, hitung mundur 5 langkah: <strong>17, 16, 15, 14, 13!</strong></p>
+<p>Jadi, <code>18 - 5 = 13</code>. Gampang sekali kan! 🎯</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Berapakah hasil dari 16 − 4 dengan menghitung mundur dari 16?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">12</button><button class="quiz-opt" data-opt="1">13</button><button class="quiz-opt" data-opt="2">14</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Trik Pecah 10 <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Ayo belajar trik memecah angka 10 untuk pengurangan besar! ➖</p>
+<p>Misalnya kita mau menghitung <code>15 − 8</code>:</p>
+<ol style="padding-left: 20px;">
+  <li>Pecah 15 menjadi <strong>10 dan 5</strong>. 📦</li>
+  <li>Kurangi angka 10 dulu: 10 − 8 = <strong>2</strong>.</li>
+  <li>Tambahkan sisa 2 dengan 5 tadi: 2 + 5 = <strong>7</strong>!</li>
+</ol>
+<p>Jadi, <code>15 - 8 = 7</code>. Memecah 10 bikin hitung mundur jadi cepat! 🔄</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Hitunglah 13 − 7 dengan memecah 13 menjadi 10 dan 3, lalu 10 − 7 = 3, lalu 3 + 3 = ...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">5</button><button class="quiz-opt" data-opt="1">6</button><button class="quiz-opt" data-opt="2">7</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">➖</div>
+        <p style="font-weight:bold; color: #c2185b; font-size: 24px;">Juru Kurang Belasan</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kirim! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 2)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku kakak kelasmu. Mau tanya soal Pengurangan sampai 20? Yuk, kita hitung bareng-bareng! 🧸🎉</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [0, 1];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

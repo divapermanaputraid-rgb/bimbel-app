@@ -5,6 +5,20 @@ const outDir = path.join(__dirname, '../public/buku/kelas1/matematika');
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 function template(data) {
+  // Rotate background colors for K1 book themes to make them pastel and colorful
+  let bgTheme = '#FFFDE7'; // yellow lemon
+  if (data.id.endsWith('02') || data.id.endsWith('10') || data.id.endsWith('14')) {
+    bgTheme = '#FCE4EC'; // pink baby
+  } else if (data.id.endsWith('03') || data.id.endsWith('11') || data.id.endsWith('15')) {
+    bgTheme = '#E3F2FD'; // blue baby
+  } else if (data.id.endsWith('04') || data.id.endsWith('12') || data.id.endsWith('16')) {
+    bgTheme = '#E8F5E9'; // green mint
+  } else if (data.id.endsWith('05') || data.id.endsWith('13') || data.id.endsWith('17')) {
+    bgTheme = '#F3E5F5'; // purple pastel
+  } else if (data.id.endsWith('06') || data.id.endsWith('18')) {
+    bgTheme = '#FFF3E0'; // orange pastel
+  }
+
   return `<!DOCTYPE html>
 <html lang="id">
 <head>
@@ -13,7 +27,7 @@ function template(data) {
   <title>${data.judul} — Kelas 1</title>
   <link rel="stylesheet" href="/assets/book-theme.css">
 </head>
-<body class="kelas1" data-kelas="1" data-pelajaran="mtk" data-materi="${data.id}">
+<body class="kelas1" data-kelas="1" data-pelajaran="mtk" data-materi="${data.id}" style="background-color: ${bgTheme}; --bg: ${bgTheme};">
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
@@ -200,7 +214,7 @@ const materiList = [
 <p>Jumlah bunga mereka tidak ada yang kurang dan tidak ada yang lebih. Semuanya pas!</p>
 <p>Artinya, bunga Upe dan Kira adalah <strong>sama banyak</strong>! 💖</p>`,
         quiz: {
-          soal: 'Di piring ada 3 donat 🍩🍩🍩. Di meja ada 3 donat 🍩🍩🍩. Donat di piring dan di meja adalah...',
+          soal: 'Di piring ada 3 donat 🍩🍩🍩. Di meja ada 3 donat 🍩🍩🍩. Donat di piring and di meja adalah...',
           pilihan: ['Lebih banyak', 'Lebih sedikit', 'Sama banyak'],
           jawabanIdx: 2
         }
@@ -431,6 +445,376 @@ const materiList = [
           soal: 'Upe punya tomat merah 🍅 dan daun hijau 🍃. Upe memisahkan mereka. Kelompok tomat adalah kelompok...',
           pilihan: ['Kelompok warna merah', 'Kelompok warna hijau', 'Kelompok bentuk segitiga'],
           jawabanIdx: 0
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-10',
+    judul: 'Bilangan 11–15',
+    emoji: '🌸',
+    deskripsi: 'Yuk, kita belajar menghitung 11 sampai 15 bareng Upe dan Kira!',
+    tujuan: ['Menghitung benda 11 sampai 15 🌸', 'Menulis angka belasan dengan mudah ✏️'],
+    badgeEmoji: '🌸',
+    badgeNama: 'Penghitung Belasan',
+    sections: [
+      {
+        judul: 'Ayo Menghitung 11 sampai 15!',
+        konten: `<p>Upe sedang memetik bunga cantik di halaman. 🏡</p>
+<p>Bunganya banyak sekali! Ayo bantu Upe menghitung semuanya! 🌸</p>
+<p class="emoji-large">🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸</p>
+<p>Mari hitung: satu, dua... sepuluh, sebelas, dua belas, tiga belas! Ada <strong>13</strong> bunga!</p>
+<p>Cara membaca angka belasan:</p>
+<ul style="padding-left: 20px;">
+  <li><code>11</code> dibaca sebelas</li>
+  <li><code>12</code> dibaca dua belas</li>
+  <li><code>13</code> dibaca tiga belas</li>
+  <li><code>14</code> dibaca empat belas</li>
+  <li><code>15</code> dibaca lima belas</li>
+</ul>`,
+        quiz: {
+          soal: 'Kira menata mainan kelereng: 🔮 🔮 🔮 🔮 🔮 🔮 🔮 🔮 🔮 🔮 🔮 🔮. Ada berapa kelereng?',
+          pilihan: ['11 kelereng', '12 kelereng', '13 kelereng'],
+          jawabanIdx: 1
+        }
+      },
+      {
+        judul: 'Menulis Angka 11 sampai 15',
+        konten: `<p>Menulis belasan itu seru! Angka 1 selalu berdiri di depan. ✏️</p>
+<p>Trik menulisnya:</p>
+<ul style="padding-left: 20px;">
+  <li><strong>sebelas</strong> = angka 1 dan 1 (seperti dua tiang listrik) 🗼🗼</li>
+  <li><strong>dua belas</strong> = angka 1 di depan dan 2 di belakang 🦆</li>
+  <li><strong>tiga belas</strong> = angka 1 di depan dan 3 di belakang 🐦</li>
+  <li><strong>empat belas</strong> = angka 1 di depan dan 4 di belakang 🪑</li>
+  <li><strong>lima belas</strong> = angka 1 di depan dan 5 di belakang 🤡</li>
+</ul>`,
+        quiz: {
+          soal: 'Bagaimana cara menulis angka "lima belas"?',
+          pilihan: ['51', '15', '105'],
+          jawabanIdx: 1
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-11',
+    judul: 'Bilangan 16–20',
+    emoji: '🔢',
+    deskripsi: 'Ayo kita berhitung 16 sampai 20 dengan jari tangan dan kaki!',
+    tujuan: ['Menghitung benda 16 sampai 20 🚗', 'Berhitung memakai jari tangan dan jari kaki 🖐️'],
+    badgeEmoji: '🔢',
+    badgeNama: 'Master Dua Puluh',
+    sections: [
+      {
+        judul: 'Ayo Menghitung 16 sampai 20!',
+        konten: `<p>Kira punya banyak stiker binatang yang lucu. 🐱</p>
+<p>Mari kita hitung stiker Kira bersama-sama! 🦁</p>
+<p class="emoji-large">🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁</p>
+<p>Ayo berhitung: sepuluh... lima belas, enam belas, tujuh belas, delapan belas! Ada <strong>18</strong> stiker!</p>
+<p>Cara membaca angka belasan besar:</p>
+<ul style="padding-left: 20px;">
+  <li><code>16</code> dibaca enam belas</li>
+  <li><code>17</code> dibaca tujuh belas</li>
+  <li><code>18</code> dibaca delapan belas</li>
+  <li><code>19</code> dibaca sembilan belas</li>
+  <li><code>20</code> dibaca dua puluh</li>
+</ul>`,
+        quiz: {
+          soal: 'Tika punya permen karet: 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬 🍬. Ada berapa permen karet?',
+          pilihan: ['17 permen', '18 permen', '19 permen'],
+          jawabanIdx: 0
+        }
+      },
+      {
+        judul: 'Jari Tangan dan Jari Kaki!',
+        konten: `<p>Ayo kita hitung total jari tubuh kita! 🖐️🦶</p>
+<p>Sepuluh jari tangan digabung dengan sepuluh jari kaki.</p>
+<p>Mari hitung: 10 jari tangan ditambah 10 jari kaki menjadi <strong>20</strong> jari semuanya! 🖐️🦶</p>
+<p>Wow! Kita punya 20 alat hitung alami di tubuh kita! Keren sekali! 😎</p>`,
+        quiz: {
+          soal: 'Bagaimana cara menulis angka "dua puluh"?',
+          pilihan: ['12', '20', '210'],
+          jawabanIdx: 1
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-12',
+    judul: 'Penjumlahan sampai 20',
+    emoji: '➕',
+    deskripsi: 'Menggabungkan mainan dan makanan seru. Penjumlahan itu gampang!',
+    tujuan: ['Menjumlahkan angka belasan tanpa menyimpan 🧸', 'Menggunakan trik teman 10 untuk penjumlahan ➕'],
+    badgeEmoji: '➕',
+    badgeNama: 'Juru Tambah Belasan',
+    sections: [
+      {
+        judul: 'Tambah Belasan Tanpa Menyimpan',
+        konten: `<p>Upe membawa 12 biskuit cokelat manis di piring. 🍪</p>
+<p>Kira datang dan memberikan 3 biskuit lagi. 🍪🍪🍪</p>
+<p>Ayo hitung totalnya: 12 di kepala, hitung maju 3 langkah: <strong>13, 14, 15!</strong></p>
+<p>Jadi, <code>12 + 3 = 15</code>. Ingat angka besar di kepala, hitung maju angka kecilnya! 🧗‍♂️</p>`,
+        quiz: {
+          soal: 'Berapakah hasil dari 14 + 4 dengan menghitung maju dari 14?',
+          pilihan: ['17', '18', '19'],
+          jawabanIdx: 1
+        }
+      },
+      {
+        judul: 'Trik Cari Teman 10',
+        konten: `<p>Ayo kita belajar cara menjumlahkan angka lewat 10! ➕</p>
+<p>Misalnya kita mau menghitung <code>8 + 7</code>:</p>
+<ol style="padding-left: 20px;">
+  <li>Angka 8 butuh berapa biar jadi 10? Butuh <strong>2</strong>! 🤝</li>
+  <li>Pinjam 2 dari angka 7. Maka 7 sisa <strong>5</strong>.</li>
+  <li>Jadinya: 8 + 2 = 10, lalu 10 + 5 = <strong>15</strong>!</li>
+</ol>
+<p>Wah, penjumlahan besar jadi gampang sekali kalau dibuat jadi 10 dulu! 🌟</p>`,
+        quiz: {
+          soal: 'Hitunglah 9 + 6 dengan meminjam 1 dari 6 untuk menjadikan 9 jadi 10!',
+          pilihan: ['14', '15', '16'],
+          jawabanIdx: 1
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-13',
+    judul: 'Pengurangan sampai 20',
+    emoji: '➖',
+    deskripsi: 'Mengambil biskuit dan mainan. Pengurangan itu seru!',
+    tujuan: ['Mengurangi angka belasan tanpa meminjam 🍪', 'Menggunakan trik pecah 10 untuk pengurangan ➖'],
+    badgeEmoji: '➖',
+    badgeNama: 'Juru Kurang Belasan',
+    sections: [
+      {
+        judul: 'Kurang Belasan Tanpa Meminjam',
+        konten: `<p>Malosi membawa 18 lolipop warna-warni. 🍭</p>
+<p>Lalu ia bagikan 5 lolipop kepada Tika. 🍭🍭🍭🍭🍭</p>
+<p>Berapa sisa lolipop Malosi? Ingat 18 di kepala, hitung mundur 5 langkah: <strong>17, 16, 15, 14, 13!</strong></p>
+<p>Jadi, <code>18 - 5 = 13</code>. Gampang sekali kan! 🎯</p>`,
+        quiz: {
+          soal: 'Berapakah hasil dari 16 − 4 dengan menghitung mundur dari 16?',
+          pilihan: ['12', '13', '14'],
+          jawabanIdx: 0
+        }
+      },
+      {
+        judul: 'Trik Pecah 10',
+        konten: `<p>Ayo belajar trik memecah angka 10 untuk pengurangan besar! ➖</p>
+<p>Misalnya kita mau menghitung <code>15 − 8</code>:</p>
+<ol style="padding-left: 20px;">
+  <li>Pecah 15 menjadi <strong>10 dan 5</strong>. 📦</li>
+  <li>Kurangi angka 10 dulu: 10 − 8 = <strong>2</strong>.</li>
+  <li>Tambahkan sisa 2 dengan 5 tadi: 2 + 5 = <strong>7</strong>!</li>
+</ol>
+<p>Jadi, <code>15 - 8 = 7</code>. Memecah 10 bikin hitung mundur jadi cepat! 🔄</p>`,
+        quiz: {
+          soal: 'Hitunglah 13 − 7 dengan memecah 13 menjadi 10 dan 3, lalu 10 − 7 = 3, lalu 3 + 3 = ...',
+          pilihan: ['5', '6', '7'],
+          jawabanIdx: 1
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-14',
+    judul: 'Lebih dari, Kurang dari, Selisih',
+    emoji: '⚖️',
+    deskripsi: 'Membandingkan hasil operasi dan mencari bedanya!',
+    tujuan: ['Membandingkan hasil dua penjumlahan/pengurangan ⚖️', 'Menghitung beda (selisih) jumlah benda 🌸'],
+    badgeEmoji: '⚖️',
+    badgeNama: 'Juru Banding Lanjut',
+    sections: [
+      {
+        judul: 'Bandingkan Hasil Hitung!',
+        konten: `<p>Ayo bandingkan dua kotak hasil hitungan! ⚖️</p>
+<ul style="padding-left: 20px;">
+  <li>Kotak A: <code>12 + 5 = 17</code> 🔴</li>
+  <li>Kotak B: <code>8 + 6 = 14</code> 🔵</li>
+</ul>
+<p>Karena 17 lebih besar dari 14, maka hasil Kotak A adalah <strong>lebih dari</strong> Kotak B! 👑</p>`,
+        quiz: {
+          soal: 'Kotak X berisi 15 - 3 = 12. Kotak Y berisi 10 + 5 = 15. Kotak X adalah...',
+          pilihan: ['Lebih dari Kotak Y', 'Kurang dari Kotak Y', 'Sama dengan Kotak Y'],
+          jawabanIdx: 1
+        }
+      },
+      {
+        judul: 'Mencari Bedanya (Selisih)',
+        konten: `<p>Upe menggambar 15 bintang kuning. 🌟</p>
+<p>Kira menggambar 9 bintang kuning. 🌟</p>
+<p>Berapa banyak bedanya bintang Upe dan Kira? Coba kurangi angka besar dengan yang kecil:</p>
+<p><code>15 - 9 = 6</code>.</p>
+<p>Bintang Upe punya <strong>beda 6</strong> buah lebih banyak dari bintang Kira! 🌸</p>`,
+        quiz: {
+          soal: 'Tika punya 12 permen. Malosi punya 8 permen. Berapa beda jumlah permen mereka?',
+          pilihan: ['3 permen', '4 permen', '5 permen'],
+          jawabanIdx: 1
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-15',
+    judul: 'Membandingkan Panjang',
+    emoji: '📏',
+    deskripsi: 'Lebih panjang, lebih pendek, sama panjang, paling panjang, paling pendek!',
+    tujuan: ['Menentukan benda yang lebih panjang atau pendek 🖍️', 'Menemukan benda yang paling panjang atau paling pendek 📏'],
+    badgeEmoji: '📏',
+    badgeNama: 'Juru Ukur Cilik',
+    sections: [
+      {
+        judul: 'Lebih Panjang dan Lebih Pendek',
+        konten: `<p>Upe membawa sebuah pensil kayu baru yang belum diruncing. 🖍️</p>
+<p>Kira membawa sebuah krayon warna biru yang sudah sering dipakai. 🖍️</p>
+<p>Jika diletakkan sejajar, pensil Upe terlihat lebih maju ujungnya.</p>
+<p>Artinya, pensil Upe <strong>lebih panjang</strong> dari krayon Kira. Krayon Kira <strong>lebih pendek</strong> dari pensil Upe! 📏</p>`,
+        quiz: {
+          soal: 'Penggaris panjang 30 cm dibandingkan dengan penghapus karet kecil. Penghapus karet adalah...',
+          pilihan: ['Lebih panjang', 'Lebih pendek', 'Sama panjang'],
+          jawabanIdx: 1
+        }
+      },
+      {
+        judul: 'Paling Panjang dan Paling Pendek',
+        konten: `<p>Ayo jejerkan 3 buah benda di mejamu! 📏</p>
+<ul style="padding-left: 20px;">
+  <li>Penggaris besi (sangat molor ke kanan) 📏</li>
+  <li>Spidol warna 🖊️</li>
+  <li>Klip kertas kecil 📎</li>
+</ul>
+<p>Penggaris besi adalah yang <strong>paling panjang</strong>. Klip kertas adalah yang <strong>paling pendek</strong>! 🥇</p>`,
+        quiz: {
+          soal: 'Di antara: (A) Kereta api, (B) Mobil, (C) Sepeda. Kendaraan mana yang PALING PANJANG?',
+          pilihan: ['Kereta api', 'Mobil', 'Sepeda'],
+          jawabanIdx: 0
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-16',
+    judul: 'Mengukur dengan Benda Tidak Baku',
+    emoji: '🦶',
+    deskripsi: 'Mengukur panjang menggunakan jengkal, kaki, pensil!',
+    tujuan: ['Mengukur panjang memakai jengkal tangan dan langkah kaki 🦶', 'Memahami bahwa hasil ukur orang bisa berbeda-beda 📏'],
+    badgeEmoji: '🦶',
+    badgeNama: 'Juru Jengkal',
+    sections: [
+      {
+        judul: 'Ukur Pakai Jengkal dan Langkah',
+        konten: `<p>Kita bisa mengukur panjang benda tanpa penggaris besi lho! 😮</p>
+<p>Caranya pakai anggota tubuh kita:</p>
+<ul style="padding-left: 20px;">
+  <li><strong>Jengkal</strong> = rentangan jari jempol sampai jari kelingkingmu. 🖐️</li>
+  <li><strong>Langkah</strong> = jarak satu langkah kakimu saat berjalan biasa. 🚶‍♂️</li>
+</ul>
+<p>Misalnya, lebar meja belajarmu adalah 4 jengkal tanganmu! 📏</p>`,
+        quiz: {
+          soal: 'Kira berjalan dari pintu kamar ke kasur. Jaraknya dihitung dengan...',
+          pilihan: ['Jengkal tangan', 'Langkah kaki', 'Pensil'],
+          jawabanIdx: 1
+        }
+      },
+      {
+        judul: 'Mengapa Hasilnya Beda?',
+        konten: `<p>Tangan Upe kecil, tangan Ayah besar. 🖐️👨</p>
+<p>Saat mengukur meja yang sama:</p>
+<ul style="padding-left: 20px;">
+  <li>Meja = 6 jengkal Upe (karena tangannya kecil).</li>
+  <li>Meja = 4 jengkal Ayah (karena tangannya lebar).</li>
+</ul>
+<p>Wah! Mengukur pakai tubuh hasilnya bisa <strong>berbeda-beda</strong> karena ukuran tubuh setiap orang tidak sama! 🌟</p>`,
+        quiz: {
+          soal: 'Siapa yang butuh jengkal LEBIH BANYAK untuk mengukur buku yang sama?',
+          pilihan: ['Adik bayi (tangan kecil)', 'Kakak kelas 6 (tangan besar)', 'Sama saja'],
+          jawabanIdx: 0
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-17',
+    judul: 'Mengelompokkan Data',
+    emoji: '📋',
+    deskripsi: 'Membuat daftar dan tabel sederhana dari mainan kesukaan!',
+    tujuan: ['Membuat daftar data sederhana 📋', 'Membaca tabel baris dan kolom 📊'],
+    badgeEmoji: '📋',
+    badgeNama: 'Juru Daftar',
+    sections: [
+      {
+        judul: 'Membuat Daftar Sederhana',
+        konten: `<p>Upe bertanya ke 6 temannya tentang warna baju kesukaan mereka. 📋</p>
+<p>Upe mencatatnya dalam daftar:</p>
+<ul style="padding-left: 20px;">
+  <li>Merah: 3 anak 🔴🔴🔴</li>
+  <li>Biru: 2 anak 🔵🔵</li>
+  <li>Kuning: 1 anak 🟡</li>
+</ul>
+<p>Daftar membantu kita melihat informasi dengan sangat jelas! 🌟</p>`,
+        quiz: {
+          soal: 'Dari daftar baju di atas, warna baju apa yang paling banyak disukai teman Upe?',
+          pilihan: ['Merah', 'Biru', 'Kuning'],
+          jawabanIdx: 0
+        }
+      },
+      {
+        judul: 'Membaca Tabel Sederhana',
+        konten: `<p>Tabel adalah daftar yang memiliki baris mendatar dan kolom tegak. 📊</p>
+<p>Contoh tabel buah di kulkas Upe:</p>
+<table style="width: 100%; border: 2px solid #ccc; text-align: center; font-size: 18px;">
+  <tr style="background:#e3f2fd;"><th>Buah</th><th>Jumlah</th></tr>
+  <tr><td>Apel 🍎</td><td>5</td></tr>
+  <tr><td>Pisang 🍌</td><td>3</td></tr>
+</table>
+<p>Dari tabel, kita tahu ada 5 apel dan 3 pisang! Sangat rapi! 🍎🍌</p>`,
+        quiz: {
+          soal: 'Berapa jumlah buah pisang yang ada di kulkas Upe berdasarkan tabel di atas?',
+          pilihan: ['5 buah', '3 buah', '8 buah'],
+          jawabanIdx: 1
+        }
+      }
+    ]
+  },
+  {
+    id: 'k1-mtk-18',
+    judul: 'Diagram Gambar Sederhana',
+    emoji: '🎨',
+    deskripsi: 'Piktogram dengan gambar/emoji yang seru!',
+    tujuan: ['Membaca diagram gambar sederhana 🐱', 'Membuat diagram gambar dari data mainan 🎨'],
+    badgeEmoji: '🎨',
+    badgeNama: 'Ilustrator Data Cilik',
+    sections: [
+      {
+        judul: 'Membaca Diagram Gambar',
+        konten: `<p>Diagram gambar (piktogram) memakai simbol lucu untuk menunjukkan jumlah! 🐱🐶</p>
+<p>Contoh diagram hewan peliharaan di rumah Kira:</p>
+<ul style="padding-left: 20px;">
+  <li>Kucing: 🐱 🐱 🐱 (artinya ada 3 kucing)</li>
+  <li>Anjing: 🐶 🐶 (artinya ada 2 anjing)</li>
+</ul>
+<p>Kita bisa langsung melihat bahwa kucing <strong>lebih banyak</strong> dari anjing! 🐱</p>`,
+        quiz: {
+          soal: 'Berapa jumlah anjing peliharaan Kira berdasarkan gambar di atas?',
+          pilihan: ['2 anjing', '3 anjing', '5 anjing'],
+          jawabanIdx: 0
+        }
+      },
+      {
+        judul: 'Ayo Membuat Diagram Gambar!',
+        konten: `<p>Kira punya 4 robot mainan 🤖 dan 3 mobil mainan 🚗.</p>
+<p>Mari kita buat diagram gambarnya agar indah:</p>
+<ul style="padding-left: 20px;">
+  <li>Robot: 🤖 🤖 🤖 🤖</li>
+  <li>Mobil: 🚗 🚗 🚗</li>
+</ul>
+<p>Keren kan! Gambar membuat matematika jadi sangat menyenangkan! 🎨</p>`,
+        quiz: {
+          soal: 'Jika kita ingin menambahkan data "2 boneka beruang" ke diagram di atas, gambar apa yang harus ditaruh?',
+          pilihan: ['🤖 🤖', '🚗 🚗', '🧸 🧸'],
+          jawabanIdx: 2
         }
       }
     ]

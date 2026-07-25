@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Penjumlahan sampai 20 — Kelas 1</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="mtk" data-materi="k1-mtk-12" style="background-color: #E8F5E9; --bg: #E8F5E9;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">➕</div>
+        <h1 style="color: #c2185b; margin:0 0 8px 0; font-size: 28px;">Penjumlahan sampai 20</h1>
+        <p style="color: #666; font-size: 20px;">Matematika — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Menggabungkan mainan dan makanan seru. Penjumlahan itu gampang! 🎀🧸</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <ul style="padding-left: 20px;">
+          <li>Menjumlahkan angka belasan tanpa menyimpan 🧸</li><li>Menggunakan trik teman 10 untuk penjumlahan ➕</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Tambah Belasan Tanpa Menyimpan <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Upe membawa 12 biskuit cokelat manis di piring. 🍪</p>
+<p>Kira datang dan memberikan 3 biskuit lagi. 🍪🍪🍪</p>
+<p>Ayo hitung totalnya: 12 di kepala, hitung maju 3 langkah: <strong>13, 14, 15!</strong></p>
+<p>Jadi, <code>12 + 3 = 15</code>. Ingat angka besar di kepala, hitung maju angka kecilnya! 🧗‍♂️</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Berapakah hasil dari 14 + 4 dengan menghitung maju dari 14?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">17</button><button class="quiz-opt" data-opt="1">18</button><button class="quiz-opt" data-opt="2">19</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Trik Cari Teman 10 <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Ayo kita belajar cara menjumlahkan angka lewat 10! ➕</p>
+<p>Misalnya kita mau menghitung <code>8 + 7</code>:</p>
+<ol style="padding-left: 20px;">
+  <li>Angka 8 butuh berapa biar jadi 10? Butuh <strong>2</strong>! 🤝</li>
+  <li>Pinjam 2 dari angka 7. Maka 7 sisa <strong>5</strong>.</li>
+  <li>Jadinya: 8 + 2 = 10, lalu 10 + 5 = <strong>15</strong>!</li>
+</ol>
+<p>Wah, penjumlahan besar jadi gampang sekali kalau dibuat jadi 10 dulu! 🌟</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Hitunglah 9 + 6 dengan meminjam 1 dari 6 untuk menjadikan 9 jadi 10!</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">14</button><button class="quiz-opt" data-opt="1">15</button><button class="quiz-opt" data-opt="2">16</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">➕</div>
+        <p style="font-weight:bold; color: #c2185b; font-size: 24px;">Juru Tambah Belasan</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kirim! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 2)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku kakak kelasmu. Mau tanya soal Penjumlahan sampai 20? Yuk, kita hitung bareng-bareng! 🧸🎉</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [1, 1];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

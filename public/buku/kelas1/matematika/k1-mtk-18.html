@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Diagram Gambar Sederhana — Kelas 1</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="mtk" data-materi="k1-mtk-18" style="background-color: #FFF3E0; --bg: #FFF3E0;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+  
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">🎨</div>
+        <h1 style="color: #c2185b; margin:0 0 8px 0; font-size: 28px;">Diagram Gambar Sederhana</h1>
+        <p style="color: #666; font-size: 20px;">Matematika — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Piktogram dengan gambar/emoji yang seru! 🎀🧸</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <ul style="padding-left: 20px;">
+          <li>Membaca diagram gambar sederhana 🐱</li><li>Membuat diagram gambar dari data mainan 🎨</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Membaca Diagram Gambar <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Diagram gambar (piktogram) memakai simbol lucu untuk menunjukkan jumlah! 🐱🐶</p>
+<p>Contoh diagram hewan peliharaan di rumah Kira:</p>
+<ul style="padding-left: 20px;">
+  <li>Kucing: 🐱 🐱 🐱 (artinya ada 3 kucing)</li>
+  <li>Anjing: 🐶 🐶 (artinya ada 2 anjing)</li>
+</ul>
+<p>Kita bisa langsung melihat bahwa kucing <strong>lebih banyak</strong> dari anjing! 🐱</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Berapa jumlah anjing peliharaan Kira berdasarkan gambar di atas?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">2 anjing</button><button class="quiz-opt" data-opt="1">3 anjing</button><button class="quiz-opt" data-opt="2">5 anjing</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Ayo Membuat Diagram Gambar! <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>Kira punya 4 robot mainan 🤖 dan 3 mobil mainan 🚗.</p>
+<p>Mari kita buat diagram gambarnya agar indah:</p>
+<ul style="padding-left: 20px;">
+  <li>Robot: 🤖 🤖 🤖 🤖</li>
+  <li>Mobil: 🚗 🚗 🚗</li>
+</ul>
+<p>Keren kan! Gambar membuat matematika jadi sangat menyenangkan! 🎨</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Coba tebak:</p>
+          <p style="font-size: 20px;">Jika kita ingin menambahkan data "2 boneka beruang" ke diagram di atas, gambar apa yang harus ditaruh?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">🤖 🤖</button><button class="quiz-opt" data-opt="1">🚗 🚗</button><button class="quiz-opt" data-opt="2">🧸 🧸</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">🎨</div>
+        <p style="font-weight:bold; color: #c2185b; font-size: 24px;">Ilustrator Data Cilik</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kirim! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 2)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku kakak kelasmu. Mau tanya soal Diagram Gambar Sederhana? Yuk, kita hitung bareng-bareng! 🧸🎉</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [0, 2];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
