@@ -87,11 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById('ai-input');
     const msg = input.value.trim();
     if (!msg) return;
-    
+
     const msgsContainer = document.querySelector('.ai-msgs');
-    msgsContainer.innerHTML += `<div class="msg user">${msg}</div>`;
+
+    // XSS fix: escape HTML
+    const escMsg = msg.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    msgsContainer.innerHTML += `<div class="msg user">${escMsg}</div>`;
     input.value = '';
-    
+
     const typingId = "typing-" + Date.now();
     msgsContainer.innerHTML += `<div id="${typingId}" class="msg ai typing">Mengetik...</div>`;
     msgsContainer.scrollTop = msgsContainer.scrollHeight;
@@ -100,17 +103,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const res = await fetch('/api/ai-tutor', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          message: msg, 
-          kelas: document.body.dataset.kelas, 
-          materi: document.body.dataset.materi 
+        body: JSON.stringify({
+          message: msg,
+          kelas: document.body.dataset.kelas,
+          materi: document.body.dataset.materi
         })
       });
       const data = await res.json();
-      
+
       const typingElem = document.getElementById(typingId);
       if (typingElem) typingElem.remove();
-      msgsContainer.innerHTML += `<div class="msg ai">${data.reply || "Maaf AI sedang istirahat."}</div>`;
+
+      // XSS fix: escape response as well
+      const escRes = data.reply ? data.reply.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;') : "Maaf AI sedang istirahat.";
+      msgsContainer.innerHTML += `<div class="msg ai">${escRes}</div>`;
     } catch (e) {
       const typingElem = document.getElementById(typingId);
       if (typingElem) typingElem.remove();
