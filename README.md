@@ -44,6 +44,13 @@ adb install android/app/release/app-release.apk
 - ✅ Deep linking dari URL tugas
 - ✅ Back button Android native
 
+### Native feel checklist (Android)
+- Status bar indigo; splash hides after load
+- Back on root shows Keluar/Batal (not instant exit)
+- Offline banner sits below status bar / notch
+- Book progress bar and AI chat clear of notch and home indicator
+- Desktop browser: no Capacitor console errors
+
 ## Setup lokal
 
 ```bash
