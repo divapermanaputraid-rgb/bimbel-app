@@ -3,98 +3,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Mengonstruksi &amp; Mengurai Kubus/Balok — Kelas 6</title>
+  <title>Mengonstruksi & Mengurai Kubus/Balok — Kelas 6</title>
   <link rel="stylesheet" href="/assets/book-theme.css">
 </head>
 <body class="kelas6" data-kelas="6" data-pelajaran="mtk" data-materi="k6-mtk-13">
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
         <div style="font-size: 80px; margin-bottom: 16px;">📦</div>
-        <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Mengonstruksi &amp; Mengurai Kubus/Balok</h1>
+        <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Mengonstruksi & Mengurai Kubus/Balok</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Mari membongkar dan memasang kotak kardus! 📐</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy({ top: 300, behavior: 'smooth' });">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Membongkar kotak kardus dan merakitnya kembali! 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Mengenal sifat kubus &amp; balok</li><li>Memahami jaring-jaring</li>
+          <li>Menyebutkan bagian-bagian kubus dan balok (sisi, rusuk, titik sudut)</li>
+          <li>Memahami apa itu jaring-jaring bangun ruang</li>
+          <li>Mengenali pola jaring-jaring kubus dan balok yang benar</li>
+          <li>Menghitung volume/isi sederhana dengan kubus satuan</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Sifat Kubus dan Balok <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Mengenal Bagian Kotak <span>▼</span></div>
       <div class="section-body">
-        <p>Kubus memiliki 6 sisi (berbentuk persegi), 12 rusuk, dan 8 titik sudut. Begitu pula balok, hanya saja sisinya persegi panjang.</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Berapa banyak rusuk yang dimiliki balok?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">8</button><button class="quiz-opt" data-opt="1">12</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Jaring-jaring Bangun Ruang <span>▼</span></div>
-      <div class="section-body">
-        <p>Jika kubus digunting pada rusuknya dan dilebarkan, akan terbentuk jaring-jaring. Ada 11 pola berbeda lho!</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Berapa jumlah persegi pada jaring-jaring kubus?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">6</button><button class="quiz-opt" data-opt="1">8</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Lihat kotak kardus di sekitarmu! Kotak adalah bangun ruang 3 dimensi.</p>
+        <p><strong>Kubus</strong> adalah kotak yang semua sisinya berbentuk persegi (sama besar persis), contohnya dadu atau Rubik.</p>
+        <p><strong>Balok</strong> adalah kotak yang sisi-sisinya berbentuk persegi panjang (ada yang panjang, lebar, dan tinggi), contohnya kotak sepatu atau lemari.</p>
+        <p>Setiap kubus dan balok punya: <strong>6 sisi</strong> (dinding/atap/lantai), <strong>12 rusuk</strong> (garis tiang), dan <strong>8 titik sudut</strong> (pojokan runcing).</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh hitung sudut di kamar:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Lihat atap kamarmu: ada 4 pojokan di atas.</li>
+            <li>Lihat lantai kamarmu: ada 4 pojokan di bawah.</li>
+            <li>Total titik sudut = 4 + 4 = <strong>8 titik sudut</strong>!</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Berapa banyak jumlah sisi (permukaan datar) yang dimiliki oleh sebuah kubus dadu?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">4 sisi</button>
+            <button class="quiz-opt" data-opt="1">6 sisi</button>
+            <button class="quiz-opt" data-opt="2">8 sisi</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Perbedaan utama antara Kubus dan Balok adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Balok punya sisi lebih banyak dari kubus</button>
+            <button class="quiz-opt" data-opt="1">Kubus semua sisinya sama besar (persegi), sedangkan balok dari persegi panjang</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Membongkar Kardus (Jaring-Jaring) <span>▼</span></div>
+      <div class="section-body">
+        <p>Kalau kamu mengambil sebuah kotak kardus bekas, lalu menggunting rusuk-rusuknya (tapi tidak sampai putus) dan membentangkannya di lantai sampai rata, itu disebut <strong>Mengurai (Jaring-jaring)</strong>.</p>
+        <p><strong>Jaring-jaring</strong> adalah bentangan bentuk 2 dimensi yang kalau dilipat-lipat akan kembali membentuk bangun 3 dimensi.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Bayangkan lipatan:</strong></p>
+          <p>Karena kubus punya 6 sisi, maka jaring-jaring kubus HARUS terdiri dari tepat <strong>6 buah kotak persegi</strong> yang bergandengan.</p>
+          <p>Kalau kotaknya cuma ada 5, saat dilipat nanti pasti ada lubang (tidak ada tutupnya)!</p>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Sebuah gambar bentangan jaring-jaring kubus yang sempurna wajib memiliki berapa buah persegi datar?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">4 persegi</button>
+            <button class="quiz-opt" data-opt="1">6 persegi</button>
+            <button class="quiz-opt" data-opt="2">8 persegi</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Proses membentangkan bangun ruang menjadi datar di lantai disebut...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Membuat Jaring-jaring</button>
+            <button class="quiz-opt" data-opt="1">Menghitung Volume</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Pola Lipatan yang Benar <span>▼</span></div>
+      <div class="section-body">
+        <p>Tidak semua 6 kotak persegi yang digabung bisa dilipat jadi kubus! Kalau posisinya salah, saat dilipat ada 2 sisi yang bertumpuk di tempat yang sama.</p>
+        <p>Pola jaring-jaring kubus yang paling terkenal adalah pola <strong>1 - 4 - 1 (Pola Salib / Huruf T)</strong>.</p>
+        <ul style="padding-left: 20px;">
+          <li>Ada 4 kotak berderet lurus di tengah (menjadi 4 dinding sekeliling).</li>
+          <li>Ada 1 kotak menempel di atas (menjadi atap/tutup).</li>
+          <li>Ada 1 kotak menempel di bawah (menjadi alas/lantai).</li>
+        </ul>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Kalau kita menyusun 6 kotak persegi lurus memanjang satu baris seperti kereta api (1 - 1 - 1 - 1 - 1 - 1), apakah bisa dilipat jadi kubus?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Bisa</button>
+            <button class="quiz-opt" data-opt="1">Tidak bisa (nanti bertumpuk melingkar tanpa alas dan tutup)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Dalam pola jaring-jaring kubus 1 - 4 - 1, kotak tunggal di atas dan di bawah akan berfungsi sebagai apa saat dilipat?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Sebagai dinding kiri dan kanan</button>
+            <button class="quiz-opt" data-opt="1">Sebagai alas (lantai) dan tutup (atap)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Isi (Volume) Kubus Satuan <span>▼</span></div>
+      <div class="section-body">
+        <p>Kalau kita merakit kotak sampai tertutup rapat, di dalamnya ada ruang kosong. Kapasitas muatan ruang kosong itu disebut <strong>Volume (Isi)</strong>.</p>
+        <p>Cara membayangkan volume paling mudah adalah: berapa banyak dadu kecil (kubus satuan) yang bisa dimasukkan sampai kotak itu penuh?</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Cara hitung volume:</strong></p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Lihat alasnya: ada berapa baris dan berapa kolom dadu? (Panjang × Lebar).</li>
+            <li>Lihat tingginya: ada berapa tumpuk/lantai ke atas? (Tinggi).</li>
+            <li>Kalikan semuanya: <strong>Panjang × Lebar × Tinggi</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Sebuah kotak balok muat 4 kubus satuan memanjang, 2 kubus melebar, dan tumpukannya 2 lantai ke atas (4 × 2 × 2). Berapa total kubus satuan di dalamnya?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">8 kubus</button>
+            <button class="quiz-opt" data-opt="1">16 kubus</button>
+            <button class="quiz-opt" data-opt="2">12 kubus</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Jika kubus punya panjang rusuk 3 cm, lebar 3 cm, dan tinggi 3 cm (3 × 3 × 3), volumenya adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">9</button>
+            <button class="quiz-opt" data-opt="1">27</button>
+            <button class="quiz-opt" data-opt="2">18</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur tentang kubus dan balok! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Manakah pernyataan di bawah ini yang BENAR tentang balok?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Balok memiliki 8 sisi dan 6 titik sudut</button>
+            <button class="quiz-opt" data-opt="1">Balok memiliki 6 sisi, 12 rusuk, dan 8 titik sudut</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Jika jaring-jaring kubus dilipat tapi ternyata ada 2 sisi yang saling bertumpuk (menabrak), berarti...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Pola jaring-jaringnya salah</button>
+            <button class="quiz-opt" data-opt="1">Kubusnya kebesaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
         <div style="font-size: 64px; margin: 16px 0;">📦</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Arsitek Ruang</p>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Arsitek Kotak</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Mengonstruksi &amp; Mengurai Kubus/Balok lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi jaring-jaring kubus atau volume? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [1,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [1, 1, 1, 0, 1, 1, 1, 1, 1, 0];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
