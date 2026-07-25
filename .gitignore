@@ -7,14 +7,13 @@ node_modules/
 .agents/
 .claude/skills/
 skills-lock.json
-.superpowers
-.docs/superpowers
-.konteks
-# AI and Planning Docs
 .superpowers/
+.docs/superpowers/
 docs/superpowers/
+.konteks/
 konteks/
 QA_NOTES.md
+CLAUDE.md
 
 # Android
 /android/app/build/
