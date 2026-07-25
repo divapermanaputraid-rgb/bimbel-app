@@ -10,91 +10,242 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">🌍</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">🌂</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Membandingkan Peluang dalam Kehidupan</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Bawa payung atau tidak? Mari hitung risikonya! 🌂</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy({ top: 300, behavior: 'smooth' });">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Ramalan cuaca, kantong misteri, dan hadiah undian! 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Melihat peluang sehari-hari</li><li>Membuat keputusan dari data</li>
+          <li>Membaca ramalan cuaca sebagai angka peluang (persen)</li>
+          <li>Menghitung peluang mengambil benda tanpa melihat dalam kantong</li>
+          <li>Mengerti kenapa ikut undian itu sulit menangnya</li>
+          <li>Mengambil keputusan dengan menghitung risiko kejadian buruk</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Peluang Sehari-hari <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Ramalan Cuaca & Persen <span>▼</span></div>
       <div class="section-body">
-        <p>Jika BMKG bilang peluang hujan <code>80%</code>, itu artinya kemungkinan hujan sangat tinggi (hampir pasti), sebaiknya bawa payung!</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Kalau peluang macet 10%, artinya jalanan akan?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">Lancar (kemungkinan macet kecil)</button><button class="quiz-opt" data-opt="1">Sangat macet</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Peluang dari Data Kelompok <span>▼</span></div>
-      <div class="section-body">
-        <p>Ada 20 siswa: 12 suka matematika, 8 suka IPA. Peluang memilih anak yang suka matematika secara acak adalah <code>12/20</code> atau <code>3/5</code>.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Peluang terpilihnya anak yang suka IPA?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">8/20</button><button class="quiz-opt" data-opt="1">20/8</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Di TV atau HP, kamu pasti sering melihat gambar awan dengan tulisan <strong>"Peluang Hujan 80%"</strong>.</p>
+        <p>Persen ( % ) artinya <em>per-seratus</em>. Angka 80% sama dengan pecahan <code>80/100</code> atau desimal <code>0,8</code>.</p>
+        <p>Karena angkanya sangat dekat dengan angka 100% (kejadian Pasti), berarti hujannya <strong>sangat mungkin akan terjadi</strong>!</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Tips Membaca Cuaca:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Peluang 10% – 30%: Kemungkinan kecil hujan, santai saja.</li>
+            <li>Peluang 50%: Seimbang. Bisa hujan, bisa tidak. (Hati-hati).</li>
+            <li>Peluang 80% – 90%: Hampir pasti hujan. Bawa payung/jas hujan!</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Jika HP ibumu menunjukkan peluang hujan 20%, apakah artinya besok PASTI TIDAK akan turun hujan sama sekali (Mustahil)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ya, pasti tidak akan hujan sama sekali</button>
+            <button class="quiz-opt" data-opt="1">Bukan pasti tidak, tapi kemungkinan hujannya sangat KECIL</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Apabila berita TV berkata peluang hujan adalah 50%. Apa saran terbaik yang bisa kamu berikan ke ayah yang mau bepergian naik motor?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Tinggal jas hujan di rumah saja</button>
+            <button class="quiz-opt" data-opt="1">Sedia jas hujan karena peluangnya seimbang (bisa hujan atau tidak)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Misteri Kantong Gelap <span>▼</span></div>
+      <div class="section-body">
+        <p>Di sekolah, guru mungkin menyuruhmu mengambil satu bola mata tertutup dari dalam kantong gelap.</p>
+        <p>Peluang kamu mengambil bola warna tertentu tergantung <strong>berapa banyak bola warna itu dibanding total semua bola di kantong</strong>.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Contoh Menghitung:</strong></p>
+          <p>Dalam kantong ada <strong>2 bola Merah</strong> dan <strong>3 bola Putih</strong>. Total bola ada 5.</p>
+          <ol style="margin:0; padding-left: 20px;">
+            <li>Peluang terambil bola Merah = <code>2 dari 5</code> atau <code>⅖</code>.</li>
+            <li>Peluang terambil bola Putih = <code>3 dari 5</code> atau <code>⅗</code>.</li>
+            <li>Karena 3/5 > 2/5, kemungkinan besar tanganmu akan menarik bola Putih!</li>
+          </ol>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Di dalam kotak tertutup ada 5 permen cokelat dan 1 permen mint. Mana yang peluang terambilnya paling besar jika kamu cuma asal comot?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Permen mint (karena cuma 1)</button>
+            <button class="quiz-opt" data-opt="1">Permen cokelat (karena ada 5)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Kalau di dalam kantong semua isinya kelereng hijau (10 buah). Berapa peluang kamu asal comot dan malah dapat kelereng biru?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">0 (Mustahil)</button>
+            <button class="quiz-opt" data-opt="1">½ (Setengah)</button>
+            <button class="quiz-opt" data-opt="2">1 (Pasti)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Menang Undian (Lotere) <span>▼</span></div>
+      <div class="section-body">
+        <p>Pernah ikut undian jalan sehat atau beli kupon berhadiah HP baru? Wah, hadiahnya menggiurkan! Tapi tunggu dulu...</p>
+        <p>Peluang kamu menang undian dihitung dari <strong>berapa tiket yang kamu punya DIBAGI dengan total semua tiket yang terjual.</strong></p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Fakta Undian:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Misal kamu beli 1 tiket undian mobil. Panitia menjual 1.000 tiket.</li>
+            <li>Peluang menangnya adalah <code>1/1000</code>.</li>
+            <li>Ini setara dengan <code>0,001</code> atau <code>0,1%</code>.</li>
+            <li>Sangat dekat dengan angka 0 (Hampir Mustahil)! Makanya sangat sulit menang undian besar.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Untuk memperbesar peluang menang undian, apa yang secara matematika bisa kamu lakukan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Berdoa saja</button>
+            <button class="quiz-opt" data-opt="1">Membeli tiket lebih banyak (misal beli 50 tiket dari total 1000 tiket)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Jika kamu beli 1 tiket dan Budi beli 10 tiket (total tiket terjual 100). Peluang menang siapa yang lebih besar?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Sama besar (karena undian itu untung-untungan murni)</button>
+            <button class="quiz-opt" data-opt="1">Peluang Budi lebih besar (10/100 vs 1/100)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Menghitung Risiko <span>▼</span></div>
+      <div class="section-body">
+        <p>Kita bisa memakai peluang untuk mengambil keputusan sehari-hari agar aman dari hal buruk (risiko).</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Kasus Jajan Sembarangan:</strong></p>
+          <p>Dari 10 teman yang beli es sirup merah di pinggir jalan kotor, 6 orang langsung sakit perut.</p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Peluang sakit perut kalau jajan di situ adalah <code>6/10</code> atau <strong>60%</strong>.</li>
+            <li>Karena angka 60% itu lebih besar dari 50% (setengah), risikonya sangat tinggi! Sebaiknya jangan ikut-ikutan beli.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Dari 100 sepeda yang parkir tidak dikunci, 2 hilang dicuri (peluang hilang 2%). Apakah menurutmu tetap aman membiarkan sepedamu tidak dikunci?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lebih baik dikunci! Meskipun peluang hilangnya kecil (2%), tetap ada risiko kejadian buruk.</button>
+            <button class="quiz-opt" data-opt="1">Tidak usah dikunci (peluang hilangnya kecil sekali, cuma 2/100).</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Sebuah maskapai penerbangan membanggakan bahwa peluang pesawatnya datang tepat waktu adalah 95%. Apakah ini nilai yang bagus?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Sangat bagus! Angka 95% hampir mendekati Pasti (100%).</button>
+            <button class="quiz-opt" data-opt="1">Sangat buruk! Angka 95% sangat dekat dengan Mustahil (0%).</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur tentang peluang kehidupan! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Ada kaleng berisi 5 bola merah, 5 bola kuning, dan 5 bola hijau. Peluang terambilnya bola Kuning adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5 dari 10</button>
+            <button class="quiz-opt" data-opt="1">5 dari 15</button>
+            <button class="quiz-opt" data-opt="2">1 dari 5</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Sebuah acara membagikan 1 motor. Ratusan ribu orang ikut mengumpulkan bungkus kopi. Peluang seseorang memenangkan motor itu adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Hampir pasti (Mendekati 1)</button>
+            <button class="quiz-opt" data-opt="1">Hampir mustahil (Mendekati 0)</button>
+            <button class="quiz-opt" data-opt="2">Seimbang (Mendekati ½)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">🌍</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Analis Kehidupan</p>
+        <div style="font-size: 64px; margin: 16px 0;">🌂</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Pemikir Logis</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Membandingkan Peluang dalam Kehidupan lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi peluang dalam kehidupan sehari-hari? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [1, 1, 1, 0, 1, 1, 0, 0, 1, 1];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
