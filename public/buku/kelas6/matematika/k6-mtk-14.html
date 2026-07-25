@@ -10,91 +10,231 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">👁️</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">📸</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Visualisasi Spasial</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Melihat benda dari berbagai arah. 📸</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy({ top: 300, behavior: 'smooth' });">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Membayangkan benda 3D dilihat dari berbagai arah! 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Melihat tampak atas, depan, dan samping</li><li>Menentukan ukuran dari tampak perspektif</li>
+          <li>Membayangkan pandangan dari Depan, Atas, dan Samping (Proyeksi 2D)</li>
+          <li>Menggambar denah benda bertumpuk dari atas</li>
+          <li>Membayangkan irisan benda (kalau dipotong jadinya seperti apa)</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Tampak Depan, Samping, Atas <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Melihat dari Depan <span>▼</span></div>
       <div class="section-body">
-        <p>Kalau kamu melihat kubus dari atas, ia terlihat seperti sebuah persegi datar. Dari depan juga persegi!</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Tampak depan dari kotak sepatu (balok) biasanya berbentuk?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">Persegi panjang</button><button class="quiz-opt" data-opt="1">Lingkaran</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Menentukan Ukuran Tampak <span>▼</span></div>
-      <div class="section-body">
-        <p>Balok punya panjang 5, lebar 3, tinggi 2. Tampak depannya adalah <code>panjang × tinggi</code> = <code>5 × 2</code>.</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Ukuran tampak atas dari balok di atas adalah?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">5 × 3</button><button class="quiz-opt" data-opt="1">3 × 2</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Bayangkan kamu jongkok di lantai dan memotret tumpukan balok lego tepat dari depan (rata sejajar dengan matamu).</p>
+        <p>Di foto itu, kamu <strong>tidak akan bisa melihat bagian atas (atap) balok</strong>. Kamu juga tidak bisa melihat balok yang ada di belakang jika tertutup balok di depannya.</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata: Kamera Smartphone</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Kalau kamu memotret kulkas tepat dari depan pintu, hasil fotonya hanya berbentuk <strong>satu persegi panjang tinggi</strong>. Sisi samping dan atas kulkas tidak ikut terfoto!</li>
+            <li>Inilah yang disebut gambar 2 Dimensi dari pandangan depan.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Jika kamu melihat sebuah kaleng susu (tabung) sejajar lurus dari arah depan, bentuk datar 2D apa yang akan kamu lihat?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Persegi Panjang</button>
+            <button class="quiz-opt" data-opt="2">Segitiga</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Jika ada 2 balok ditumpuk, satu di depan dan satu di belakang. Balok belakang lebih PENDEK dari balok depan. Apa yang terlihat dari depan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Hanya 1 balok (yang depan)</button>
+            <button class="quiz-opt" data-opt="1">Kelihatan 2 balok bertumpuk</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Melihat dari Atas (Burung) <span>▼</span></div>
+      <div class="section-body">
+        <p>Pandangan dari atas sering disebut "Mata Burung" (Bird's-eye view) atau "Denah".</p>
+        <p>Bayangkan kamu terbang pakai helikopter melihat ke bawah. Kamu <strong>tidak bisa melihat tinggi benda atau sisi sampingnya</strong>. Yang terlihat hanya atap (permukaan paling atas) dari benda tersebut.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Bayangkan piramida Mesir:</strong></p>
+          <p>Dari samping/depan, piramida terlihat berbentuk segitiga. Tapi kalau dilihat lurus dari langit, piramida terlihat seperti <strong>persegi yang punya garis X (silang)</strong> karena atapnya mengerucut ke titik tengah.</p>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Jika kamu melihat topi ulang tahun (kerucut) persis lurus dari atas ke bawah, bentuk apa yang terlihat?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Segitiga</button>
+            <button class="quiz-opt" data-opt="1">Lingkaran (dengan titik di tengah)</button>
+            <button class="quiz-opt" data-opt="2">Persegi panjang</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Sebuah balok memanjang diletakkan di lantai. Jika difoto dari atas langit, hasilnya akan menjadi gambar 2 Dimensi berupa...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi panjang</button>
+            <button class="quiz-opt" data-opt="1">Kubus</button>
+            <button class="quiz-opt" data-opt="2">Lingkaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Melihat dari Samping <span>▼</span></div>
+      <div class="section-body">
+        <p>Sisi samping (kiri atau kanan) sama seperti melihat dari depan, tapi kita geser sudut pandang kita ke sebelah benda.</p>
+        <p>Benda yang dari depan terlihat lebar, mungkin dari samping terlihat tipis.</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh: Buku tulis diberdirikan</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Dilihat dari depan: Tampak bentuk <strong>persegi panjang yang lebar</strong> (cover buku).</li>
+            <li>Dilihat dari samping: Tampak bentuk <strong>persegi panjang yang sangat kurus/tipis</strong> (hanya sisi halaman kertas).</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Televisi layar datar yang modern di ruang tamu. Jika dilihat persis lurus dari samping kanan, ia akan terlihat seperti...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi panjang yang sangat lebar</button>
+            <button class="quiz-opt" data-opt="1">Persegi panjang tegak yang sangat tipis</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Apakah bola (seperti bola basket) bentuknya akan berubah jika dilihat dari depan, atas, maupun samping?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ya, akan berubah-ubah</button>
+            <button class="quiz-opt" data-opt="1">Tidak, selalu tampak seperti lingkaran datar</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Membayangkan Irisan <span>▼</span></div>
+      <div class="section-body">
+        <p>Kali ini uji imajinasi terberat: <strong>Irisan (Potongan)</strong>!</p>
+        <p>Bayangkan kamu punya kue ulang tahun, lalu kamu membelahnya dengan pisau. Bentuk "luka sayatan" atau penampang yang terpotong itu namanya <em>penampang irisan</em>.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Latihan imajinasi iris:</strong></p>
+          <p>Bayangkan buah apel (bola). Jika kamu membelahnya tepat di tengah menjadi dua. Bentuk bagian putih buah yang terpotong adalah sebuah <strong>Lingkaran datar</strong>.</p>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Jika kue berbentuk balok panjang dipotong tegak lurus (seperti memotong roti tawar), penampang irisannya akan berbentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi panjang (atau persegi)</button>
+            <button class="quiz-opt" data-opt="1">Lingkaran</button>
+            <button class="quiz-opt" data-opt="2">Segitiga</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Sebuah wortel berbentuk tabung (silinder) dipotong miring (serong). Bekas potongannya akan berbentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran bulat sempurna</button>
+            <button class="quiz-opt" data-opt="1">Oval / elips memanjang</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur tentang arah pandang! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Tumpukan 3 kotak kardus ke atas. Jika dilihat dari ATAS, kita akan melihat...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Tiga kotak bertumpuk tinggi</button>
+            <button class="quiz-opt" data-opt="1">Hanya 1 kotak (karena yang bawah tertutup yang atas)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Tenda kemah berbentuk prisma segitiga. Jika dilihat dari sisi DEPAN (pintu masuk), bentuknya adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Segitiga</button>
+            <button class="quiz-opt" data-opt="1">Persegi panjang</button>
+            <button class="quiz-opt" data-opt="2">Lingkaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">👁️</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Visioner Spasial</p>
+        <div style="font-size: 64px; margin: 16px 0;">📸</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Kamera 3 Dimensi</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Visualisasi Spasial lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi proyeksi arah pandang benda? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,0];
-    window._TOTAL_SECTIONS = 2;
+    window._QUIZ_ANSWERS = [1, 0, 1, 0, 1, 1, 0, 1, 1, 0];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
