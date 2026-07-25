@@ -10,106 +10,243 @@
   <div class="progress-container"><div class="progress-fill"></div></div>
   
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">⚖️</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">🗺️</div>
         <h1 style="color: #4f46e5; margin:0 0 8px 0; font-size: 26px;">Kesamaan Rasio (Rasio Senilai)</h1>
         <p style="color: #666;">Matematika — Kelas 6</p>
-        <p style="margin-top: 16px;">Kalau skalanya dibesarkan, apakah rasionya tetap sama? 🗺️</p>
-        <button class="btn" style="margin-top: 24px; background-color: #4f46e5;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,300)">Mulai Belajar! 🚀</button>
+        <p style="margin-top: 16px;">Modul 5 pertemuan: Kalau skalanya dibesarkan atau dikecilkan, apakah rasionya tetap sama? 🚀</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Mencari rasio senilai</li><li>Perkalian silang untuk membuktikan</li><li>Aplikasi resep/campuran</li>
+          <li>Memahami konsep resep yang dibesarkan (dikali)</li>
+          <li>Memahami konsep menyederhanakan rasio (dibagi)</li>
+          <li>Menggunakan aturan matematika perkalian atas dan bawah secara adil</li>
+          <li>Mengecek apakah dua rasio bernilai sama (ekuivalen)</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Rasio yang Nilainya Sama <span>▼</span></div>
+    <!-- P1 -->
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Skala Membesar (Dikali) <span>▼</span></div>
       <div class="section-body">
-        <p>Rasio <code>2:3</code> itu sama nilainya dengan <code>4:6</code> (karena sama-sama dikali 2). Ini disebut rasio senilai.</p>
-        <div class="quiz-box" data-idx="0" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Rasio 1:4 senilai dengan...</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">2:8</button><button class="quiz-opt" data-opt="1">4:1</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Cek Perkalian Silang <span>▼</span></div>
-      <div class="section-body">
-        <p>Apakah 2:3 dan 4:6 senilai? Pakai kali silang: <code>2 × 6 = 12</code> dan <code>3 × 4 = 12</code>. Hasilnya sama, berarti senilai!</p>
-        <div class="quiz-box" data-idx="1" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Apakah 3:5 dan 6:10 senilai?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">Tidak</button><button class="quiz-opt" data-opt="1">Ya</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 3: Resep &amp; Campuran <span>▼</span></div>
-      <div class="section-body">
-        <p>Resep cat: 2 liter hijau + 3 liter putih. Kalau butuh 6 liter hijau, putihnya butuh berapa? <code>2:3 = 6:?</code> → 2 dikali 3 jadi 6, maka 3 dikali 3 jadi 9 liter putih!</p>
-        <div class="quiz-box" data-idx="2" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Jika resep butuh 1 sendok gula untuk 2 gelas air (1:2). Untuk 4 gelas air butuh gula berapa?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-opt="0">2 sendok</button><button class="quiz-opt" data-opt="1">3 sendok</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
+        <p>Bila ibumu punya resep kue: "2 telur untuk 3 gelas tepung" (Rasio <code>2 : 3</code>).</p>
+        <p>Tiba-tiba ada pesanan banyak! Ibumu mau membuat <strong>2 kali lipat</strong> adonannya.</p>
+        <p>Maka telurnya harus dikali 2, tepungnya juga dikali 2. Jadinya 4 telur dan 6 gelas tepung. (Rasio <code>4 : 6</code>).</p>
 
-    <!-- Ringkasan -->
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Intinya:</strong></p>
+          <p>Rasio <code>2 : 3</code> itu <strong>SENILAI</strong> (sama rasa / proporsinya) dengan <code>4 : 6</code>. Yang satu ukuran kecil, satu ukuran besar, tapi rasa kuenya persis sama.</p>
+        </div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1:</p>
+          <p>Kalau ibu mau membuat adonan kue <strong>3 kali lipat</strong> dari resep asli (2:3), maka rasio baru telur dan tepungnya menjadi...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">6 : 9</button>
+            <button class="quiz-opt" data-opt="1">5 : 6</button>
+            <button class="quiz-opt" data-opt="2">6 : 3</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2:</p>
+          <p>Apakah rasa kue yang dihasilkan dari resep 2:3 dan resep 6:9 akan sama?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Sama (karena itu rasio senilai)</button>
+            <button class="quiz-opt" data-opt="1">Beda (karena telurnya lebih banyak)</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Aturan Adil Atas dan Bawah <span>▼</span></div>
+      <div class="section-body">
+        <p>Mencari rasio senilai itu punya <strong>satu aturan emas</strong>:</p>
+        <p>Kamu harus <strong>mengalikan (atau membagi) angka pertama dan angka kedua dengan bilangan yang sama persis!</strong> Nggak boleh beda-beda!</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh langkah:</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Rasio asli: <code>5 : 2</code></li>
+            <li>Kalikan angka pertama (5) dengan angka <strong>10</strong> → jadi 50.</li>
+            <li>Maka angka kedua (2) JUGA WAJIB dikali <strong>10</strong> → jadi 20.</li>
+            <li>Rasio senilai = <code>50 : 20</code>. Mudah kan!</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3:</p>
+          <p>Saya punya rasio <code>1 : 4</code>. Jika saya mengalikan angka depannya dengan 5 (jadinya 5), angka belakangnya harus jadi angka berapa agar senilai?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">20</button>
+            <button class="quiz-opt" data-opt="1">10</button>
+            <button class="quiz-opt" data-opt="2">9</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4:</p>
+          <p>Rasio <code>3 : 4</code> senilai dengan <code>... : 12</code>. Titik-titik itu isinya angka berapa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">6</button>
+            <button class="quiz-opt" data-opt="1">9</button>
+            <button class="quiz-opt" data-opt="2">11</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Skala Mengecil (Menyederhanakan) <span>▼</span></div>
+      <div class="section-body">
+        <p>Selain dikali, rasio juga bisa <strong>dibagi</strong> agar angkanya jadi lebih kecil dan sederhana untuk ditulis.</p>
+
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal:</strong></p>
+          <p>Di sekolah ada 100 murid laki-laki dan 150 perempuan. (Rasio <code>100 : 150</code>).</p>
+          <p>Wah panjang amat nulisnya! Ayo kita bagi sama-sama dengan angka <strong>50</strong>.</p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>100 ÷ 50 = 2</li>
+            <li>150 ÷ 50 = 3</li>
+          </ul>
+          <p>Jadi bentuk paling sederhananya adalah <code>2 : 3</code>!</p>
+        </div>
+
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5:</p>
+          <p>Sederhanakan rasio <code>20 : 30</code> dengan membagi kedua angkanya dengan 10!</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">10 : 20</button>
+            <button class="quiz-opt" data-opt="1">2 : 3</button>
+            <button class="quiz-opt" data-opt="2">4 : 6</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6:</p>
+          <p>Bentuk paling sederhana (tidak bisa dibagi rata lagi) dari rasio <code>4 : 8</code> adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">2 : 4</button>
+            <button class="quiz-opt" data-opt="1">1 : 2</button>
+            <button class="quiz-opt" data-opt="2">0 : 4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Cek Senilai atau Beda <span>▼</span></div>
+      <div class="section-body">
+        <p>Kadang guru matematika memberi dua rasio, lalu bertanya: <em>"Apakah dua rasio ini senilai?"</em></p>
+        <p>Caranya: coba kalikan angka yang kecil, atau bagi angka yang besar! Kalau hasilnya jadi SAMA PERSIS, berarti mereka <strong>senilai</strong>.</p>
+
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh:</strong></p>
+          <p>Cek apakah <code>3 : 4</code> senilai dengan <code>6 : 8</code>?</p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>3 dikali 2 = 6.</li>
+            <li>4 dikali 2 = 8.</li>
+            <li>Oh sama dengan 6 dan 8! Berarti <strong>Ya, senilai</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7:</p>
+          <p>Apakah rasio <code>1 : 5</code> senilai dengan <code>3 : 15</code> ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ya, senilai</button>
+            <button class="quiz-opt" data-opt="1">Beda, tidak senilai</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8:</p>
+          <p>Apakah rasio <code>2 : 3</code> senilai dengan <code>4 : 9</code> ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ya, senilai</button>
+            <button class="quiz-opt" data-opt="1">Beda, tidak senilai</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Uji Pemahaman Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Waktunya tes memori campur-campur! 🧠</p>
+
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9:</p>
+          <p>Di warung, Anton membeli 2 donat seharga Rp4.000 (Rasio donat ke harga = <code>2 : 4000</code>). Jika Budi membeli 5 donat dengan harga Rp10.000 (<code>5 : 10000</code>), apakah kedua harga itu senilai (sama murahnya)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ya, senilai (karena dua-duanya disederhanakan jadi 1 donat = Rp2.000)</button>
+            <button class="quiz-opt" data-opt="1">Beda, punyanya Budi lebih mahal</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+
+        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!):</p>
+          <p>Rasio <code>12 : 16</code> jika disederhanakan dengan dibagi 4 pada kedua angka akan menjadi...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">6 : 8</button>
+            <button class="quiz-opt" data-opt="1">3 : 4</button>
+            <button class="quiz-opt" data-opt="2">2 : 4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">⚖️</div>
-        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Master Rasio Senilai</p>
+        <div style="font-size: 64px; margin: 16px 0;">🗺️</div>
+        <p style="font-weight:bold; color: #4f46e5; font-size: 20px;">Pembuat Skala Rasio</p>
         <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed; background-color: #4f46e5;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
-        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua quiz dulu ya)</p>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
-      <div class="ai-header">Tutor AI (Kakak Groq)</div>
+      <div class="ai-header" style="background:#4f46e5;">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi Kesamaan Rasio (Rasio Senilai) lebih dalam? Mari kita diskusikan. 💡</div>
+        <div class="msg ai">Halo! Aku Tutor AI Kelas 6. Mau bahas materi mengecek apakah dua rasio sama besar? Mari kita diskusikan. 💡</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik pertanyaanmu di sini...">
-        <button onclick="sendToAI()">Kirim</button>
+        <button style="background:#4f46e5;" onclick="sendToAI()">Kirim</button>
       </div>
     </div>
   </div>
+
   <script>
-    window._QUIZ_ANSWERS = [0,1,0];
-    window._TOTAL_SECTIONS = 3;
+    window._QUIZ_ANSWERS = [0, 0, 0, 1, 1, 1, 0, 1, 0, 1];
+    window._TOTAL_SECTIONS = 10;
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
