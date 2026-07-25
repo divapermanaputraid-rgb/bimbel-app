@@ -8,81 +8,212 @@
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-06">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
         <div style="font-size: 80px; margin-bottom: 16px;">📖</div>
         <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Petualangan Anton dan Kelereng</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Membaca cerita dan berhitung! 🕵️‍♂️</p>
+        <p style="margin-top: 16px;">Modul 5 pertemuan — baca pelan, kerjakan kuis, kumpulkan tugas. 📖</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Mengerjakan soal cerita tambah</li><li>Mengerjakan soal cerita kurang</li>
+          <li>Membedakan soal cerita tambah dan kurang</li>
+          <li>Menemukan bilangan penting dalam cerita</li>
+          <li>Menyusun model matematika dari cerita</li>
+          <li>Menyelesaikan cerita 2 langkah sederhana</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Kelereng Anton <span>▼</span></div>
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Cerita = Soal Tersembunyi <span>▼</span></div>
       <div class="section-body">
-        <p>Anton menang 8 kelereng. Awalnya dia punya 15. Jadi: 15 + 8 = 23 kelereng! 🔴</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Siti punya 10 buku, lalu dibeli lagi 2 buku. Total buku Siti?</p>
+        <p>Soal cerita adalah cerita pendek yang menyimpan pertanyaan hitung. Jangan buru-buru hitung — <strong>baca dulu</strong>.</p>
+        <p>Langkah: (1) baca, (2) garis bawahi angka, (3) pilih + atau −, (4) hitung, (5) cek masuk akal.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Ibu beli 15 telur, lalu beli lagi 5 → ada kata “lagi” → tambah.</li>
+            <li>Ada 20 burung, terbang 4 → “terbang” = berkurang → kurang.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Kata kunci</strong></p>
+          <ul style="margin:0; padding-left:20px;">
+            <li>Tambah: lagi, total, digabung, menang, diberi.</li>
+            <li>Kurang: sisa, hilang, dimakan, terbang, dibagikan, turun.</li>
+          </ul>
+        </div>        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1</p>
+          <p>Ibu punya 20 kue, dimakan adik 5. Ditambah atau dikurang?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">12 buku</button><button class="quiz-opt" data-correct="false">8 buku</button>
+            <button class="quiz-opt" data-opt="0">Ditambah</button>
+            <button class="quiz-opt" data-opt="1">Dikurang</button>
+            <button class="quiz-opt" data-opt="2">Sama saja</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2</p>
+          <p>Budi punya 10 pensil, Ayah membelikan 5 lagi. Total pensil?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">5</button>
+            <button class="quiz-opt" data-opt="1">15</button>
+            <button class="quiz-opt" data-opt="2">20</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
       </div>
     </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Permen Budi Berkurang <span>▼</span></div>
-      <div class="section-body">
-        <p>Budi punya 30 permen, dibagikan 12 ke temannya. Sisa permen Budi adalah 18! 🍬</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Ibu bawa 20 telur, pecah 4 di jalan. Sisa telur Ibu?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">16 telur</button><button class="quiz-opt" data-correct="false">24 telur</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
 
-    <!-- Ringkasan -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Satu Langkah: Tambah <span>▼</span></div>
+      <div class="section-body">
+        <p>Cerita satu langkah cuma butuh satu operasi. Anton 18 kelereng, menang 11 → 18 + 11 = 29.</p>
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal</strong></p>
+          <ol style="margin:0; padding-left:20px;">
+            <li>Angka: 18 dan 11.</li>
+            <li>Kata “menang” = bertambah.</li>
+            <li>18 + 11 = <strong>29</strong>.</li>
+          </ol>
+        </div>        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3</p>
+          <p>Anton punya 18 kelereng. Menang 11 butir. Sekarang berapa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">29</button>
+            <button class="quiz-opt" data-opt="1">7</button>
+            <button class="quiz-opt" data-opt="2">28</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4</p>
+          <p>Anton punya 12 mobil mainan, kakak memberi 8. Total?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">18</button>
+            <button class="quiz-opt" data-opt="1">19</button>
+            <button class="quiz-opt" data-opt="2">20</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Satu Langkah: Kurang <span>▼</span></div>
+      <div class="section-body">
+        <p>Di toko 35 permen, terjual 12 → “terjual” = berkurang → 35 − 12 = 23.</p>
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal</strong></p>
+          <ol style="margin:0; padding-left:20px;">
+            <li>Angka 35 dan 12.</li>
+            <li>Kata “terjual / sisa” → kurang.</li>
+            <li>35 − 12 = <strong>23</strong>.</li>
+          </ol>
+        </div>        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5</p>
+          <p>Di toko ada 35 permen. Terjual 12. Sisa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">47</button>
+            <button class="quiz-opt" data-opt="1">23</button>
+            <button class="quiz-opt" data-opt="2">25</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6</p>
+          <p>Siti punya 30 kue, bagikan 12. Sisa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">18</button>
+            <button class="quiz-opt" data-opt="1">28</button>
+            <button class="quiz-opt" data-opt="2">42</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Dua Langkah Sederhana <span>▼</span></div>
+      <div class="section-body">
+        <p>Kadang ada <strong>dua kejadian</strong>. Anton 45 kelereng, hilang 12, lalu Ibu kasih 8.</p>
+        <p>Hitung berurutan: 45 − 12 = 33, lalu 33 + 8 = <strong>41</strong>.</p>
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal bus: 15 orang, naik 5, turun 3</strong></p>
+          <ol style="margin:0; padding-left:20px;">
+            <li>15 + 5 = 20 (naik).</li>
+            <li>20 − 3 = <strong>17</strong> (turun).</li>
+          </ol>
+        </div>        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7</p>
+          <p>Anton 45 kelereng. Hilang 12. Ibu beri 8. Total sekarang?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">33</button>
+            <button class="quiz-opt" data-opt="1">41</button>
+            <button class="quiz-opt" data-opt="2">35</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8</p>
+          <p>Di bus 15 orang. Naik 5, lalu turun 3. Berapa sekarang?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">15</button>
+            <button class="quiz-opt" data-opt="1">17</button>
+            <button class="quiz-opt" data-opt="2">23</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Baca pelan. Cari angka. Pilih + atau −. Hitung. Cek: apakah jawabannya masuk akal?</p>
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9</p>
+          <p>Ibu beli 15 telur, lalu beli lagi 5. Total telur?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">10</button>
+            <button class="quiz-opt" data-opt="1">20</button>
+            <button class="quiz-opt" data-opt="2">25</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!)</p>
+          <p>Ada 20 burung di pohon, terbang 4. Sisa burung?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">24</button>
+            <button class="quiz-opt" data-opt="1">15</button>
+            <button class="quiz-opt" data-opt="2">16</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">📖</div>
+        <div style="font-size: 64px; margin: 16px 0;">🕵️</div>
         <p style="font-weight:bold; color: #667eea; font-size: 20px;">Detektif Cerita</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Petualangan Anton dan Kelereng? 😊</div>
+        <div class="msg ai">Halo! Mau tanya soal Petualangan Anton dan Kelereng? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +221,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 1, 0, 2, 1, 0, 1, 1, 1, 2];
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>

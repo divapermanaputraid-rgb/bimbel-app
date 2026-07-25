@@ -8,81 +8,229 @@
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-05">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
         <div style="font-size: 80px; margin-bottom: 16px;">➖</div>
         <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Mengurangi dengan Mudah</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Kalau permennya dimakan, sisanya berapa ya? 😋</p>
+        <p style="margin-top: 16px;">Modul 5 pertemuan — baca pelan, kerjakan kuis, kumpulkan tugas. ➖</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Mengurang tanpa pinjam</li><li>Mengurang dengan pinjam</li>
+          <li>Mengurangi tanpa meminjam</li>
+          <li>Mengurangi dengan meminjam puluhan</li>
+          <li>Mengerjakan pengurangan bersusun</li>
+          <li>Memecahkan soal cerita pengurangan</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Mengurang Tanpa Pinjam <span>▼</span></div>
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Apa itu Mengurangi? <span>▼</span></div>
       <div class="section-body">
-        <p>Punya 20 donat, dimakan 8. Sisa 12! 🍩</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Berapa 15 - 5?</p>
+        <p>Mengurangi artinya <strong>mengambil / menghilangkan</strong> sebagian. Anton punya 15 kue, dimakan 4. Sisa = 15 − 4.</p>
+        <p>Tanda: <code>−</code>. Hasil disebut <strong>selisih</strong> atau sisa.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>15 kue − 4 dimakan = 11 sisa.</li>
+            <li>30 burung − 10 terbang = 20 di pohon.</li>
+            <li>Uang 25.000 − belanja 10.000 = sisa 15.000.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal 15 − 4</strong></p>
+          <ol style="margin:0; padding-left:20px;">
+            <li>Mulai dari 15.</li>
+            <li>Hitung mundur 4: 14, 13, 12, 11.</li>
+            <li>Hasil: <strong>11</strong>.</li>
+          </ol>
+        </div>        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1</p>
+          <p>Hasil dari 15 − 4 adalah...</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">10</button><button class="quiz-opt" data-correct="false">20</button>
+            <button class="quiz-opt" data-opt="0">10</button>
+            <button class="quiz-opt" data-opt="1">11</button>
+            <button class="quiz-opt" data-opt="2">12</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2</p>
+          <p>30 − 10 = ?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">20</button>
+            <button class="quiz-opt" data-opt="1">10</button>
+            <button class="quiz-opt" data-opt="2">40</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
       </div>
     </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Mengurang Dengan Pinjam <span>▼</span></div>
-      <div class="section-body">
-        <p>Kalau 32 - 15, pinjam 1 puluhan dari 3, jadi sisanya 17. 🛡️</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Berapa 24 - 8?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">16</button><button class="quiz-opt" data-correct="false">14</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
 
-    <!-- Ringkasan -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Kurang Tanpa Meminjam <span>▼</span></div>
+      <div class="section-body">
+        <p>Kalau satuan atas <strong>≥</strong> satuan bawah, langsung kurangi. Contoh 38 − 15: satuan 8−5=3, puluhan 3−1=2 → <strong>23</strong>.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>38 stiker − 15 diberikani = 23 sisa.</li>
+            <li>25 burung − 12 terbang = 13 sisa.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal 38 − 15 bersusun</strong></p>
+          <pre style="margin:0; font-size:16px;">  38
+− 15
+----
+  23</pre>
+        </div>        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3</p>
+          <p>Berapa hasil dari 38 − 15?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">23</button>
+            <button class="quiz-opt" data-opt="1">13</button>
+            <button class="quiz-opt" data-opt="2">33</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4</p>
+          <p>Ada 25 burung. 12 terbang. Sisa burung?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">12</button>
+            <button class="quiz-opt" data-opt="1">13</button>
+            <button class="quiz-opt" data-opt="2">14</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Kurang dengan Meminjam <span>▼</span></div>
+      <div class="section-body">
+        <p>Kalau satuan atas <strong>lebih kecil</strong> dari satuan bawah, <strong>pinjam 1 puluhan</strong> (jadi +10 di satuan).</p>
+        <p>Contoh 42 − 18: satuan 2 &lt; 8 → pinjam, 12−8=4. Puluhan sisa 3−1=2 → <strong>24</strong>.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>42 kelereng − 18 hilang: satuan tidak cukup → pinjam puluhan.</li>
+            <li>24 − 7: 4 &lt; 7 → pinjam, 14−7=7, puluhan 1 → 17.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal 42 − 18</strong></p>
+          <ol style="margin:0; padding-left:20px;">
+            <li>2 &lt; 8 → pinjam 1 puluhan. Satuan jadi 12.</li>
+            <li>12 − 8 = 4.</li>
+            <li>Puluhan: 4 jadi 3, 3 − 1 = 2.</li>
+            <li>Hasil: <strong>24</strong>.</li>
+          </ol>
+        </div>        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5</p>
+          <p>42 − 18 = ? (pakai pinjam)</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">24</button>
+            <button class="quiz-opt" data-opt="1">34</button>
+            <button class="quiz-opt" data-opt="2">26</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6</p>
+          <p>24 − 7 = ...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">16</button>
+            <button class="quiz-opt" data-opt="1">17</button>
+            <button class="quiz-opt" data-opt="2">18</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Soal Cerita Pengurangan <span>▼</span></div>
+      <div class="section-body">
+        <p>Kata kunci kurang: <em>dimakan, hilang, terbang, sisa, berkurang, dibagikan, turun</em>.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Budi bawa 25 kue, dimakan teman 6 → sisa 19.</li>
+            <li>Di bus 20 orang, turun 4 → sisa 16.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Misal 30 − … = 22</strong></p>
+          <p style="margin:0;">Yang hilang = 30 − 22 = <strong>8</strong>. Cek: 30 − 8 = 22.</p>
+        </div>        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7</p>
+          <p>Budi bawa 25 kue, dimakan teman 6 kue. Sisa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">18</button>
+            <button class="quiz-opt" data-opt="1">19</button>
+            <button class="quiz-opt" data-opt="2">20</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8</p>
+          <p>30 − … = 22. Titik-titik isinya?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">6</button>
+            <button class="quiz-opt" data-opt="1">7</button>
+            <button class="quiz-opt" data-opt="2">8</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Ringkas: kurang = ambil. Satuan dulu. Kalau tidak cukup, pinjam puluhan.</p>
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9</p>
+          <p>18 − 5 = ...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">13</button>
+            <button class="quiz-opt" data-opt="1">12</button>
+            <button class="quiz-opt" data-opt="2">14</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!)</p>
+          <p>Ada 45 stiker. Diberi adik 17. Sisa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">28</button>
+            <button class="quiz-opt" data-opt="1">32</button>
+            <button class="quiz-opt" data-opt="2">27</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
         <div style="font-size: 64px; margin: 16px 0;">➖</div>
-        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Juru Kurang</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Jagoan Kurang</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Mengurangi dengan Mudah? 😊</div>
+        <div class="msg ai">Halo! Mau tanya soal Mengurangi dengan Mudah? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +238,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 0, 0, 1, 0, 1, 1, 2, 0, 0];
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>

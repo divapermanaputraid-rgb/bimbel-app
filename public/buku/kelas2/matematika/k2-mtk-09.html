@@ -3,86 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Bentuk yang Berisi — Kelas 2</title>
+  <title>Kotak Ajaib dan Bola — Kelas 2</title>
   <link rel="stylesheet" href="/assets/book-theme.css">
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-09">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">🎲</div>
-        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Bentuk yang Berisi</h1>
+        <div style="font-size: 80px; margin-bottom: 16px;">📦</div>
+        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Kotak Ajaib dan Bola</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Bangun yang ada isinya! 📦</p>
+        <p style="margin-top: 16px;">Modul 5 pertemuan — baca pelan, kerjakan kuis, kumpulkan tugas. 📦</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Kenal kubus, balok, bola</li><li>Bedakan sisi datar & lengkung</li>
+          <li>Membedakan bangun datar (pipih) dan bangun ruang (tebal)</li>
+          <li>Mengenal balok, kubus, dan bola</li>
+          <li>Menyebutkan contoh benda bangun ruang</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Mengenal Bangun Ruang <span>▼</span></div>
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Pipih vs Tebal <span>▼</span></div>
       <div class="section-body">
-        <p>Bola basket itu bulat bisa digelindingkan 🏀. Kotak sepatu itu balok 🧃.</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Celengan kaleng susu berbentuk apa?</p>
+        <p>Kertas itu pipih (bangun datar). Kotak kardus itu tebal (bangun ruang) karena punya <strong>ruang di dalamnya</strong> (bisa diisi barang).</p>
+        <p>Gambar di buku itu datar. Benda yang bisa dipegang dan ada tebalnya itu bangun ruang.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Gambar kotak = persegi (datar).</li>
+            <li>Kotak kado = kubus/balok (ruang).</li>
+            <li>Gambar bulat = lingkaran. Bola bekel = bangun ruang.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Gampang ingat</strong></p>
+          <p style="margin:0;">Kalau bisa diisi air atau pasir, pasti bangun ruang.</p>
+        </div>        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1</p>
+          <p>Mana yang disebut bangun ruang (tebal)?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">Tabung</button><button class="quiz-opt" data-correct="false">Kubus</button>
+            <button class="quiz-opt" data-opt="0">Kertas HVS</button>
+            <button class="quiz-opt" data-opt="1">Kotak Sepatu</button>
+            <button class="quiz-opt" data-opt="2">Lukisan dinding</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2</p>
+          <p>Kertas origami termasuk bangun...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ruang</button>
+            <button class="quiz-opt" data-opt="1">Datar</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
       </div>
     </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Datar vs Lengkung <span>▼</span></div>
-      <div class="section-body">
-        <p>Permukaan bola melengkung semuanya, tapi kubus permukaannya datar seperti lantai. 🧊</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Bangun mana yang gampang menggelinding?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">Bola</button><button class="quiz-opt" data-correct="false">Balok</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
 
-    <!-- Ringkasan -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Kubus dan Balok <span>▼</span></div>
+      <div class="section-body">
+        <p><strong>Kubus</strong>: Kotak yang semua sisinya sama besar. Dadu itu kubus.</p>
+        <p><strong>Balok</strong>: Kotak yang panjang. Kardus kulkas, lemari es, batu bata itu balok.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Dadu monopoli: Kubus.</li>
+            <li>Kotak sepatu, kotak pasta gigi: Balok.</li>
+          </ul>
+        </div>        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3</p>
+          <p>Dadu bentuknya adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Balok</button>
+            <button class="quiz-opt" data-opt="1">Kubus</button>
+            <button class="quiz-opt" data-opt="2">Bola</button>
+            <button class="quiz-opt" data-opt="3">Kerucut</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4</p>
+          <p>Lemari pakaian di kamarmu biasanya berbentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Kubus</button>
+            <button class="quiz-opt" data-opt="1">Balok</button>
+            <button class="quiz-opt" data-opt="2">Bola</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Bola <span>▼</span></div>
+      <div class="section-body">
+        <p><strong>Bola</strong> itu bundar sempurna dan bisa menggelinding ke segala arah. Pinggirnya mulus lengkung semua.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Bola basket, bola voli.</li>
+            <li>Kelereng, buah jeruk (hampir bola).</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Bedanya sama lingkaran</strong></p>
+          <p style="margin:0;">Lingkaran itu pipih kayak uang koin logam tipis. Bola itu gendut kayak bola tenis.</p>
+        </div>        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5</p>
+          <p>Buah jeruk lebih mirip dengan bentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran datar</button>
+            <button class="quiz-opt" data-opt="1">Bola</button>
+            <button class="quiz-opt" data-opt="2">Balok</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6</p>
+          <p>Kelereng Anton bentuknya adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Kubus</button>
+            <button class="quiz-opt" data-opt="1">Bola</button>
+            <button class="quiz-opt" data-opt="2">Kerucut</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Tabung dan Kerucut <span>▼</span></div>
+      <div class="section-body">
+        <p><strong>Tabung</strong>: Seperti kaleng susu atau pipa. Punya alas bundar, tapi panjang ke atas.</p>
+        <p><strong>Kerucut</strong>: Seperti topi ulang tahun atau corong es krim. Runcing di atas.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Kaleng sarden, kaleng soda: Tabung.</li>
+            <li>Topi ulang tahun, tumpeng: Kerucut.</li>
+          </ul>
+        </div>        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7</p>
+          <p>Kaleng susu bentuknya apa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Kerucut</button>
+            <button class="quiz-opt" data-opt="1">Bola</button>
+            <button class="quiz-opt" data-opt="2">Tabung</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8</p>
+          <p>Topi ulang tahun runcing ke atas bentuknya...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Tabung</button>
+            <button class="quiz-opt" data-opt="1">Kubus</button>
+            <button class="quiz-opt" data-opt="2">Kerucut</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Ringkas: Kubus (kotak sama), Balok (kotak panjang), Bola (bundar penuh), Tabung (kaleng), Kerucut (topi).</p>
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9</p>
+          <p>Kardus sepatu biasanya...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Balok</button>
+            <button class="quiz-opt" data-opt="1">Kubus</button>
+            <button class="quiz-opt" data-opt="2">Tabung</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!)</p>
+          <p>Batu bata untuk membangun dinding rumah berbentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Kubus</button>
+            <button class="quiz-opt" data-opt="1">Kerucut</button>
+            <button class="quiz-opt" data-opt="2">Balok</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">🎲</div>
-        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Penjelajah Ruang</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <div style="font-size: 64px; margin: 16px 0;">📦</div>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Ahli Ruang</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Bentuk yang Berisi? 😊</div>
+        <div class="msg ai">Halo! Mau tanya soal Kotak Ajaib dan Bola? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +220,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 1, 1, 1, 1, 1, 2, 2, 0, 2];
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>

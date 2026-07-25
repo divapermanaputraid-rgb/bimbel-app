@@ -3,86 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Merakit Bentuk — Kelas 2</title>
+  <title>Bongkar Pasang Bangun Datar — Kelas 2</title>
   <link rel="stylesheet" href="/assets/book-theme.css">
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-08">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
         <div style="font-size: 80px; margin-bottom: 16px;">🧩</div>
-        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Merakit Bentuk</h1>
+        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Bongkar Pasang Bangun Datar</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Menyusun bentuk-bentuk kecil jadi bentuk besar! 🛠️</p>
+        <p style="margin-top: 16px;">Modul 5 pertemuan — baca pelan, kerjakan kuis, kumpulkan tugas. 🧩</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Menguraikan bentuk</li><li>Menyusun bentuk</li>
+          <li>Menggabungkan 2 segitiga jadi persegi</li>
+          <li>Menggabungkan persegi panjang</li>
+          <li>Mengenal pola gabungan (ubin)</li>
+          <li>Memecah bentuk jadi bentuk kecil</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Menguraikan Bentuk <span>▼</span></div>
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Menggabungkan 2 Segitiga <span>▼</span></div>
       <div class="section-body">
-        <p>Persegi kalau dipotong dua miring, bisa jadi 2 segitiga! ✂️</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Kalau kertas persegi digunting diagonal (miring), jadi bentuk apa?</p>
+        <p>Coba potong kertas bentuk persegi miring dari sudut ke ujung. Kamu akan dapat <strong>2 segitiga siku-siku</strong>.</p>
+        <p>Artinya, kalau 2 segitiga itu disambung sisi miringnya, akan kembali jadi <strong>1 persegi</strong> atau persegi panjang!</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Kertas origami dilipat diagonal: jadi 2 segitiga.</li>
+            <li>Sandwich yang dipotong serong.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Ide puzzle</strong></p>
+          <p style="margin:0;">Banyak mainan puzzle dibuat dari bentuk-bentuk segitiga kecil yang disambung.</p>
+        </div>        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1</p>
+          <p>Kertas persegi dipotong dari ujung ke ujung miring, jadi 2...</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">Dua segitiga</button><button class="quiz-opt" data-correct="false">Dua lingkaran</button>
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Persegi</button>
+            <button class="quiz-opt" data-opt="2">Segitiga</button>
+            <button class="quiz-opt" data-opt="3">Tabung</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2</p>
+          <p>Berapa segitiga kecil yang butuh digabung buat 1 persegi?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">1</button>
+            <button class="quiz-opt" data-opt="1">2</button>
+            <button class="quiz-opt" data-opt="2">3</button>
+            <button class="quiz-opt" data-opt="3">5</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
       </div>
     </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Menyusun Segitiga <span>▼</span></div>
-      <div class="section-body">
-        <p>Dua segitiga disatukan juga bisa dikembalikan jadi satu persegi lagi. Ajaib kan? ✨</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Apakah 4 kotak kecil bisa disusun jadi kotak (persegi) besar?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">Bisa</button><button class="quiz-opt" data-correct="false">Tidak bisa</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
 
-    <!-- Ringkasan -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Gabungan Segi Empat <span>▼</span></div>
+      <div class="section-body">
+        <p>Dua buah persegi panjang (seperti batu bata) kalau digabung bersebelahan, bisa membentuk persegi besar atau persegi panjang yang lebih besar.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Dua meja didekatkan jadi satu meja besar.</li>
+            <li>Ubin di lantai digabung jadi area kotak luas.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Penting</strong></p>
+          <p style="margin:0;">Bentuk tidak pernah jadi lingkaran kalau kita cuma menggabung sisi lurus.</p>
+        </div>        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3</p>
+          <p>Dua buah persegi panjang sama besar digabung jadi apa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi</button>
+            <button class="quiz-opt" data-opt="1">Lingkaran</button>
+            <button class="quiz-opt" data-opt="2">Segitiga</button>
+            <button class="quiz-opt" data-opt="3">Oval</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4</p>
+          <p>Kalau 2 segitiga siku-siku disatukan, akan menjadi?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Persegi/Persegi Panjang</button>
+            <button class="quiz-opt" data-opt="2">Segi lima</button>
+            <button class="quiz-opt" data-opt="3">Bola</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Pola dan Ubin <span>▼</span></div>
+      <div class="section-body">
+        <p>Tukang lantai sering memasang ubin. Ubin ini aslinya potongan persegi atau persegi panjang. Digabung jadi lantai rumahmu yang luas.</p>
+        <p>Susunan yang berulang-ulang tanpa sela disebut <strong>pola pengubinan</strong>.</p>
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5</p>
+          <p>Pola ubin di lantai bentuknya?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Segitiga</button>
+            <button class="quiz-opt" data-opt="1">Persegi</button>
+            <button class="quiz-opt" data-opt="2">Lingkaran</button>
+            <button class="quiz-opt" data-opt="3">Bintang</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6</p>
+          <p>Lantai ubin disusun tanpa ada celah disebut...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Pola pengubinan</button>
+            <button class="quiz-opt" data-opt="1">Lukisan</button>
+            <button class="quiz-opt" data-opt="2">Bantalan</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Memecah Bentuk (Bongkar) <span>▼</span></div>
+      <div class="section-body">
+        <p>Sama seperti bongkar Lego. Sebuah persegi panjang bisa kita garisi di tengahnya dan pecah jadi 2 atau 4 kotak kecil.</p>
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Imajinasi</strong></p>
+          <p style="margin:0;">Bayangkan cokelat batang. Garis kotaknya bisa dipatah-patahkan jadi potongan kecil (persegi).</p>
+        </div>        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7</p>
+          <p>Satu batang coklat panjang dipotong tengahnya jadi 2 bagian berbentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Persegi</button>
+            <button class="quiz-opt" data-opt="2">Segitiga</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8</p>
+          <p>Sebuah jendela besar dibagi 4 kaca. Tiap kaca bentuknya...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Persegi panjang/persegi</button>
+            <button class="quiz-opt" data-opt="2">Oval</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Ringkas: bentuk besar = gabungan bentuk kecil. Segitiga digabung = segi empat.</p>
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9</p>
+          <p>Kertas origami dilipat diagonal (serong) menghasilkan bentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Segitiga</button>
+            <button class="quiz-opt" data-opt="2">Persegi</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!)</p>
+          <p>Kalau kita menggabung 2 persegi, mungkinkah jadi lingkaran?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Ya, mungkin</button>
+            <button class="quiz-opt" data-opt="1">Tidak mungkin</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
         <div style="font-size: 64px; margin: 16px 0;">🧩</div>
         <p style="font-weight:bold; color: #667eea; font-size: 20px;">Master Puzzle</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Merakit Bentuk? 😊</div>
+        <div class="msg ai">Halo! Mau tanya soal Bongkar Pasang Bangun Datar? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +214,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [2, 1, 0, 1, 1, 0, 1, 1, 1, 1];
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>

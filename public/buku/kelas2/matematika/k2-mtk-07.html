@@ -8,81 +8,226 @@
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-07">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">📐</div>
+        <div style="font-size: 80px; margin-bottom: 16px;">🔺</div>
         <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Petualangan di Dunia Bentuk</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Mengenal bentuk di sekitarmu! 🖼️</p>
+        <p style="margin-top: 16px;">Modul 5 pertemuan — baca pelan, kerjakan kuis, kumpulkan tugas. 🔺</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Kenal persegi, segitiga, lingkaran</li><li>Menghitung sisi</li>
+          <li>Mengenal bentuk segitiga, persegi, persegi panjang, lingkaran</li>
+          <li>Menghitung sisi tiap bentuk datar</li>
+          <li>Mengenali bentuk dari ciri-cirinya</li>
+          <li>Melihat bentuk datar di sekitar rumah</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Bentuk Datar <span>▼</span></div>
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Segitiga dan Segi Empat <span>▼</span></div>
       <div class="section-body">
-        <p>Roda sepeda itu lingkaran ⭕, buku tulis itu persegi panjang ⬜.</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Papan tulis di kelas biasanya berbentuk apa?</p>
+        <p>Benda punya bentuk. Coba lihat atap rumah dan jendela! Atap biasanya <strong>segitiga</strong>, jendela <strong>persegi / segi empat</strong>.</p>
+        <p><strong>Segitiga</strong>: Punya 3 sisi lurus yang menyambung. <strong>Persegi</strong>: Punya 4 sisi lurus yang ukurannya sama panjang.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Potongan pizza / sandwich: segitiga.</li>
+            <li>Rambu lalu lintas peringatan: segitiga.</li>
+            <li>Papan catur, ubin lantai: persegi (4 sisi sama).</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Cara cek</strong></p>
+          <p style="margin:0;">Hitung pinggirnya pakai telunjuk. Kalau ada 3 garis lurus = segitiga. Kalau 4 garis = segi empat.</p>
+        </div>        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1</p>
+          <p>Segitiga punya berapa sisi?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">Persegi panjang</button><button class="quiz-opt" data-correct="false">Lingkaran</button>
+            <button class="quiz-opt" data-opt="0">1</button>
+            <button class="quiz-opt" data-opt="1">2</button>
+            <button class="quiz-opt" data-opt="2">3</button>
+            <button class="quiz-opt" data-opt="3">4</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2</p>
+          <p>Persegi punya sisi yang...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Beda panjang</button>
+            <button class="quiz-opt" data-opt="1">Sama panjang semua</button>
+            <button class="quiz-opt" data-opt="2">Tidak punya sisi</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
       </div>
     </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Sisi dan Sudut <span>▼</span></div>
-      <div class="section-body">
-        <p>Segitiga punya 3 sisi dan 3 sudut. Persegi punya 4 lho! 🔺</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Lingkaran punya berapa sudut?</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">Tidak ada</button><button class="quiz-opt" data-correct="false">1 sudut</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
 
-    <!-- Ringkasan -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Persegi vs Persegi Panjang <span>▼</span></div>
+      <div class="section-body">
+        <p>Ada segi empat lain namanya <strong>persegi panjang</strong>. Dia juga punya 4 sisi, tapi <strong>tidak semuanya sama panjang</strong>.</p>
+        <p>Dua sisi panjang, dua sisi pendek (lebar). Papan tulis dan pintu adalah contoh persegi panjang.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Buku tulismu: persegi panjang.</li>
+            <li>Kasur / kasur busa: persegi panjang.</li>
+            <li>TV, handphone: persegi panjang.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Bedanya apa?</strong></p>
+          <ol style="margin:0; padding-left:20px;">
+            <li>Cek sisinya. 4? Lanjut.</li>
+            <li>Apakah semuanya sama persis? Jika Ya = <strong>Persegi</strong>.</li>
+            <li>Apakah ada sisi yang lebih molor/panjang? Jika Ya = <strong>Persegi Panjang</strong>.</li>
+          </ol>
+        </div>        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3</p>
+          <p>Bentuk papan tulis biasanya?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Segitiga</button>
+            <button class="quiz-opt" data-opt="2">Persegi Panjang</button>
+            <button class="quiz-opt" data-opt="3">Persegi</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4</p>
+          <p>Aku punya 4 sisi, 2 panjang dan 2 pendek. Aku adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi</button>
+            <button class="quiz-opt" data-opt="1">Segitiga</button>
+            <button class="quiz-opt" data-opt="2">Persegi panjang</button>
+            <button class="quiz-opt" data-opt="3">Lingkaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Lingkaran dan Lingkungan <span>▼</span></div>
+      <div class="section-body">
+        <p>Ada juga bentuk yang <strong>tidak punya sisi lurus</strong> sama sekali. Cuma satu garis melengkung bulat penuh. Itu namanya <strong>lingkaran</strong>.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Roda sepeda, ban mobil: lingkaran.</li>
+            <li>Jam dinding bulat: lingkaran.</li>
+            <li>Uang koin, piring: lingkaran.</li>
+          </ul>
+        </div>        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Guling vs lurus</strong></p>
+          <p style="margin:0;">Benda lingkaran bisa menggelinding. Benda segi lurus (persegi, segitiga) akan diam.</p>
+        </div>        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5</p>
+          <p>Uang koin berbentuk?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Persegi</button>
+            <button class="quiz-opt" data-opt="2">Segitiga</button>
+            <button class="quiz-opt" data-opt="3">Oval</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6</p>
+          <p>Bentuk yang tidak punya sisi lurus adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi</button>
+            <button class="quiz-opt" data-opt="1">Segitiga</button>
+            <button class="quiz-opt" data-opt="2">Lingkaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Ciri-Ciri (Tebak Bentuk) <span>▼</span></div>
+      <div class="section-body">
+        <p>Setiap bentuk punya ciri khusus. Mari bermain tebak-tebakan dari cirinya!</p>
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Rahasia</strong></p>
+          <ul style="margin:0; padding-left:20px;">
+            <li>3 sisi = segitiga.</li>
+            <li>4 sisi sama = persegi.</li>
+            <li>4 sisi beda = persegi panjang.</li>
+            <li>1 garis lengkung = lingkaran.</li>
+          </ul>
+        </div>        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7</p>
+          <p>Aku bulat dan bisa menggelinding. Aku adalah...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi</button>
+            <button class="quiz-opt" data-opt="1">Lingkaran</button>
+            <button class="quiz-opt" data-opt="2">Segitiga</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8</p>
+          <p>Roda bus biasanya berbentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi Panjang</button>
+            <button class="quiz-opt" data-opt="1">Segitiga</button>
+            <button class="quiz-opt" data-opt="2">Lingkaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Uji ingatan tentang bentuk datar yang sudah kita pelajari!</p>
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9</p>
+          <p>Aku punya 4 sisi sama panjang, seperti papan catur. Aku adalah?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Persegi</button>
+            <button class="quiz-opt" data-opt="1">Persegi panjang</button>
+            <button class="quiz-opt" data-opt="2">Lingkaran</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!)</p>
+          <p>Atap rumah biasanya berbentuk...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lingkaran</button>
+            <button class="quiz-opt" data-opt="1">Persegi</button>
+            <button class="quiz-opt" data-opt="2">Segitiga</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">📐</div>
-        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Penjelajah Bentuk</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <div style="font-size: 64px; margin: 16px 0;">🔺</div>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Ahli Bangun</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Petualangan di Dunia Bentuk? 😊</div>
+        <div class="msg ai">Halo! Mau tanya soal Petualangan di Dunia Bentuk? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +235,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [2, 1, 2, 2, 0, 2, 1, 2, 0, 2];
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>

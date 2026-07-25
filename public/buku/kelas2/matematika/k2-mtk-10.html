@@ -3,86 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Di Mana Letaknya? — Kelas 2</title>
+  <title>Berat atau Ringan? — Kelas 2</title>
   <link rel="stylesheet" href="/assets/book-theme.css">
 </head>
 <body data-kelas="2" data-pelajaran="mtk" data-materi="k2-mtk-10">
   <div class="progress-container"><div class="progress-fill"></div></div>
-  
+
   <div class="book-container">
-    <!-- Cover -->
     <div class="section-card expanded">
       <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
-        <div style="font-size: 80px; margin-bottom: 16px;">🧭</div>
-        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Di Mana Letaknya?</h1>
+        <div style="font-size: 80px; margin-bottom: 16px;">⚖️</div>
+        <h1 style="color: #667eea; margin:0 0 8px 0; font-size: 28px;">Berat atau Ringan?</h1>
         <p style="color: #666;">Matematika — Kelas 2</p>
-        <p style="margin-top: 16px;">Atas, bawah, kanan, kiri! 🗺️</p>
+        <p style="margin-top: 16px;">Modul 5 pertemuan — baca pelan, kerjakan kuis, kumpulkan tugas. ⚖️</p>
       </div>
     </div>
 
-    <!-- Tujuan -->
     <div class="section-card">
       <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
       <div class="section-body">
         <ul style="padding-left: 20px;">
-          <li>Kenal posisi benda</li><li>Bisa baca peta sederhana</li>
+          <li>Mengukur berat dengan satuan tidak baku (genggaman, timbangan buatan)</li>
+          <li>Membedakan benda berat dan ringan</li>
+          <li>Mengurutkan berat benda</li>
         </ul>
       </div>
     </div>
 
-    <!-- Penjelasan & Quiz -->
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 1: Posisi Dasar <span>▼</span></div>
+    <div class="section-card" id="p1">
+      <div class="section-header">📚 Pertemuan 1: Berat dan Ringan <span>▼</span></div>
       <div class="section-body">
-        <p>Burung terbang di ATAS pohon. Kucing tidur di BAWAH meja. 🐈</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Kalau tangan untuk salaman biasanya tangan sebelah...</p>
+        <p>Coba angkat bukumu dan selembar kertas. Mana yang bikin tangan lebih capek? Buku! Itu artinya buku <strong>lebih berat</strong> dan kertas <strong>lebih ringan</strong>.</p>
+        <div style="background: #fff8e1; padding: 12px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #fbc02d;">
+          <p style="margin:0 0 8px 0;"><strong>📌 Contoh nyata</strong></p>
+          <ul style="margin:0; padding-left: 20px;">
+            <li>Batu bata jauh lebih berat dari kapas.</li>
+            <li>Kucing lebih berat dari semut.</li>
+          </ul>
+        </div>        <div class="quiz-box" data-idx="0" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 1</p>
+          <p>Mana yang lebih berat: Gajah atau Kucing?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">Kanan</button><button class="quiz-opt" data-correct="false">Kiri</button>
+            <button class="quiz-opt" data-opt="0">Kucing</button>
+            <button class="quiz-opt" data-opt="1">Gajah</button>
+            <button class="quiz-opt" data-opt="2">Sama</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="1" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 2</p>
+          <p>Kapas dan batu bata. Mana yang ringan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Batu bata</button>
+            <button class="quiz-opt" data-opt="1">Kapas</button>
+            <button class="quiz-opt" data-opt="2">Keduanya ringan</button>
           </div>
           <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
         </div>
       </div>
     </div>
-    
-    <div class="section-card">
-      <div class="section-header">📚 Bagian 2: Membaca Peta Arah <span>▼</span></div>
-      <div class="section-body">
-        <p>Di peta, rumah Ani ada di kiri jalan, taman ada di kanannya. 🛣️</p>
-        <div class="quiz-box" data-answered="false">
-          <p style="font-weight: bold;">🤔 Cek Pemahaman:</p>
-          <p>Kalau kamu menghadap ke Barat, belakangmu adalah...</p>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-correct="true">Timur</button><button class="quiz-opt" data-correct="false">Utara</button>
-          </div>
-          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
-        </div>
-      </div>
-    </div>
-    
 
-    <!-- Ringkasan -->
+    <div class="section-card" id="p2">
+      <div class="section-header">📚 Pertemuan 2: Timbangan Jungkat-jungkit <span>▼</span></div>
+      <div class="section-body">
+        <p>Di taman bermain, ada mainan jungkat-jungkit. Siapa yang <strong>turun ke bawah</strong>, dia yang lebih <strong>berat</strong>. Yang naik ke atas, lebih ringan.</p>
+        <div style="background: #e0f7fa; padding: 12px; border-radius: 8px; margin: 12px 0;">
+          <p style="margin:0 0 8px 0;"><strong>💡 Membaca timbangan piring</strong></p>
+          <p style="margin:0;">Kalau piring timbangan A turun, piring B naik → berarti A lebih berat dari B.</p>
+        </div>        <div class="quiz-box" data-idx="2" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 3</p>
+          <p>Di jungkat-jungkit, posisi orang yang lebih berat ada di...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Bawah</button>
+            <button class="quiz-opt" data-opt="1">Atas</button>
+            <button class="quiz-opt" data-opt="2">Tengah</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="3" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 4</p>
+          <p>Jika buah semangka di timbangan turun, dan apel naik. Artinya?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Apel lebih berat</button>
+            <button class="quiz-opt" data-opt="1">Semangka lebih berat</button>
+            <button class="quiz-opt" data-opt="2">Sama berat</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p3">
+      <div class="section-header">📚 Pertemuan 3: Menimbang Pakai Tangan <span>▼</span></div>
+      <div class="section-body">
+        <p>Sebelum ada timbangan, orang zaman dulu pakai kedua tangannya. Tangan kanan pegang benda A, tangan kiri pegang benda B (disebut menimbang <strong>tidak baku</strong>).</p>
+        <p>Tangan yang terasa lebih ditarik ke bawah berarti pegang benda berat.</p>
+        <div class="quiz-box" data-idx="4" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 5</p>
+          <p>Menimbang dengan 2 tangan untuk rasakan mana yang berat disebut menimbang pakai alat...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Baku</button>
+            <button class="quiz-opt" data-opt="1">Tidak baku</button>
+            <button class="quiz-opt" data-opt="2">Mesin</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="5" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 6</p>
+          <p>Pegang penghapus dan tas sekolah. Tangan yang bawa tas akan merasa...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Lebih ringan</button>
+            <button class="quiz-opt" data-opt="1">Lebih capek / berat</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p4">
+      <div class="section-header">📚 Pertemuan 4: Mengurutkan Berat <span>▼</span></div>
+      <div class="section-body">
+        <p>Ada Semut, Kucing, dan Sapi. Urutkan dari yang <strong>paling ringan</strong> ke berat!</p>
+        <p>1. Semut (sangat ringan).<br>2. Kucing (sedang).<br>3. Sapi (paling berat).<br>Jadi: Semut - Kucing - Sapi.</p>
+        <div class="quiz-box" data-idx="6" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 7</p>
+          <p>Urutkan dari yang paling ringan: Tas, Penghapus, Sepatu.</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Penghapus, Sepatu, Tas</button>
+            <button class="quiz-opt" data-opt="1">Tas, Sepatu, Penghapus</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="7" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 8</p>
+          <p>Mana yang lebih berat: 1 buku atau 5 buku sama?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">1 buku</button>
+            <button class="quiz-opt" data-opt="1">5 buku</button>
+            <button class="quiz-opt" data-opt="2">Sama saja</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" id="p5">
+      <div class="section-header">📚 Pertemuan 5: Latihan Campuran <span>▼</span></div>
+      <div class="section-body">
+        <p>Ringkas: Turun = berat. Naik = ringan. Kita bisa mengurutkan berat benda.</p>
+        <div class="quiz-box" data-idx="8" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 9</p>
+          <p>Buah durian vs rambutan. Mana yang lebih ringan?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Durian</button>
+            <button class="quiz-opt" data-opt="1">Rambutan</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>        <div class="quiz-box" data-idx="9" data-answered="false">
+          <p style="font-weight: bold;">🤔 Kuis 10 (Terakhir!)</p>
+          <p>Di jungkat-jungkit, gajah melawan semut. Gajah ada di...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-opt="0">Atas</button>
+            <button class="quiz-opt" data-opt="1">Bawah</button>
+            <button class="quiz-opt" data-opt="2">Seimbang</button>
+          </div>
+          <div class="feedback" style="margin-top:8px; font-weight:bold;"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-card">
       <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
       <div class="section-body text-center" style="text-align: center;">
         <p>Kamu mendapatkan badge:</p>
-        <div style="font-size: 64px; margin: 16px 0;">🧭</div>
-        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Navigator Cilik</p>
-        <button class="btn" style="margin-top:24px;" onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <div style="font-size: 64px; margin: 16px 0;">⚖️</div>
+        <p style="font-weight:bold; color: #667eea; font-size: 20px;">Timbangan Ajaib</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai & Kumpulkan Tugas! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:12px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
       </div>
     </div>
   </div>
 
-  <!-- AI Tutor -->
   <div class="ai-chat">
     <div class="ai-toggle" onclick="toggleChat()">🤖</div>
     <div class="ai-panel">
       <div class="ai-header">Tutor AI (Kakak Groq)</div>
       <div class="ai-msgs">
-        <div class="msg ai">Halo! Aku Tutor AI. Mau tanya soal materi Di Mana Letaknya?? 😊</div>
+        <div class="msg ai">Halo! Mau tanya soal Berat atau Ringan?? 😊</div>
       </div>
       <div class="ai-input-area">
         <input type="text" id="ai-input" placeholder="Ketik di sini...">
@@ -90,6 +194,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 1, 0, 1, 1, 1, 0, 1, 1, 1];
+    window._TOTAL_SECTIONS = 10;
+  </script>
   <script src="/assets/book-engine.js"></script>
 </body>
 </html>
