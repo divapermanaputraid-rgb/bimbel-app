@@ -106,3 +106,78 @@ body.kelas6 .ai-toggle {
 body.kelas6 .progress-fill {
   background: #4f46e5;
 }
+
+/* --- TEMA KELAS 1 (GAYA PASTEL BOCAH) --- */
+body.kelas1 {
+  font-size: 20px;
+  line-height: 2.0;
+  font-family: 'Comic Sans MS', 'Nunito', sans-serif;
+  --bg: #FFFDE7; /* Kuning lemon pastel default */
+}
+body.kelas1 .section-card {
+  border-radius: 24px; /* Lebih bulat & ramah anak */
+  border: 3px solid #E3F2FD;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.03);
+}
+body.kelas1 .section-header {
+  background: #FCE4EC; /* Pink pastel */
+  font-size: 22px;
+  padding: 20px;
+  color: #c2185b;
+}
+body.kelas1 .btn {
+  font-size: 22px;
+  padding: 18px;
+  border-radius: 9999px; /* Rounded full */
+  background: #e3f2fd;
+  color: #1565c0;
+  border: 3px solid #1565c0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+body.kelas1 .btn:active {
+  transform: scale(0.95);
+}
+body.kelas1 .quiz-box {
+  background: #E8F5E9; /* Hijau mint */
+  border: 3px dashed #81c784;
+  border-radius: 20px;
+  padding: 20px;
+}
+body.kelas1 .quiz-opt {
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 20px;
+  border: 3px solid #cfd8dc;
+  background: white;
+  transition: transform 0.1s;
+}
+body.kelas1 .quiz-opt:active {
+  transform: scale(0.98);
+}
+body.kelas1 .quiz-opt.benar {
+  border-color: #4caf50;
+  background: #c8e6c9;
+  font-weight: bold;
+}
+body.kelas1 .quiz-opt.salah {
+  border-color: #f44336;
+  background: #ffcdd2;
+}
+body.kelas1 .ai-toggle {
+  background: #ff4081; /* Pink menyala buat anak */
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
+}
+body.kelas1 .ai-header {
+  background: #ff4081;
+}
+body.kelas1 .progress-fill {
+  background: linear-gradient(90deg, #ff4081, #ffeb3b, #4caf50, #2196f3); /* Pelangi progress */
+}
+body.kelas1 .emoji-large {
+  font-size: 28px;
+  display: inline-block;
+  margin: 0 4px;
+}
