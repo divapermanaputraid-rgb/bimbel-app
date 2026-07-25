@@ -4,14 +4,29 @@
   --primary: #667eea;
   --success: #4caf50;
   --error: #f44336;
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
 }
 * { box-sizing: border-box; }
 body {
-  margin: 0; padding: 0 0 80px; font-family: 'Comic Sans MS', 'Nunito', sans-serif;
-  background-color: var(--bg); font-size: 18px; line-height: 1.8; color: #333;
+  margin: 0;
+  padding: var(--sat) 0 calc(80px + var(--sab));
+  font-family: 'Comic Sans MS', 'Nunito', sans-serif;
+  background-color: var(--bg);
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
 }
 .progress-container {
-  position: fixed; top: 0; left: 0; width: 100%; height: 8px; background: #e0e0e0; z-index: 50;
+  position: fixed;
+  top: var(--sat);
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  z-index: 50;
 }
 .progress-fill {
   height: 100%; background: var(--primary); width: 0%; transition: width 0.3s;
@@ -45,7 +60,12 @@ body {
 .quiz-opt.salah { border-color: var(--error); background: #ffebee; }
 
 /* AI Chat */
-.ai-chat { position: fixed; bottom: 20px; right: 20px; z-index: 100; }
+.ai-chat {
+  position: fixed;
+  bottom: calc(20px + var(--sab));
+  right: calc(20px + var(--sar));
+  z-index: 100;
+}
 .ai-toggle {
   width: 56px; height: 56px; border-radius: 50%; background: #667eea;
   display: flex; align-items: center; justify-content: center; font-size: 28px;
