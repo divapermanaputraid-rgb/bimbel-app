@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Penjumlahan sampai 1.000 — Kelas 3</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas3" data-kelas="3" data-pelajaran="mtk" data-materi="k3-mtk-04" style="background-color: #F3E5F5; --bg: #F3E5F5;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">➕</div>
+        <h1 style="color: #2e7d32; margin:0 0 8px 0; font-size: 26px;">Penjumlahan sampai 1.000</h1>
+        <p style="color: #666; font-size: 17px;">Matematika — Kelas 3</p>
+        <p style="margin-top: 16px; font-size: 17px;">Galih menemukan kelereng lagi! Mari kita jumlahkan totalnya.</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Ayo Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <ul style="padding-left: 20px;">
+          <li>Menjumlahkan bilangan tanpa dan dengan simpan</li><li>Menyelesaikan soal cerita penjumlahan</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Penjumlahan Tanpa Simpan <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Galih punya 234 kelereng merah dan 125 kelereng biru.</p><p>Kita tambahkan per kolom: satuan (4+5=9), puluhan (3+2=5), ratusan (2+1=3).</p><p>Total kelereng Galih = <strong>359</strong>. Mudah sekali!</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Berapa hasil 142 + 215?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">357</button><button class="quiz-opt" data-opt="1">367</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Penjumlahan Dengan Simpan <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Coba hitung: 487 + 256.</p><p>Satuan: 7+6=13 (simpan 1 puluhan). Puluhan: 1 (simpan) + 8 + 5 = 14 (simpan 1 ratusan).</p><p>Ratusan: 1 (simpan) + 4 + 2 = 7. Jadi hasilnya <strong>743</strong>!</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Berapa hasil dari 258 + 164?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">422</button><button class="quiz-opt" data-opt="1">412</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 17px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">➕</div>
+        <p style="font-weight:bold; color: #2e7d32; font-size: 20px;">Juru Tambah Ribuan</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 3)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku siap bantu kamu belajar. Mau tanya soal Penjumlahan sampai 1.000? Ayo kita coba! 💪</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [0,0];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

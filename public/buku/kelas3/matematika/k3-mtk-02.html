@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nilai Tempat: Ratusan, Puluhan, Satuan — Kelas 3</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+</head>
+<body class="kelas3" data-kelas="3" data-pelajaran="mtk" data-materi="k3-mtk-02" style="background-color: #E8F5E9; --bg: #E8F5E9;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">🏠</div>
+        <h1 style="color: #2e7d32; margin:0 0 8px 0; font-size: 26px;">Nilai Tempat: Ratusan, Puluhan, Satuan</h1>
+        <p style="color: #666; font-size: 17px;">Matematika — Kelas 3</p>
+        <p style="margin-top: 16px; font-size: 17px;">Meutia mengajakmu menguraikan bilangan seperti menyusun balok lego!</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Ayo Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <ul style="padding-left: 20px;">
+          <li>Memecah bilangan menjadi ratusan, puluhan, satuan</li><li>Menyusun bilangan dari nilai tempat</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Penjelasan & Quiz -->
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 1: Menguraikan Bilangan 3 Angka <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Meutia punya 523 kelereng. Kita pisahkan yuk!</p><p>523 = 5 ratusan + 2 puluhan + 3 satuan.</p><p>Jadi, 523 = <strong>500 + 20 + 3</strong>. Mantap!</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">Bentuk urai dari 456 adalah...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">400 + 50 + 6</button><button class="quiz-opt" data-opt="1">40 + 50 + 6</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-card">
+      <div class="section-header">📚 Bagian 2: Permainan Susun Angka <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Kalau kamu punya 3 ratusan, 0 puluhan, dan 7 satuan, angka berapa yang terbentuk?</p><p>Betul! Digabungkan jadi <strong>307</strong>.</p>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Coba Jawab:</p>
+          <p style="font-size: 17px;">8 ratusan dan 9 satuan disusun menjadi...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">89</button><button class="quiz-opt" data-opt="1">809</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 17px;">
+        <p>Kamu mendapatkan badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">🏠</div>
+        <p style="font-weight:bold; color: #2e7d32; font-size: 20px;">Arsitek Angka</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai! ✅</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 3)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku siap bantu kamu belajar. Mau tanya soal Nilai Tempat: Ratusan, Puluhan, Satuan? Ayo kita coba! 💪</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window._QUIZ_ANSWERS = [0,1];
+    window._TOTAL_SECTIONS = 2;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
