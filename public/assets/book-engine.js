@@ -1,4 +1,19 @@
 // bimbel-app/public/assets/book-engine.js
+
+// Web Speech API untuk Pronunciation Bahasa Inggris
+window.speakEnglish = (text) => {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel(); // hentikan suara sebelumnya jika ada
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.85; // kecepatan ramah anak kelas 3
+    utterance.pitch = 1.1; // sedikit tinggi
+    window.speechSynthesis.speak(utterance);
+  } else {
+    alert("Maaf, browsermu tidak mendukung fitur suara pronunciation.");
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   let progress = 0;
   const totalSections = window._TOTAL_SECTIONS || 1;
