@@ -251,3 +251,133 @@ body.kelas3 .ai-header {
 body.kelas3 .progress-fill {
   background: linear-gradient(90deg, #42a5f5, #66bb6a, #ffa726, #ab47bc);
 }
+
+/* --- TEMA KELAS 3 BAHASA INGGRIS (My Next Words) --- */
+body.kelas3-bing {
+  font-size: 18px;
+  line-height: 2.0;
+  font-family: 'Comic Sans MS', 'Nunito', sans-serif;
+  --bg: #FFEBEE; /* Merah muda cerah default */
+}
+body.kelas3-bing .section-card {
+  border-radius: 18px;
+  border: 2px solid #ffcdd2;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+body.kelas3-bing .section-header {
+  background: #E3F2FD; /* Biru cerah */
+  font-size: 20px;
+  padding: 16px;
+  color: #1565c0;
+}
+body.kelas3-bing .btn {
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #e3f2fd;
+  color: #1565c0;
+  border: 2px solid #1565c0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+body.kelas3-bing .btn:active {
+  transform: scale(0.95);
+}
+/* Vocab Grid */
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+.vocab-card {
+  background: white;
+  border: 2px solid #90caf9;
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.vocab-card .emoji {
+  font-size: 36px;
+  margin-bottom: 4px;
+}
+.vocab-card .word {
+  font-weight: bold;
+  color: #1565c0;
+  font-size: 18px;
+}
+.vocab-card .meaning {
+  font-size: 14px;
+  color: #666;
+}
+.audio-btn {
+  background: #ffeb3b;
+  border: 1px solid #fbc02d;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 6px;
+  font-size: 16px;
+  transition: transform 0.1s;
+}
+.audio-btn:active {
+  transform: scale(0.9);
+}
+/* Dialogue Box */
+.dialogue-box {
+  background: #E8F5E9;
+  border-left: 4px solid #4caf50;
+  padding: 16px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+.dialogue-line {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.dialogue-line .speaker {
+  font-weight: bold;
+  color: #2e7d32;
+  min-width: 70px;
+}
+/* Song Box */
+.song-box {
+  background: #FFFDE7;
+  border: 2px dashed #fbc02d;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  margin: 16px 0;
+}
+body.kelas3-bing .quiz-box {
+  background: #FFF8E1;
+  border: 2px dashed #ffb74d;
+  border-radius: 16px;
+  padding: 16px;
+}
+body.kelas3-bing .quiz-opt {
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 2px solid #cfd8dc;
+  background: white;
+}
+body.kelas3-bing .quiz-opt.benar {
+  border-color: #4caf50;
+  background: #c8e6c9;
+  font-weight: bold;
+}
+body.kelas3-bing .quiz-opt.salah {
+  border-color: #f44336;
+  background: #ffcdd2;
+}
