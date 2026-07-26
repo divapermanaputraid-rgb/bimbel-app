@@ -14,6 +14,11 @@ function escapeHtml(unsafe) {
          .replace(/'/g, "&#039;");
 }
 
+function escapeJsString(str) {
+    if(!str) return "";
+    return str.replace(/'/g, "\\'");
+}
+
 function template(data) {
   const answers = data.exercises.map(ex => ex.jawabanIdx);
   let bgTheme = '#FFEBEE'; // merah
@@ -67,7 +72,7 @@ function template(data) {
             <div class="emoji">${v.emoji}</div>
             <div class="word">${v.word}</div>
             <div class="meaning">(${v.meaning})</div>
-            <button class="audio-btn" onclick="speakEnglish('${v.word}')">🔊</button>
+            <button class="audio-btn" onclick="speakEnglish('${escapeJsString(v.word)}')">🔊</button>
           </div>
           `).join('')}
         </div>
@@ -81,7 +86,7 @@ function template(data) {
         <p>Ayo latihan mengeja kata (phonics)! Tirukan suara yang kamu dengar:</p>
         <ul style="padding-left: 20px; line-height: 2.2;">
           ${data.phonics.map(p => `
-          <li><strong>${p.word}</strong> dieja: <code>${p.spell}</code> <button class="audio-btn" onclick="speakEnglish('${p.word}')">🔊</button></li>
+          <li><strong>${p.word}</strong> dieja: <code>${p.spell}</code> <button class="audio-btn" onclick="speakEnglish('${escapeJsString(p.word)}')">🔊</button></li>
           `).join('')}
         </ul>
       </div>
@@ -98,7 +103,7 @@ function template(data) {
             <span class="speaker">${l.speaker}:</span>
             <div>
               <span>"${l.text}"</span>
-              <button class="audio-btn" style="width:30px;height:30px;font-size:14px;" onclick="speakEnglish('${l.text}')">🔊</button>
+              <button class="audio-btn" style="width:30px;height:30px;font-size:14px;" onclick="speakEnglish('${escapeJsString(l.text)}')">🔊</button>
               <div style="font-size:14px;color:#666;">(${l.meaning})</div>
             </div>
           </div>
@@ -131,7 +136,7 @@ function template(data) {
         <p>Ayo nyanyikan lirik ini bersama-sama agar cepat hafal!</p>
         <div class="song-box">
           <p style="white-space: pre-line; font-weight: bold; color: #d32f2f;">${data.song.lyrics}</p>
-          <button class="btn" style="margin-top: 12px; background: #ffeb3b; color: #333;" onclick="speakEnglish('${data.song.lyrics.replace(/\n/g, ' ')}')">🔊 Play Song / Chant</button>
+          <button class="btn" style="margin-top: 12px; background: #ffeb3b; color: #333;" onclick="speakEnglish('${escapeJsString(data.song.lyrics.replace(/\n/g, ' '))}')">🔊 Play Song / Chant</button>
         </div>
       </div>
     </div>
@@ -212,7 +217,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun kata ini menjadi kalimat benar: like / I / rice", pilihan: ["rice I like", "I like rice", "like I rice"], jawabanIdx: 1},
       {title: "Fill in the Blank", soal: "Cici: 'I ___ ice cream.'", pilihan: ["like", "likes", "noodle"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 I like chicken, I like rice,\\nyummy yummy in my tummy!\\nI like tea, I like milk,\\nslurp slurp so tasty! 🎵"}
+    song: {lyrics: "🎵 I like chicken, I like rice,\nyummy yummy in my tummy!\nI like tea, I like milk,\nslurp slurp so tasty! 🎵"}
   },
   {
     id: "k3-bing-02", emoji: "🍚",
@@ -249,7 +254,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun kata: you / Do / like / bread?", pilihan: ["Do you like bread?", "you Do like bread?", "bread like you Do?"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "Aisyah: 'Do you like milk?' Joshua: 'Yes, I ___.'", pilihan: ["do", "don't", "like"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 Do you like chicken? Yes, I do!\\nDo you like fish? No, I don't!\\nYucky yucky, no I don't! 🎵"}
+    song: {lyrics: "🎵 Do you like chicken? Yes, I do!\nDo you like fish? No, I don't!\nYucky yucky, no I don't! 🎵"}
   },
   {
     id: "k3-bing-03", emoji: "🌅",
@@ -285,7 +290,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun: have / I / noodles / for / lunch", pilihan: ["I have noodles for lunch", "for lunch I noodles have", "have I noodles lunch"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "I have bread for ___. (makan pagi)", pilihan: ["breakfast", "lunch", "dinner"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 Breakfast in the morning,\\nlunch at noon,\\ndinner in the evening,\\nyum yum soon! 🎵"}
+    song: {lyrics: "🎵 Breakfast in the morning,\nlunch at noon,\ndinner in the evening,\nyum yum soon! 🎵"}
   },
   {
     id: "k3-bing-04", emoji: "🏊",
@@ -323,7 +328,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun: like / you / Do / swimming?", pilihan: ["Do you like swimming?", "you Do like swimming?", "swimming Do you like?"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "Made likes ___ (membaca buku).", pilihan: ["reading", "running", "singing"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 Swimming, swimming in the pool!\\nReading, reading very cool!\\nRiding a bike, beep beep beep! 🎵"}
+    song: {lyrics: "🎵 Swimming, swimming in the pool!\nReading, reading very cool!\nRiding a bike, beep beep beep! 🎵"}
   },
   {
     id: "k3-bing-05", emoji: "📅",
@@ -361,7 +366,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun: Sunday / on / like / I / swimming", pilihan: ["I like swimming on Sunday", "Sunday on I like swimming", "like I Sunday swimming"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "After Monday is ___ (setelah Senin adalah hari Selasa).", pilihan: ["Tuesday", "Saturday", "Thursday"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 Monday, Tuesday, Wednesday too,\\nThursday, Friday, Saturday,\\nSunday, yahoo! 🎵"}
+    song: {lyrics: "🎵 Monday, Tuesday, Wednesday too,\nThursday, Friday, Saturday,\nSunday, yahoo! 🎵"}
   },
   {
     id: "k3-bing-06", emoji: "🏫",
@@ -399,7 +404,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun: it / Is / canteen / the?", pilihan: ["Is it the canteen?", "canteen Is it the?", "it Is the canteen?"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "Is it the office? Yes, it ___.", pilihan: ["is", "isn't", "are"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 Canteen, canteen, eat and drink!\\nLibrary, library, read and think!\\nSchool is fun, yes indeed! 🎵"}
+    song: {lyrics: "🎵 Canteen, canteen, eat and drink!\nLibrary, library, read and think!\nSchool is fun, yes indeed! 🎵"}
   },
   {
     id: "k3-bing-07", emoji: "🧭",
@@ -436,7 +441,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun: is / class / The / behind / office / the", pilihan: ["The class is behind the office", "behind the office The class is", "is The class behind office"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "The pencil is ___ the table. (di atas meja)", pilihan: ["on", "under", "between"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 In, on, under, beside,\\nbetween, behind, in front of!\\nWhere is the cat? On the mat! 🎵"}
+    song: {lyrics: "🎵 In, on, under, beside,\nbetween, behind, in front of!\nWhere is the cat? On the mat! 🎵"}
   },
   {
     id: "k3-bing-08", emoji: "📚",
@@ -474,7 +479,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun: juice / drink / I / in / canteen / the", pilihan: ["I drink juice in the canteen", "drink I juice in the canteen", "in the canteen juice I drink"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "We ___ (belajar) math in the classroom.", pilihan: ["study", "play", "eat"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 Study, study in the class,\\neat and drink in the canteen,\\nplay, play in the yard! 🎵"}
+    song: {lyrics: "🎵 Study, study in the class,\neat and drink in the canteen,\nplay, play in the yard! 🎵"}
   },
   {
     id: "k3-bing-09", emoji: "✨",
@@ -510,7 +515,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun: is / classroom / My / clean", pilihan: ["My classroom is clean", "clean My classroom is", "classroom My clean is"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "The schoolyard is very ___ (luas/besar).", pilihan: ["large / big", "dirty", "narrow"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 Clean and big, wide and bright,\\nmy school is beautiful, what a sight!\\nKeep it clean every day! 🎵"}
+    song: {lyrics: "🎵 Clean and big, wide and bright,\nmy school is beautiful, what a sight!\nKeep it clean every day! 🎵"}
   },
   {
     id: "k3-bing-10", emoji: "🔢",
@@ -548,7 +553,7 @@ const materiListBing = [
       {title: "Arrange Words", soal: "Susun: are / There / books / thirty", pilihan: ["There are thirty books", "books There are thirty", "thirty books There are"], jawabanIdx: 0},
       {title: "Fill in the Blank", soal: "___ is one pen on the table. (Karena cuma 1 pena)", pilihan: ["There is", "There are", "They"], jawabanIdx: 0}
     ],
-    song: {lyrics: "🎵 Twenty, thirty, forty, fifty,\\ncount with me, it's so nifty!\\nThere are books, there are pens, let's learn! 🎵"}
+    song: {lyrics: "🎵 Twenty, thirty, forty, fifty,\ncount with me, it's so nifty!\nThere are books, there are pens, let's learn! 🎵"}
   }
 ];
 
