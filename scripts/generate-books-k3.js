@@ -21,10 +21,10 @@ function template(data) {
   );
 
   let bgTheme = '#E3F2FD'; // default cerah biru
-  if (data.id.endsWith('02') || data.id.endsWith('06')) bgTheme = '#E8F5E9'; // hijau
-  else if (data.id.endsWith('03') || data.id.endsWith('07')) bgTheme = '#FFF3E0'; // oranye
-  else if (data.id.endsWith('04') || data.id.endsWith('08')) bgTheme = '#F3E5F5'; // ungu
-  else if (data.id.endsWith('05') || data.id.endsWith('09')) bgTheme = '#FFFDE7'; // kuning
+  if (data.id.endsWith('02') || data.id.endsWith('06') || data.id.endsWith('10') || data.id.endsWith('14') || data.id.endsWith('18')) bgTheme = '#E8F5E9'; // hijau
+  else if (data.id.endsWith('03') || data.id.endsWith('07') || data.id.endsWith('11') || data.id.endsWith('15')) bgTheme = '#FFF3E0'; // oranye
+  else if (data.id.endsWith('04') || data.id.endsWith('08') || data.id.endsWith('12') || data.id.endsWith('16')) bgTheme = '#F3E5F5'; // ungu
+  else if (data.id.endsWith('05') || data.id.endsWith('09') || data.id.endsWith('13') || data.id.endsWith('17')) bgTheme = '#FFFDE7'; // kuning
 
   return `<!DOCTYPE html>
 <html lang="id">
@@ -402,3 +402,292 @@ materiListK3Part1.forEach(materi => {
   fs.writeFileSync(path.join(outDir, `${materi.id}.html`), html);
 });
 console.log('✅ Generated 9 Kelas 3 books (Part 1)');
+
+// Data Array untuk Bab 3 - Bab 5 (k3-mtk-10 hingga k3-mtk-18)
+const materiListK3Part2 = [
+  {
+    id: "k3-mtk-10", emoji: "📏",
+    judul: "Mengukur Panjang dengan Satuan Baku",
+    deskripsi: "Belajar mengukur menggunakan penggaris dan meteran bersama Alfa!",
+    tujuan: ["Mengenal satuan panjang meter (m), sentimeter (cm), milimeter (mm)", "Menggunakan alat ukur penggaris dengan benar"],
+    badgeEmoji: "📏", badgeNama: "Juru Ukur Panjang",
+    sections: [
+      {
+        judul: "Satuan Panjang Baku",
+        konten: "<p>Alfa mengukur meja belajarnya dengan penggaris. Hasilnya adalah <code>120 cm</code>!</p><p>Satuan panjang baku yang sering kita pakai adalah <strong>meter (m)</strong>, <strong>sentimeter (cm)</strong>, dan <strong>milimeter (mm)</strong>.</p><p>120 cm sama dengan <strong>1 meter lebih 20 cm</strong>.</p>",
+        quiz: {
+          soal: "Satuan yang tepat untuk mengukur panjang pensil adalah...",
+          pilihan: [
+            {teks: "sentimeter (cm)", benar: true},
+            {teks: "meter (m)", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Cara Mengukur dengan Penggaris",
+        konten: "<p>Letakkan ujung benda pas di angka <strong>0 (nol)</strong> pada penggaris.</p><p>Lalu lihat angka yang sejajar dengan ujung benda satunya. Itulah panjang bendamu!</p>",
+        quiz: {
+          soal: "Saat mengukur benda dengan penggaris, ujung benda harus diletakkan di angka...",
+          pilihan: [
+            {teks: "Angka 1", benar: false},
+            {teks: "Angka 0", benar: true}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "k3-mtk-11", emoji: "🪜",
+    judul: "Hubungan Antar Satuan Panjang",
+    deskripsi: "Ayo naik turun tangga satuan panjang bersama Galih!",
+    tujuan: ["Memahami hubungan 1 m = 100 cm dan 1 cm = 10 mm", "Mengubah satuan panjang"],
+    badgeEmoji: "🪜", badgeNama: "Master Tangga Panjang",
+    sections: [
+      {
+        judul: "Tangga Satuan Panjang",
+        konten: "<p>Ingat aturan tangga: setiap <strong>turun 1 tangga dikali 10</strong>, setiap <strong>naik 1 tangga dibagi 10</strong>!</p><p>Dari meter (m) ke sentimeter (cm) turun 2 tangga, jadi dikali 100. Maka <strong>1 m = 100 cm</strong>.</p><p>Dari cm ke milimeter (mm) turun 1 tangga, jadi <strong>1 cm = 10 mm</strong>.</p>",
+        quiz: {
+          soal: "Tali panjangnya 3 meter. Berapa panjang tali dalam sentimeter?",
+          pilihan: [
+            {teks: "300 cm", benar: true},
+            {teks: "30 cm", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Soal Cerita Jarak",
+        konten: "<p>Galih berlari keliling lapangan sepanjang 200 m, lalu berjalan 150 m lagi.</p><p>Total jarak yang ditempuh Galih adalah 200 m + 150 m = <strong>350 m</strong>!</p>",
+        quiz: {
+          soal: "Pita 500 cm sama panjangnya dengan berapa meter?",
+          pilihan: [
+            {teks: "50 meter", benar: false},
+            {teks: "5 meter", benar: true}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "k3-mtk-12", emoji: "⚖️",
+    judul: "Mengukur Berat dengan Satuan Baku",
+    deskripsi: "Meutia menimbang buku dan buah apel. Berapa beratnya?",
+    tujuan: ["Mengenal satuan berat kilogram (kg), gram (g), dan ons", "Membaca alat timbangan"],
+    badgeEmoji: "⚖️", badgeNama: "Juru Timbang Baku",
+    sections: [
+      {
+        judul: "Satuan Berat Baku",
+        konten: "<p>Meutia membantu ibu menimbang tepung. Di timbangan tertulis <code>500 gram</code>.</p><p>Satuan berat yang sering dipakai sehari-hari adalah <strong>kilogram (kg)</strong>, <strong>gram (g)</strong>, dan <strong>ons</strong>.</p><p>Berat badan Andi adalah <strong>35 kg</strong>!</p>",
+        quiz: {
+          soal: "Satuan yang tepat untuk menimbang berat badan siswa kelas 3 adalah...",
+          pilihan: [
+            {teks: "kilogram (kg)", benar: true},
+            {teks: "gram (g)", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Membaca Timbangan",
+        konten: "<p>Pada timbangan jarum, perhatikan angka tempat jarum berhenti.</p><p>Jika jarum menunjuk angka 2 pada timbangan buah, berarti berat buah adalah <strong>2 kg</strong>!</p>",
+        quiz: {
+          soal: "Sebungkus gula pasir ditimbang dan jarum menunjuk angka 1000 gram. Itu sama artinya dengan...",
+          pilihan: [
+            {teks: "1 kilogram", benar: true},
+            {teks: "10 kilogram", benar: false}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "k3-mtk-13", emoji: "🛍️",
+    judul: "Hubungan Antar Satuan Berat",
+    deskripsi: "Belanja ke pasar bareng Alfa! Konversi berat gula dan beras.",
+    tujuan: ["Memahami hubungan 1 kg = 1.000 g dan 1 kg = 10 ons", "Menyelesaikan masalah sehari-hari tentang berat"],
+    badgeEmoji: "🛍️", badgeNama: "Master Tangga Berat",
+    sections: [
+      {
+        judul: "Konversi Satuan Berat",
+        konten: "<p>Perhatikan hubungan penting ini:</p><p>🌟 <strong>1 kg = 1.000 gram</strong></p><p>🌟 <strong>1 kg = 10 ons</strong></p><p>🌟 <strong>1 ons = 100 gram</strong></p><p>Kalau ibu beli beras 2 kg, berarti beratnya <strong>2.000 gram</strong>!</p>",
+        quiz: {
+          soal: "Ibu membeli cabai seberat 3 ons. Berapa gram berat cabai ibu?",
+          pilihan: [
+            {teks: "300 gram", benar: true},
+            {teks: "30 gram", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Total Belanjaan",
+        konten: "<p>Alfa membawa telur 1.500 gram dan tepung 500 gram.</p><p>Total berat bawaan Alfa = 1.500 + 500 = 2.000 gram, atau sama dengan <strong>2 kg</strong>!</p>",
+        quiz: {
+          soal: "4 kilogram telur sama beratnya dengan berapa ons?",
+          pilihan: [
+            {teks: "40 ons", benar: true},
+            {teks: "400 ons", benar: false}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "k3-mtk-14", emoji: "📐",
+    judul: "Sisi pada Bangun Datar",
+    deskripsi: "Ayo amati pinggiran kertas lipat origamimu!",
+    tujuan: ["Mengenal dan menghitung sisi pada persegi, persegi panjang, dan segitiga", "Menentukan panjang sisi"],
+    badgeEmoji: "📐", badgeNama: "Juru Sisi",
+    sections: [
+      {
+        judul: "Sisi Bangun Datar",
+        konten: "<p><strong>Sisi</strong> adalah garis lurus yang membatasi bangun datar.</p><p>🟧 <strong>Persegi</strong> punya 4 sisi yang <em>semuanya sama panjang</em>.</p><p>🟦 <strong>Persegi panjang</strong> punya 4 sisi: 2 sisi panjang dan 2 sisi pendek.</p><p>🔺 <strong>Segitiga</strong> punya 3 sisi!</p>",
+        quiz: {
+          soal: "Bangun datar yang memiliki 4 sisi sama panjang adalah...",
+          pilihan: [
+            {teks: "Persegi", benar: true},
+            {teks: "Segitiga", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Keliling dan Panjang Sisi",
+        konten: "<p>Keliling adalah jumlah panjang semua sisinya.</p><p>Jika persegi panjang sisinya 5 cm, maka kelilingnya 5 + 5 + 5 + 5 = <strong>20 cm</strong>!</p>",
+        quiz: {
+          soal: "Sebuah segitiga sama sisi memiliki panjang tiap sisi 6 cm. Keliling segitiga tersebut adalah...",
+          pilihan: [
+            {teks: "18 cm", benar: true},
+            {teks: "12 cm", benar: false}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "k3-mtk-15", emoji: "📙",
+    judul: "Sudut pada Bangun Datar",
+    deskripsi: "Ternyata pojokan buku kita itu namanya sudut siku-siku!",
+    tujuan: ["Mengenal sudut siku-siku, lancip, dan tumpul", "Menentukan jenis sudut pada bangun datar"],
+    badgeEmoji: "📙", badgeNama: "Juru Sudut",
+    sections: [
+      {
+        judul: "Tiga Jenis Sudut",
+        konten: "<p><strong>Sudut</strong> adalah pertemuan dua buah sisi.</p><p>📐 <strong>Sudut Siku-Siku:</strong> tegak lurus seperti pojok buku tulis (besarnya 90°).</p><p>🔺 <strong>Sudut Lancip:</strong> lebih tajam/sempit dari sudut siku-siku.</p><p>🪑 <strong>Sudut Tumpul:</strong> lebih lebar/terbuka dari sudut siku-siku!</p>",
+        quiz: {
+          soal: "Sudut yang bentuknya tegak lurus seperti pojokan meja disebut sudut...",
+          pilihan: [
+            {teks: "Siku-siku", benar: true},
+            {teks: "Lancip", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Sudut pada Bangun Datar",
+        konten: "<p>Persegi dan persegi panjang memiliki <strong>4 sudut siku-siku</strong>.</p><p>Sedangkan segitiga sama sisi memiliki 3 sudut lancip yang tajam!</p>",
+        quiz: {
+          soal: "Berapa banyak sudut siku-siku yang dimiliki oleh sebuah persegi panjang?",
+          pilihan: [
+            {teks: "4 sudut", benar: true},
+            {teks: "2 sudut", benar: false}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "k3-mtk-16", emoji: "🛤️",
+    judul: "Garis Tegak Lurus & Garis Sejajar",
+    deskripsi: "Mengamati rel kereta api dan jalan raya bersama Andi!",
+    tujuan: ["Mengenal garis tegak lurus", "Mengenal garis sejajar yang tidak pernah berpotongan"],
+    badgeEmoji: "🛤️", badgeNama: "Juru Garis",
+    sections: [
+      {
+        judul: "Garis Sejajar vs Tegak Lurus",
+        konten: "<p>🛤️ <strong>Garis Sejajar:</strong> dua garis yang posisinya searah dan tidak akan pernah berpotongan sampai kapanpun, seperti rel kereta api!</p><p>➕ <strong>Garis Tegak Lurus:</strong> dua garis yang bertemu dan membentuk sudut siku-siku (90°), seperti persimpangan jalan!</p>",
+        quiz: {
+          soal: "Rel kereta api adalah contoh nyata dari garis...",
+          pilihan: [
+            {teks: "Sejajar", benar: true},
+            {teks: "Tegak lurus", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Garis pada Persegi Panjang",
+        konten: "<p>Persegi panjang memiliki 2 pasang sisi yang <strong>sejajar</strong> (atas dengan bawah, kiri dengan kanan).</p><p>Sisi atas dan sisi samping bertemu saling <strong>tegak lurus</strong>!</p>",
+        quiz: {
+          soal: "Dua garis yang bertemu membentuk sudut siku-siku disebut garis...",
+          pilihan: [
+            {teks: "Tegak lurus", benar: true},
+            {teks: "Sejajar", benar: false}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "k3-mtk-17", emoji: "📊",
+    judul: "Mengurutkan & Membandingkan Data",
+    deskripsi: "Meutia mendata tinggi badan teman sekelas. Ayo kita urutkan!",
+    tujuan: ["Mengurutkan data dari terkecil atau terbesar", "Membandingkan data untuk mencari selisih"],
+    badgeEmoji: "📊", badgeNama: "Juru Urut Data",
+    sections: [
+      {
+        judul: "Mengurutkan Data Acak",
+        konten: "<p>Data tinggi badan 4 teman: 135 cm, 128 cm, 142 cm, 130 cm.</p><p>Supaya mudah dibaca, kita urutkan dari yang terpendek: <strong>128, 130, 135, 142</strong>!</p><p>Siswa tertinggi adalah Galih (142 cm) dan terpendek adalah Andi (128 cm).</p>",
+        quiz: {
+          soal: "Dari data berat badan: 28 kg, 35 kg, 30 kg, 32 kg. Siapakah yang paling berat?",
+          pilihan: [
+            {teks: "Siswa dengan berat 35 kg", benar: true},
+            {teks: "Siswa dengan berat 32 kg", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Selisih Data",
+        konten: "<p>Berapa beda tinggi antara Galih (142 cm) dan Andi (128 cm)?</p><p>Caranya dikurangkan: 142 - 128 = <strong>14 cm</strong>. Itulah selisihnya!</p>",
+        quiz: {
+          soal: "Nilai ulangan Alfa 90, Galih 75. Selisih nilai mereka adalah...",
+          pilihan: [
+            {teks: "15 poin", benar: true},
+            {teks: "25 poin", benar: false}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "k3-mtk-18", emoji: "📋",
+    judul: "Menyajikan Data dalam Tabel",
+    deskripsi: "Membuat tabel rapi untuk mencatat warna baju favorit di kelas!",
+    tujuan: ["Membuat tabel sederhana dari sekumpulan data", "Membaca informasi dari tabel baris dan kolom"],
+    badgeEmoji: "📋", badgeNama: "Master Tabel",
+    sections: [
+      {
+        judul: "Apa itu Tabel?",
+        konten: "<p>Tabel membantu kita merapikan data menggunakan <strong>kolom</strong> (ke bawah) dan <strong>baris</strong> (ke samping).</p><p>Misalnya, Kolom 1 untuk 'Pelajaran Favorit', Kolom 2 untuk 'Jumlah Siswa'. Sangat rapi dan mudah dibaca!</p>",
+        quiz: {
+          soal: "Bagian tabel yang mendatar ke samping disebut...",
+          pilihan: [
+            {teks: "Baris", benar: true},
+            {teks: "Kolom", benar: false}
+          ]
+        }
+      },
+      {
+        judul: "Membaca Data dari Tabel",
+        konten: "<p>Jika di baris 'Matematika' tertulis angka 8, artinya ada 8 siswa yang menyukai pelajaran Matematika.</p><p>Kita bisa langsung tahu pelajaran apa yang paling disukai dari angka terbesar di dalam tabel!</p>",
+        quiz: {
+          soal: "Jika di tabel tertulis warna Merah (5 siswa) dan Biru (7 siswa), warna apa yang lebih banyak disukai?",
+          pilihan: [
+            {teks: "Biru", benar: true},
+            {teks: "Merah", benar: false}
+          ]
+        }
+      }
+    ]
+  }
+];
+
+materiListK3Part2.forEach(materi => {
+  const html = template(materi);
+  fs.writeFileSync(path.join(outDir, `${materi.id}.html`), html);
+});
+console.log('✅ Generated 9 Kelas 3 books (Part 2)');
