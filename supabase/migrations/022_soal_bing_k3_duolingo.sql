@@ -393,7 +393,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q1',
+  'k3-bing-04-k3-bing-05-q1',
   'k3-bing-04',
   'match',
   'Match the hobby with the emoji!',
@@ -409,7 +409,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q2',
+  'k3-bing-04-k3-bing-05-q2',
   'k3-bing-04',
   'choose_correct',
   '''Swimming'' artinya...',
@@ -425,7 +425,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q3',
+  'k3-bing-04-k3-bing-05-q3',
   'k3-bing-04',
   'fill_blank',
   'Do you like ___? (bermain bola)',
@@ -441,7 +441,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q4',
+  'k3-bing-04-k3-bing-05-q4',
   'k3-bing-04',
   'arrange',
   'Arrange into a question!',
@@ -457,7 +457,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q5',
+  'k3-bing-04-k3-bing-05-q5',
   'k3-bing-04',
   'choose_correct',
   'Does Made like reading? (jawaban negatif)',
@@ -473,7 +473,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q6',
+  'k3-bing-04-k3-bing-05-q6',
   'k3-bing-04',
   'true_false',
   '''Riding a bike'' artinya berlari.',
@@ -489,7 +489,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q7',
+  'k3-bing-04-k3-bing-05-q7',
   'k3-bing-04',
   'fill_blank',
   'Cici likes ___. (menyanyi)',
@@ -505,7 +505,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q8',
+  'k3-bing-04-k3-bing-05-q8',
   'k3-bing-04',
   'arrange',
   'Arrange into a sentence!',
@@ -521,7 +521,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q1',
+  'k3-bing-05-q1',
   'k3-bing-05',
   'choose_correct',
   '''Sunday'' artinya...',
@@ -537,7 +537,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q2',
+  'k3-bing-05-q2',
   'k3-bing-05',
   'match',
   'Match the day with the correct order!',
@@ -553,7 +553,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q3',
+  'k3-bing-05-q3',
   'k3-bing-05',
   'fill_blank',
   'I like swimming on ___.',
@@ -569,7 +569,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q4',
+  'k3-bing-05-q4',
   'k3-bing-05',
   'arrange',
   'Arrange the days in order!',
@@ -585,7 +585,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q5',
+  'k3-bing-05-q5',
   'k3-bing-05',
   'choose_correct',
   'What day is today? (jika hari ini Senin)',
@@ -601,7 +601,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q6',
+  'k3-bing-05-q6',
   'k3-bing-05',
   'true_false',
   '''Friday'' artinya Kamis.',
@@ -617,7 +617,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q7',
+  'k3-bing-05-q7',
   'k3-bing-05',
   'fill_blank',
   'I like reading on ___. (hari Sabtu dan Minggu)',
@@ -633,7 +633,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q8',
+  'k3-bing-05-q8',
   'k3-bing-05',
   'arrange',
   'Arrange into a sentence!',
@@ -649,7 +649,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q1',
+  'k3-bing-06-k3-bing-05-q1',
   'k3-bing-06',
   'match',
   'Match the place with the emoji!',
@@ -665,7 +665,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q2',
+  'k3-bing-06-k3-bing-05-q2',
   'k3-bing-06',
   'choose_correct',
   '''Library'' artinya...',
@@ -681,7 +681,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q3',
+  'k3-bing-06-k3-bing-05-q3',
   'k3-bing-06',
   'fill_blank',
   'Is it the classroom? ___, it is.',
@@ -697,7 +697,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q4',
+  'k3-bing-06-k3-bing-05-q4',
   'k3-bing-06',
   'arrange',
   'Arrange into a question!',
@@ -713,7 +713,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q5',
+  'k3-bing-06-k3-bing-05-q5',
   'k3-bing-06',
   'choose_correct',
   'Is it the library? (jawaban negatif)',
@@ -729,7 +729,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q6',
+  'k3-bing-06-k3-bing-05-q6',
   'k3-bing-06',
   'true_false',
   '''Prayer room'' artinya mushola.',
@@ -745,7 +745,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q7',
+  'k3-bing-06-k3-bing-05-q7',
   'k3-bing-06',
   'fill_blank',
   '___ it the office? No, it isn''t.',
@@ -761,7 +761,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q8',
+  'k3-bing-06-k3-bing-05-q8',
   'k3-bing-06',
   'listen_choose',
   'Listen and choose!',
@@ -777,7 +777,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q1',
+  'k3-bing-07-k3-bing-05-q1',
   'k3-bing-07',
   'choose_correct',
   '''Behind'' artinya...',
@@ -793,7 +793,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q2',
+  'k3-bing-07-k3-bing-05-q2',
   'k3-bing-07',
   'match',
   'Match the preposition with the position!',
@@ -809,7 +809,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q3',
+  'k3-bing-07-k3-bing-05-q3',
   'k3-bing-07',
   'fill_blank',
   'The book is ___ the table.',
@@ -825,7 +825,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q4',
+  'k3-bing-07-k3-bing-05-q4',
   'k3-bing-07',
   'arrange',
   'Arrange into a sentence!',
@@ -841,7 +841,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q5',
+  'k3-bing-07-k3-bing-05-q5',
   'k3-bing-07',
   'choose_correct',
   'Where is the canteen? (di samping perpustakaan)',
@@ -857,7 +857,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q6',
+  'k3-bing-07-k3-bing-05-q6',
   'k3-bing-07',
   'true_false',
   '''Between'' artinya di depan.',
@@ -873,7 +873,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q7',
+  'k3-bing-07-k3-bing-05-q7',
   'k3-bing-07',
   'fill_blank',
   'The library is ___ the classroom and the office.',
@@ -889,7 +889,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q8',
+  'k3-bing-07-k3-bing-05-q8',
   'k3-bing-07',
   'arrange',
   'Arrange into a sentence!',
@@ -905,7 +905,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q1',
+  'k3-bing-08-k3-bing-05-q1',
   'k3-bing-08',
   'match',
   'Match the activity with the place!',
@@ -921,7 +921,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q2',
+  'k3-bing-08-k3-bing-05-q2',
   'k3-bing-08',
   'choose_correct',
   '''Teach'' artinya...',
@@ -937,7 +937,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q3',
+  'k3-bing-08-k3-bing-05-q3',
   'k3-bing-08',
   'fill_blank',
   'I ___ orange juice in the canteen.',
@@ -953,7 +953,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q4',
+  'k3-bing-08-k3-bing-05-q4',
   'k3-bing-08',
   'arrange',
   'Arrange into a sentence!',
@@ -969,7 +969,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q5',
+  'k3-bing-08-k3-bing-05-q5',
   'k3-bing-08',
   'choose_correct',
   'What do you do in the classroom?',
@@ -985,7 +985,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q6',
+  'k3-bing-08-k3-bing-05-q6',
   'k3-bing-08',
   'true_false',
   '''Write'' artinya membaca.',
@@ -1001,7 +1001,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q7',
+  'k3-bing-08-k3-bing-05-q7',
   'k3-bing-08',
   'fill_blank',
   'The teacher ___ in the classroom.',
@@ -1017,7 +1017,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q8',
+  'k3-bing-08-k3-bing-05-q8',
   'k3-bing-08',
   'arrange',
   'Arrange into a sentence!',
@@ -1033,7 +1033,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q1',
+  'k3-bing-09-k3-bing-05-q1',
   'k3-bing-09',
   'match',
   'Match the adjective with the opposite!',
@@ -1049,7 +1049,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q2',
+  'k3-bing-09-k3-bing-05-q2',
   'k3-bing-09',
   'choose_correct',
   '''Clean'' artinya...',
@@ -1065,7 +1065,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q3',
+  'k3-bing-09-k3-bing-05-q3',
   'k3-bing-09',
   'fill_blank',
   'My classroom is ___.',
@@ -1081,7 +1081,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q4',
+  'k3-bing-09-k3-bing-05-q4',
   'k3-bing-09',
   'arrange',
   'Arrange into a sentence!',
@@ -1097,7 +1097,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q5',
+  'k3-bing-09-k3-bing-05-q5',
   'k3-bing-09',
   'choose_correct',
   'The schoolyard is ___. (luas)',
@@ -1113,7 +1113,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q6',
+  'k3-bing-09-k3-bing-05-q6',
   'k3-bing-09',
   'true_false',
   '''Beautiful'' artinya indah.',
@@ -1129,7 +1129,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q7',
+  'k3-bing-09-k3-bing-05-q7',
   'k3-bing-09',
   'fill_blank',
   'The restroom is ___. (kotor)',
@@ -1145,7 +1145,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q8',
+  'k3-bing-09-k3-bing-05-q8',
   'k3-bing-09',
   'arrange',
   'Arrange into a sentence!',
@@ -1161,7 +1161,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q1',
+  'k3-bing-10-k3-bing-05-q1',
   'k3-bing-10',
   'match',
   'Match the number with the word!',
@@ -1177,7 +1177,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q2',
+  'k3-bing-10-k3-bing-05-q2',
   'k3-bing-10',
   'choose_correct',
   '''Thirty'' artinya...',
@@ -1193,7 +1193,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q3',
+  'k3-bing-10-k3-bing-05-q3',
   'k3-bing-10',
   'fill_blank',
   'There ___ 20 books on the shelf.',
@@ -1209,7 +1209,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q4',
+  'k3-bing-10-k3-bing-05-q4',
   'k3-bing-10',
   'arrange',
   'Arrange into a sentence!',
@@ -1225,7 +1225,7 @@ INSERT INTO public.questions (
   15
 ),
 (
-  'q5',
+  'k3-bing-10-k3-bing-05-q5',
   'k3-bing-10',
   'choose_correct',
   'There is ___ pencil on the table.',
@@ -1241,7 +1241,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q6',
+  'k3-bing-10-k3-bing-05-q6',
   'k3-bing-10',
   'true_false',
   '''Forty-two'' artinya 42.',
@@ -1257,7 +1257,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q7',
+  'k3-bing-10-k3-bing-05-q7',
   'k3-bing-10',
   'fill_blank',
   '___ there 25 students in the class?',
@@ -1273,7 +1273,7 @@ INSERT INTO public.questions (
   10
 ),
 (
-  'q8',
+  'k3-bing-10-k3-bing-05-q8',
   'k3-bing-10',
   'listen_choose',
   'Listen and choose!',
