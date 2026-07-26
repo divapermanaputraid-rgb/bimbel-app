@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import Link from "next/link";
 import { ProfileCard } from "./profile-card";
-import { TaskList } from "./task-list";
 import { SubjectGrid } from "./subject-grid";
 import { AchievementGrid } from "./achievement-grid";
 import { LearningHistory } from "./learning-history";
@@ -47,25 +47,6 @@ export default async function SiswaDashboardPage() {
         .order("urutan", { ascending: true })
     : { data: [] };
 
-  // Query active assignments (status !== completed)
-  const { data: assignments } = kelas
-    ? await supabase
-        .from("assignments")
-        .select(`
-          id,
-          due_date,
-          status,
-          material:materials (
-            id,
-            judul,
-            file_path
-          )
-        `)
-        .eq("student_id", user.id)
-        .neq("status", "completed")
-        .order("due_date", { ascending: true })
-    : { data: [] };
-
   // Compute materials progress
   // Fetch total materials per subject for this class
   const { data: materialsCount } = kelas
@@ -99,39 +80,21 @@ export default async function SiswaDashboardPage() {
     }
   });
 
-  type RawAssignment = {
-    id: string;
-    due_date: string | null;
-    status: string | null;
-    material: {
-      id: string;
-      judul: string;
-      file_path: string;
-    } | {
-      id: string;
-      judul: string;
-      file_path: string;
-    }[] | null;
-  };
-
-  const pendingTasks = ((assignments as unknown as RawAssignment[]) ?? [])
-    .map((a) => ({
-      id: a.id,
-      due_date: a.due_date,
-      status: a.status,
-      material: Array.isArray(a.material) ? a.material[0] : a.material,
-    }))
-    .filter((a): a is { id: string; due_date: string | null; status: string | null; material: { id: string; judul: string; file_path: string } } => a.material != null);
-
-  const pendingCount = pendingTasks.length;
-
-  // Query Streaks
+  // Query Streaks (fallback ke user_streaks Duolingo jika ada)
   const { data: streakData } = await supabase
     .from("daily_streaks")
     .select("streak_count")
     .eq("student_id", user.id)
-    .single();
-  const streakCount = streakData?.streak_count || 0;
+    .maybeSingle();
+  let streakCount = streakData?.streak_count || 0;
+  if (!streakCount) {
+    const { data: us } = await supabase
+      .from("user_streaks")
+      .select("current_streak")
+      .eq("user_id", user.id)
+      .maybeSingle();
+    streakCount = us?.current_streak || 0;
+  }
 
   // Query Notifications
   const { data: notifications } = await supabase
@@ -180,19 +143,28 @@ export default async function SiswaDashboardPage() {
       />
 
       {/* Sapaan Personal */}
-      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-4 mb-6">
-        <h2 className="text-base font-bold text-indigo-900 mb-1">
+      <div className="mb-6 rounded-2xl border border-indigo-100 bg-indigo-50 p-4">
+        <h2 className="mb-1 text-base font-bold text-indigo-900">
           Halo {profile.nama}! 👋
         </h2>
-        <p className="text-xs text-indigo-700 leading-normal font-medium">
-          {pendingCount > 0
-            ? `Hari ini ada ${pendingCount} tugas menunggu untuk diselesaikan 📚`
-            : "Yeay! Kamu bebas tugas hari ini. Yuk eksplor materi seru! ✨"}
+        <p className="text-xs font-medium leading-normal text-indigo-700">
+          Yuk lanjut belajar mandiri! Raih bintang di setiap unit ✨
         </p>
+        <div className="mt-3 flex gap-2">
+          <Link
+            href="/dashboard/siswa/learn"
+            className="rounded-lg bg-indigo-600 px-3 py-2 text-xs font-bold text-white"
+          >
+            📚 Belajar
+          </Link>
+          <Link
+            href="/dashboard/siswa/practice"
+            className="rounded-lg border border-indigo-200 bg-white px-3 py-2 text-xs font-bold text-indigo-700"
+          >
+            🎮 Latihan
+          </Link>
+        </div>
       </div>
-
-      {/* Section: Tugas Saya */}
-      <TaskList assignments={pendingTasks} />
 
       {/* Section: Buku Pelajaran */}
       <SubjectGrid subjects={subjects ?? []} subjectCounts={subjectCounts} />
