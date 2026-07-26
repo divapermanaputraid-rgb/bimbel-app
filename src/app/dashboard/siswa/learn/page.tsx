@@ -1,0 +1,11 @@
+export default function SiswaLearnPage() {
+  return (
+    <main className="mx-auto max-w-lg p-4 pt-6">
+      <h1 className="text-xl font-bold text-slate-800">📚 Belajar</h1>
+      <p className="mt-2 text-sm text-slate-500">Pilih materi dan unit untuk dibaca.</p>
+      <div className="mt-8 rounded-xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-400">
+        Halaman belajar — segera hadir
+      </div>
+    </main>
+  );
+}
