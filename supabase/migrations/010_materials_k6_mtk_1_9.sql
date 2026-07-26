@@ -1,3 +1,11 @@
+INSERT INTO public.subjects (id, kode, nama, icon, kelas, urutan)
+VALUES
+  ('k6-mtk', 'mtk', 'Matematika', '🔢', 6, 1)
+ON CONFLICT (id) DO UPDATE SET
+  nama = EXCLUDED.nama,
+  icon = EXCLUDED.icon,
+  urutan = EXCLUDED.urutan;
+
 INSERT INTO public.materials (id, kelas, subject_id, judul, deskripsi, file_path, jumlah_halaman, urutan) VALUES
 ('k6-mtk-01', 6, 'k6-mtk', 'Perkalian Bilangan Asli × Pecahan', 'Mengalikan bilangan bulat dengan pecahan. Mari kita pelajari konsep dasarnya! 💡', '/buku/kelas6/matematika/k6-mtk-01.html', 5, 1),
 ('k6-mtk-02', 6, 'k6-mtk', 'Perkalian Pecahan × Bilangan Asli', 'Sifat komutatif pada perkalian pecahan! Mari kita perhatikan contoh berikut. 📦', '/buku/kelas6/matematika/k6-mtk-02.html', 5, 2),
@@ -8,7 +16,7 @@ INSERT INTO public.materials (id, kelas, subject_id, judul, deskripsi, file_path
 ('k6-mtk-07', 6, 'k6-mtk', 'Membandingkan Benda (Konsep Rasio)', 'Berapa banyak banding berapa banyak? Itulah rasio! 🏀⚽', '/buku/kelas6/matematika/k6-mtk-07.html', 5, 7),
 ('k6-mtk-08', 6, 'k6-mtk', 'Pengertian Rasio', 'Belajar menuliskan notasi perbandingan secara matematis. 📏', '/buku/kelas6/matematika/k6-mtk-08.html', 5, 8),
 ('k6-mtk-09', 6, 'k6-mtk', 'Kesamaan Rasio (Rasio Senilai)', 'Kalau skalanya dibesarkan, apakah rasionya tetap sama? 🗺️', '/buku/kelas6/matematika/k6-mtk-09.html', 5, 9)
-ON CONFLICT (id) DO UPDATE SET 
+ON CONFLICT (id) DO UPDATE SET
   judul = EXCLUDED.judul,
   deskripsi = EXCLUDED.deskripsi,
   file_path = EXCLUDED.file_path;
