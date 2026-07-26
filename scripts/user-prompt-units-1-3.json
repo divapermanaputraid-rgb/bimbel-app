@@ -1,0 +1,332 @@
+{
+  "subject": "k3-bing",
+  "subject_name": "Bahasa Inggris",
+  "kelas": 3,
+  "total_soal": 80,
+  "units": [
+    {
+      "unit_id": "k3-bing-01",
+      "unit_title": "I Like Mi Aceh",
+      "topic": "Food & Drink",
+      "soal": [
+        {
+          "id": "k3-bing-01-q1",
+          "tipe": "match",
+          "soal": "Match the picture with the correct word!",
+          "soal_id": "Pilih gambar yang sesuai dengan kata!",
+          "data": {
+            "🍗": ["fried chicken", "noodle", "rice"],
+            "🍜": ["meatball", "noodle", "bread"],
+            "🍚": ["fried rice", "rice", "tea"]
+          },
+          "jawaban_benar": {
+            "🍗": "fried chicken",
+            "🍜": "noodle",
+            "🍚": "rice"
+          },
+          "penjelasan_id": "🍗 = fried chicken (ayam goreng), 🍜 = noodle (mi), 🍚 = rice (nasi). Great job! 🌟",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-01-q2",
+          "tipe": "listen_choose",
+          "soal": "Listen and choose the correct picture!",
+          "soal_id": "Dengar dan pilih gambar yang benar!",
+          "audio_text": "fried chicken",
+          "pilihan": ["🍗", "🍜", "🍚"],
+          "jawaban_benar": "🍗",
+          "penjelasan_id": "Fried chicken = ayam goreng = 🍗. Yummy! 🎉",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-01-q3",
+          "tipe": "arrange",
+          "soal": "Arrange the words into a correct sentence!",
+          "soal_id": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata": ["like", "I", "chicken", "fried"],
+          "jawaban_benar": "I like fried chicken",
+          "penjelasan_id": "I like fried chicken = Saya suka ayam goreng. Ingat: Subject (I) + like + object! ✅",
+          "level": 1,
+          "xp": 15
+        },
+        {
+          "id": "k3-bing-01-q4",
+          "tipe": "fill_blank",
+          "soal": "Fill in the blank!",
+          "soal_id": "Lengkapi kalimatnya!",
+          "kalimat": "I ___ fried rice.",
+          "pilihan": ["like", "is", "are"],
+          "jawaban_benar": "like",
+          "penjelasan_id": "I LIKE fried rice = Saya suka nasi goreng. 'Like' artinya suka! 🍛",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-01-q5",
+          "tipe": "choose_correct",
+          "soal": "What is this? 🍦",
+          "soal_id": "Apa ini? 🍦",
+          "pilihan": ["ice cream", "milk", "tea"],
+          "jawaban_benar": "ice cream",
+          "penjelasan_id": "🍦 = ice cream = es krim. Sweet! 🍦",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-01-q6",
+          "tipe": "true_false",
+          "soal": "'Meatball' artinya bakso. True or False?",
+          "soal_id": "'Meatball' artinya bakso. Benar atau Salah?",
+          "pilihan": ["True", "False"],
+          "jawaban_benar": "True",
+          "penjelasan_id": "Betul! Meatball = bakso = 🍡. Yummy! 🎉",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-01-q7",
+          "tipe": "arrange",
+          "soal": "Arrange into a sentence!",
+          "soal_id": "Susun menjadi kalimat!",
+          "kata": ["milk", "like", "I"],
+          "jawaban_benar": "I like milk",
+          "penjelasan_id": "I like milk = Saya suka susu. 🥛",
+          "level": 1,
+          "xp": 15
+        },
+        {
+          "id": "k3-bing-01-q8",
+          "tipe": "match",
+          "soal": "Match the English word with Indonesian meaning!",
+          "soal_id": "Cocokkan kata Inggris dengan arti Indonesia!",
+          "data": {
+            "coffee": ["teh", "kopi", "susu"],
+            "tea": ["kopi", "teh", "es krim"],
+            "bread": ["nasi", "roti", "bakso"]
+          },
+          "jawaban_benar": {
+            "coffee": "kopi",
+            "tea": "teh",
+            "bread": "roti"
+          },
+          "penjelasan_id": "Coffee = kopi ☕, Tea = teh 🍵, Bread = roti 🍞. Perfect! ⭐",
+          "level": 2,
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bing-02",
+      "unit_title": "I Don't Like Rice",
+      "topic": "Like & Dislike",
+      "soal": [
+        {
+          "id": "k3-bing-02-q1",
+          "tipe": "choose_correct",
+          "soal": "'I don't like' artinya...",
+          "soal_id": "'I don't like' artinya...",
+          "pilihan": ["Saya suka", "Saya tidak suka", "Saya mau"],
+          "jawaban_benar": "Saya tidak suka",
+          "penjelasan_id": "Don't = tidak. Jadi 'I don't like' = Saya tidak suka. 👎",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-02-q2",
+          "tipe": "fill_blank",
+          "soal": "___ you like noodles?",
+          "soal_id": "___ kamu suka mi?",
+          "kalimat": "___ you like noodles?",
+          "pilihan": ["Do", "Are", "Is"],
+          "jawaban_benar": "Do",
+          "penjelasan_id": "'Do you like...?' = Apakah kamu suka...? Untuk tanya 'suka', pakai 'Do'! 💡",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-02-q3",
+          "tipe": "arrange",
+          "soal": "Arrange into a question!",
+          "soal_id": "Susun menjadi pertanyaan!",
+          "kata": ["like", "you", "Do", "rice"],
+          "jawaban_benar": "Do you like rice",
+          "penjelasan_id": "Do you like rice? = Apakah kamu suka nasi? 🍚",
+          "level": 1,
+          "xp": 15
+        },
+        {
+          "id": "k3-bing-02-q4",
+          "tipe": "choose_correct",
+          "soal": "Do you like coffee? (jawaban positif)",
+          "soal_id": "Do you like coffee? (jawaban positif)",
+          "pilihan": ["Yes, I do.", "No, I don't.", "I like tea."],
+          "jawaban_benar": "Yes, I do.",
+          "penjelasan_id": "'Yes, I do.' = Ya, saya suka. Untuk jawab positif dari 'Do you like...?' ✅",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-02-q5",
+          "tipe": "true_false",
+          "soal": "'No, I don't like it.' artinya 'Ya, saya suka.'",
+          "soal_id": "'No, I don't like it.' artinya 'Ya, saya suka.'",
+          "pilihan": ["True", "False"],
+          "jawaban_benar": "False",
+          "penjelasan_id": "Salah! 'No, I don't like it.' = Tidak, saya tidak suka. 👎",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-02-q6",
+          "tipe": "fill_blank",
+          "soal": "A: Do you like meatball? B: ___, I don't.",
+          "soal_id": "A: Do you like meatball? B: ___, saya tidak.",
+          "kalimat": "A: Do you like meatball? B: ___, I don't.",
+          "pilihan": ["Yes", "No", "Maybe"],
+          "jawaban_benar": "No",
+          "penjelasan_id": "'No, I don't.' = Tidak, saya tidak (suka). 👎",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-02-q7",
+          "tipe": "match",
+          "soal": "Match the expression with the meaning!",
+          "soal_id": "Cocokkan ungkapan dengan artinya!",
+          "data": {
+            "I like it.": ["Saya tidak suka", "Saya suka", "Saya mau"],
+            "I don't like it.": ["Saya suka", "Saya tidak suka", "Saya punya"],
+            "Do you like it?": ["Apakah kamu punya?", "Apakah kamu suka?", "Apakah kamu mau?"]
+          },
+          "jawaban_benar": {
+            "I like it.": "Saya suka",
+            "I don't like it.": "Saya tidak suka",
+            "Do you like it?": "Apakah kamu suka?"
+          },
+          "penjelasan_id": "I like it = Saya suka 👍, I don't like it = Saya tidak suka 👎, Do you like it? = Apakah kamu suka? ❓",
+          "level": 2,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-02-q8",
+          "tipe": "arrange",
+          "soal": "Arrange into a correct answer!",
+          "soal_id": "Susun menjadi jawaban yang benar!",
+          "kata": ["do", "Yes", "I"],
+          "jawaban_benar": "Yes I do",
+          "penjelasan_id": "Yes, I do. = Ya, saya suka. Jangan lupa koma setelah Yes! ✅",
+          "level": 2,
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bing-03",
+      "unit_title": "I Have Fried Chicken for Breakfast",
+      "topic": "Meals & Time",
+      "soal": [
+        {
+          "id": "k3-bing-03-q1",
+          "tipe": "choose_correct",
+          "soal": "'Breakfast' artinya...",
+          "soal_id": "'Breakfast' artinya...",
+          "pilihan": ["Sarapan", "Makan siang", "Makan malam"],
+          "jawaban_benar": "Sarapan",
+          "penjelasan_id": "Breakfast = sarapan 🌅, Lunch = makan siang 🌞, Dinner = makan malam 🌙",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-03-q2",
+          "tipe": "match",
+          "soal": "Match the meal with the time!",
+          "soal_id": "Cocokkan makanan dengan waktunya!",
+          "data": {
+            "breakfast": ["12:00", "07:00", "19:00"],
+            "lunch": ["07:00", "12:00", "19:00"],
+            "dinner": ["19:00", "07:00", "12:00"]
+          },
+          "jawaban_benar": {
+            "breakfast": "07:00",
+            "lunch": "12:00",
+            "dinner": "19:00"
+          },
+          "penjelasan_id": "Breakfast = 07:00 pagi 🌅, Lunch = 12:00 siang 🌞, Dinner = 19:00 malam 🌙",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-03-q3",
+          "tipe": "fill_blank",
+          "soal": "I ___ bread and milk for breakfast.",
+          "soal_id": "Saya ___ roti dan susu untuk sarapan.",
+          "kalimat": "I ___ bread and milk for breakfast.",
+          "pilihan": ["have", "like", "eat"],
+          "jawaban_benar": "have",
+          "penjelasan_id": "'I have... for breakfast' = Saya makan/minum... untuk sarapan. 🍞🥛",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-03-q4",
+          "tipe": "arrange",
+          "soal": "Arrange into a sentence!",
+          "soal_id": "Susun menjadi kalimat!",
+          "kata": ["for", "chicken", "I", "have", "lunch", "fried"],
+          "jawaban_benar": "I have fried chicken for lunch",
+          "penjelasan_id": "I have fried chicken for lunch = Saya makan ayam goreng untuk makan siang. 🍗",
+          "level": 1,
+          "xp": 15
+        },
+        {
+          "id": "k3-bing-03-q5",
+          "tipe": "choose_correct",
+          "soal": "What do you have for dinner? 🌙",
+          "soal_id": "Apa yang kamu makan untuk makan malam? 🌙",
+          "pilihan": ["Rice and meatball", "Bread and milk", "Fried chicken"],
+          "jawaban_benar": "Rice and meatball",
+          "penjelasan_id": "Semua bisa benar! Tapi 'rice and meatball' = nasi dan bakso adalah makanan malam yang umum di Indonesia. 🍚🍡",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-03-q6",
+          "tipe": "true_false",
+          "soal": "'Lunch' artinya sarapan.",
+          "soal_id": "'Lunch' artinya sarapan.",
+          "pilihan": ["True", "False"],
+          "jawaban_benar": "False",
+          "penjelasan_id": "Salah! Lunch = makan siang, Breakfast = sarapan. 🌞 vs 🌅",
+          "level": 1,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-03-q7",
+          "tipe": "fill_blank",
+          "soal": "I have noodles ___ dinner.",
+          "soal_id": "Saya makan mi ___ makan malam.",
+          "kalimat": "I have noodles ___ dinner.",
+          "pilihan": ["for", "in", "on"],
+          "jawaban_benar": "for",
+          "penjelasan_id": "'For' digunakan untuk menyatakan makanan pada waktu tertentu. 'I have noodles for dinner.' 🍜",
+          "level": 2,
+          "xp": 10
+        },
+        {
+          "id": "k3-bing-03-q8",
+          "tipe": "listen_choose",
+          "soal": "Listen and choose!",
+          "soal_id": "Dengar dan pilih!",
+          "audio_text": "breakfast",
+          "pilihan": ["🌅", "🌞", "🌙"],
+          "jawaban_benar": "🌅",
+          "penjelasan_id": "Breakfast = sarapan = pagi = 🌅. Rise and shine! ☀️",
+          "level": 1,
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}
