@@ -1,11 +1,49 @@
-export default function SiswaLearnPage() {
+import { redirect } from "next/navigation";
+import { createClient } from "@/lib/supabase/server";
+import {
+  LearnClient,
+  type MaterialRow,
+  type ProgressRow,
+  type SubjectRow,
+} from "@/components/learn/LearnClient";
+
+export default async function SiswaLearnPage() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) redirect("/login");
+
+  const { data: profile } = await supabase
+    .from("users")
+    .select("role")
+    .eq("id", user.id)
+    .single();
+
+  if (!profile) redirect("/login");
+  if (profile.role !== "siswa") redirect("/dashboard/guru");
+
+  const { data: subjects } = await supabase
+    .from("subjects")
+    .select("id, kode, nama, icon, kelas, urutan")
+    .order("urutan", { ascending: true });
+
+  const { data: materials } = await supabase
+    .from("materials")
+    .select("id, kelas, subject_id, judul, deskripsi, file_path, urutan")
+    .order("urutan", { ascending: true });
+
+  const { data: progress } = await supabase
+    .from("unit_progress")
+    .select("unit_id, subject_id, kelas, status, stars, best_score")
+    .eq("user_id", user.id);
+
   return (
-    <main className="mx-auto max-w-lg p-4 pt-6">
-      <h1 className="text-xl font-bold text-slate-800">📚 Belajar</h1>
-      <p className="mt-2 text-sm text-slate-500">Pilih materi dan unit untuk dibaca.</p>
-      <div className="mt-8 rounded-xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-400">
-        Halaman belajar — segera hadir
-      </div>
-    </main>
+    <LearnClient
+      subjects={(subjects ?? []) as SubjectRow[]}
+      materials={(materials ?? []) as MaterialRow[]}
+      progress={(progress ?? []) as ProgressRow[]}
+    />
   );
 }
