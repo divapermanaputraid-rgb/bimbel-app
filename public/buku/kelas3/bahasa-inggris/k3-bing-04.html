@@ -248,6 +248,20 @@ Riding a bike, beep beep beep! 🎵</p>
         <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua 4 Exercise dulu ya)</p>
       </div>
     </div>
+
+    <!-- Book End Action -->
+    <div class="book-end-section" style="text-align:center; padding:40px 20px; background:#E8F5E9; border-radius:16px; margin-top:24px; border:2px dashed #81c784;">
+      <h2 style="font-size:24px; margin:0 0 10px 0; color:#2e7d32;">🎓 Materi Selesai!</h2>
+      <p style="font-size:18px; color:#4caf50; margin:0 0 20px 0; font-weight:bold;">Yuk uji pemahamanmu dengan latihan soal!</p>
+
+      <button onclick="goToPractice()" style="background:#4F46E5; color:white; padding:16px 32px; border-radius:12px; font-size:18px; border:none; cursor:pointer; margin:8px; font-weight:bold; box-shadow:0 4px 0 #3730a3; transition:transform 0.1s;">
+        🎮 Mulai Latihan (8 Soal)
+      </button>
+
+      <button onclick="goToNextBook()" style="background:white; color:#4F46E5; padding:16px 32px; border-radius:12px; font-size:18px; border:2px solid #4F46E5; cursor:pointer; margin:8px; font-weight:bold;">
+        📖 Buka Unit Berikutnya
+      </button>
+    </div>
   </div>
 
   <!-- AI Tutor -->
@@ -267,6 +281,22 @@ Riding a bike, beep beep beep! 🎵</p>
   <script>
     window._QUIZ_ANSWERS = [0,0,0,0];
     window._TOTAL_SECTIONS = 4;
+
+    function goToPractice() {
+      const path = window.location.pathname;
+      const match = path.match(/k3-bing-\d+/);
+      if (match) window.location.href = '/dashboard/siswa/latihan/' + match[0];
+    }
+
+    function goToNextBook() {
+      const path = window.location.pathname;
+      const match = path.match(/k3-bing-(\d+)/);
+      if (match) {
+        const currentNum = parseInt(match[1]);
+        const nextNum = String(currentNum + 1).padStart(2, '0');
+        window.location.href = path.replace(/k3-bing-\d+/, 'k3-bing-' + nextNum);
+      }
+    }
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
