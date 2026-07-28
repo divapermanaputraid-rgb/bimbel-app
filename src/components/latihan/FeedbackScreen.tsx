@@ -26,7 +26,7 @@ export function FeedbackScreen({
           </div>
         )}
         {explanation && (
-          <div className="mb-6 rounded-xl bg-white/50 p-4 text-sm font-medium">
+          <div className="mb-6 rounded-xl bg-white/50 p-4 text-lg leading-[1.8] font-medium">
             💡 {explanation}
           </div>
         )}

@@ -12,7 +12,8 @@ import { FeedbackScreen } from "./FeedbackScreen";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Soal = any;
 
-export function LatihanContainer({ questions }: { unitId: string; questions: Soal[] }) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function LatihanContainer({ unitId, questions }: { unitId: string; questions: Soal[] }) {
   const router = useRouter();
   const { playCorrect, playWrong, playComplete } = useSound();
 
