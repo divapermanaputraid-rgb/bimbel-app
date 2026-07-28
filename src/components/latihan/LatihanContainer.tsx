@@ -70,7 +70,21 @@ export function LatihanContainer({ unitId, questions }: { unitId: string; questi
       <div className="flex min-h-screen flex-col items-center justify-center bg-indigo-50 p-6 text-center">
         <h1 className="mb-4 text-3xl font-black text-indigo-900">Latihan Unit</h1>
         <p className="mb-8 text-lg font-medium text-indigo-700">8 Soal • Target 3 Bintang ⭐</p>
-        <button onClick={handleStart} className="w-full rounded-2xl bg-indigo-600 py-4 text-xl font-bold text-white shadow-[0_4px_0_#4338ca]">🚀 MULAI LATIHAN</button>
+        <div className="flex w-full flex-col gap-3">
+          <button onClick={handleStart} className="w-full rounded-2xl bg-indigo-600 py-4 text-xl font-bold text-white shadow-[0_4px_0_#4338ca] active:translate-y-1 active:shadow-none transition-all">
+            🚀 MULAI LATIHAN
+          </button>
+          <button
+            onClick={() => {
+              if (typeof window !== "undefined") {
+                window.location.href = `/buku/kelas3/bahasa-inggris/${unitId}.html`;
+              }
+            }}
+            className="w-full rounded-2xl border-2 border-indigo-200 bg-white py-4 text-xl font-bold text-indigo-700 transition-all hover:bg-indigo-50"
+          >
+            📖 Baca Buku Dulu
+          </button>
+        </div>
       </div>
     );
   }
