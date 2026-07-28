@@ -2,6 +2,9 @@
 
 import { useCallback } from "react";
 
+// Store globally to prevent AudioContext exhaustion
+let globalAudioCtx: any = null;
+
 export function useSound() {
   const playSound = useCallback((type: "correct" | "wrong" | "complete") => {
     if (typeof window === "undefined") return;
@@ -10,19 +13,27 @@ export function useSound() {
     if (!AudioContextClass) return;
 
     try {
-      const audioCtx = new AudioContextClass();
-      const osc = audioCtx.createOscillator();
-      const gain = audioCtx.createGain();
-      osc.connect(gain);
-      gain.connect(audioCtx.destination);
+      if (!globalAudioCtx) {
+        globalAudioCtx = new AudioContextClass();
+      }
+      
+      const audioCtx = globalAudioCtx;
 
       if (type === 'correct') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
         osc.frequency.value = 880; // A5
         gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
         gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.2);
         osc.start();
         osc.stop(audioCtx.currentTime + 0.3);
       } else if (type === 'wrong') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
         osc.frequency.value = 220; // A3
         gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
         gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);

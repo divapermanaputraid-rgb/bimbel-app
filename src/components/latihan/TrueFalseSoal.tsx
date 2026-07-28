@@ -8,7 +8,7 @@ export function TrueFalseSoal({ soal, onSubmit }: { soal: any, onSubmit: (ans: s
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="text-xl font-bold text-slate-800">{soal.soal_id || soal.soal}</h2>
+      <h2 className="text-lg leading-[1.8] font-bold text-slate-800">{soal.soal_id || soal.soal}</h2>
       <div className="flex gap-4">
         {["True", "False"].map((opt) => (
           <button

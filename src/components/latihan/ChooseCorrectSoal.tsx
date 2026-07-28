@@ -17,7 +17,7 @@ export function ChooseCorrectSoal({ soal, onSubmit }: Props) {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="text-xl font-bold text-slate-800">{soal.soal_id || soal.soal}</h2>
+      <h2 className="text-lg leading-[1.8] font-bold text-slate-800">{soal.soal_id || soal.soal}</h2>
       {soal.audio_text && (
         <button onClick={() => speak(soal.audio_text)} className="w-16 h-16 rounded-2xl bg-indigo-100 text-3xl border-2 border-indigo-200">🔊</button>
       )}
