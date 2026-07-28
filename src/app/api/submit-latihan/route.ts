@@ -157,6 +157,49 @@ export async function POST(req: NextRequest) {
         await supabase.from("unit_progress").insert(progressPayload);
       }
 
+      // Auto-unlock next unit jika mendapat bintang
+      if (nextStars >= 1) {
+        try {
+          const match = unitId.match(/(.*)-(\d+)$/);
+          if (match) {
+            const prefix = match[1];
+            const num = parseInt(match[2], 10);
+            const nextNum = String(num + 1).padStart(2, '0');
+            const nextUnitId = `${prefix}-${nextNum}`;
+
+            // Cek apakah unit berikutnya valid di tabel materials
+            const { data: nextMat } = await supabase
+              .from("materials")
+              .select("id")
+              .eq("id", nextUnitId)
+              .maybeSingle();
+
+            if (nextMat) {
+              const { data: exNext } = await supabase
+                .from("unit_progress")
+                .select("id, status")
+                .eq("user_id", user.id)
+                .eq("unit_id", nextUnitId)
+                .maybeSingle();
+
+              if (!exNext) {
+                await supabase.from("unit_progress").insert({
+                  user_id: user.id,
+                  unit_id: nextUnitId,
+                  subject_id: subjectId || material.subject_id,
+                  kelas: material.kelas,
+                  status: 'available'
+                });
+              } else if (exNext.status === 'locked') {
+                await supabase.from("unit_progress").update({ status: 'available' }).eq("id", exNext.id);
+              }
+            }
+          }
+        } catch (e) {
+          console.error("Auto-unlock error:", e);
+        }
+      }
+
       // latihan_results log
       await supabase.from("latihan_results").insert({
         student_id: user.id,
