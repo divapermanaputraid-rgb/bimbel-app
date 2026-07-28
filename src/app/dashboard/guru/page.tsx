@@ -80,6 +80,12 @@ export default async function GuruDashboardPage() {
                   <form action={async () => {
                     "use server";
                     const supabaseClient = await createClient();
+                    const { data: { user: actor } } = await supabaseClient.auth.getUser();
+                    if (!actor) throw new Error("Unauthorized");
+
+                    const { data: actorProfile } = await supabaseClient.from("users").select("role").eq("id", actor.id).single();
+                    if (actorProfile?.role !== "guru") throw new Error("Forbidden");
+
                     await supabaseClient.from("notifications").insert({
                       student_id: s.user_id,
                       type: "semangat",

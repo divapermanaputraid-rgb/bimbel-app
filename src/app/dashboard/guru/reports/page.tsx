@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
 interface SiswaItem {
@@ -14,6 +15,11 @@ interface UnitProgressItem {
 
 export default async function GuruReportsPage() {
   const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect("/login");
+
+  const { data: profile } = await supabase.from("users").select("role").eq("id", user.id).single();
+  if (profile?.role !== "guru") redirect("/dashboard/siswa");
 
   const { data: siswaList } = await supabase
     .from("users")
