@@ -3,31 +3,46 @@ import { createClient } from "@/lib/supabase/server";
 
 export async function POST(req: NextRequest) {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
   if (!user) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
   try {
-    const { materialId, status, skor = 0 } = await req.json();
+    // Abaikan skor dari client. Route ini hanya untuk "Selesai Membaca Buku".
+    // XP flat 20, dicek agar tidak bisa di-farm berulang.
+    const { materialId, status } = await req.json();
 
     if (!materialId || status !== "completed") {
       return NextResponse.json({ error: "Bad request" }, { status: 400 });
     }
 
-    // 1. Calculate XP
-    const xpEarned = 10 + Math.floor(skor * 0.5);
+    // Sudah pernah selesai? Jangan kasih XP lagi.
+    const { data: existingProgress } = await supabase
+      .from("student_progress")
+      .select("id")
+      .eq("student_id", user.id)
+      .eq("material_id", materialId)
+      .maybeSingle();
 
-    // 2. Insert XP Log
+    if (existingProgress) {
+      return NextResponse.json({ success: true, message: "Already completed, no new XP", xpEarned: 0 });
+    }
+
+    const xpEarned = 20;
+
+    // XP log
     await supabase.from("xp_logs").insert({
       student_id: user.id,
       amount: xpEarned,
-      reason: `Selesai: Materi ${materialId}`,
-      material_id: materialId
+      reason: `Selesai membaca: ${materialId}`,
+      material_id: materialId,
     });
 
-    // 3. Update User Total XP
+    // Update total XP
     const { data: profile } = await supabase
       .from("users")
       .select("xp_total, kelas")
@@ -41,32 +56,16 @@ export async function POST(req: NextRequest) {
         .eq("id", user.id);
     }
 
-    // 4. Upsert Progress
-    const { data: existingProgress } = await supabase
-      .from("student_progress")
-      .select("id")
-      .eq("student_id", user.id)
-      .eq("material_id", materialId)
-      .single();
+    // Insert progress (baru pertama kali)
+    await supabase.from("student_progress").insert({
+      student_id: user.id,
+      material_id: materialId,
+      status: "completed",
+      skor: 100,
+      completed_at: new Date().toISOString(),
+    });
 
-    if (existingProgress) {
-      await supabase
-        .from("student_progress")
-        .update({ status: "completed", skor, completed_at: new Date().toISOString() })
-        .eq("id", existingProgress.id);
-    } else {
-      await supabase
-        .from("student_progress")
-        .insert({
-          student_id: user.id,
-          material_id: materialId,
-          status: "completed",
-          skor,
-          completed_at: new Date().toISOString()
-        });
-    }
-
-    // 5. Update Streak
+    // Streak
     const today = new Date().toISOString().split("T")[0];
     const yesterdayDate = new Date();
     yesterdayDate.setDate(yesterdayDate.getDate() - 1);
@@ -76,17 +75,16 @@ export async function POST(req: NextRequest) {
       .from("daily_streaks")
       .select("id, streak_count, last_study_date, longest_streak")
       .eq("student_id", user.id)
-      .single();
+      .maybeSingle();
 
     let newStreak = 1;
 
     if (!streakRecord) {
-      // First time studying
       await supabase.from("daily_streaks").insert({
         student_id: user.id,
         streak_count: 1,
         longest_streak: 1,
-        last_study_date: today
+        last_study_date: today,
       });
     } else {
       const lastStudy = streakRecord.last_study_date;
@@ -97,16 +95,15 @@ export async function POST(req: NextRequest) {
           .update({
             streak_count: newStreak,
             longest_streak: Math.max(newStreak, streakRecord.longest_streak || 0),
-            last_study_date: today
+            last_study_date: today,
           })
           .eq("id", streakRecord.id);
       } else if (lastStudy !== today) {
-        // Streak broken
         await supabase
           .from("daily_streaks")
           .update({
             streak_count: 1,
-            last_study_date: today
+            last_study_date: today,
           })
           .eq("id", streakRecord.id);
       } else {
@@ -114,19 +111,16 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 6. Check Achievements
+    // Badge check (tanpa perfect_score dari skor client)
     try {
-      // Get all completed materials count
       const { count: materialsCompleted } = await supabase
         .from("student_progress")
         .select("id", { count: "exact", head: true })
         .eq("student_id", user.id)
         .eq("status", "completed");
 
-      // Get user class
       const userClass = profile?.kelas || 2;
 
-      // Get unearned achievements
       const { data: allBadges } = await supabase
         .from("achievements")
         .select("*")
@@ -137,40 +131,30 @@ export async function POST(req: NextRequest) {
         .select("achievement_id")
         .eq("student_id", user.id);
 
-      const earnedIds = new Set((earnedBadges || []).map(b => b.achievement_id));
-      const availableBadges = (allBadges || []).filter(b => !earnedIds.has(b.id));
-
-      const newlyEarned = [];
+      const earnedIds = new Set((earnedBadges || []).map((b) => b.achievement_id));
+      const availableBadges = (allBadges || []).filter((b) => !earnedIds.has(b.id));
 
       for (const badge of availableBadges) {
         let earned = false;
         if (badge.condition_type === "complete_materials") {
           earned = (materialsCompleted || 0) >= (badge.condition_value || 1);
-        } else if (badge.condition_type === "perfect_score") {
-          earned = skor === 100;
         } else if (badge.condition_type === "streak") {
           earned = newStreak >= (badge.condition_value || 1);
         }
+        // perfect_score diabaikan di route baca-buku (tidak ada skor kuis)
 
         if (earned) {
-          newlyEarned.push(badge);
+          await supabase.from("student_achievements").insert({
+            student_id: user.id,
+            achievement_id: badge.id,
+          });
+          await supabase.from("notifications").insert({
+            student_id: user.id,
+            title: "Selamat! Badge Baru 🏆",
+            message: `Kamu mendapatkan badge: ${badge.name}!`,
+            type: "achievement",
+          });
         }
-      }
-
-      // Unlock badges
-      for (const badge of newlyEarned) {
-        await supabase.from("student_achievements").insert({
-          student_id: user.id,
-          achievement_id: badge.id
-        });
-
-        // Notify
-        await supabase.from("notifications").insert({
-          student_id: user.id,
-          title: "Selamat! Badge Baru 🏆",
-          message: `Kamu mendapatkan badge: ${badge.name}!`,
-          type: "achievement"
-        });
       }
     } catch (achErr) {
       console.error("Achievement Error:", achErr);

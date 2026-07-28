@@ -7,6 +7,9 @@ export async function POST(req: NextRequest) {
 
   if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
+  const { data: profile } = await supabase.from("users").select("role").eq("id", user.id).single();
+  if (profile?.role !== "guru") return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+
   const { studentIds, materialId, includeChallenge, dueDate, notes } = await req.json();
 
   if (!studentIds || !studentIds.length || !materialId) {
