@@ -3,7 +3,7 @@
 import { useCallback } from "react";
 
 // Store globally to prevent AudioContext exhaustion
-let globalAudioCtx: any = null;
+let globalAudioCtx: AudioContext | null = null;
 
 export function useSound() {
   const playSound = useCallback((type: "correct" | "wrong" | "complete") => {
