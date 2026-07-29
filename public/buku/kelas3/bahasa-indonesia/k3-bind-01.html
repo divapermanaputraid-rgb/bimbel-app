@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ayo, Main! — Kelas 3</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+  <style>
+    .kelas3 { font-size:17px; line-height:1.8; }
+    .kelas3 .section-header { font-size:19px; }
+    .kelas3 .section-body { font-size:17px; }
+    .kelas3 .quiz-box p { font-size:17px; }
+    .kelas3 .feedback { font-size:17px; }
+    .kelas3 h1 { font-size:24px; }
+  </style>
+</head>
+<body class="kelas3" data-kelas="3" data-pelajaran="bind" data-materi="k3-bind-01" style="background-color: #FFFDE7; --bg: #FFFDE7;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Halaman Utama <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 72px; margin-bottom: 16px;">🏃</div>
+        <h1 style="color: #2e7d32; margin:0 0 8px 0; font-size: 24px;">Ayo, Main!</h1>
+        <p style="color: #666; font-size: 17px;">Bahasa Indonesia — Kelas 3</p>
+        <p style="margin-top: 16px; font-size: 17px;">Ayo kenali permainan tradisional dan modern! Belajar aturan bermain dan kerja sama! 🏃⚽</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Yuk Mulai! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Tujuan -->
+    <div class="section-card">
+      <div class="section-header">🎯 Setelah ini kamu bisa... <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <ul style="padding-left: 20px;">
+          <li>Mengenal permainan tradisional dan modern 🎯</li><li>Memahami pentingnya aturan bermain 📋</li><li>Bekerja sama saat bermain 🤝</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bagian 1 -->
+    <div class="section-card">
+      <div class="section-header">📖 Bagian 1: Permainan Tradisional! <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Halo teman-teman! Perhatikan! Hari ini Alfa dan Galih bermain di lapangan. 🏃‍♂️</p>
+<p>"Ayo main gobak sodor!" seru Alfa. 🎉</p>
+<p>Gobak sodor adalah permainan tradisional. Ada dua tim. Tim A jaga garis, tim B coba lewat! 🚧</p>
+<p>Alfa dan Galih di tim yang sama. Mereka <strong>bekerja sama</strong>! 💪</p>
+<p>"Kamu jaga garis depan, aku jaga garis belakang!" kata Galih. 🗣️</p>
+<p>Permainan tradisional lain yang seru:</p>
+<ul style="padding-left: 20px;">
+  <li>🙈 Petak umpet — sembunyi dan cari</li>
+  <li>🤸 Lompat tali — lompat bareng teman</li>
+  <li>🪁 Layang-layang — terbang di angin</li>
+  <li>🏃 Gobak sodor — lewat garis jaga</li>
+</ul>
+<p>Wah, seru sekali main di luar! Badan sehat, hati senang! 🌟</p>
+        <p style="font-weight:bold; margin-top:20px; font-size:18px;">🧪 Checkpoint 1</p>
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 16px; padding-top: 12px; border-top: 1px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 'Bekerja sama' artinya...</p>
+          <div class="quiz-options" style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Sendirian</button><button class="quiz-opt" data-opt="1">Bersama-sama 🤝</button><button class="quiz-opt" data-opt="2">Berantem</button>
+          </div>
+          <div class="feedback" style="margin-top:10px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 16px; padding-top: 12px; border-top: 1px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Gobak sodor adalah permainan...</p>
+          <div class="quiz-options" style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Modern 🎮</button><button class="quiz-opt" data-opt="1">Tradisional 🏃</button><button class="quiz-opt" data-opt="2">Dalam ruangan</button>
+          </div>
+          <div class="feedback" style="margin-top:10px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian 2 -->
+    <div class="section-card">
+      <div class="section-header">📖 Bagian 2: Aturan Bermain dan Kerja Sama! <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p>Meutia datang. "Boleh ikut?" tanya Meutia. 🙋‍♀️</p>
+<p>"Boleh! Tapi kita harus ikuti aturan!" kata Alfa. 📋</p>
+<p><strong>Aturan bermain yang baik:</strong></p>
+<ul style="padding-left: 20px;">
+  <li>✅ Jujur — jangan curang</li>
+  <li>🤝 Hormati lawan — jangan mengejek</li>
+  <li>😊 Terima kekalahan — jangan marah</li>
+  <li>👏 Rayakan kemenangan bersama</li>
+</ul>
+<p>Andi main video game di rumah. 🎮 Itu permainan modern. Seru juga, tapi main di luar lebih sehat! 🌞</p>
+<p>"Ayo, kita bisa!" seru Alfa saat hampir kalah. Mereka semangat terus! 💪</p>
+<p>Akhirnya tim Alfa menang. Semua tepuk tangan, termasuk lawan! 👏</p>
+<p>Itulah semangat sportif! Hebat! ⭐</p>
+        <p style="font-weight:bold; margin-top:20px; font-size:18px;">🧪 Checkpoint 2</p>
+        <div class="quiz-box" data-idx="2" data-answered="false" style="margin-top: 16px; padding-top: 12px; border-top: 1px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Alfa dan Galih ____ main gobak sodor.</p>
+          <div class="quiz-options" style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Bekerja sama 🤝</button><button class="quiz-opt" data-opt="1">Berkelahi</button><button class="quiz-opt" data-opt="2">Sendirian</button>
+          </div>
+          <div class="feedback" style="margin-top:10px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+        <div class="quiz-box" data-idx="3" data-answered="false" style="margin-top: 16px; padding-top: 12px; border-top: 1px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 17px;">🤔 Sikap yang benar saat kalah adalah...</p>
+          <div class="quiz-options" style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Marah</button><button class="quiz-opt" data-opt="1">Mengejek</button><button class="quiz-opt" data-opt="2">Menerima dengan legowo 😊</button>
+          </div>
+          <div class="feedback" style="margin-top:10px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latihan Soal -->
+    <div class="section-card">
+      <div class="section-header">✏️ Latihan Soal <span>▼</span></div>
+      <div class="section-body" style="font-size: 17px;">
+        <p style="font-weight:bold; font-size: 19px;">💪 Ayo kerjakan soal-soal di bawah ini!</p>
+        <p style="color: #666;">Klik jawaban yang menurutmu benar ya 😊</p>
+
+        <div class="quiz-box" data-idx="4" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 17px;">1. Permainan tradisional yang pakai tali disebut...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Gobak sodor</button><button class="quiz-opt" data-opt="1">Lompat tali 🤸</button><button class="quiz-opt" data-opt="2">Video game</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div><div class="quiz-box" data-idx="5" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 17px;">2. Aturan bermain penting supaya...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Main jadi adil 📋</button><button class="quiz-opt" data-opt="1">Main jadi membosankan</button><button class="quiz-opt" data-opt="2">Main jadi kacau</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div><div class="quiz-box" data-idx="6" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 17px;">3. 🤝 = ...</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Berkelahi</button><button class="quiz-opt" data-opt="1">Tolong-menolong / kerja sama</button><button class="quiz-opt" data-opt="2">Sendirian</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div><div class="quiz-box" data-idx="7" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 17px;">4. Susun: s-e-m-a-n-g-a-t →</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">semnagat</button><button class="quiz-opt" data-opt="1">semangat ✅</button><button class="quiz-opt" data-opt="2">smangat</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 17px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ringkasan + Badge -->
+    <div class="section-card">
+      <div class="section-header">🏆 Ringkasan & Selesai! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 17px;">
+        <p>Kamu sudah belajar tentang <strong>Ayo, Main!</strong>! 🌟</p>
+        <p style="margin-top: 16px;">Kamu mendapatkan badge istimewa:</p>
+        <div style="font-size: 72px; margin: 16px 0;">🏃</div>
+        <p style="font-weight:bold; color: #2e7d32; font-size: 22px;">Juru Bermain</p>
+        <p style="color: #666; margin-top: 8px;">⭐⭐⭐⭐⭐</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Selesai! 🎉</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Selesaikan semua kuis di atas dulu ya 🧐)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">Tutor AI (Kakak Kelas 6)</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Halo! Aku kakak kelas. Mau tanya soal Ayo, Main!? Aku siap bantu! 📚</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 1, 0, 2, 1, 0, 1, 1];
+    window._TOTAL_SECTIONS = 8;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
