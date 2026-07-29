@@ -413,7 +413,7 @@ const materiList = [
       konten: `<p>Garis bilangan adalah garis ajaib yang membantu kita berhitung! 📏</p>
 <p>Untuk <strong>2 + 3</strong>: mulai dari angka 2, lalu lompat maju 3 langkah: 3... 4... 5! Sampai di angka 5! 🐸</p>
 <p style="background:#fff8e1; padding:12px; border-radius:8px; margin:12px 0; border-left:4px solid #fbc02d; text-align:center; font-size:24px;">
-0 — 1 — 2 — <strong>3</strong> ← <strong>4</strong> ← <strong>5</strong> 🐸
+0 — 1 — 2 — <strong>3</strong> → <strong>4</strong> → <strong>5</strong> 🐸
 </p>
 <p>Tahukah kamu? <strong>2 + 3 = 5</strong> dan <strong>3 + 2 = 5</strong>. Hasilnya SAMA! Ini namanya <strong>sifat komutatif</strong>! 🔄</p>
 <p>Jadi berapapun urutannya, hasil penjumlahan tetap sama! Ajaib! 🌟</p>`,
@@ -504,7 +504,7 @@ const materiList = [
       konten: `<p>Kita juga bisa mengurangi dengan mundur di garis bilangan! 📏</p>
 <p>Untuk <strong>6 − 2</strong>: mulai dari 6, lalu mundur 2 langkah: 5... 4! Sampai di angka 4! 🐸</p>
 <p style="background:#fff8e1; padding:12px; border-radius:8px; margin:12px 0; border-left:4px solid #fbc02d; text-align:center; font-size:24px;">
-0 — 1 — 2 — 3 — <strong>4</strong> 🐸 → 5 → <strong>6</strong>
+0 — 1 — 2 — 3 — <strong>4</strong> 🐸 ← 5 ← <strong>6</strong>
 </p>
 <p>Pasangan bilangan juga membantu! Kalau 3 + 2 = 5, maka 5 − 3 = 2. Pasangan tak terpisahkan! 🔄</p>`,
       quiz: {
