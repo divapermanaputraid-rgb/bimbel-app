@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Animals Around Me — Grade 2 English</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+  <style>
+    .kelas2 { font-size:18px; line-height:1.8; }
+    .kelas2 .section-header { font-size:20px; }
+    .kelas2 .section-body { font-size:18px; }
+    .kelas2 .quiz-box p { font-size:18px; }
+    .kelas2 .feedback { font-size:18px; }
+    .kelas2 h1 { font-size:26px; }
+    .vocab-grid { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+    .vocab-card { background: white; border-radius: 12px; padding: 12px; text-align: center; flex: 1 0 45%; min-width: 120px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    .vocab-card .emoji { font-size: 40px; margin-bottom: 4px; }
+    .vocab-card .word { font-weight: bold; font-size: 18px; color: #1565c0; }
+    .vocab-card .meaning { font-size: 14px; color: #888; }
+    .vocab-card .audio-btn { background: #4CAF50; color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 18px; cursor: pointer; margin-top: 4px; }
+    .vocab-card .audio-btn:hover { background: #388E3C; }
+    .dialogue-box { background: #fff8e1; padding: 16px; border-radius: 12px; margin: 12px 0; border-left: 4px solid #fbc02d; font-size: 18px; }
+    .dialogue-box p { margin: 8px 0; }
+    .dialogue-box .speaker { display: inline-block; margin-right: 8px; font-weight: bold; }
+    .dialogue-box .audio-btn { background: #FF9800; color: white; border: none; border-radius: 50%; width: 28px; height: 28px; font-size: 14px; cursor: pointer; vertical-align: middle; }
+    .song-box { background: #e0f7fa; padding: 16px; border-radius: 12px; margin: 12px 0; text-align: center; font-size: 20px; }
+    .song-box .audio-btn { background: #00BCD4; color: white; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 22px; cursor: pointer; margin-top: 8px; }
+  </style>
+  <script>
+    function speakK2(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        var u = new SpeechSynthesisUtterance(text);
+        u.lang = 'en-US';
+        u.rate = 0.7;
+        u.pitch = 1.1;
+        window.speechSynthesis.speak(u);
+      }
+    }
+  </script>
+</head>
+<body class="kelas2" data-kelas="2" data-pelajaran="bing" data-materi="k2-bing-09" style="background-color: #E3F2FD; --bg: #E3F2FD;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Main Page <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">🐾</div>
+        <h1 style="color: #1565c0; margin:0 0 8px 0; font-size: 26px;">Animals Around Me</h1>
+        <p style="color: #666; font-size: 18px;">Bahasa Inggris — Kelas 2</p>
+        <p style="margin-top: 16px; font-size: 18px;">Let's learn animal names in English! Yuk belajar nama hewan dalam Inggris! 🐾🇬🇧</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Let's Go! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Goals -->
+    <div class="section-card">
+      <div class="section-header">🎯 Learning Goals <span>▼</span></div>
+      <div class="section-body" style="font-size: 18px;">
+        <p>After this you can: (Setelah ini kamu bisa:)</p>
+        <ul style="padding-left: 20px;">
+          <li>Name animals in English 🐱</li><li>Say "It is a..." in sentences 📝</li><li>Describe animals: big, small, cute</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bagian 1 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 1: Pets and Farm Animals (Hewan Peliharaan & Ternak) <span>▼</span></div>
+      <div class="section-body" style="font-size: 18px;">
+        <p style="font-weight:bold;">✨ New Words (Kata Baru):</p>
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">🐱</div>
+            <div class="word">Cat</div>
+            <div class="meaning">(Kucing)</div>
+            <button class="audio-btn" onclick="speakK2('Cat')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🐶</div>
+            <div class="word">Dog</div>
+            <div class="meaning">(Anjing)</div>
+            <button class="audio-btn" onclick="speakK2('Dog')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🐟</div>
+            <div class="word">Fish</div>
+            <div class="meaning">(Ikan)</div>
+            <button class="audio-btn" onclick="speakK2('Fish')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🐦</div>
+            <div class="word">Bird</div>
+            <div class="meaning">(Burung)</div>
+            <button class="audio-btn" onclick="speakK2('Bird')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🐮</div>
+            <div class="word">Cow</div>
+            <div class="meaning">(Sapi)</div>
+            <button class="audio-btn" onclick="speakK2('Cow')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🐔</div>
+            <div class="word">Chicken</div>
+            <div class="meaning">(Ayam)</div>
+            <button class="audio-btn" onclick="speakK2('Chicken')">🔊</button>
+          </div>
+          
+        </div>
+
+        <p style="font-weight:bold;margin-top:16px;">💬 Let's Talk (Ayo Berdialog):</p><div class="dialogue-box"><p><span class="speaker">👩 Cici:</span> I have a cat. It is cute! 🐱 <button class="audio-btn" onclick="speakK2('I have a cat. It is cute! 🐱')">🔊</button></p><p><span class="speaker">👦 Made:</span> I have a dog. It is big! 🐶 I love my dog! <button class="audio-btn" onclick="speakK2('I have a dog. It is big! 🐶 I love my dog!')">🔊</button></p><p><span class="speaker">👩 Cici:</span> Look! A bird! It can fly! 🐦 <button class="audio-btn" onclick="speakK2('Look! A bird! It can fly! 🐦')">🔊</button></p></div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 18px;">🤔 Checkpoint 1:</p>
+          <p style="font-size: 18px;">"Cat" in Indonesian is... 🐱</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Anjing</button><button class="quiz-opt" data-opt="1">Kucing 🐱</button><button class="quiz-opt" data-opt="2">Burung</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 18px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian 2 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 2: Wild Animals (Hewan Liar) <span>▼</span></div>
+      <div class="section-body" style="font-size: 18px;">
+        <p style="font-weight:bold;">✨ More Words (Kata Lainnya):</p>
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">🐘</div>
+            <div class="word">Elephant</div>
+            <div class="meaning">(Gajah)</div>
+            <button class="audio-btn" onclick="speakK2('Elephant')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🦁</div>
+            <div class="word">Lion</div>
+            <div class="meaning">(Singa)</div>
+            <button class="audio-btn" onclick="speakK2('Lion')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🐅</div>
+            <div class="word">Tiger</div>
+            <div class="meaning">(Harimau)</div>
+            <button class="audio-btn" onclick="speakK2('Tiger')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🐒</div>
+            <div class="word">Monkey</div>
+            <div class="meaning">(Monyet)</div>
+            <button class="audio-btn" onclick="speakK2('Monkey')">🔊</button>
+          </div>
+          
+        </div>
+
+        <p style="font-weight:bold;margin-top:16px;">🎵 Let's Sing! (Ayo Bernyanyi):</p><div class="song-box">
+          <p>🎵 Animal Song 🎵</p>
+          <p>I see a cat! Meow meow meow! I see a dog! Woof woof woof! I see a cow! Moo moo moo! Animals are fun! 🎵</p>
+          <button class="audio-btn" onclick="speakK2('I see a cat! Meow meow meow! I see a dog! Woof woof woof! I see a cow! Moo moo moo! Animals are fun! 🎵')">🔊 Sing Along!</button>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 18px;">🤔 Checkpoint 2:</p>
+          <p style="font-size: 18px;">"It is a tiger." Artinya... 🐅</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Ini gajah</button><button class="quiz-opt" data-opt="1">Ini harimau 🐅</button><button class="quiz-opt" data-opt="2">Ini monyet</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 18px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Practice -->
+    <div class="section-card">
+      <div class="section-header">✏️ Practice (Latihan) <span>▼</span></div>
+      <div class="section-body" style="font-size: 18px;">
+        <p style="font-weight:bold; font-size: 20px;">💪 Let's practice! (Ayo berlatih!)</p>
+
+        <div class="quiz-box" data-idx="2" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 18px;">1. "Elephant" in Indonesian is... 🐘</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Singa</button><button class="quiz-opt" data-opt="1">Gajah 🐘</button><button class="quiz-opt" data-opt="2">Harimau</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 18px;"></div>
+        </div><div class="quiz-box" data-idx="3" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 18px;">2. 🐮 "Cow" gives us ___</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Milk 🥛</button><button class="quiz-opt" data-opt="1">Eggs 🥚</button><button class="quiz-opt" data-opt="2">Honey 🍯</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 18px;"></div>
+        </div><div class="quiz-box" data-idx="4" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 18px;">3. 🐱 "I see a ___"</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Dog</button><button class="quiz-opt" data-opt="1">Cat 🐱</button><button class="quiz-opt" data-opt="2">Bird</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 18px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section-card">
+      <div class="section-header">🏆 Summary & Done! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 18px;">
+        <p>Great job! Kamu sudah belajar <strong>Animals Around Me</strong>! 🌟</p>
+        <p style="margin-top: 16px;">You got a badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">🐾</div>
+        <p style="font-weight:bold; color: #1565c0; font-size: 24px;">Animal Lover</p>
+        <p style="color: #666; margin-top: 8px;">⭐⭐⭐⭐⭐</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Done! 🎉</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Answer all quizzes first ya 🧐)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">English Tutor 🤗</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Hi! Let's learn English together! Yuk belajar Bahasa Inggris bareng! 🇬🇧</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 1, 1, 0, 1];
+    window._TOTAL_SECTIONS = 5;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
