@@ -1,5 +1,5 @@
--- Migration 024: Seed subject, materials, and questions for K1 MTK + B.Indo (new curriculum)
--- 18 materials × 3 questions = 54 questions total
+-- Migration 024: Seed subject, materials, and questions for K1 MTK + B.Indo + B.Inggris
+-- 26 materials × 3 questions = 78 questions total
 
 -- Subject
 INSERT INTO public.subjects (id, kode, nama, icon, kelas, urutan)
@@ -181,3 +181,98 @@ VALUES
 ('k1-bind-08', 'Bagian rumah untuk masuk dan keluar adalah...', '["🚪 Pintu", "🪟 Jendela", "🏠 Atap"]', '🚪 Pintu', 1, 'Pintu tempat masuk dan keluar. ✅'),
 ('k1-bind-08', 'Arah lawan dari DEPAN adalah...', '["Kanan", "Belakang ⬇️", "Kiri"]', 'Belakang ⬇️', 1, 'Lawan depan adalah belakang! ✅'),
 ('k1-bind-08', 'Peta digunakan untuk...', '["Menulis", "Menunjukkan letak 🗺️", "Mewarnai"]', 'Menunjukkan letak 🗺️', 1, 'Peta menunjukkan letak suatu tempat. ✅');
+
+-- Subject B.Inggris
+INSERT INTO public.subjects (id, kode, nama, icon, kelas, urutan)
+VALUES ('k1-bing', 'bing', 'Bahasa Inggris', '🇬🇧', 1, 3)
+ON CONFLICT (id) DO UPDATE SET
+  nama = EXCLUDED.nama,
+  icon = EXCLUDED.icon,
+  urutan = EXCLUDED.urutan;
+
+INSERT INTO public.materials (id, kelas, subject_id, judul, deskripsi, file_path, urutan)
+VALUES
+  ('k1-bing-01', 1, 'k1-bing', 'How Are You?', 'Unit 1 — Greetings', '/buku/kelas1/bahasa-inggris/k1-bing-01.html', 1),
+  ('k1-bing-02', 1, 'k1-bing', 'I am Kimi', 'Unit 2 — Self Introduction', '/buku/kelas1/bahasa-inggris/k1-bing-02.html', 2),
+  ('k1-bing-03', 1, 'k1-bing', 'My Name is Joshua', 'Unit 3 — Asking Names', '/buku/kelas1/bahasa-inggris/k1-bing-03.html', 3),
+  ('k1-bing-04', 1, 'k1-bing', 'My Number Is Ten', 'Unit 4 — Numbers 1-10', '/buku/kelas1/bahasa-inggris/k1-bing-04.html', 4),
+  ('k1-bing-05', 1, 'k1-bing', 'I Have Four Books', 'Unit 5 — Classroom Objects', '/buku/kelas1/bahasa-inggris/k1-bing-05.html', 5),
+  ('k1-bing-06', 1, 'k1-bing', 'My Garden Is Colorful', 'Unit 6 — Colors', '/buku/kelas1/bahasa-inggris/k1-bing-06.html', 6),
+  ('k1-bing-07', 1, 'k1-bing', 'It Is a Big Circle', 'Unit 7 — Shapes & Sizes', '/buku/kelas1/bahasa-inggris/k1-bing-07.html', 7)
+ON CONFLICT (id) DO UPDATE SET
+  judul = EXCLUDED.judul,
+  deskripsi = EXCLUDED.deskripsi,
+  urutan = EXCLUDED.urutan;
+
+INSERT INTO public.questions (material_id, soal, pilihan, jawaban_benar, level, penjelasan)
+VALUES
+-- k1-bing-01: How Are You?
+('k1-bing-01', '"Hello" artinya...', '["Halo", "Selamat pagi", "Selamat malam"]', 'Halo', 1, 'Hello = Halo. ✅'),
+('k1-bing-01', '"Good morning" artinya...', '["Selamat siang", "Selamat pagi", "Selamat malam"]', 'Selamat pagi', 1, 'Good morning = Selamat pagi. ✅'),
+('k1-bing-01', '"How are you?" Jawabannya...', '["I am fine", "My name is", "Goodbye"]', 'I am fine', 1, '"How are you?" dijawab "I am fine". ✅'),
+('k1-bing-01', 'Cara mengatakan selamat malam dalam Inggris...', '["Good night", "Good morning", "Good afternoon"]', 'Good night', 1, 'Good night = selamat malam. ✅'),
+('k1-bing-01', '"Thank you" artinya...', '["Sama-sama", "Terima kasih", "Selamat tinggal"]', 'Terima kasih', 1, 'Thank you = terima kasih. ✅'),
+('k1-bing-01', '"Goodbye" artinya...', '["Halo", "Selamat tinggal", "Terima kasih"]', 'Selamat tinggal', 1, 'Goodbye = selamat tinggal. ✅'),
+('k1-bing-01', 'Goodbye = selamat tinggal. (TRUE/FALSE)', '["TRUE", "FALSE"]', 'TRUE', 1, 'Betul! Goodbye = selamat tinggal. ✅'),
+('k1-bing-01', 'Susun: you - are - How?', '["How are you?", "You are how?", "Are you how?"]', 'How are you?', 1, 'How are you? ✅'),
+
+-- k1-bing-02: I am Kimi
+('k1-bing-02', '"I am Kimi" artinya...', '["Kamu adalah Kimi", "Saya adalah Kimi", "Kimi adalah saya"]', 'Saya adalah Kimi', 1, 'I am Kimi = Saya adalah Kimi. ✅'),
+('k1-bing-02', '"My name is Made." Kata "My" artinya...', '["Kamu", "Milikku", "Milikmu"]', 'Milikku', 1, 'My = milikku. ✅'),
+('k1-bing-02', '"Nice to meet you" artinya...', '["Senang bertemu kamu", "Selamat tinggal", "Terima kasih"]', 'Senang bertemu kamu', 1, 'Nice to meet you = senang bertemu. ✅'),
+('k1-bing-02', 'Cara memperkenalkan diri dalam Inggris adalah...', '["I am fine", "I am Made", "Good morning"]', 'I am Made', 1, '"I am Made" = perkenalan diri. ✅'),
+('k1-bing-02', '"I am" artinya "kamu adalah". (TRUE/FALSE)', '["TRUE", "FALSE"]', 'FALSE', 1, 'I am = saya adalah, bukan kamu. ✅'),
+('k1-bing-02', '"Student" artinya...', '["Guru", "Murid", "Teman"]', 'Murid', 1, 'Student = murid. ✅'),
+('k1-bing-02', '"Teacher" artinya...', '["Teman", "Guru", "Murid"]', 'Guru', 1, 'Teacher = guru. ✅'),
+('k1-bing-02', 'Susun: am - I - Made', '["I am Made", "Am I Made", "Made I am"]', 'I am Made', 1, 'I am Made. ✅'),
+
+-- k1-bing-03: My Name is Joshua
+('k1-bing-03', '"What is your name?" artinya...', '["Siapa namamu?", "Apa kabar?", "Selamat pagi"]', 'Siapa namamu?', 1, 'What is your name? = siapa namamu. ✅'),
+('k1-bing-03', 'Jawab: "What is your name?" → "___"', '["I am fine", "My name is Joshua", "I am five"]', 'My name is Joshua', 1, 'Jawab dengan "My name is...". ✅'),
+('k1-bing-03', '"Your" artinya...', '["Milikku", "Milikmu", "Nama"]', 'Milikmu', 1, 'Your = milikmu. ✅'),
+('k1-bing-03', '"My name is Cici" artinya "Namaku Cici". (TRUE/FALSE)', '["TRUE", "FALSE"]', 'TRUE', 1, 'Betul! My name is Cici = Namaku Cici. ✅'),
+('k1-bing-03', '"Your book" artinya...', '["Bukuku", "Bukumu", "Buku"]', 'Bukumu', 1, 'Your book = bukumu. ✅'),
+('k1-bing-03', '"What" artinya...', '["Apa", "Siapa", "Dimana"]', 'Apa', 1, 'What = apa. ✅'),
+('k1-bing-03', '"My" digunakan untuk milik...', '["Saya", "Kamu", "Dia"]', 'Saya', 1, 'My = milik saya. ✅'),
+('k1-bing-03', 'Susun: your - What - name - is?', '["What is your name?", "What your name is?", "Your name is what?"]', 'What is your name?', 1, 'What is your name? ✅'),
+
+-- k1-bing-04: My Number is Ten
+('k1-bing-04', '🍎🍎🍎 = Three. 🍎🍎🍎🍎🍎 = ___', '["Four", "Five", "Six"]', 'Five', 1, '5 = five. ✅'),
+('k1-bing-04', '"Ten" in Indonesian is...', '["Enam", "Delapan", "Sepuluh"]', 'Sepuluh', 1, 'Ten = sepuluh. ✅'),
+('k1-bing-04', 'After 7 comes... (setelah 7)...', '["Six", "Eight", "Nine"]', 'Eight', 1, 'After 7 is 8 (eight). ✅'),
+('k1-bing-04', '"My number is ten" artinya...', '["Nomorku sepuluh", "Nomormu sepuluh", "Aku nomor sepuluh"]', 'Nomorku sepuluh', 1, 'My number is ten = nomorku sepuluh. ✅'),
+('k1-bing-04', '"One" artinya dua. (TRUE/FALSE)', '["TRUE", "FALSE"]', 'FALSE', 1, 'One = satu, bukan dua. ✅'),
+('k1-bing-04', '🍬🍬🍬🍬🍬🍬🍬 = Seven candies. Seven artinya...', '["Enam", "Tujuh", "Delapan"]', 'Tujuh', 1, 'Seven = tujuh. ✅'),
+('k1-bing-04', 'Number before 10 is... (angka sebelum 10)', '["Eight", "Nine", "Eleven"]', 'Nine', 1, 'Before 10 is 9 (nine). ✅'),
+('k1-bing-04', 'Susun: four - I - books - have', '["I have four books", "Four books I have", "Have I four books"]', 'I have four books', 1, 'I have four books. ✅'),
+
+-- k1-bing-05: I Have Four Books
+('k1-bing-05', '"Book" in Indonesian is...', '["Pensil", "Buku", "Tas"]', 'Buku', 1, 'Book = buku. ✅'),
+('k1-bing-05', '"Pencil" artinya...', '["Pulpen", "Pensil", "Penggaris"]', 'Pensil', 1, 'Pencil = pensil. ✅'),
+('k1-bing-05', '"Ruler" artinya...', '["Pulpen", "Penggaris", "Krayon"]', 'Penggaris', 1, 'Ruler = penggaris. ✅'),
+('k1-bing-05', '"Bag" artinya...', '["Buku", "Tas", "Kursi"]', 'Tas', 1, 'Bag = tas. ✅'),
+('k1-bing-05', '"Chair" artinya buku. (TRUE/FALSE)', '["TRUE", "FALSE"]', 'FALSE', 1, 'Chair = kursi, bukan buku. ✅'),
+('k1-bing-05', '"I have ___ books" untuk 3 buku...', '["one", "three", "five"]', 'three', 1, '3 = three. ✅'),
+('k1-bing-05', '"Pen" artinya...', '["Pensil", "Pulpen", "Buku"]', 'Pulpen', 1, 'Pen = pulpen. ✅'),
+('k1-bing-05', 'I have a ___. Untuk benda di kelas untuk duduk...', '["book", "pencil", "chair"]', 'chair', 1, 'Chair = kursi untuk duduk. ✅'),
+
+-- k1-bing-06: My Garden is Colorful
+('k1-bing-06', '"Red" in Indonesian is...', '["Biru", "Merah", "Hijau"]', 'Merah', 1, 'Red = merah. ✅'),
+('k1-bing-06', '"Blue" artinya...', '["Biru", "Merah", "Kuning"]', 'Biru', 1, 'Blue = biru. ✅'),
+('k1-bing-06', '"Green" = hijau. (TRUE/FALSE)', '["TRUE", "FALSE"]', 'TRUE', 1, 'Green = hijau. ✅'),
+('k1-bing-06', '🌿 Grass is ___ in color.', '["Green", "Blue", "Red"]', 'Green', 1, 'Grass is green. ✅'),
+('k1-bing-06', '"Purple" artinya...', '["Oranye", "Ungu", "Coklat"]', 'Ungu', 1, 'Purple = ungu. ✅'),
+('k1-bing-06', '🍋 Lemon is ___ in color.', '["Red", "Yellow", "Blue"]', 'Yellow', 1, 'Lemon is yellow. ✅'),
+('k1-bing-06', '"Yellow" artinya...', '["Hijau", "Kuning", "Biru"]', 'Kuning', 1, 'Yellow = kuning. ✅'),
+('k1-bing-06', 'Susun: is - My - colorful - garden', '["My garden is colorful", "Garden my is colorful", "Colorful is my garden"]', 'My garden is colorful', 1, 'My garden is colorful. ✅'),
+
+-- k1-bing-07: It is a Big Circle
+('k1-bing-07', '⚽ A ball is a ___ shape.', '["Square", "Circle", "Triangle"]', 'Circle', 1, 'Ball is a circle. ✅'),
+('k1-bing-07', '⬛ A square has ___ sides.', '["3", "4", "5"]', '4', 1, 'Square has 4 sides. ✅'),
+('k1-bing-07', '🔺 A triangle has ___ sides.', '["2", "3", "4"]', '3', 1, 'Triangle has 3 sides. ✅'),
+('k1-bing-07', '"Big" in Indonesian is...', '["Kecil", "Besar", "Tinggi"]', 'Besar', 1, 'Big = besar. ✅'),
+('k1-bing-07', '"Small square" artinya...', '["Lingkaran besar", "Persegi kecil", "Segitiga kecil"]', 'Persegi kecil', 1, 'Small square = persegi kecil. ✅'),
+('k1-bing-07', '🐘 Elephant is big. (TRUE/FALSE)', '["TRUE", "FALSE"]', 'TRUE', 1, 'Gajah besar. ✅'),
+('k1-bing-07', '🧀 A slice of cheese can be a ___ shape.', '["Circle", "Square", "Triangle"]', 'Triangle', 1, 'Keju sering bentuk segitiga. ✅'),
+('k1-bing-07', 'Susun: a - It - circle - is - big', '["It is a big circle", "A big circle it is", "It a big is circle"]', 'It is a big circle', 1, 'It is a big circle. ✅');
+

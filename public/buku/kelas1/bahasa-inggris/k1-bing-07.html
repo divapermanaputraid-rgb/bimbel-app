@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>It Is a Big Circle — Grade 1 English</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+  <style>
+    .vocab-card .audio-btn { background: #4CAF50; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; margin-top: 4px; }
+    .vocab-card .audio-btn:hover { background: #388E3C; }
+    .dialogue-box { background: #fff8e1; padding: 16px; border-radius: 12px; margin: 12px 0; border-left: 4px solid #fbc02d; font-size: 20px; }
+    .dialogue-box p { margin: 8px 0; }
+    .dialogue-box .speaker { display: inline-block; margin-right: 8px; font-weight: bold; }
+    .song-box { background: #e0f7fa; padding: 16px; border-radius: 12px; margin: 12px 0; text-align: center; font-size: 22px; }
+    .song-box .audio-btn { background: #00BCD4; color: white; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 22px; cursor: pointer; margin-top: 8px; }
+  </style>
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="bing" data-materi="k1-bing-07" style="background-color: #F3E5F5; --bg: #F3E5F5;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Main Page <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">⬭</div>
+        <h1 style="color: #1565c0; margin:0 0 8px 0; font-size: 28px;">It Is a Big Circle</h1>
+        <p style="color: #666; font-size: 20px;">Bahasa Inggris — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Let's learn shapes and sizes! Yuk belajar bentuk dan ukuran! ⬭🔺🇬🇧</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Let's Go! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Goals -->
+    <div class="section-card">
+      <div class="section-header">🎯 Learning Goals <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>After this you can: (Setelah ini kamu bisa:)</p>
+        <ul style="padding-left: 20px;">
+          <li>Name shapes in English ⬭</li><li>Say big and small 🔵</li><li>Describe shapes and sizes 📝</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bagian 1 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 1: Shapes (Bentuk) <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">⬭</div>
+            <div class="word" style="font-size: 18px;">Circle</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Lingkaran)</div>
+            <button class="audio-btn" onclick="speakEnglish('Circle')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">⬛</div>
+            <div class="word" style="font-size: 18px;">Square</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Persegi)</div>
+            <button class="audio-btn" onclick="speakEnglish('Square')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🔺</div>
+            <div class="word" style="font-size: 18px;">Triangle</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Segitiga)</div>
+            <button class="audio-btn" onclick="speakEnglish('Triangle')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">▬</div>
+            <div class="word" style="font-size: 18px;">Rectangle</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Persegi panjang)</div>
+            <button class="audio-btn" onclick="speakEnglish('Rectangle')">🔊</button>
+          </div>
+          
+        </div>
+
+        <div class="dialogue-box"><p><span class="speaker">👩 Cici:</span> Look! A circle! The clock is a circle! ⏰ <button class="audio-btn" onclick="speakEnglish('Look! A circle! The clock is a circle! ⏰')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👦 Made:</span> The window is a rectangle! 🪟 <button class="audio-btn" onclick="speakEnglish('The window is a rectangle! 🪟')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👩 Cici:</span> The cheese is a triangle! 🧀 So yummy! <button class="audio-btn" onclick="speakEnglish('The cheese is a triangle! 🧀 So yummy!')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p></div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Checkpoint 1:</p>
+          <p style="font-size: 20px;">⚽ A ball is a ___ shape.</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Square ⬛</button><button class="quiz-opt" data-opt="1">Circle ⬭</button><button class="quiz-opt" data-opt="2">Triangle 🔺</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian 2 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 2: Big and Small (Besar dan Kecil) <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">🐘</div>
+            <div class="word" style="font-size: 18px;">Big</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Besar)</div>
+            <button class="audio-btn" onclick="speakEnglish('Big')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🐭</div>
+            <div class="word" style="font-size: 18px;">Small</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Kecil)</div>
+            <button class="audio-btn" onclick="speakEnglish('Small')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">⬭</div>
+            <div class="word" style="font-size: 18px;">Big circle</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Lingkaran besar)</div>
+            <button class="audio-btn" onclick="speakEnglish('Big circle')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">⬭</div>
+            <div class="word" style="font-size: 18px;">Small square</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Persegi kecil)</div>
+            <button class="audio-btn" onclick="speakEnglish('Small square')">🔊</button>
+          </div>
+          
+        </div>
+
+        <div class="song-box">
+          <p>🎵 Shape Song 🎵</p>
+          <p>Circle, square, triangle! Big and small! Circle, square, triangle! I see them all! 🎵</p>
+          <button class="audio-btn" onclick="speakEnglish('Circle, square, triangle! Big and small! Circle, square, triangle! I see them all! 🎵')">🔊 Sing Along!</button>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Checkpoint 2:</p>
+          <p style="font-size: 20px;">"Big" in Indonesian is... 🐘</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Kecil 🐭</button><button class="quiz-opt" data-opt="1">Besar 🐘</button><button class="quiz-opt" data-opt="2">Tinggi</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latihan -->
+    <div class="section-card">
+      <div class="section-header">✏️ Practice <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p style="font-weight:bold; font-size: 22px;">💪 Let's practice! (Ayo berlatih!)</p>
+
+        <div class="quiz-box" data-idx="2" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">1. 🔺 A triangle has ___ sides.</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">3 🔺</button><button class="quiz-opt" data-opt="1">4</button><button class="quiz-opt" data-opt="2">0</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div><div class="quiz-box" data-idx="3" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">2. "Small square" artinya... ⬛</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Lingkaran besar</button><button class="quiz-opt" data-opt="1">Persegi kecil ⬛</button><button class="quiz-opt" data-opt="2">Segitiga kecil</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div><div class="quiz-box" data-idx="4" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">3. 🐘 Elephant is ___ . 🐭 Mouse is small.</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Small</button><button class="quiz-opt" data-opt="1">Big 🐘</button><button class="quiz-opt" data-opt="2">Long</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Summary & Done! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Great job! Kamu sudah belajar <strong>It Is a Big Circle</strong>! 🌟</p>
+        <p style="margin-top: 16px;">You got a badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">⬭</div>
+        <p style="font-weight:bold; color: #1565c0; font-size: 24px;">Shape Detective</p>
+        <p style="color: #666; margin-top: 8px;">⭐⭐⭐⭐⭐</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Done! 🎉</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Answer all quizzes first ya 🧐)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">English Tutor 🤗</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Hi! Let's learn English together! Yuk belajar Bahasa Inggris bareng! 🇬🇧</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 1, 0, 1, 1];
+    window._TOTAL_SECTIONS = 5;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

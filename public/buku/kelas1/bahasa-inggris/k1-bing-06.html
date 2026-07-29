@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>My Garden Is Colorful — Grade 1 English</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+  <style>
+    .vocab-card .audio-btn { background: #4CAF50; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; margin-top: 4px; }
+    .vocab-card .audio-btn:hover { background: #388E3C; }
+    .dialogue-box { background: #fff8e1; padding: 16px; border-radius: 12px; margin: 12px 0; border-left: 4px solid #fbc02d; font-size: 20px; }
+    .dialogue-box p { margin: 8px 0; }
+    .dialogue-box .speaker { display: inline-block; margin-right: 8px; font-weight: bold; }
+    .song-box { background: #e0f7fa; padding: 16px; border-radius: 12px; margin: 12px 0; text-align: center; font-size: 22px; }
+    .song-box .audio-btn { background: #00BCD4; color: white; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 22px; cursor: pointer; margin-top: 8px; }
+  </style>
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="bing" data-materi="k1-bing-06" style="background-color: #FFF3E0; --bg: #FFF3E0;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Main Page <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">🎨</div>
+        <h1 style="color: #1565c0; margin:0 0 8px 0; font-size: 28px;">My Garden Is Colorful</h1>
+        <p style="color: #666; font-size: 20px;">Bahasa Inggris — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Let's learn colors in English! Yuk belajar warna dalam Inggris! 🎨🌈</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Let's Go! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Goals -->
+    <div class="section-card">
+      <div class="section-header">🎯 Learning Goals <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>After this you can: (Setelah ini kamu bisa:)</p>
+        <ul style="padding-left: 20px;">
+          <li>Name colors in English 🎨</li><li>Describe things with colors 🌈</li><li>Say "My garden is colorful" 🌻</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bagian 1 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 1: Colors (Warna) <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">❤️</div>
+            <div class="word" style="font-size: 18px;">Red</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Merah)</div>
+            <button class="audio-btn" onclick="speakEnglish('Red')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">💙</div>
+            <div class="word" style="font-size: 18px;">Blue</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Biru)</div>
+            <button class="audio-btn" onclick="speakEnglish('Blue')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">💚</div>
+            <div class="word" style="font-size: 18px;">Green</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Hijau)</div>
+            <button class="audio-btn" onclick="speakEnglish('Green')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">💛</div>
+            <div class="word" style="font-size: 18px;">Yellow</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Kuning)</div>
+            <button class="audio-btn" onclick="speakEnglish('Yellow')">🔊</button>
+          </div>
+          
+        </div>
+
+        <div class="dialogue-box"><p><span class="speaker">👩 Cici:</span> My garden is colorful! Look! Red flower! 🌹 <button class="audio-btn" onclick="speakEnglish('My garden is colorful! Look! Red flower! 🌹')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👦 Made:</span> Wow! Blue flower! 💙 And green leaves! 🌿 <button class="audio-btn" onclick="speakEnglish('Wow! Blue flower! 💙 And green leaves! 🌿')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👩 Cici:</span> Yellow sunflowers too! 🌻 So beautiful! <button class="audio-btn" onclick="speakEnglish('Yellow sunflowers too! 🌻 So beautiful!')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p></div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Checkpoint 1:</p>
+          <p style="font-size: 20px;">"Red" in Indonesian is... ❤️</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Biru</button><button class="quiz-opt" data-opt="1">Merah ❤️</button><button class="quiz-opt" data-opt="2">Hijau</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian 2 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 2: More Colors & Describing <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">🧡</div>
+            <div class="word" style="font-size: 18px;">Orange</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Oranye)</div>
+            <button class="audio-btn" onclick="speakEnglish('Orange')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">💜</div>
+            <div class="word" style="font-size: 18px;">Purple</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Ungu)</div>
+            <button class="audio-btn" onclick="speakEnglish('Purple')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🤎</div>
+            <div class="word" style="font-size: 18px;">Brown</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Coklat)</div>
+            <button class="audio-btn" onclick="speakEnglish('Brown')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🖤</div>
+            <div class="word" style="font-size: 18px;">Black</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Hitam)</div>
+            <button class="audio-btn" onclick="speakEnglish('Black')">🔊</button>
+          </div>
+          
+        </div>
+
+        <div class="song-box">
+          <p>🎵 Rainbow Song 🎵</p>
+          <p>Red and yellow and pink and green! Purple and orange and blue! I can sing a rainbow! Sing a rainbow too! 🎵🌈</p>
+          <button class="audio-btn" onclick="speakEnglish('Red and yellow and pink and green! Purple and orange and blue! I can sing a rainbow! Sing a rainbow too! 🎵🌈')">🔊 Sing Along!</button>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Checkpoint 2:</p>
+          <p style="font-size: 20px;">"Blue" = biru. "Green" = ___ 💚</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Merah</button><button class="quiz-opt" data-opt="1">Biru</button><button class="quiz-opt" data-opt="2">Hijau 💚</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latihan -->
+    <div class="section-card">
+      <div class="section-header">✏️ Practice <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p style="font-weight:bold; font-size: 22px;">💪 Let's practice! (Ayo berlatih!)</p>
+
+        <div class="quiz-box" data-idx="2" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">1. 🍋 Lemon is ___ in color.</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Red</button><button class="quiz-opt" data-opt="1">Yellow 💛</button><button class="quiz-opt" data-opt="2">Blue</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div><div class="quiz-box" data-idx="3" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">2. "Purple" in Indonesian is... 💜</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Oranye</button><button class="quiz-opt" data-opt="1">Ungu 💜</button><button class="quiz-opt" data-opt="2">Coklat</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div><div class="quiz-box" data-idx="4" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">3. 🌿 Grass is ___ in color.</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Green 💚</button><button class="quiz-opt" data-opt="1">Blue</button><button class="quiz-opt" data-opt="2">Red</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Summary & Done! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Great job! Kamu sudah belajar <strong>My Garden Is Colorful</strong>! 🌟</p>
+        <p style="margin-top: 16px;">You got a badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">🎨</div>
+        <p style="font-weight:bold; color: #1565c0; font-size: 24px;">Color Artist</p>
+        <p style="color: #666; margin-top: 8px;">⭐⭐⭐⭐⭐</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Done! 🎉</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Answer all quizzes first ya 🧐)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">English Tutor 🤗</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Hi! Let's learn English together! Yuk belajar Bahasa Inggris bareng! 🇬🇧</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 2, 1, 1, 0];
+    window._TOTAL_SECTIONS = 5;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

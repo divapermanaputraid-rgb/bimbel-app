@@ -1,0 +1,95 @@
+{
+  "units": [
+    {
+      "unit_id": "k1-bing-01",
+      "soal": [
+        {"id":"k1-bing-01-01","tipe":"choose","pertanyaan":"'Hello' artinya...","pilihan":["Halo","Selamat pagi","Selamat malam"],"jawaban":"Halo"},
+        {"id":"k1-bing-01-02","tipe":"choose","pertanyaan":"'Good morning' artinya...","pilihan":["Selamat siang","Selamat pagi","Selamat malam"],"jawaban":"Selamat pagi"},
+        {"id":"k1-bing-01-03","tipe":"choose","pertanyaan":"Bagaimana mengatakan 'Halo' dalam Bahasa Inggris?","pilihan":["Goodbye","Hello","Thank you"],"jawaban":"Hello"},
+        {"id":"k1-bing-01-04","tipe":"fill","pertanyaan":"'Good ___' artinya selamat malam. Huruf yang tepat...","pilihan":["night","morning","afternoon"],"jawaban":"night"},
+        {"id":"k1-bing-01-05","tipe":"choose","pertanyaan":"'How are you?' artinya...","pilihan":["Apa kabar?","Siapa namamu?","Selamat tinggal"],"jawaban":"Apa kabar?"},
+        {"id":"k1-bing-01-06","tipe":"choose","pertanyaan":"Jawaban yang tepat untuk 'How are you?'","pilihan":["I am fine","My name is","Goodbye"],"jawaban":"I am fine"},
+        {"id":"k1-bing-01-07","tipe":"truefalse","pertanyaan":"'Goodbye' artinya selamat tinggal.","pilihan":["TRUE","FALSE"],"jawaban":"TRUE"},
+        {"id":"k1-bing-01-08","tipe":"arrange","pertanyaan":"Susun: you - are - How?","pilihan":["How are you?","You are how?","Are you how?"],"jawaban":"How are you?"}
+      ]
+    },
+    {
+      "unit_id": "k1-bing-02",
+      "soal": [
+        {"id":"k1-bing-02-01","tipe":"choose","pertanyaan":"'I am Kimi' artinya...","pilihan":["Kamu adalah Kimi","Saya adalah Kimi","Kimi adalah saya"],"jawaban":"Saya adalah Kimi"},
+        {"id":"k1-bing-02-02","tipe":"fill","pertanyaan":"'___ name is Made.' (Namaku Made)","pilihan":["I","My","You"],"jawaban":"My"},
+        {"id":"k1-bing-02-03","tipe":"arrange","susun":"am - I - Made","pilihan":["I am Made","Am I Made","Made I am"],"jawaban":"I am Made"},
+        {"id":"k1-bing-02-04","tipe":"choose","pertanyaan":"'Nice to meet you' artinya...","pilihan":["Senang bertemu kamu","Selamat tinggal","Terima kasih"],"jawaban":"Senang bertemu kamu"},
+        {"id":"k1-bing-02-05","tipe":"truefalse","pertanyaan":"'I am' artinya 'kamu adalah'.","pilihan":["TRUE","FALSE"],"jawaban":"FALSE"},
+        {"id":"k1-bing-02-06","tipe":"choose","pertanyaan":"Cara memperkenalkan diri dalam Inggris...","pilihan":["I am fine","I am Made","Good morning"],"jawaban":"I am Made"},
+        {"id":"k1-bing-02-07","tipe":"choose","pertanyaan":"'Student' artinya...","pilihan":["Guru","Murid","Teman"],"jawaban":"Murid"},
+        {"id":"k1-bing-02-08","tipe":"match","pertanyaan":"Cocokkan!","opsi_kiri":["🙋","👦","👧"],"opsi_kanan":["Girl","I am","Boy"],"jawaban":{"🙋":"I am","👦":"Boy","👧":"Girl"}}
+      ]
+    },
+    {
+      "unit_id": "k1-bing-03",
+      "soal": [
+        {"id":"k1-bing-03-01","tipe":"choose","pertanyaan":"'What is your name?' artinya...","pilihan":["Siapa namamu?","Apa kabar?","Selamat pagi"],"jawaban":"Siapa namamu?"},
+        {"id":"k1-bing-03-02","tipe":"fill","pertanyaan":"'___ is your name?' (Apa namamu?)","pilihan":["What","Where","How"],"jawaban":"What"},
+        {"id":"k1-bing-03-03","tipe":"choose","pertanyaan":"Jawab: 'What is your name?'","pilihan":["I am fine","My name is Joshua","I am five"],"jawaban":"My name is Joshua"},
+        {"id":"k1-bing-03-04","tipe":"choose","pertanyaan":"'Your' artinya...","pilihan":["Milikku","Milikmu","Nama"],"jawaban":"Milikmu"},
+        {"id":"k1-bing-03-05","tipe":"truefalse","pertanyaan":"'My name is Cici' artinya 'Namaku Cici'.","pilihan":["TRUE","FALSE"],"jawaban":"TRUE"},
+        {"id":"k1-bing-03-06","tipe":"choose","pertanyaan":"'Your book' artinya...","pilihan":["Bukuku","Bukumu","Buku"],"jawaban":"Bukumu"},
+        {"id":"k1-bing-03-07","tipe":"arrange","susun":"your - What - name - is?","pilihan":["What is your name?","What your name is?","Your name is what?"],"jawaban":"What is your name?"},
+        {"id":"k1-bing-03-08","tipe":"choose","pertanyaan":"'My' digunakan untuk milik...","pilihan":["Saya","Kamu","Dia"],"jawaban":"Saya"}
+      ]
+    },
+    {
+      "unit_id": "k1-bing-04",
+      "soal": [
+        {"id":"k1-bing-04-01","tipe":"choose","pertanyaan":"🍎🍎🍎 = Three apples. 🍎🍎🍎🍎🍎 = ___","pilihan":["Four","Five","Six"],"jawaban":"Five"},
+        {"id":"k1-bing-04-02","tipe":"choose","pertanyaan":"'Ten' in Indonesian is...","pilihan":["Enam","Delapan","Sepuluh"],"jawaban":"Sepuluh"},
+        {"id":"k1-bing-04-03","tipe":"arrange","susun":"four - I - books - have","pilihan":["I have four books","Four books I have","Have I four books"],"jawaban":"I have four books"},
+        {"id":"k1-bing-04-04","tipe":"choose","pertanyaan":"After 7 comes...","pilihan":["Six","Eight","Nine"],"jawaban":"Eight"},
+        {"id":"k1-bing-04-05","tipe":"choose","pertanyaan":"'My number is ten' artinya...","pilihan":["Nomorku sepuluh","Nomormu sepuluh","Aku nomor sepuluh"],"jawaban":"Nomorku sepuluh"},
+        {"id":"k1-bing-04-06","tipe":"truefalse","pertanyaan":"'One' artinya dua.","pilihan":["TRUE","FALSE"],"jawaban":"FALSE"},
+        {"id":"k1-bing-04-07","tipe":"choose","pertanyaan":"🍬🍬🍬🍬 = Four candies. 🍬🍬🍬🍬🍬🍬🍬 = ___","pilihan":["Six","Seven","Eight"],"jawaban":"Seven"},
+        {"id":"k1-bing-04-08","tipe":"choose","pertanyaan":"'Three' dibaca...","pilihan":["Tri","Three","Tiru"],"jawaban":"Three"}
+      ]
+    },
+    {
+      "unit_id": "k1-bing-05",
+      "soal": [
+        {"id":"k1-bing-05-01","tipe":"choose","pertanyaan":"'Book' in Indonesian is...","pilihan":["Pensil","Buku","Tas"],"jawaban":"Buku"},
+        {"id":"k1-bing-05-02","tipe":"choose","pertanyaan":"'Pencil' artinya...","pilihan":["Pulpen","Pensil","Penggaris"],"jawaban":"Pensil"},
+        {"id":"k1-bing-05-03","tipe":"match","pertanyaan":"Cocokkan!","opsi_kiri":["📖","✏️","🎒"],"opsi_kanan":["Bag","Pencil","Book"],"jawaban":{"📖":"Book","✏️":"Pencil","🎒":"Bag"}},
+        {"id":"k1-bing-05-04","tipe":"fill","pertanyaan":"'I ___ a book.' (Aku punya buku)","pilihan":["have","has","am"],"jawaban":"have"},
+        {"id":"k1-bing-05-05","tipe":"choose","pertanyaan":"'Ruler' artinya...","pilihan":["Pulpen","Penggaris","Krayon"],"jawaban":"Penggaris"},
+        {"id":"k1-bing-05-06","tipe":"truefalse","pertanyaan":"'Chair' artinya buku.","pilihan":["TRUE","FALSE"],"jawaban":"FALSE"},
+        {"id":"k1-bing-05-07","tipe":"choose","pertanyaan":"'I have ___ books' (Aku punya 3 buku)","pilihan":["one","three","five"],"jawaban":"three"},
+        {"id":"k1-bing-05-08","tipe":"choose","pertanyaan":"'Pen' artinya...","pilihan":["Pensil","Pulpen","Buku"],"jawaban":"Pulpen"}
+      ]
+    },
+    {
+      "unit_id": "k1-bing-06",
+      "soal": [
+        {"id":"k1-bing-06-01","tipe":"choose","pertanyaan":"'Red' in Indonesian is...","pilihan":["Biru","Merah","Hijau"],"jawaban":"Merah"},
+        {"id":"k1-bing-06-02","tipe":"choose","pertanyaan":"💚 Green. 💛 Yellow. What color is 🍋 lemon?","pilihan":["Red","Yellow","Blue"],"jawaban":"Yellow"},
+        {"id":"k1-bing-06-03","tipe":"choose","pertanyaan":"'Blue' artinya...","pilihan":["Biru","Merah","Kuning"],"jawaban":"Biru"},
+        {"id":"k1-bing-06-04","tipe":"truefalse","pertanyaan":"'Green' = hijau.","pilihan":["TRUE","FALSE"],"jawaban":"TRUE"},
+        {"id":"k1-bing-06-05","tipe":"choose","pertanyaan":"🌿 Grass is ___ in color.","pilihan":["Green","Blue","Red"],"jawaban":"Green"},
+        {"id":"k1-bing-06-06","tipe":"choose","pertanyaan":"'Purple' artinya...","pilihan":["Oranye","Ungu","Coklat"],"jawaban":"Ungu"},
+        {"id":"k1-bing-06-07","tipe":"arrange","susun":"is - My - colorful - garden","pilihan":["My garden is colorful","Garden my is colorful","Colorful is my garden"],"jawaban":"My garden is colorful"},
+        {"id":"k1-bing-06-08","tipe":"match","pertanyaan":"Cocokkan!","opsi_kiri":["❤️","💙","💚"],"opsi_kanan":["Green","Blue","Red"],"jawaban":{"❤️":"Red","💙":"Blue","💚":"Green"}}
+      ]
+    },
+    {
+      "unit_id": "k1-bing-07",
+      "soal": [
+        {"id":"k1-bing-07-01","tipe":"choose","pertanyaan":"⚽ A ball is a ___ shape.","pilihan":["Square","Circle","Triangle"],"jawaban":"Circle"},
+        {"id":"k1-bing-07-02","tipe":"choose","pertanyaan":"⬛ A square has ___ sides.","pilihan":["3","4","5"],"jawaban":"4"},
+        {"id":"k1-bing-07-03","tipe":"choose","pertanyaan":"🔺 A triangle has ___ sides.","pilihan":["2","3","4"],"jawaban":"3"},
+        {"id":"k1-bing-07-04","tipe":"choose","pertanyaan":"'Big' in Indonesian is...","pilihan":["Kecil","Besar","Tinggi"],"jawaban":"Besar"},
+        {"id":"k1-bing-07-05","tipe":"choose","pertanyaan":"'Small square' artinya...","pilihan":["Lingkaran besar","Persegi kecil","Segitiga kecil"],"jawaban":"Persegi kecil"},
+        {"id":"k1-bing-07-06","tipe":"truefalse","pertanyaan":"🐘 Elephant is big. 🐭 Mouse is small.","pilihan":["TRUE","FALSE"],"jawaban":"TRUE"},
+        {"id":"k1-bing-07-07","tipe":"choose","pertanyaan":"🧀 A slice of cheese can be a ___ shape.","pilihan":["Circle","Square","Triangle"],"jawaban":"Triangle"},
+        {"id":"k1-bing-07-08","tipe":"arrange","susun":"a - It - circle - is - big","pilihan":["It is a big circle","A big circle it is","It a big is circle"],"jawaban":"It is a big circle"}
+      ]
+    }
+  ]
+}

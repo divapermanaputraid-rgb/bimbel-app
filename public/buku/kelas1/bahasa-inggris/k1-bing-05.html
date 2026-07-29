@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>I Have Four Books — Grade 1 English</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+  <style>
+    .vocab-card .audio-btn { background: #4CAF50; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; margin-top: 4px; }
+    .vocab-card .audio-btn:hover { background: #388E3C; }
+    .dialogue-box { background: #fff8e1; padding: 16px; border-radius: 12px; margin: 12px 0; border-left: 4px solid #fbc02d; font-size: 20px; }
+    .dialogue-box p { margin: 8px 0; }
+    .dialogue-box .speaker { display: inline-block; margin-right: 8px; font-weight: bold; }
+    .song-box { background: #e0f7fa; padding: 16px; border-radius: 12px; margin: 12px 0; text-align: center; font-size: 22px; }
+    .song-box .audio-btn { background: #00BCD4; color: white; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 22px; cursor: pointer; margin-top: 8px; }
+  </style>
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="bing" data-materi="k1-bing-05" style="background-color: #F1F8E9; --bg: #F1F8E9;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Main Page <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">🎒</div>
+        <h1 style="color: #1565c0; margin:0 0 8px 0; font-size: 28px;">I Have Four Books</h1>
+        <p style="color: #666; font-size: 20px;">Bahasa Inggris — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Let's learn classroom objects! Yuk belajar benda di kelas! 🎒🇬🇧</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Let's Go! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Goals -->
+    <div class="section-card">
+      <div class="section-header">🎯 Learning Goals <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>After this you can: (Setelah ini kamu bisa:)</p>
+        <ul style="padding-left: 20px;">
+          <li>Name classroom objects in English 🎒</li><li>Say "I have..." 📝</li><li>Count classroom objects 🔢</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bagian 1 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 1: Classroom Objects (Benda di Kelas) <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">📖</div>
+            <div class="word" style="font-size: 18px;">Book</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Buku)</div>
+            <button class="audio-btn" onclick="speakEnglish('Book')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">✏️</div>
+            <div class="word" style="font-size: 18px;">Pencil</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Pensil)</div>
+            <button class="audio-btn" onclick="speakEnglish('Pencil')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🎒</div>
+            <div class="word" style="font-size: 18px;">Bag</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Tas)</div>
+            <button class="audio-btn" onclick="speakEnglish('Bag')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🪑</div>
+            <div class="word" style="font-size: 18px;">Chair</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Kursi)</div>
+            <button class="audio-btn" onclick="speakEnglish('Chair')">🔊</button>
+          </div>
+          
+        </div>
+
+        <div class="dialogue-box"><p><span class="speaker">👩 Cici:</span> I have a book. I have a pencil. <button class="audio-btn" onclick="speakEnglish('I have a book. I have a pencil.')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👦 Made:</span> I have a bag. I have a chair. <button class="audio-btn" onclick="speakEnglish('I have a bag. I have a chair.')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👩 Cici:</span> How many books do you have? <button class="audio-btn" onclick="speakEnglish('How many books do you have?')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👦 Made:</span> I have four books! 📖📖📖📖 <button class="audio-btn" onclick="speakEnglish('I have four books! 📖📖📖📖')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p></div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Checkpoint 1:</p>
+          <p style="font-size: 20px;">"Book" in Indonesian is... 📖</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Pensil</button><button class="quiz-opt" data-opt="1">Buku 📖</button><button class="quiz-opt" data-opt="2">Tas</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian 2 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 2: More Objects (Lagi Benda) <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">🖊️</div>
+            <div class="word" style="font-size: 18px;">Pen</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Pulpen)</div>
+            <button class="audio-btn" onclick="speakEnglish('Pen')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">📏</div>
+            <div class="word" style="font-size: 18px;">Ruler</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Penggaris)</div>
+            <button class="audio-btn" onclick="speakEnglish('Ruler')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🖍️</div>
+            <div class="word" style="font-size: 18px;">Crayon</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Krayon)</div>
+            <button class="audio-btn" onclick="speakEnglish('Crayon')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🧮</div>
+            <div class="word" style="font-size: 18px;">Calculator</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Kalkulator)</div>
+            <button class="audio-btn" onclick="speakEnglish('Calculator')">🔊</button>
+          </div>
+          
+        </div>
+
+        <div class="song-box">
+          <p>🎵 I Have A Book 🎵</p>
+          <p>I have a book, I have a pen! I have a bag, I have a pen! School is fun! Hooray! 🎵</p>
+          <button class="audio-btn" onclick="speakEnglish('I have a book, I have a pen! I have a bag, I have a pen! School is fun! Hooray! 🎵')">🔊 Sing Along!</button>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Checkpoint 2:</p>
+          <p style="font-size: 20px;">"I have a pencil." Artinya... ✏️</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Aku punya pensil ✏️</button><button class="quiz-opt" data-opt="1">Aku punya buku</button><button class="quiz-opt" data-opt="2">Kamu punya pensil</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latihan -->
+    <div class="section-card">
+      <div class="section-header">✏️ Practice <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p style="font-weight:bold; font-size: 22px;">💪 Let's practice! (Ayo berlatih!)</p>
+
+        <div class="quiz-box" data-idx="2" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">1. "Ruler" in Indonesian is... 📏</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Pulpen</button><button class="quiz-opt" data-opt="1">Penggaris 📏</button><button class="quiz-opt" data-opt="2">Krayon</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div><div class="quiz-box" data-idx="3" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">2. I have ___ chairs. 🪑🪑🪑</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Two</button><button class="quiz-opt" data-opt="1">Three</button><button class="quiz-opt" data-opt="2">Four</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div><div class="quiz-box" data-idx="4" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">3. "Pen" artinya... 🖊️</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Pensil</button><button class="quiz-opt" data-opt="1">Pulpen 🖊️</button><button class="quiz-opt" data-opt="2">Buku</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Summary & Done! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Great job! Kamu sudah belajar <strong>I Have Four Books</strong>! 🌟</p>
+        <p style="margin-top: 16px;">You got a badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">🎒</div>
+        <p style="font-weight:bold; color: #1565c0; font-size: 24px;">Classroom Hero</p>
+        <p style="color: #666; margin-top: 8px;">⭐⭐⭐⭐⭐</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Done! 🎉</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Answer all quizzes first ya 🧐)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">English Tutor 🤗</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Hi! Let's learn English together! Yuk belajar Bahasa Inggris bareng! 🇬🇧</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [1, 0, 1, 1, 1];
+    window._TOTAL_SECTIONS = 5;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>

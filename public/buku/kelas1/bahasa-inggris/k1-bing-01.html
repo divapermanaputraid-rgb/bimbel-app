@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>How Are You? — Grade 1 English</title>
+  <link rel="stylesheet" href="/assets/book-theme.css">
+  <style>
+    .vocab-card .audio-btn { background: #4CAF50; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; margin-top: 4px; }
+    .vocab-card .audio-btn:hover { background: #388E3C; }
+    .dialogue-box { background: #fff8e1; padding: 16px; border-radius: 12px; margin: 12px 0; border-left: 4px solid #fbc02d; font-size: 20px; }
+    .dialogue-box p { margin: 8px 0; }
+    .dialogue-box .speaker { display: inline-block; margin-right: 8px; font-weight: bold; }
+    .song-box { background: #e0f7fa; padding: 16px; border-radius: 12px; margin: 12px 0; text-align: center; font-size: 22px; }
+    .song-box .audio-btn { background: #00BCD4; color: white; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 22px; cursor: pointer; margin-top: 8px; }
+  </style>
+</head>
+<body class="kelas1" data-kelas="1" data-pelajaran="bing" data-materi="k1-bing-01" style="background-color: #FFEBEE; --bg: #FFEBEE;">
+  <div class="progress-container"><div class="progress-fill"></div></div>
+
+  <div class="book-container">
+    <!-- Cover -->
+    <div class="section-card expanded">
+      <div class="section-header">🏠 Main Page <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 80px; margin-bottom: 16px;">👋</div>
+        <h1 style="color: #1565c0; margin:0 0 8px 0; font-size: 28px;">How Are You?</h1>
+        <p style="color: #666; font-size: 20px;">Bahasa Inggris — Kelas 1</p>
+        <p style="margin-top: 16px; font-size: 20px;">Let's learn greetings in English! Yuk belajar salam dalam Inggris! 👋🇬🇧</p>
+        <button class="btn" style="margin-top: 24px;" onclick="document.querySelectorAll('.section-card')[1].classList.add('expanded'); window.scrollBy(0,350)">Let's Go! 🚀</button>
+      </div>
+    </div>
+
+    <!-- Goals -->
+    <div class="section-card">
+      <div class="section-header">🎯 Learning Goals <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p>After this you can: (Setelah ini kamu bisa:)</p>
+        <ul style="padding-left: 20px;">
+          <li>Say Hello and Hi in English 👋</li><li>Say Good morning and Good night 🌅</li><li>Ask "How are you?" and answer 😊</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bagian 1 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 1: Greetings (Salam) <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">👋</div>
+            <div class="word" style="font-size: 18px;">Hello</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Halo)</div>
+            <button class="audio-btn" onclick="speakEnglish('Hello')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">✋</div>
+            <div class="word" style="font-size: 18px;">Hi</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Hai)</div>
+            <button class="audio-btn" onclick="speakEnglish('Hi')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🌅</div>
+            <div class="word" style="font-size: 18px;">Good morning</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Selamat pagi)</div>
+            <button class="audio-btn" onclick="speakEnglish('Good morning')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🌤️</div>
+            <div class="word" style="font-size: 18px;">Good afternoon</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Selamat siang)</div>
+            <button class="audio-btn" onclick="speakEnglish('Good afternoon')">🔊</button>
+          </div>
+          
+        </div>
+
+        <div class="dialogue-box"><p><span class="speaker">👩 Cici:</span> Hello! How are you? <button class="audio-btn" onclick="speakEnglish('Hello! How are you?')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👦 Made:</span> I am fine, thank you! And you? <button class="audio-btn" onclick="speakEnglish('I am fine, thank you! And you?')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p><p><span class="speaker">👩 Cici:</span> I am fine too! <button class="audio-btn" onclick="speakEnglish('I am fine too!')" style="width:28px;height:28px;font-size:14px;vertical-align:middle;">🔊</button></p></div>
+
+        <div class="quiz-box" data-idx="0" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Checkpoint 1:</p>
+          <p style="font-size: 20px;">How do you say "Halo" in English? 🗣️</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Hello 👋</button><button class="quiz-opt" data-opt="1">Goodbye 👋</button><button class="quiz-opt" data-opt="2">Thank you 🙏</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian 2 -->
+    <div class="section-card">
+      <div class="section-header">📖 Part 2: More Greetings (Lagi Salam) <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <div class="vocab-grid">
+          
+          <div class="vocab-card">
+            <div class="emoji">🌙</div>
+            <div class="word" style="font-size: 18px;">Good night</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Selamat malam)</div>
+            <button class="audio-btn" onclick="speakEnglish('Good night')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">👋</div>
+            <div class="word" style="font-size: 18px;">Goodbye</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Selamat tinggal)</div>
+            <button class="audio-btn" onclick="speakEnglish('Goodbye')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">🙏</div>
+            <div class="word" style="font-size: 18px;">Thank you</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Terima kasih)</div>
+            <button class="audio-btn" onclick="speakEnglish('Thank you')">🔊</button>
+          </div>
+          
+          <div class="vocab-card">
+            <div class="emoji">😊</div>
+            <div class="word" style="font-size: 18px;">You're welcome</div>
+            <div class="meaning" style="font-size: 16px; color: #666;">(Sama-sama)</div>
+            <button class="audio-btn" onclick="speakEnglish('You\'re welcome')">🔊</button>
+          </div>
+          
+        </div>
+
+        <div class="song-box">
+          <p>🎵 Good Morning Song 🎵</p>
+          <p>Good morning, good morning! How are you? I am fine, thank you! How are you? 🎵</p>
+          <button class="audio-btn" onclick="speakEnglish('Good morning, good morning! How are you? I am fine, thank you! How are you? 🎵')">🔊 Sing Along!</button>
+        </div>
+
+        <div class="quiz-box" data-idx="1" data-answered="false" style="margin-top: 20px;">
+          <p style="font-weight: bold; font-size: 20px;">🤔 Checkpoint 2:</p>
+          <p style="font-size: 20px;">"Good night" artinya... 🌙</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Selamat pagi</button><button class="quiz-opt" data-opt="1">Selamat malam 🌙</button><button class="quiz-opt" data-opt="2">Selamat siang</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latihan -->
+    <div class="section-card">
+      <div class="section-header">✏️ Practice <span>▼</span></div>
+      <div class="section-body" style="font-size: 20px;">
+        <p style="font-weight:bold; font-size: 22px;">💪 Let's practice! (Ayo berlatih!)</p>
+
+        <div class="quiz-box" data-idx="2" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">1. "Goodbye" artinya... 👋</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Halo</button><button class="quiz-opt" data-opt="1">Selamat tinggal</button><button class="quiz-opt" data-opt="2">Terima kasih</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div><div class="quiz-box" data-idx="3" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">2. How do you say "Terima kasih" in English?</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Please</button><button class="quiz-opt" data-opt="1">Sorry</button><button class="quiz-opt" data-opt="2">Thank you 🙏</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div><div class="quiz-box" data-idx="4" data-answered="false" style="margin-top: 20px; padding-top: 16px; border-top: 2px dashed #ddd;">
+          <p style="font-weight: bold; font-size: 20px;">3. Answer: "How are you?" → "I am ___"</p>
+          <div class="quiz-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="quiz-opt" data-opt="0">Fine 😊</button><button class="quiz-opt" data-opt="1">Five</button><button class="quiz-opt" data-opt="2">Book 📖</button>
+          </div>
+          <div class="feedback" style="margin-top:12px; font-weight:bold; font-size: 20px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ringkasan -->
+    <div class="section-card">
+      <div class="section-header">🏆 Summary & Done! <span>▼</span></div>
+      <div class="section-body text-center" style="text-align: center; font-size: 20px;">
+        <p>Great job! Kamu sudah belajar <strong>How Are You?</strong>! 🌟</p>
+        <p style="margin-top: 16px;">You got a badge:</p>
+        <div style="font-size: 80px; margin: 16px 0;">👋</div>
+        <p style="font-weight:bold; color: #1565c0; font-size: 24px;">Greeter Pro</p>
+        <p style="color: #666; margin-top: 8px;">⭐⭐⭐⭐⭐</p>
+        <button id="btn-selesai" class="btn disabled" style="margin-top:24px; opacity:0.5; cursor:not-allowed;" disabled onclick="finishBook()">Done! 🎉</button>
+        <p id="msg-belum-selesai" style="font-size:14px; color:#888; margin-top:8px;">(Answer all quizzes first ya 🧐)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Tutor -->
+  <div class="ai-chat">
+    <div class="ai-toggle" onclick="toggleChat()">🤖</div>
+    <div class="ai-panel">
+      <div class="ai-header">English Tutor 🤗</div>
+      <div class="ai-msgs" style="font-size: 16px;">
+        <div class="msg ai">Hi! Let's learn English together! Yuk belajar Bahasa Inggris bareng! 🇬🇧</div>
+      </div>
+      <div class="ai-input-area">
+        <input type="text" id="ai-input" placeholder="Ketik di sini...">
+        <button onclick="sendToAI()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window._QUIZ_ANSWERS = [0, 1, 1, 2, 0];
+    window._TOTAL_SECTIONS = 5;
+  </script>
+  <script src="/assets/book-engine.js"></script>
+</body>
+</html>
