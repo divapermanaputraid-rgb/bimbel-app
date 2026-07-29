@@ -1,5 +1,5 @@
--- Migration 024: Seed subject, materials, and questions for K1 MTK (new curriculum)
--- 9 materials × 3 questions = 27 questions total
+-- Migration 024: Seed subject, materials, and questions for K1 MTK + B.Indo (new curriculum)
+-- 18 materials × 3 questions = 54 questions total
 
 -- Subject
 INSERT INTO public.subjects (id, kode, nama, icon, kelas, urutan)
@@ -21,6 +21,29 @@ VALUES
   ('k1-mtk-07', 1, 'k1-mtk', 'Cerita Pengurangan', 'Bab 3 — Pengurangan', '/buku/kelas1/matematika/k1-mtk-07.html', 7),
   ('k1-mtk-08', 1, 'k1-mtk', 'Cara Mengurangi', 'Bab 3 — Pengurangan', '/buku/kelas1/matematika/k1-mtk-08.html', 8),
   ('k1-mtk-09', 1, 'k1-mtk', 'Bangun Datar di Sekitar Kita', 'Bab 4 — Bangun Datar', '/buku/kelas1/matematika/k1-mtk-09.html', 9)
+ON CONFLICT (id) DO UPDATE SET
+  judul = EXCLUDED.judul,
+  deskripsi = EXCLUDED.deskripsi,
+  urutan = EXCLUDED.urutan;
+
+-- Subject B.Indonesia
+INSERT INTO public.subjects (id, kode, nama, icon, kelas, urutan)
+VALUES ('k1-bind', 'bind', 'Bahasa Indonesia', '📖', 1, 2)
+ON CONFLICT (id) DO UPDATE SET
+  nama = EXCLUDED.nama,
+  icon = EXCLUDED.icon,
+  urutan = EXCLUDED.urutan;
+
+INSERT INTO public.materials (id, kelas, subject_id, judul, deskripsi, file_path, urutan)
+VALUES
+  ('k1-bind-01', 1, 'k1-bind', 'Bunyi Apa?', 'Bab 1 — Suara & Huruf B', '/buku/kelas1/bahasa-indonesia/k1-bind-01.html', 1),
+  ('k1-bind-02', 1, 'k1-bind', 'Ayo Bermain!', 'Bab 2 — Permainan & Huruf H/C', '/buku/kelas1/bahasa-indonesia/k1-bind-02.html', 2),
+  ('k1-bind-03', 1, 'k1-bind', 'Awas Kuman!', 'Bab 3 — Kebersihan & Huruf K', '/buku/kelas1/bahasa-indonesia/k1-bind-03.html', 3),
+  ('k1-bind-04', 1, 'k1-bind', 'Aku Bisa!', 'Bab 4 — Gerak Tubuh & Huruf L', '/buku/kelas1/bahasa-indonesia/k1-bind-04.html', 4),
+  ('k1-bind-05', 1, 'k1-bind', 'Teman Baru', 'Bab 5 — Perkenalan & Berteman', '/buku/kelas1/bahasa-indonesia/k1-bind-05.html', 5),
+  ('k1-bind-06', 1, 'k1-bind', 'Temanku Berbeda', 'Bab 6 — Perbedaan & Toleransi', '/buku/kelas1/bahasa-indonesia/k1-bind-06.html', 6),
+  ('k1-bind-07', 1, 'k1-bind', 'Aku Ingin', 'Bab 7 — Kebutuhan & Keinginan', '/buku/kelas1/bahasa-indonesia/k1-bind-07.html', 7),
+  ('k1-bind-08', 1, 'k1-bind', 'Di Sekitar Rumah', 'Bab 8 — Lingkungan & Arah', '/buku/kelas1/bahasa-indonesia/k1-bind-08.html', 8)
 ON CONFLICT (id) DO UPDATE SET
   judul = EXCLUDED.judul,
   deskripsi = EXCLUDED.deskripsi,
@@ -117,4 +140,44 @@ VALUES
 -- k1-mtk-18: Mengelompokkan Data dan Diagram Gambar
 ('k1-mtk-18', 'Tabel: 🚗=4, 🚲=2, ✈️=3. Kendaraan paling banyak adalah...', '["🚗 Mobil", "🚲 Sepeda", "✈️ Pesawat"]', '🚗 Mobil', 1, 'Mobil ada 4, paling banyak! ✅'),
 ('k1-mtk-18', 'Diagram: 🐱🐱🐱🐱🐱 (5), 🐶🐶🐶 (3). Selisih kucing dan anjing...', '["1", "2", "3"]', '2', 1, '5 - 3 = 2. ✅'),
-('k1-mtk-18', 'Kalau 🐟🐟🐟🐟 berarti ada... ikan', '["3 ikan", "4 ikan", "5 ikan"]', '4 ikan', 1, 'Hitung: 1, 2, 3, 4. Empat ikan! ✅');
+('k1-mtk-18', 'Kalau 🐟🐟🐟🐟 berarti ada... ikan', '["3 ikan", "4 ikan", "5 ikan"]', '4 ikan', 1, 'Hitung: 1, 2, 3, 4. Empat ikan! ✅'),
+
+-- k1-bind-01: Bunyi Apa?
+('k1-bind-01', '"Meong meong" adalah suara hewan...', '["🐱 Kucing", "🐦 Burung", "🐶 Anjing"]', '🐱 Kucing', 1, 'Kucing bersuara meong meong! ✅'),
+('k1-bind-01', 'Huruf awal kata "🍌" pisang adalah...', '["B", "P", "M"]', 'P', 1, 'Pisang huruf awalnya P. ✅'),
+('k1-bind-01', 'Benda yang huruf awalnya B adalah...', '["🍎 Apel", "⚽ Bola", "🐱 Kucing"]', '⚽ Bola', 1, 'Bola huruf awalnya B! ✅'),
+
+-- k1-bind-02: Ayo Bermain!
+('k1-bind-02', 'Permainan yang pakai tali dan dilompati disebut...', '["Petak umpet", "Lompat tali", "Layang-layang"]', 'Lompat tali', 1, 'Lompat tali pakai tali dan dilompati! ✅'),
+('k1-bind-02', 'Huruf awal kata "Catur" ♟️ adalah...', '["C", "H", "K"]', 'C', 1, 'Catur huruf awalnya C. ✅'),
+('k1-bind-02', '"Ayo bermain!" Kata bermain artinya...', '["Bekerja", "Belajar", "Melakukan permainan"]', 'Melakukan permainan', 1, 'Bermain = melakukan permainan! ✅'),
+
+-- k1-bind-03: Awas Kuman!
+('k1-bind-03', 'Kita harus cuci tangan sebelum...', '["Tidur", "Makan 🍚", "Menulis ✏️"]', 'Makan 🍚', 1, 'Cuci tangan sebelum makan! ✅'),
+('k1-bind-03', 'Huruf awal kata "🦠" (Kuman) adalah...', '["B", "K", "M"]', 'K', 1, 'Kuman huruf awalnya K. ✅'),
+('k1-bind-03', 'Mandi dilakukan sehari...', '["1 kali", "2 kali", "3 kali"]', '2 kali', 1, 'Mandi 2 kali sehari, pagi dan sore. ✅'),
+
+-- k1-bind-04: Aku Bisa!
+('k1-bind-04', 'Melompat artinya...', '["Diam saja", "Angkat kaki dan loncat 🙆", "Duduk 🪑"]', 'Angkat kaki dan loncat 🙆', 1, 'Melompat = angkat kaki dan loncat! ✅'),
+('k1-bind-04', 'Huruf awal "🕯️" (Lilin) adalah...', '["L", "I", "N"]', 'L', 1, 'Lilin huruf awalnya L. ✅'),
+('k1-bind-04', 'Kegiatan yang bisa dilakukan setelah mandi adalah...', '["Main kotor-kotoran", "Pakai baju bersih 👕", "Langsung tidur"]', 'Pakai baju bersih 👕', 1, 'Setelah mandi pakai baju bersih! ✅'),
+
+-- k1-bind-05: Teman Baru
+('k1-bind-05', '"Halo, namaku Upe." Itu adalah contoh...', '["Perkenalan 🙋", "Makan siang", "Belajar"]', 'Perkenalan 🙋', 1, 'Itu adalah perkenalan! ✅'),
+('k1-bind-05', 'Berteman itu membuat kita...', '["Sedih", "Senang 😊", "Marah"]', 'Senang 😊', 1, 'Berteman membuat kita senang! ✅'),
+('k1-bind-05', 'Huruf awal kata "🤝" (Teman) adalah...', '["B", "T", "S"]', 'T', 1, 'Teman huruf awalnya T. ✅'),
+
+-- k1-bind-06: Temanku Berbeda
+('k1-bind-06', 'Perbedaan membuat dunia seperti...', '["Hitam putih", "Pelangi 🌈", "Air"]', 'Pelangi 🌈', 1, 'Perbedaan indah seperti pelangi! ✅'),
+('k1-bind-06', 'Teman yang pakai jilbab harus kita...', '["Ejek", "Hormati 🤝", "Tertawakan"]', 'Hormati 🤝', 1, 'Semua teman harus dihormati! ✅'),
+('k1-bind-06', '"Toleransi" artinya...', '["Bertengkar", "Menghargai perbedaan 🌈", "Pergi"]', 'Menghargai perbedaan 🌈', 1, 'Toleransi = menghargai perbedaan! ✅'),
+
+-- k1-bind-07: Aku Ingin
+('k1-bind-07', 'Mana yang termasuk KEINGINAN?', '["🍚 Nasi", "👕 Baju", "🧸 Mainan baru"]', '🧸 Mainan baru', 1, 'Mainan adalah keinginan, bukan kebutuhan. ✅'),
+('k1-bind-07', 'Kita harus... atas apa yang sudah kita punya', '["Bersyukur 🙏", "Mengeluh", "Membuang"]', 'Bersyukur 🙏', 1, 'Kita harus bersyukur! ✅'),
+('k1-bind-07', 'Yang harus DIDAHULUKAN adalah...', '["Keinginan", "Kebutuhan 🍚", "Mainan"]', 'Kebutuhan 🍚', 1, 'Kebutuhan didahulukan! ✅'),
+
+-- k1-bind-08: Di Sekitar Rumah
+('k1-bind-08', 'Bagian rumah untuk masuk dan keluar adalah...', '["🚪 Pintu", "🪟 Jendela", "🏠 Atap"]', '🚪 Pintu', 1, 'Pintu tempat masuk dan keluar. ✅'),
+('k1-bind-08', 'Arah lawan dari DEPAN adalah...', '["Kanan", "Belakang ⬇️", "Kiri"]', 'Belakang ⬇️', 1, 'Lawan depan adalah belakang! ✅'),
+('k1-bind-08', 'Peta digunakan untuk...', '["Menulis", "Menunjukkan letak 🗺️", "Mewarnai"]', 'Menunjukkan letak 🗺️', 1, 'Peta menunjukkan letak suatu tempat. ✅');
