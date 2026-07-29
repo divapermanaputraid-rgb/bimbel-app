@@ -19,6 +19,18 @@ export default async function GuruDashboardPage() {
 
   const { count: studentCount } = await supabase.from("users").select("id", { count: "exact" }).eq("role", "siswa");
 
+  // Count per kelas
+  const { data: kelasCounts } = await supabase
+    .from("users")
+    .select("kelas")
+    .eq("role", "siswa")
+    .not("kelas", "is", null);
+
+  const byKelas: Record<number, number> = {};
+  (kelasCounts || []).forEach((r: { kelas: number }) => {
+    byKelas[r.kelas] = (byKelas[r.kelas] || 0) + 1;
+  });
+
   // Query latihan minggu ini (last 7 days)
   const oneWeekAgo = new Date();
   oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
@@ -43,7 +55,12 @@ export default async function GuruDashboardPage() {
       <div className="grid grid-cols-3 gap-4 mb-8">
         <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
           <div className="text-3xl font-black text-indigo-600">{studentCount || 0}</div>
-          <p className="text-xs text-slate-500 font-bold uppercase mt-1">Siswa Aktif</p>
+          <p className="text-xs text-slate-500 font-bold uppercase mt-1">Total Siswa</p>
+          <div className="mt-1 flex flex-wrap justify-center gap-1 text-[10px] text-slate-400">
+            {Object.entries(byKelas).sort(([a], [b]) => Number(a) - Number(b)).map(([k, c]) => (
+              <span key={k} className="rounded-full bg-indigo-50 px-2 py-0.5 font-semibold">Kls {k}: {c}</span>
+            ))}
+          </div>
         </div>
         <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
           <div className="text-3xl font-black text-emerald-600">{latihanCount || 0}</div>

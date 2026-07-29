@@ -13,7 +13,11 @@ interface UnitProgressItem {
   stars: number;
 }
 
-export default async function GuruReportsPage() {
+export default async function GuruReportsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ kelas?: string }>;
+}) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect("/login");
@@ -21,11 +25,12 @@ export default async function GuruReportsPage() {
   const { data: profile } = await supabase.from("users").select("role").eq("id", user.id).single();
   if (profile?.role !== "guru") redirect("/dashboard/siswa");
 
-  const { data: siswaList } = await supabase
-    .from("users")
-    .select("id, nama, kelas")
-    .eq("role", "siswa")
-    .order("kelas");
+  const { kelas } = await searchParams;
+  const filterKelas = kelas ? Number(kelas) : null;
+
+  let query = supabase.from("users").select("id, nama, kelas").eq("role", "siswa");
+  if (filterKelas) query = query.eq("kelas", filterKelas);
+  const { data: siswaList } = await query.order("kelas");
 
   const { data: progress } = await supabase
     .from("unit_progress")
@@ -36,8 +41,30 @@ export default async function GuruReportsPage() {
 
   return (
     <div>
-      <h2 className="mb-4 text-2xl font-bold text-slate-800">📊 Laporan Detail</h2>
-      <p className="text-sm text-slate-500 mb-8">Pantau progress unit mandiri siswa.</p>
+      <div className="mb-6 flex items-center justify-between">
+        <div>
+          <h2 className="text-2xl font-bold text-slate-800">📊 Laporan Detail</h2>
+          <p className="mt-1 text-sm text-slate-500">Pantau progress unit mandiri siswa.</p>
+        </div>
+        <form method="GET" className="flex items-center gap-2">
+          <label className="text-xs font-bold text-slate-500">Filter:</label>
+          <select
+            name="kelas"
+            onChange={(e) => e.target.form?.submit()}
+            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-bold text-slate-700 shadow-sm"
+            defaultValue={filterKelas?.toString() ?? ""}
+          >
+            <option value="">Semua Kelas</option>
+            <option value="1">Kelas 1</option>
+            <option value="2">Kelas 2</option>
+            <option value="3">Kelas 3</option>
+            <option value="6">Kelas 6</option>
+          </select>
+          <noscript>
+            <button type="submit" className="rounded-lg bg-indigo-600 px-3 py-2 text-xs font-bold text-white">Filter</button>
+          </noscript>
+        </form>
+      </div>
 
       <div className="bg-white border border-slate-200 rounded-xl overflow-x-auto shadow-sm">
         <table className="w-full text-left text-sm text-slate-600">

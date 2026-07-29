@@ -11,6 +11,7 @@ export type UnitItem = {
   status: UnitStatus;
   stars: number;
   best_score: number;
+  kelas?: number;
 };
 
 type UnitGridProps = {
@@ -38,6 +39,7 @@ export function UnitGrid({ units }: UnitGridProps) {
           stars={u.stars}
           bestScore={u.best_score}
           filePath={u.file_path}
+          kelas={u.kelas}
         />
       ))}
     </div>

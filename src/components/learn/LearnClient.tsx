@@ -176,6 +176,7 @@ export function LearnClient({ subjects, materials, progress }: LearnClientProps)
         status: deriveStatus(m, mats, progressMap),
         stars: row?.stars ?? 0,
         best_score: row?.best_score ?? 0,
+        kelas: activeKelas,
       };
     });
   }, [activeGroup, activeKelas, subjects, materials, progressMap]);

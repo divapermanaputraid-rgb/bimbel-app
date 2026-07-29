@@ -10,6 +10,7 @@ type UnitCardProps = {
   stars?: number;
   bestScore?: number;
   filePath: string | null;
+  kelas?: number;
 };
 
 const STATUS_STYLE: Record<
@@ -50,6 +51,7 @@ export function UnitCard({
   stars = 0,
   bestScore = 0,
   filePath,
+  kelas,
 }: UnitCardProps) {
   const style = STATUS_STYLE[status];
   const canOpen = status !== "locked" && !!filePath;
@@ -69,14 +71,17 @@ export function UnitCard({
       onClick={openBook}
       className={`flex flex-col items-center rounded-xl border p-3 text-center shadow-sm transition duration-200 ${style.bg} ${style.border} ${
         canOpen ? "hover:scale-105 active:scale-95" : "cursor-not-allowed opacity-80"
-      }`}
+      } ${kelas === 1 ? "border-2 border-amber-300 ring-1 ring-amber-100" : ""}`}
     >
       <div className="mb-1 flex w-full items-center justify-between text-[10px] font-bold text-slate-500">
         <span>#{number}</span>
-        <span>{style.badge}</span>
+        <div className="flex items-center gap-1">
+          {kelas === 1 && status !== "locked" && <span className="rounded-full bg-amber-100 px-1.5 py-0.5 text-[8px] font-bold text-amber-700">K1</span>}
+          <span>{style.badge}</span>
+        </div>
       </div>
-      <div className="mb-1 text-3xl leading-none">{status === "locked" ? "🔒" : emoji}</div>
-      <p className="line-clamp-2 min-h-[2.5rem] text-[11px] font-bold leading-tight text-slate-800">
+      <div className={`mb-1 leading-none ${kelas === 1 ? "text-4xl" : "text-3xl"}`}>{status === "locked" ? "🔒" : emoji}</div>
+      <p className={`line-clamp-2 min-h-[2.5rem] font-bold leading-tight text-slate-800 ${kelas === 1 ? "text-xs" : "text-[11px]"}`}>
         {title}
       </p>
       <p className="mt-1 text-[10px] font-semibold text-slate-500">{style.label}</p>
