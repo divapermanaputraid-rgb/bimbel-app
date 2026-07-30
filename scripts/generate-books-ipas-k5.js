@@ -165,7 +165,7 @@ function renderBook(data) {
 
   <script>
     window._QUIZ_ANSWERS = [${jawaban.join(', ')}];
-    window._TOTAL_SECTIONS = ${5 + data.latihan.length};
+    window._TOTAL_SECTIONS = ${data.observasi.quiz.length + data.eksperimen.quiz.length + data.latihan.length};
   </script>
   <script src="/assets/book-engine.js"></script>
 </body>
