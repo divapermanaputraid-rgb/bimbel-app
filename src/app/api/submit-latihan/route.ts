@@ -275,12 +275,17 @@ export async function POST(req: NextRequest) {
 
     const { data: assignment } = await supabase
       .from("assignments")
-      .select("student_id, question_ids, material_id")
+      .select("student_id, question_ids, material_id, status")
       .eq("id", assignmentId)
-      .single();
+      .maybeSingle();
 
     if (!assignment || assignment.student_id !== user.id) {
       return NextResponse.json({ error: "Assignment not found or forbidden" }, { status: 403 });
+    }
+
+    // Guard: Prevent XP farming by re-submitting completed assignments
+    if (assignment.status === "completed") {
+      return NextResponse.json({ error: "Tugas sudah dikerjakan" }, { status: 400 });
     }
 
     const { data: questions } = await supabase
