@@ -52,16 +52,7 @@ type LearnClientProps = {
 };
 
 const COMING_SOON: GroupedSubject[] = [
-  {
-    kode: "ipas",
-    nama: "IPAS",
-    icon: "🌿",
-    kelasList: [],
-    subjectIds: [],
-    totalUnits: 0,
-    completedUnits: 0,
-    locked: true,
-  },
+  // IPAS removed — seed migration 030 provides real data from DB
 ];
 
 function unitEmoji(m: MaterialRow): string {
