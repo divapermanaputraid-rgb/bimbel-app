@@ -4,13 +4,11 @@
 DELETE FROM public.questions WHERE material_id LIKE 'k1-bind-%' OR material_id LIKE 'k2-bind-%' OR material_id LIKE 'k3-bind-%' OR material_id LIKE 'k6-bind-%';
 
 INSERT INTO public.questions (
-  id, material_id, subject_id, kelas, tipe, soal, pilihan, jawaban_benar, level, xp
+  id, material_id, tipe, soal, pilihan, jawaban_benar, level, xp
 ) VALUES
 (
   'k1-bind-01-01',
   'k1-bind-01',
-  'k1-bind',
-  1,
   'choose_correct',
   'Anton menang lomba. Dia merasa...',
   '["senang","sedih","marah"]'::jsonb,
@@ -21,8 +19,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-01-02',
   'k1-bind-01',
-  'k1-bind',
-  1,
   'match',
   'Cocokkan perasaan!',
   '["😊","😢","😠"]'::jsonb,
@@ -33,8 +29,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-01-03',
   'k1-bind-01',
-  'k1-bind',
-  1,
   'true_false',
   'Kalau jatuh dari sepeda, kita merasa senang.',
   '["Benar","Salah"]'::jsonb,
@@ -45,8 +39,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-02-01',
   'k1-bind-02',
-  'k1-bind',
-  1,
   'choose_correct',
   'Cara berteman yang baik adalah...',
   '["berbagi dan ramah","mengejek","tidak mau bermain"]'::jsonb,
@@ -57,8 +49,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-02-02',
   'k1-bind-02',
-  'k1-bind',
-  1,
   'fill_blank',
   'Kita harus ___ dengan teman baru.',
   '["bertengkar","bersahabat","mengabaikan"]'::jsonb,
@@ -69,8 +59,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-02-03',
   'k1-bind-02',
-  'k1-bind',
-  1,
   'true_false',
   'Bertengkar adalah cara berteman yang baik.',
   '["Benar","Salah"]'::jsonb,
@@ -81,8 +69,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-03-01',
   'k1-bind-03',
-  'k1-bind',
-  1,
   'choose_correct',
   'Bagian tubuh yang digunakan untuk melihat...',
   '["mata","hidung","telinga"]'::jsonb,
@@ -93,8 +79,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-03-02',
   'k1-bind-03',
-  'k1-bind',
-  1,
   'fill_blank',
   'Kita mencium bau dengan ___',
   '["hidung","mata","mulut"]'::jsonb,
@@ -105,8 +89,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-03-03',
   'k1-bind-03',
-  'k1-bind',
-  1,
   'true_false',
   'Telinga digunakan untuk mendengar.',
   '["Benar","Salah"]'::jsonb,
@@ -117,8 +99,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-04-01',
   'k1-bind-04',
-  'k1-bind',
-  1,
   'choose_correct',
   'Orang tua laki-laki kita disebut...',
   '["ayah","ibu","kakak"]'::jsonb,
@@ -129,8 +109,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-04-02',
   'k1-bind-04',
-  'k1-bind',
-  1,
   'fill_blank',
   'Adik perempuan dari ibu kita disebut ___',
   '["tante","nenek","kakak"]'::jsonb,
@@ -141,8 +119,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-04-03',
   'k1-bind-04',
-  'k1-bind',
-  1,
   'true_false',
   'Nenek adalah ibu dari ayah atau ibu kita.',
   '["Benar","Salah"]'::jsonb,
@@ -153,8 +129,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-05-01',
   'k1-bind-05',
-  'k1-bind',
-  1,
   'choose_correct',
   'Hewan yang sering dipelihara di rumah...',
   '["kucing","harimau","gajah"]'::jsonb,
@@ -165,8 +139,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-05-02',
   'k1-bind-05',
-  'k1-bind',
-  1,
   'fill_blank',
   'Memelihara hewan harus memberi ___ dan minum.',
   '["makan","batu","pasir"]'::jsonb,
@@ -177,8 +149,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-05-03',
   'k1-bind-05',
-  'k1-bind',
-  1,
   'true_false',
   'Ikan adalah hewan peliharaan.',
   '["Benar","Salah"]'::jsonb,
@@ -189,8 +159,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-06-01',
   'k1-bind-06',
-  'k1-bind',
-  1,
   'choose_correct',
   'Tetangga yang baik harus saling...',
   '["membantu","mengabaikan","bertengkar"]'::jsonb,
@@ -201,8 +169,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-06-02',
   'k1-bind-06',
-  'k1-bind',
-  1,
   'fill_blank',
   'Menjaga kebersihan lingkungan adalah ___ kita bersama.',
   '["tanggung jawab","mainan","pekerjaan orang lain"]'::jsonb,
@@ -213,8 +179,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-06-03',
   'k1-bind-06',
-  'k1-bind',
-  1,
   'true_false',
   'Membuang sampah sembarangan membuat lingkungan kotor.',
   '["Benar","Salah"]'::jsonb,
@@ -225,8 +189,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-07-01',
   'k1-bind-07',
-  'k1-bind',
-  1,
   'choose_correct',
   'Olahraga yang baik untuk tubuh kita adalah...',
   '["berlari","rebahan saja","makan terus"]'::jsonb,
@@ -237,8 +199,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-07-02',
   'k1-bind-07',
-  'k1-bind',
-  1,
   'fill_blank',
   'Bermain bersama teman membuat kita merasa ___',
   '["senang","sedih","marah"]'::jsonb,
@@ -249,8 +209,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-07-03',
   'k1-bind-07',
-  'k1-bind',
-  1,
   'true_false',
   'Olahraga membuat tubuh kita sehat.',
   '["Benar","Salah"]'::jsonb,
@@ -261,8 +219,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-08-01',
   'k1-bind-08',
-  'k1-bind',
-  1,
   'choose_correct',
   'Sikap yang benar saat guru mengajar adalah...',
   '["mendengarkan dengan baik","bermain sendiri","berbicara dengan teman"]'::jsonb,
@@ -273,8 +229,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-08-02',
   'k1-bind-08',
-  'k1-bind',
-  1,
   'fill_blank',
   'Di sekolah kita belajar bersama ___ dan teman.',
   '["guru","pedagang","dokter"]'::jsonb,
@@ -285,8 +239,6 @@ INSERT INTO public.questions (
 (
   'k1-bind-08-03',
   'k1-bind-08',
-  'k1-bind',
-  1,
   'true_false',
   'Kita harus menghormati guru di sekolah.',
   '["Benar","Salah"]'::jsonb,
@@ -297,8 +249,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-01-01',
   'k2-bind-01',
-  'k2-bind',
-  2,
   'choose_correct',
   'Jujur artinya...',
   '["berkata benar","berbohong","menipu"]'::jsonb,
@@ -309,8 +259,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-01-02',
   'k2-bind-01',
-  'k2-bind',
-  2,
   'fill_blank',
   'Anak yang jujur tidak pernah ___',
   '["berbohong","belajar","bermain"]'::jsonb,
@@ -321,8 +269,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-01-03',
   'k2-bind-01',
-  'k2-bind',
-  2,
   'true_false',
   'Anak yang jujur dipercaya oleh teman dan orang tua.',
   '["Benar","Salah"]'::jsonb,
@@ -333,8 +279,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-02-01',
   'k2-bind-02',
-  'k2-bind',
-  2,
   'choose_correct',
   'Agar tubuh sehat, kita harus...',
   '["makan teratur dan olahraga","tidur terus","makan jajan saja"]'::jsonb,
@@ -345,8 +289,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-02-02',
   'k2-bind-02',
-  'k2-bind',
-  2,
   'fill_blank',
   'Mencuci tangan sebelum makan agar tidak ___.',
   '["sakit","kuat","besar"]'::jsonb,
@@ -357,8 +299,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-02-03',
   'k2-bind-02',
-  'k2-bind',
-  2,
   'true_false',
   'Mandi dua kali sehari membuat tubuh bersih dan sehat.',
   '["Benar","Salah"]'::jsonb,
@@ -369,8 +309,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-03-01',
   'k2-bind-03',
-  'k2-bind',
-  2,
   'choose_correct',
   'Sebelum menyeberang jalan, kita harus...',
   '["lihat kiri-kanan","lari cepat","tutup mata"]'::jsonb,
@@ -381,8 +319,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-03-02',
   'k2-bind-03',
-  'k2-bind',
-  2,
   'fill_blank',
   'Kita tidak boleh menerima permen dari orang ___.',
   '["teman","guru","asing"]'::jsonb,
@@ -393,8 +329,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-03-03',
   'k2-bind-03',
-  'k2-bind',
-  2,
   'true_false',
   'Berhati-hati artinya waspada dan teliti.',
   '["Benar","Salah"]'::jsonb,
@@ -405,8 +339,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-04-01',
   'k2-bind-04',
-  'k2-bind',
-  2,
   'choose_correct',
   'Manfaat membaca buku adalah...',
   '["menambah pengetahuan","membuat mengantuk","membuang waktu"]'::jsonb,
@@ -417,8 +349,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-04-02',
   'k2-bind-04',
-  'k2-bind',
-  2,
   'fill_blank',
   'Membaca harus dengan ___ yang cukup agar mata tidak lelah.',
   '["cahaya/penerangan","kegelapan","musik keras"]'::jsonb,
@@ -429,8 +359,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-04-03',
   'k2-bind-04',
-  'k2-bind',
-  2,
   'true_false',
   'Membaca bisa meningkatkan kemampuan bahasa.',
   '["Benar","Salah"]'::jsonb,
@@ -441,8 +369,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-05-01',
   'k2-bind-05',
-  'k2-bind',
-  2,
   'choose_correct',
   'Meskipun berbeda suku, kita harus...',
   '["saling menghargai","saling mengejek","menghindari"]'::jsonb,
@@ -453,8 +379,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-05-02',
   'k2-bind-05',
-  'k2-bind',
-  2,
   'fill_blank',
   'Indonesia kaya akan keragaman budaya dan ___',
   '["suku bangsa","kekacauan","konflik"]'::jsonb,
@@ -465,8 +389,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-05-03',
   'k2-bind-05',
-  'k2-bind',
-  2,
   'true_false',
   'Perbedaan membuat kita saling melengkapi.',
   '["Benar","Salah"]'::jsonb,
@@ -477,8 +399,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-06-01',
   'k2-bind-06',
-  'k2-bind',
-  2,
   'choose_correct',
   'Menabung adalah kebiasaan...',
   '["baik untuk masa depan","membuang uang","boros"]'::jsonb,
@@ -489,8 +409,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-06-02',
   'k2-bind-06',
-  'k2-bind',
-  2,
   'fill_blank',
   'Sebelum membeli sesuatu, kita harus ___ apakah perlu atau tidak.',
   '["memikirkan","langsung beli","meminjam"]'::jsonb,
@@ -501,8 +419,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-06-03',
   'k2-bind-06',
-  'k2-bind',
-  2,
   'true_false',
   'Membeli barang yang tidak perlu adalah pemborosan.',
   '["Benar","Salah"]'::jsonb,
@@ -513,8 +429,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-07-01',
   'k2-bind-07',
-  'k2-bind',
-  2,
   'choose_correct',
   'Cara menjaga kebersihan kelas adalah...',
   '["membuang sampah di tempat sampah","mencoret dinding","membuang sampah di lantai"]'::jsonb,
@@ -525,8 +439,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-07-02',
   'k2-bind-07',
-  'k2-bind',
-  2,
   'fill_blank',
   'Piket kelas dilakukan secara ___ dan bergantian.',
   '["bersama","sendiri","terpaksa"]'::jsonb,
@@ -537,8 +449,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-07-03',
   'k2-bind-07',
-  'k2-bind',
-  2,
   'true_false',
   'Sekolah yang bersih membuat nyaman belajar.',
   '["Benar","Salah"]'::jsonb,
@@ -549,8 +459,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-08-01',
   'k2-bind-08',
-  'k2-bind',
-  2,
   'choose_correct',
   'Fabel adalah cerita tentang...',
   '["hewan yang berperilaku seperti manusia","manusia biasa","benda mati"]'::jsonb,
@@ -561,8 +469,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-08-02',
   'k2-bind-08',
-  'k2-bind',
-  2,
   'fill_blank',
   'Dari fabel, kita bisa mengambil ___ atau pelajaran.',
   '["pesan moral","kebingungan","masalah"]'::jsonb,
@@ -573,8 +479,6 @@ INSERT INTO public.questions (
 (
   'k2-bind-08-03',
   'k2-bind-08',
-  'k2-bind',
-  2,
   'true_false',
   'Kura-kura dan kelinci adalah contoh cerita fabel.',
   '["Benar","Salah"]'::jsonb,
@@ -585,8 +489,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-01-01',
   'k3-bind-01',
-  'k3-bind',
-  3,
   'choose_correct',
   'Berbagi kepada orang lain menunjukkan sikap...',
   '["peduli","egois","pelit"]'::jsonb,
@@ -597,8 +499,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-01-02',
   'k3-bind-01',
-  'k3-bind',
-  3,
   'fill_blank',
   'Tindakan berbagi membuat hati kita merasa ___',
   '["senang","sedih","kesal"]'::jsonb,
@@ -609,8 +509,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-01-03',
   'k3-bind-01',
-  'k3-bind',
-  3,
   'choose_correct',
   '"Berbagi" berarti...',
   '["memberi sebagian kepada orang lain","mengambil milik orang lain","menyimpan semuanya"]'::jsonb,
@@ -621,8 +519,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-01-04',
   'k3-bind-01',
-  'k3-bind',
-  3,
   'true_false',
   'Orang yang suka berbagi memiliki banyak teman.',
   '["Benar","Salah"]'::jsonb,
@@ -633,8 +529,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-02-01',
   'k3-bind-02',
-  'k3-bind',
-  3,
   'choose_correct',
   'Ciri sahabat sejati adalah...',
   '["selalu ada di saat susah","hanya ada saat senang","suka mengambil untung"]'::jsonb,
@@ -645,8 +539,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-02-02',
   'k3-bind-02',
-  'k3-bind',
-  3,
   'fill_blank',
   'Persahabatan yang baik didasari rasa ___ dan pengertian.',
   '["saling percaya","iri hati","persaingan"]'::jsonb,
@@ -657,8 +549,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-02-03',
   'k3-bind-02',
-  'k3-bind',
-  3,
   'choose_correct',
   'Alfa dan Galih bekerja bersama untuk menang. Ini menunjukkan...',
   '["kerja sama","persaingan","iri hati"]'::jsonb,
@@ -669,8 +559,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-02-04',
   'k3-bind-02',
-  'k3-bind',
-  3,
   'true_false',
   'Meutia dan Andi berbeda suku tapi tetap berteman. Ini toleransi.',
   '["Benar","Salah"]'::jsonb,
@@ -681,8 +569,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-03-01',
   'k3-bind-03',
-  'k3-bind',
-  3,
   'choose_correct',
   'Jenderal Sudirman tetap berjuang meski sakit. Ini menunjukkan...',
   '["pantang menyerah","mudah menyerah","malas"]'::jsonb,
@@ -693,8 +579,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-03-02',
   'k3-bind-03',
-  'k3-bind',
-  3,
   'fill_blank',
   '"Pengobar semangat" artinya orang yang ___.',
   '["memberi semangat","melemahkan","menghalangi"]'::jsonb,
@@ -705,8 +589,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-03-03',
   'k3-bind-03',
-  'k3-bind',
-  3,
   'choose_correct',
   'RA Kartini dikenal sebagai pahlawan...',
   '["emansipasi wanita","kemerdekaan di laut","teknologi"]'::jsonb,
@@ -717,8 +599,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-03-04',
   'k3-bind-03',
-  'k3-bind',
-  3,
   'true_false',
   'Pahlawan berjuang demi kepentingan bangsa, bukan diri sendiri.',
   '["Benar","Salah"]'::jsonb,
@@ -729,8 +609,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-04-01',
   'k3-bind-04',
-  'k3-bind',
-  3,
   'choose_correct',
   'Cara merawat lingkungan agar tetap hijau adalah...',
   '["menanam pohon","menebang hutan","membakar sampah"]'::jsonb,
@@ -741,8 +619,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-04-02',
   'k3-bind-04',
-  'k3-bind',
-  3,
   'fill_blank',
   'Lingkungan yang bersih membuat kita ___ dan nyaman.',
   '["sehat","sakit","sedih"]'::jsonb,
@@ -753,8 +629,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-04-03',
   'k3-bind-04',
-  'k3-bind',
-  3,
   'choose_correct',
   'Sampah plastik berbahaya karena...',
   '["sulit terurai","mudah hilang","tidak berbahaya"]'::jsonb,
@@ -765,8 +639,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-04-04',
   'k3-bind-04',
-  'k3-bind',
-  3,
   'true_false',
   'Membuang sampah di sungai dapat menyebabkan banjir.',
   '["Benar","Salah"]'::jsonb,
@@ -777,8 +649,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-05-01',
   'k3-bind-05',
-  'k3-bind',
-  3,
   'choose_correct',
   'Dongeng biasanya mengandung...',
   '["pesan moral","fakta ilmiah","berita terkini"]'::jsonb,
@@ -789,8 +659,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-05-02',
   'k3-bind-05',
-  'k3-bind',
-  3,
   'fill_blank',
   'Tokoh utama dalam cerita disebut ___.',
   '["protagonis","setting","alur"]'::jsonb,
@@ -801,8 +669,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-05-03',
   'k3-bind-05',
-  'k3-bind',
-  3,
   'choose_correct',
   'Latar cerita (setting) meliputi...',
   '["tempat, waktu, suasana","tokoh dan watak","awal dan akhir saja"]'::jsonb,
@@ -813,8 +679,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-05-04',
   'k3-bind-05',
-  'k3-bind',
-  3,
   'true_false',
   'Antagonis adalah tokoh jahat dalam cerita.',
   '["Benar","Salah"]'::jsonb,
@@ -825,8 +689,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-06-01',
   'k3-bind-06',
-  'k3-bind',
-  3,
   'choose_correct',
   'Kalimat yang benar dimulai dengan...',
   '["huruf kapital","huruf kecil","angka"]'::jsonb,
@@ -837,8 +699,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-06-02',
   'k3-bind-06',
-  'k3-bind',
-  3,
   'fill_blank',
   'Kalimat yang menyatakan pertanyaan diakhiri tanda ___.',
   '["tanya (?)","titik (.)","seru (!)"]'::jsonb,
@@ -849,8 +709,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-06-03',
   'k3-bind-06',
-  'k3-bind',
-  3,
   'choose_correct',
   'Sinonim dari kata "besar" adalah...',
   '["luas","kecil","sempit"]'::jsonb,
@@ -861,8 +719,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-06-04',
   'k3-bind-06',
-  'k3-bind',
-  3,
   'true_false',
   'Antonim adalah lawan kata.',
   '["Benar","Salah"]'::jsonb,
@@ -873,8 +729,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-07-01',
   'k3-bind-07',
-  'k3-bind',
-  3,
   'choose_correct',
   'Ciri khas puisi dibandingkan prosa adalah...',
   '["menggunakan baris dan bait","paragraf panjang","kalimat biasa"]'::jsonb,
@@ -885,8 +739,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-07-02',
   'k3-bind-07',
-  'k3-bind',
-  3,
   'fill_blank',
   'Persajakan atau rima membuat puisi terdengar lebih ___',
   '["indah","membosankan","susah"]'::jsonb,
@@ -897,8 +749,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-07-03',
   'k3-bind-07',
-  'k3-bind',
-  3,
   'choose_correct',
   'Puisi berisi ungkapan...',
   '["perasaan dan pikiran penyair","berita terkini","laporan ilmiah"]'::jsonb,
@@ -909,8 +759,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-07-04',
   'k3-bind-07',
-  'k3-bind',
-  3,
   'true_false',
   'Puisi umumnya lebih pendek dari cerpen.',
   '["Benar","Salah"]'::jsonb,
@@ -921,8 +769,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-08-01',
   'k3-bind-08',
-  'k3-bind',
-  3,
   'choose_correct',
   'Bagian surat pribadi yang paling utama adalah...',
   '["isi surat","amplop","perangko"]'::jsonb,
@@ -933,8 +779,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-08-02',
   'k3-bind-08',
-  'k3-bind',
-  3,
   'fill_blank',
   'Pengumuman ditujukan kepada ___ orang banyak.',
   '["banyak/umum","satu","dua"]'::jsonb,
@@ -945,8 +789,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-08-03',
   'k3-bind-08',
-  'k3-bind',
-  3,
   'choose_correct',
   'Bagian awal surat biasanya berisi...',
   '["salam pembuka","tanda tangan","isi pesan"]'::jsonb,
@@ -957,8 +799,6 @@ INSERT INTO public.questions (
 (
   'k3-bind-08-04',
   'k3-bind-08',
-  'k3-bind',
-  3,
   'true_false',
   'Surat pribadi lebih formal dibanding surat resmi.',
   '["Benar","Salah"]'::jsonb,
@@ -969,8 +809,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-01-01',
   'k6-bind-01',
-  'k6-bind',
-  6,
   'choose_correct',
   'Nasionalisme berarti...',
   '["cinta tanah air","mencari untung sendiri","tidak peduli negara","melarikan diri"]'::jsonb,
@@ -981,8 +819,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-01-02',
   'k6-bind-01',
-  'k6-bind',
-  6,
   'fill_blank',
   'Salah satu cara menunjukkan nasionalisme adalah ___ produk dalam negeri.',
   '["mencintai/menggunakan","merusak","mengimpor semua","mengabaikan"]'::jsonb,
@@ -993,8 +829,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-01-03',
   'k6-bind-01',
-  'k6-bind',
-  6,
   'choose_correct',
   'Lagu Indonesia Raya diciptakan oleh...',
   '["WR Supratman","Ibu Soed","AT Mahmud","C Simanjuntak"]'::jsonb,
@@ -1005,8 +839,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-01-04',
   'k6-bind-01',
-  'k6-bind',
-  6,
   'true_false',
   'Mengibarkan bendera Merah Putih pada hari nasional adalah wujud nasionalisme.',
   '["Benar","Salah"]'::jsonb,
@@ -1017,8 +849,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-01-05',
   'k6-bind-01',
-  'k6-bind',
-  6,
   'match',
   'Cocokkan simbol nasional!',
   '["Burung Garuda","Merah Putih","Indonesia Raya"]'::jsonb,
@@ -1029,8 +859,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-02-01',
   'k6-bind-02',
-  'k6-bind',
-  6,
   'choose_correct',
   'Habibie dikenal sebagai tokoh Indonesia di bidang...',
   '["teknologi/penerbangan","seni musik","olahraga","kuliner"]'::jsonb,
@@ -1041,8 +869,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-02-02',
   'k6-bind-02',
-  'k6-bind',
-  6,
   'fill_blank',
   'Seorang tokoh inspiratif memiliki sikap ___ dan tidak mudah menyerah.',
   '["gigih/pantang menyerah","pemalas","egois","sombong"]'::jsonb,
@@ -1053,8 +879,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-02-03',
   'k6-bind-02',
-  'k6-bind',
-  6,
   'choose_correct',
   'Kita bisa meneladani tokoh inspiratif dengan...',
   '["mengambil nilai positifnya","meniru semua gayanya","hanya mengagumi","tidak peduli"]'::jsonb,
@@ -1065,8 +889,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-02-04',
   'k6-bind-02',
-  'k6-bind',
-  6,
   'true_false',
   'Ibu Soed dikenal sebagai komponis lagu anak Indonesia.',
   '["Benar","Salah"]'::jsonb,
@@ -1077,8 +899,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-02-05',
   'k6-bind-02',
-  'k6-bind',
-  6,
   'fill_blank',
   'Biografi adalah tulisan tentang ___ seseorang.',
   '["riwayat hidup","hobi","resep masakan","jadwal kegiatan"]'::jsonb,
@@ -1089,8 +909,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-03-01',
   'k6-bind-03',
-  'k6-bind',
-  6,
   'choose_correct',
   'Legenda adalah cerita yang...',
   '["dianggap benar-benar terjadi di masa lalu","fiksi murni","berita aktual","dongeng binatang"]'::jsonb,
@@ -1101,8 +919,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-03-02',
   'k6-bind-03',
-  'k6-bind',
-  6,
   'fill_blank',
   'Legenda biasanya berkaitan dengan asal-usul suatu ___ atau tempat.',
   '["nama/tempat","matematika","sains","teknologi"]'::jsonb,
@@ -1113,8 +929,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-03-03',
   'k6-bind-03',
-  'k6-bind',
-  6,
   'choose_correct',
   'Pesan moral legenda Malin Kundang adalah...',
   '["jangan durhaka pada orang tua","jangan berlayar","jangan menjadi kaya","jangan berkelana"]'::jsonb,
@@ -1125,8 +939,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-03-04',
   'k6-bind-03',
-  'k6-bind',
-  6,
   'true_false',
   'Rawa Pening dan Sangkuriang adalah contoh legenda Indonesia.',
   '["Benar","Salah"]'::jsonb,
@@ -1137,8 +949,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-03-05',
   'k6-bind-03',
-  'k6-bind',
-  6,
   'match',
   'Cocokkan legenda dengan asalnya!',
   '["Sangkuriang","Malin Kundang","Timun Mas"]'::jsonb,
@@ -1149,8 +959,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-04-01',
   'k6-bind-04',
-  'k6-bind',
-  6,
   'choose_correct',
   '"Pulau Komodo berdiri gagah" adalah majas...',
   '["personifikasi","hiperbola","metafora","simile"]'::jsonb,
@@ -1161,8 +969,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-04-02',
   'k6-bind-04',
-  'k6-bind',
-  6,
   'fill_blank',
   'Majas yang melebih-lebihkan fakta disebut ___',
   '["hiperbola","personifikasi","metafora","simile"]'::jsonb,
@@ -1173,8 +979,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-04-03',
   'k6-bind-04',
-  'k6-bind',
-  6,
   'choose_correct',
   'Dari legenda Putri Komodo, kita belajar menghargai...',
   '["alam dan keberanian","kekayaan","kekuasaan","kemalasan"]'::jsonb,
@@ -1185,8 +989,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-04-04',
   'k6-bind-04',
-  'k6-bind',
-  6,
   'true_false',
   'Anggun C. Sasmi adalah musisi Indonesia yang go internasional.',
   '["Benar","Salah"]'::jsonb,
@@ -1197,8 +999,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-04-05',
   'k6-bind-04',
-  'k6-bind',
-  6,
   'match',
   'Cocokkan majas dengan contohnya!',
   '["Personifikasi","Hiperbola","Metafora","Simile"]'::jsonb,
@@ -1209,8 +1009,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-05-01',
   'k6-bind-05',
-  'k6-bind',
-  6,
   'choose_correct',
   'Teks eksplanasi menjelaskan tentang...',
   '["proses atau fenomena","cerita fiksi","iklan produk","surat pribadi"]'::jsonb,
@@ -1221,8 +1019,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-05-02',
   'k6-bind-05',
-  'k6-bind',
-  6,
   'fill_blank',
   'Struktur teks eksplanasi: pernyataan umum, ___, dan interpretasi.',
   '["deretan penjelas","penutup biasa","kata sandang","majas"]'::jsonb,
@@ -1233,8 +1029,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-05-03',
   'k6-bind-05',
-  'k6-bind',
-  6,
   'choose_correct',
   'Laporan hasil pengamatan harus berisi data yang...',
   '["faktual dan objektif","imajinatif","bersifat opini","tidak terstruktur"]'::jsonb,
@@ -1245,8 +1039,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-05-04',
   'k6-bind-05',
-  'k6-bind',
-  6,
   'true_false',
   'Kata hubung sebab-akibat antara lain "karena", "sehingga", "akibatnya".',
   '["Benar","Salah"]'::jsonb,
@@ -1257,8 +1049,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-05-05',
   'k6-bind-05',
-  'k6-bind',
-  6,
   'fill_blank',
   'Kata baku yang benar: "ijin" atau "___"?',
   '["izin","idzin","isin","ezin"]'::jsonb,
@@ -1269,8 +1059,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-06-01',
   'k6-bind-06',
-  'k6-bind',
-  6,
   'choose_correct',
   'Bagian pembuka pidato biasanya berisi...',
   '["salam dan ucapan terima kasih","penutup","isi utama","kesimpulan"]'::jsonb,
@@ -1281,8 +1069,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-06-02',
   'k6-bind-06',
-  'k6-bind',
-  6,
   'fill_blank',
   'Saat berpidato, kita harus berbicara dengan suara yang ___ dan jelas.',
   '["lantang/keras","pelan sekali","bergumam","tidak terdengar"]'::jsonb,
@@ -1293,8 +1079,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-06-03',
   'k6-bind-06',
-  'k6-bind',
-  6,
   'choose_correct',
   'Agar pidato menarik, pembicara harus...',
   '["menatap pendengar dan percaya diri","membaca teks terus","menunduk","berbisik"]'::jsonb,
@@ -1305,8 +1089,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-06-04',
   'k6-bind-06',
-  'k6-bind',
-  6,
   'true_false',
   'Pidato perpisahan sekolah termasuk pidato dalam acara resmi.',
   '["Benar","Salah"]'::jsonb,
@@ -1317,8 +1099,6 @@ INSERT INTO public.questions (
 (
   'k6-bind-06-05',
   'k6-bind-06',
-  'k6-bind',
-  6,
   'match',
   'Cocokkan bagian pidato!',
   '["Pembuka","Isi","Penutup"]'::jsonb,

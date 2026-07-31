@@ -4,13 +4,11 @@
 DELETE FROM public.questions WHERE material_id LIKE 'k3-ipas-%' OR material_id LIKE 'k4-ipas-%' OR material_id LIKE 'k5-ipas-%' OR material_id LIKE 'k6-ipas-%';
 
 INSERT INTO public.questions (
-  id, material_id, subject_id, kelas, tipe, soal, pilihan, jawaban_benar, audio_text, level, xp
+  id, material_id, tipe, soal, pilihan, jawaban_benar, audio_text, level, xp
 ) VALUES
 (
   'k3-ipas-01-01',
   'k3-ipas-01',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Kucing adalah hewan...',
   '["karnivora","herbivora","omnivora"]'::jsonb,
@@ -22,8 +20,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-01-02',
   'k3-ipas-01',
-  'k3-ipas',
-  3,
   'match',
   'Cocokkan hewan dengan makanannya!',
   '["🐱","🐰","🐔"]'::jsonb,
@@ -35,8 +31,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-01-03',
   'k3-ipas-01',
-  'k3-ipas',
-  3,
   'true_false',
   'Ayam bertelur dan berkaki dua.',
   '["Benar","Salah"]'::jsonb,
@@ -48,8 +42,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-01-04',
   'k3-ipas-01',
-  'k3-ipas',
-  3,
   'fill_blank',
   'Kupu-kupu mengalami: telur → ulat → _____ → kupu-kupu.',
   '["kepompong","telur","ikan"]'::jsonb,
@@ -61,8 +53,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-02-01',
   'k3-ipas-02',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Katak mengalami metamorfosis. Urutan yang benar...',
   '["telur → berudu → katak","telur → katak → berudu","katak → berudu → telur"]'::jsonb,
@@ -74,8 +64,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-02-02',
   'k3-ipas-02',
-  'k3-ipas',
-  3,
   'true_false',
   'Belalang mengalami metamorfosis sempurna.',
   '["Benar","Salah"]'::jsonb,
@@ -87,8 +75,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-02-03',
   'k3-ipas-02',
-  'k3-ipas',
-  3,
   'fill_blank',
   'Nyamuk mengalami: telur → jentik → _____ → nyamuk.',
   '["kepompong","ulat","cacing"]'::jsonb,
@@ -100,8 +86,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-02-04',
   'k3-ipas-02',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Hewan yang langsung menjadi dewasa tanpa fase larva adalah...',
   '["kucing","kupu-kupu","katak"]'::jsonb,
@@ -113,8 +97,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-03-01',
   'k3-ipas-03',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Tumbuhan membuat makanan sendiri lewat proses...',
   '["fotosintesis","respirasi","transpirasi"]'::jsonb,
@@ -126,8 +108,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-03-02',
   'k3-ipas-03',
-  'k3-ipas',
-  3,
   'fill_blank',
   'Fotosintesis menghasilkan _____ yang kita hirup.',
   '["oksigen","karbondioksida","nitrogen"]'::jsonb,
@@ -139,8 +119,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-03-03',
   'k3-ipas-03',
-  'k3-ipas',
-  3,
   'true_false',
   'Akar tumbuhan menyerap air dari tanah.',
   '["Benar","Salah"]'::jsonb,
@@ -152,8 +130,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-03-04',
   'k3-ipas-03',
-  'k3-ipas',
-  3,
   'match',
   'Cocokkan bagian tumbuhan dengan fungsinya!',
   '["Akar","Daun","Bunga"]'::jsonb,
@@ -165,8 +141,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-04-01',
   'k3-ipas-04',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Es batu yang dipanaskan mengalami perubahan...',
   '["mencair","membeku","menguap"]'::jsonb,
@@ -178,8 +152,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-04-02',
   'k3-ipas-04',
-  'k3-ipas',
-  3,
   'fill_blank',
   'Air dipanaskan berubah menjadi _____.',
   '["uap","es","batu"]'::jsonb,
@@ -191,8 +163,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-04-03',
   'k3-ipas-04',
-  'k3-ipas',
-  3,
   'true_false',
   'Benda gas tidak memiliki bentuk tetap.',
   '["Benar","Salah"]'::jsonb,
@@ -204,8 +174,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-04-04',
   'k3-ipas-04',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Kapur barus yang habis sendiri menunjukkan perubahan wujud...',
   '["menyublim","mencair","membeku"]'::jsonb,
@@ -217,8 +185,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-05-01',
   'k3-ipas-05',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Alat ukur suhu udara disebut...',
   '["termometer","barometer","higrometer"]'::jsonb,
@@ -230,8 +196,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-05-02',
   'k3-ipas-05',
-  'k3-ipas',
-  3,
   'true_false',
   'Indonesia beriklim tropis karena dekat khatulistiwa.',
   '["Benar","Salah"]'::jsonb,
@@ -243,8 +207,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-05-03',
   'k3-ipas-05',
-  'k3-ipas',
-  3,
   'fill_blank',
   'Angin terjadi karena perbedaan _____ udara.',
   '["tekanan","warna","rasa"]'::jsonb,
@@ -256,8 +218,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-05-04',
   'k3-ipas-05',
-  'k3-ipas',
-  3,
   'match',
   'Cocokkan cuaca dengan tanda-tandanya!',
   '["Hujan","Cerah","Berangin"]'::jsonb,
@@ -269,8 +229,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-06-01',
   'k3-ipas-06',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Sumber energi utama di Bumi adalah...',
   '["Matahari","Bulan","Bintang"]'::jsonb,
@@ -282,8 +240,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-06-02',
   'k3-ipas-06',
-  'k3-ipas',
-  3,
   'fill_blank',
   'Kincir angin mengubah energi _____ menjadi energi gerak.',
   '["angin","air","panas"]'::jsonb,
@@ -295,8 +251,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-06-03',
   'k3-ipas-06',
-  'k3-ipas',
-  3,
   'true_false',
   'Baterai menghasilkan energi listrik.',
   '["Benar","Salah"]'::jsonb,
@@ -308,8 +262,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-06-04',
   'k3-ipas-06',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Energi yang dihasilkan saat kita membakar kayu adalah...',
   '["panas dan cahaya","listrik","magnet"]'::jsonb,
@@ -321,8 +273,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-07-01',
   'k3-ipas-07',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Air, tanah, dan hutan adalah contoh sumber daya alam...',
   '["hayati","mineral","buatan"]'::jsonb,
@@ -334,8 +284,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-07-02',
   'k3-ipas-07',
-  'k3-ipas',
-  3,
   'true_false',
   'Minyak bumi bisa diperbaharui dalam waktu singkat.',
   '["Benar","Salah"]'::jsonb,
@@ -347,8 +295,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-07-03',
   'k3-ipas-07',
-  'k3-ipas',
-  3,
   'fill_blank',
   'Hemat air termasuk usaha _____ sumber daya alam.',
   '["melestarikan","merusak","menghabiskan"]'::jsonb,
@@ -360,8 +306,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-07-04',
   'k3-ipas-07',
-  'k3-ipas',
-  3,
   'match',
   'Cocokkan sumber daya dengan kegunaannya!',
   '["Air","Tanah","Hutan"]'::jsonb,
@@ -373,8 +317,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-08-01',
   'k3-ipas-08',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Membuang sampah sembarangan dapat menyebabkan...',
   '["banjir","hujan","angin"]'::jsonb,
@@ -386,8 +328,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-08-02',
   'k3-ipas-08',
-  'k3-ipas',
-  3,
   'true_false',
   'Menanam pohon membantu menjaga lingkungan tetap bersih.',
   '["Benar","Salah"]'::jsonb,
@@ -399,8 +339,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-08-03',
   'k3-ipas-08',
-  'k3-ipas',
-  3,
   'fill_blank',
   'Sampah organik seperti daun dapat dijadikan _____.',
   '["kompos","plastik","besi"]'::jsonb,
@@ -412,8 +350,6 @@ INSERT INTO public.questions (
 (
   'k3-ipas-08-04',
   'k3-ipas-08',
-  'k3-ipas',
-  3,
   'choose_correct',
   'Yang termasuk polusi udara adalah...',
   '["asap kendaraan","air bersih","tanah subur"]'::jsonb,
@@ -425,8 +361,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-01-01',
   'k4-ipas-01',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Penyerbukan pada bunga dibantu oleh...',
   '["serangga dan angin","hujan saja","manusia saja"]'::jsonb,
@@ -438,8 +372,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-01-02',
   'k4-ipas-01',
-  'k4-ipas',
-  4,
   'fill_blank',
   'Tumbuhan paku berkembang biak dengan _____.',
   '["spora","biji","umbi"]'::jsonb,
@@ -451,8 +383,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-01-03',
   'k4-ipas-01',
-  'k4-ipas',
-  4,
   'true_false',
   'Bambu termasuk tumbuhan berbiji.',
   '["Benar","Salah"]'::jsonb,
@@ -464,8 +394,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-01-04',
   'k4-ipas-01',
-  'k4-ipas',
-  4,
   'match',
   'Cocokkan cara berkembang biak tumbuhan!',
   '["Mangga","Pisang","Singkong"]'::jsonb,
@@ -477,8 +405,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-02-01',
   'k4-ipas-02',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Es batu di meja lama-lama menjadi air. Perubahan dari...',
   '["padat ke cair","cair ke gas","gas ke padat"]'::jsonb,
@@ -490,8 +416,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-02-02',
   'k4-ipas-02',
-  'k4-ipas',
-  4,
   'fill_blank',
   'Air dipanaskan menjadi _____.',
   '["uap","es","batu"]'::jsonb,
@@ -503,8 +427,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-02-03',
   'k4-ipas-02',
-  'k4-ipas',
-  4,
   'true_false',
   'Magnet bisa menarik semua benda.',
   '["Benar","Salah"]'::jsonb,
@@ -516,8 +438,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-02-04',
   'k4-ipas-02',
-  'k4-ipas',
-  4,
   'match',
   'Cocokkan gaya dengan contohnya!',
   '["Gaya gravitasi","Gaya gesek","Gaya magnet"]'::jsonb,
@@ -529,8 +449,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-03-01',
   'k4-ipas-03',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Gaya yang menarik benda ke pusat bumi adalah...',
   '["gravitasi","magnet","gesek"]'::jsonb,
@@ -542,8 +460,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-03-02',
   'k4-ipas-03',
-  'k4-ipas',
-  4,
   'true_false',
   'Gaya gesek selalu merugikan.',
   '["Benar","Salah"]'::jsonb,
@@ -555,8 +471,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-03-03',
   'k4-ipas-03',
-  'k4-ipas',
-  4,
   'fill_blank',
   'Rem sepeda menggunakan gaya _____ untuk berhenti.',
   '["gesek","gravitasi","magnet"]'::jsonb,
@@ -568,8 +482,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-03-04',
   'k4-ipas-03',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Balon yang ditiup lalu dilepas bergerak karena...',
   '["gaya udara","gaya magnet","gaya gravitasi"]'::jsonb,
@@ -581,8 +493,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-04-01',
   'k4-ipas-04',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Televisi mengubah energi listrik menjadi...',
   '["cahaya dan bunyi","panas saja","gerak saja"]'::jsonb,
@@ -594,8 +504,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-04-02',
   'k4-ipas-04',
-  'k4-ipas',
-  4,
   'fill_blank',
   'Panel surya mengubah energi _____ menjadi listrik.',
   '["matahari","angin","air"]'::jsonb,
@@ -607,8 +515,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-04-03',
   'k4-ipas-04',
-  'k4-ipas',
-  4,
   'true_false',
   'PLTA menggunakan energi air untuk menghasilkan listrik.',
   '["Benar","Salah"]'::jsonb,
@@ -620,8 +526,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-04-04',
   'k4-ipas-04',
-  'k4-ipas',
-  4,
   'match',
   'Cocokkan sumber energi!',
   '["Matahari","Minyak bumi","Angin"]'::jsonb,
@@ -633,8 +537,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-05-01',
   'k4-ipas-05',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Cahaya merambat secara...',
   '["lurus","berbelok","melingkar"]'::jsonb,
@@ -646,8 +548,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-05-02',
   'k4-ipas-05',
-  'k4-ipas',
-  4,
   'true_false',
   'Bunyi dapat merambat di ruang hampa.',
   '["Benar","Salah"]'::jsonb,
@@ -659,8 +559,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-05-03',
   'k4-ipas-05',
-  'k4-ipas',
-  4,
   'fill_blank',
   'Pelangi terjadi karena cahaya _____ oleh tetesan air.',
   '["dibiaskan","diserap","dipantulkan balik"]'::jsonb,
@@ -672,8 +570,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-05-04',
   'k4-ipas-05',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Benda yang dapat menghasilkan cahaya sendiri disebut...',
   '["sumber cahaya","cermin","prisma"]'::jsonb,
@@ -685,8 +581,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-06-01',
   'k4-ipas-06',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Gempa bumi terjadi karena...',
   '["pergeseran lempeng bumi","hujan deras","angin kencang"]'::jsonb,
@@ -698,8 +592,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-06-02',
   'k4-ipas-06',
-  'k4-ipas',
-  4,
   'fill_blank',
   'Gunung berapi mengeluarkan _____ dari dalam bumi.',
   '["magma/lava","air","pasir biasa"]'::jsonb,
@@ -711,8 +603,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-06-03',
   'k4-ipas-06',
-  'k4-ipas',
-  4,
   'true_false',
   'Indonesia berada di Cincin Api Pasifik.',
   '["Benar","Salah"]'::jsonb,
@@ -724,8 +614,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-06-04',
   'k4-ipas-06',
-  'k4-ipas',
-  4,
   'match',
   'Cocokkan lapisan bumi!',
   '["Kerak","Mantel","Inti"]'::jsonb,
@@ -737,8 +625,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-07-01',
   'k4-ipas-07',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Pakaian adat Jawa adalah...',
   '["kebaya","ulos","baju kurung"]'::jsonb,
@@ -750,8 +636,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-07-02',
   'k4-ipas-07',
-  'k4-ipas',
-  4,
   'true_false',
   'Indonesia memiliki lebih dari 300 suku bangsa.',
   '["Benar","Salah"]'::jsonb,
@@ -763,8 +647,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-07-03',
   'k4-ipas-07',
-  'k4-ipas',
-  4,
   'fill_blank',
   'Semboyan "Bhinneka Tunggal Ika" berarti berbeda-beda tetapi tetap _____.',
   '["satu","dua","tiga"]'::jsonb,
@@ -776,8 +658,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-07-04',
   'k4-ipas-07',
-  'k4-ipas',
-  4,
   'match',
   'Cocokkan rumah adat!',
   '["Jawa","Minangkabau","Toraja"]'::jsonb,
@@ -789,8 +669,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-08-01',
   'k4-ipas-08',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Deforestasi adalah...',
   '["penebangan hutan berlebihan","menanam pohon","irigasi sawah"]'::jsonb,
@@ -802,8 +680,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-08-02',
   'k4-ipas-08',
-  'k4-ipas',
-  4,
   'true_false',
   'Membuang limbah ke sungai baik untuk lingkungan.',
   '["Benar","Salah"]'::jsonb,
@@ -815,8 +691,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-08-03',
   'k4-ipas-08',
-  'k4-ipas',
-  4,
   'fill_blank',
   'Program 3R: Reduce, Reuse, dan _____.',
   '["Recycle","Remove","Repeat"]'::jsonb,
@@ -828,8 +702,6 @@ INSERT INTO public.questions (
 (
   'k4-ipas-08-04',
   'k4-ipas-08',
-  'k4-ipas',
-  4,
   'choose_correct',
   'Yang termasuk dampak pemanasan global adalah...',
   '["es kutub mencair","hutan makin lebat","air laut surut"]'::jsonb,
@@ -841,8 +713,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-01-01',
   'k5-ipas-01',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Cahaya merambat secara...',
   '["lurus","berbelok","melingkar"]'::jsonb,
@@ -854,8 +724,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-01-02',
   'k5-ipas-01',
-  'k5-ipas',
-  5,
   'fill_blank',
   'Pemantulan cahaya di cermin menghasilkan _____.',
   '["bayangan","suara","panas"]'::jsonb,
@@ -867,8 +735,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-01-03',
   'k5-ipas-01',
-  'k5-ipas',
-  5,
   'true_false',
   'Bunyi dapat merambat di ruang hampa udara.',
   '["Benar","Salah"]'::jsonb,
@@ -880,8 +746,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-01-04',
   'k5-ipas-01',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Gema terjadi karena bunyi...',
   '["dipantulkan","diserap","diperkuat"]'::jsonb,
@@ -893,8 +757,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-01-05',
   'k5-ipas-01',
-  'k5-ipas',
-  5,
   'match',
   'Cocokkan sifat cahaya!',
   '["Cermin","Kaca bening","Tembok"]'::jsonb,
@@ -906,8 +768,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-02-01',
   'k5-ipas-02',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Produsen dalam rantai makanan adalah...',
   '["tumbuhan","harimau","rusa"]'::jsonb,
@@ -919,8 +779,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-02-02',
   'k5-ipas-02',
-  'k5-ipas',
-  5,
   'fill_blank',
   'Simbiosis mutualisme menguntungkan _____ pihak.',
   '["kedua","satu","tidak ada"]'::jsonb,
@@ -932,8 +790,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-02-03',
   'k5-ipas-02',
-  'k5-ipas',
-  5,
   'true_false',
   'Lebah dan bunga menjalin simbiosis mutualisme.',
   '["Benar","Salah"]'::jsonb,
@@ -945,8 +801,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-02-04',
   'k5-ipas-02',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Jika kelinci punah, populasi rumput akan...',
   '["bertambah","berkurang","tetap"]'::jsonb,
@@ -958,8 +812,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-02-05',
   'k5-ipas-02',
-  'k5-ipas',
-  5,
   'match',
   'Cocokkan jenis simbiosis!',
   '["Kutu di rambut","Lebah & bunga","Ikan remora & hiu"]'::jsonb,
@@ -971,8 +823,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-03-01',
   'k5-ipas-03',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Magnet hanya menarik benda yang mengandung...',
   '["besi/logam feromagnetik","plastik","kayu"]'::jsonb,
@@ -984,8 +834,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-03-02',
   'k5-ipas-03',
-  'k5-ipas',
-  5,
   'fill_blank',
   'Rangkaian listrik sederhana butuh baterai, kabel, dan _____.',
   '["lampu","kertas","kayu"]'::jsonb,
@@ -997,8 +845,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-03-03',
   'k5-ipas-03',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Kutub senama magnet akan...',
   '["tolak-menolak","tarik-menarik","diam"]'::jsonb,
@@ -1010,8 +856,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-03-04',
   'k5-ipas-03',
-  'k5-ipas',
-  5,
   'true_false',
   'Matahari adalah sumber energi terbesar di bumi.',
   '["Benar","Salah"]'::jsonb,
@@ -1023,8 +867,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-03-05',
   'k5-ipas-03',
-  'k5-ipas',
-  5,
   'match',
   'Cocokkan lapisan bumi!',
   '["Kerak","Mantel","Inti"]'::jsonb,
@@ -1036,8 +878,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-04-01',
   'k5-ipas-04',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Bumi terdiri dari berapa lapisan utama?',
   '["3","4","5"]'::jsonb,
@@ -1049,8 +889,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-04-02',
   'k5-ipas-04',
-  'k5-ipas',
-  5,
   'true_false',
   'Tsunami dapat terjadi akibat gempa di dasar laut.',
   '["Benar","Salah"]'::jsonb,
@@ -1062,8 +900,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-04-03',
   'k5-ipas-04',
-  'k5-ipas',
-  5,
   'fill_blank',
   'Indonesia banyak gunung berapi karena berada di _____ Pasifik.',
   '["Cincin Api","Laut Tengah","Palung Dalam"]'::jsonb,
@@ -1075,8 +911,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-04-04',
   'k5-ipas-04',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Lempeng tektonik yang bergerak dapat menyebabkan...',
   '["gempa dan gunung berapi","hujan","angin topan"]'::jsonb,
@@ -1088,8 +922,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-04-05',
   'k5-ipas-04',
-  'k5-ipas',
-  5,
   'match',
   'Cocokkan lapisan bumi dengan isinya!',
   '["Kerak","Mantel","Inti"]'::jsonb,
@@ -1101,8 +933,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-05-01',
   'k5-ipas-05',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Organ yang memompa darah ke seluruh tubuh adalah...',
   '["jantung","paru-paru","hati"]'::jsonb,
@@ -1114,8 +944,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-05-02',
   'k5-ipas-05',
-  'k5-ipas',
-  5,
   'fill_blank',
   'Proses pernapasan menggunakan organ _____.',
   '["paru-paru","jantung","lambung"]'::jsonb,
@@ -1127,8 +955,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-05-03',
   'k5-ipas-05',
-  'k5-ipas',
-  5,
   'true_false',
   'Sistem pencernaan dimulai dari mulut.',
   '["Benar","Salah"]'::jsonb,
@@ -1140,8 +966,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-05-04',
   'k5-ipas-05',
-  'k5-ipas',
-  5,
   'choose_correct',
   'Vitamin C banyak terdapat pada...',
   '["jeruk dan sayuran","nasi","daging sapi"]'::jsonb,
@@ -1153,8 +977,6 @@ INSERT INTO public.questions (
 (
   'k5-ipas-05-05',
   'k5-ipas-05',
-  'k5-ipas',
-  5,
   'match',
   'Cocokkan organ dengan fungsinya!',
   '["Jantung","Paru-paru","Lambung"]'::jsonb,
@@ -1166,8 +988,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-01-01',
   'k6-ipas-01',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Jumlah tulang pada tubuh orang dewasa sekitar...',
   '["206","106","306","406"]'::jsonb,
@@ -1179,8 +999,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-01-02',
   'k6-ipas-01',
-  'k6-ipas',
-  6,
   'fill_blank',
   'Otot bekerja dengan cara _____ dan relaksasi.',
   '["kontraksi","pertumbuhan","pembelahan","fotosintesis"]'::jsonb,
@@ -1192,8 +1010,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-01-03',
   'k6-ipas-01',
-  'k6-ipas',
-  6,
   'true_false',
   'Persendian menghubungkan antara dua tulang.',
   '["Benar","Salah"]'::jsonb,
@@ -1205,8 +1021,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-01-04',
   'k6-ipas-01',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Tulang rusuk berfungsi melindungi...',
   '["jantung dan paru-paru","otak","lambung dan usus","ginjal"]'::jsonb,
@@ -1218,8 +1032,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-01-05',
   'k6-ipas-01',
-  'k6-ipas',
-  6,
   'match',
   'Cocokkan jenis sendi!',
   '["Sendi engsel","Sendi peluru","Sendi putar"]'::jsonb,
@@ -1231,8 +1043,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-02-01',
   'k6-ipas-02',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Proklamasi kemerdekaan Indonesia dibacakan oleh...',
   '["Soekarno-Hatta","Sudirman","Diponegoro","Kartini"]'::jsonb,
@@ -1244,8 +1054,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-02-02',
   'k6-ipas-02',
-  'k6-ipas',
-  6,
   'fill_blank',
   'Kemerdekaan Indonesia diproklamasikan pada _____ Agustus 1945.',
   '["17","16","18","19"]'::jsonb,
@@ -1257,8 +1065,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-02-03',
   'k6-ipas-02',
-  'k6-ipas',
-  6,
   'true_false',
   'RA Kartini berjuang untuk pendidikan perempuan Indonesia.',
   '["Benar","Salah"]'::jsonb,
@@ -1270,8 +1076,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-02-04',
   'k6-ipas-02',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Dasar negara Indonesia adalah...',
   '["Pancasila","UUD 1945","Bhinneka Tunggal Ika","GBHN"]'::jsonb,
@@ -1283,8 +1087,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-02-05',
   'k6-ipas-02',
-  'k6-ipas',
-  6,
   'match',
   'Cocokkan pahlawan dengan daerahnya!',
   '["Cut Nyak Dien","Pattimura","Diponegoro"]'::jsonb,
@@ -1296,8 +1098,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-03-01',
   'k6-ipas-03',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Jumlah benua di dunia adalah...',
   '["7","5","6","8"]'::jsonb,
@@ -1309,8 +1109,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-03-02',
   'k6-ipas-03',
-  'k6-ipas',
-  6,
   'fill_blank',
   'Ibu kota Jepang adalah _____.',
   '["Tokyo","Beijing","Seoul","Bangkok"]'::jsonb,
@@ -1322,8 +1120,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-03-03',
   'k6-ipas-03',
-  'k6-ipas',
-  6,
   'true_false',
   'Indonesia berada di Benua Asia.',
   '["Benar","Salah"]'::jsonb,
@@ -1335,8 +1131,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-03-04',
   'k6-ipas-03',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Benua terluas di dunia adalah...',
   '["Asia","Afrika","Eropa","Amerika"]'::jsonb,
@@ -1348,8 +1142,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-03-05',
   'k6-ipas-03',
-  'k6-ipas',
-  6,
   'match',
   'Cocokkan negara dengan ibu kotanya!',
   '["Prancis","Mesir","Brasil"]'::jsonb,
@@ -1361,8 +1153,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-04-01',
   'k6-ipas-04',
-  'k6-ipas',
-  6,
   'choose_correct',
   'ASEAN adalah organisasi negara-negara di...',
   '["Asia Tenggara","Asia Timur","Eropa","Afrika"]'::jsonb,
@@ -1374,8 +1164,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-04-02',
   'k6-ipas-04',
-  'k6-ipas',
-  6,
   'fill_blank',
   'PBB singkatan dari Perserikatan _____ Bangsa.',
   '["Bangsa-","Bangsa","Negara-","Rakyat"]'::jsonb,
@@ -1387,8 +1175,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-04-03',
   'k6-ipas-04',
-  'k6-ipas',
-  6,
   'true_false',
   'Indonesia adalah anggota ASEAN dan PBB.',
   '["Benar","Salah"]'::jsonb,
@@ -1400,8 +1186,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-04-04',
   'k6-ipas-04',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Jumlah negara anggota ASEAN saat ini...',
   '["10","8","12","15"]'::jsonb,
@@ -1413,8 +1197,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-04-05',
   'k6-ipas-04',
-  'k6-ipas',
-  6,
   'match',
   'Cocokkan organisasi dengan tujuannya!',
   '["ASEAN","PBB","WHO"]'::jsonb,
@@ -1426,8 +1208,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-05-01',
   'k6-ipas-05',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Planet terbesar di tata surya adalah...',
   '["Jupiter","Mars","Bumi","Venus"]'::jsonb,
@@ -1439,8 +1219,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-05-02',
   'k6-ipas-05',
-  'k6-ipas',
-  6,
   'fill_blank',
   'Bumi memiliki _____ satelit alami.',
   '["1","2","3","0"]'::jsonb,
@@ -1452,8 +1230,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-05-03',
   'k6-ipas-05',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Planet yang paling dekat dengan Matahari adalah...',
   '["Merkurius","Venus","Bumi","Mars"]'::jsonb,
@@ -1465,8 +1241,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-05-04',
   'k6-ipas-05',
-  'k6-ipas',
-  6,
   'match',
   'Cocokkan bencana dengan penyebabnya!',
   '["Gempa bumi","Gunung berapi","Banjir"]'::jsonb,
@@ -1478,8 +1252,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-05-05',
   'k6-ipas-05',
-  'k6-ipas',
-  6,
   'true_false',
   'Tata surya kita memiliki 8 planet.',
   '["Benar","Salah"]'::jsonb,
@@ -1491,8 +1263,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-06-01',
   'k6-ipas-06',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Energi terbarukan yang tidak akan habis adalah...',
   '["matahari","minyak bumi","batu bara","gas alam"]'::jsonb,
@@ -1504,8 +1274,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-06-02',
   'k6-ipas-06',
-  'k6-ipas',
-  6,
   'fill_blank',
   'Panel surya mengubah energi matahari menjadi energi _____.',
   '["listrik","panas","gerak","kimia"]'::jsonb,
@@ -1517,8 +1285,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-06-03',
   'k6-ipas-06',
-  'k6-ipas',
-  6,
   'true_false',
   'Batu bara termasuk energi tidak terbarukan.',
   '["Benar","Salah"]'::jsonb,
@@ -1530,8 +1296,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-06-04',
   'k6-ipas-06',
-  'k6-ipas',
-  6,
   'choose_correct',
   'PLTA menghasilkan listrik dari energi...',
   '["air","angin","matahari","panas bumi"]'::jsonb,
@@ -1543,8 +1307,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-06-05',
   'k6-ipas-06',
-  'k6-ipas',
-  6,
   'match',
   'Cocokkan energi dengan jenisnya!',
   '["Matahari","Minyak bumi","Angin","Batu bara"]'::jsonb,
@@ -1556,8 +1318,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-07-01',
   'k6-ipas-07',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Gas utama penyebab pemanasan global adalah...',
   '["CO₂ (karbon dioksida)","O₂ (oksigen)","N₂ (nitrogen)","H₂ (hidrogen)"]'::jsonb,
@@ -1569,8 +1329,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-07-02',
   'k6-ipas-07',
-  'k6-ipas',
-  6,
   'fill_blank',
   'Penebangan hutan berlebihan disebut _____.',
   '["deforestasi","irigasi","urbanisasi","industrialisasi"]'::jsonb,
@@ -1582,8 +1340,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-07-03',
   'k6-ipas-07',
-  'k6-ipas',
-  6,
   'true_false',
   'Pemanasan global menyebabkan es kutub mencair.',
   '["Benar","Salah"]'::jsonb,
@@ -1595,8 +1351,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-07-04',
   'k6-ipas-07',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Cara terbaik mengurangi polusi udara di kota adalah...',
   '["naik transportasi umum","bakar sampah","tambah pabrik","kurangi pohon"]'::jsonb,
@@ -1608,8 +1362,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-07-05',
   'k6-ipas-07',
-  'k6-ipas',
-  6,
   'match',
   'Cocokkan masalah lingkungan dengan dampaknya!',
   '["Polusi udara","Deforestasi","Pemanasan global"]'::jsonb,
@@ -1621,8 +1373,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-08-01',
   'k6-ipas-08',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Langkah pertama dalam metode ilmiah adalah...',
   '["observasi/pengamatan","percobaan","kesimpulan","hipotesis"]'::jsonb,
@@ -1634,8 +1384,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-08-02',
   'k6-ipas-08',
-  'k6-ipas',
-  6,
   'fill_blank',
   'Hipotesis adalah dugaan _____ sebelum percobaan.',
   '["sementara","akhir","pasti","random"]'::jsonb,
@@ -1647,8 +1395,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-08-03',
   'k6-ipas-08',
-  'k6-ipas',
-  6,
   'true_false',
   'Data percobaan harus dicatat apa adanya, tidak direkayasa.',
   '["Benar","Salah"]'::jsonb,
@@ -1660,8 +1406,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-08-04',
   'k6-ipas-08',
-  'k6-ipas',
-  6,
   'choose_correct',
   'Kompos organik dibuat dari...',
   '["sampah daun/sisa makanan","plastik","logam","kaca"]'::jsonb,
@@ -1673,8 +1417,6 @@ INSERT INTO public.questions (
 (
   'k6-ipas-08-05',
   'k6-ipas-08',
-  'k6-ipas',
-  6,
   'match',
   'Cocokkan tahap metode ilmiah!',
   '["1. Observasi","2. Hipotesis","3. Percobaan"]'::jsonb,

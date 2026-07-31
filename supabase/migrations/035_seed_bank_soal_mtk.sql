@@ -4,13 +4,11 @@
 DELETE FROM public.questions WHERE material_id LIKE 'k1-mtk-%' OR material_id LIKE 'k2-mtk-%' OR material_id LIKE 'k3-mtk-%' OR material_id LIKE 'k6-mtk-%';
 
 INSERT INTO public.questions (
-  id, material_id, subject_id, kelas, tipe, soal, pilihan, jawaban_benar, level, xp
+  id, material_id, tipe, soal, pilihan, jawaban_benar, level, xp
 ) VALUES
 (
   'k1-mtk-01-01',
   'k1-mtk-01',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Ada berapa 🍎? 🍎🍎🍎',
   '["2","3","4"]'::jsonb,
@@ -21,8 +19,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-01-02',
   'k1-mtk-01',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Lengkapi: 1, 2, ___, 4, 5',
   '["2","3","6"]'::jsonb,
@@ -33,8 +29,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-01-03',
   'k1-mtk-01',
-  'k1-mtk',
-  1,
   'true_false',
   '4 lebih besar dari 2.',
   '["Benar","Salah"]'::jsonb,
@@ -45,8 +39,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-02-01',
   'k1-mtk-02',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Berapa jumlah 🐟🐟🐟🐟🐟🐟🐟?',
   '["6","7","8"]'::jsonb,
@@ -57,8 +49,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-02-02',
   'k1-mtk-02',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Lengkapi: 6, 7, ___, 9, 10',
   '["7","8","11"]'::jsonb,
@@ -69,8 +59,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-02-03',
   'k1-mtk-02',
-  'k1-mtk',
-  1,
   'true_false',
   '10 lebih besar dari 9.',
   '["Benar","Salah"]'::jsonb,
@@ -81,8 +69,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-03-01',
   'k1-mtk-03',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Pasangan 3 supaya jadi 5 adalah...',
   '["1","2","3"]'::jsonb,
@@ -93,8 +79,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-03-02',
   'k1-mtk-03',
-  'k1-mtk',
-  1,
   'fill_blank',
   '4 + ___ = 5',
   '["0","1","2"]'::jsonb,
@@ -105,8 +89,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-03-03',
   'k1-mtk-03',
-  'k1-mtk',
-  1,
   'true_false',
   '2 + 3 = 5.',
   '["Benar","Salah"]'::jsonb,
@@ -117,8 +99,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-04-01',
   'k1-mtk-04',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Mana yang LEBIH BESAR: 7 atau 3?',
   '["7","3","sama"]'::jsonb,
@@ -129,8 +109,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-04-02',
   'k1-mtk-04',
-  'k1-mtk',
-  1,
   'fill_blank',
   '5 ___ 8 (isi: < atau >)',
   '["<",">","="]'::jsonb,
@@ -141,8 +119,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-04-03',
   'k1-mtk-04',
-  'k1-mtk',
-  1,
   'true_false',
   '6 lebih kecil dari 9.',
   '["Benar","Salah"]'::jsonb,
@@ -153,8 +129,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-05-01',
   'k1-mtk-05',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Upe punya 3 apel 🍎. Dapat lagi 2. Total?',
   '["4","5","6"]'::jsonb,
@@ -165,8 +139,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-05-02',
   'k1-mtk-05',
-  'k1-mtk',
-  1,
   'fill_blank',
   '2 + 4 = ___',
   '["5","6","7"]'::jsonb,
@@ -177,8 +149,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-05-03',
   'k1-mtk-05',
-  'k1-mtk',
-  1,
   'true_false',
   '3 + 3 = 6.',
   '["Benar","Salah"]'::jsonb,
@@ -189,8 +159,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-06-01',
   'k1-mtk-06',
-  'k1-mtk',
-  1,
   'choose_correct',
   '4 + 5 = ?',
   '["8","9","10"]'::jsonb,
@@ -201,8 +169,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-06-02',
   'k1-mtk-06',
-  'k1-mtk',
-  1,
   'fill_blank',
   '___ + 3 = 7',
   '["3","4","5"]'::jsonb,
@@ -213,8 +179,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-06-03',
   'k1-mtk-06',
-  'k1-mtk',
-  1,
   'true_false',
   '5 + 0 = 5.',
   '["Benar","Salah"]'::jsonb,
@@ -225,8 +189,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-07-01',
   'k1-mtk-07',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Ada 8 🍪, dimakan 3. Sisa?',
   '["4","5","6"]'::jsonb,
@@ -237,8 +199,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-07-02',
   'k1-mtk-07',
-  'k1-mtk',
-  1,
   'fill_blank',
   '9 - 4 = ___',
   '["4","5","6"]'::jsonb,
@@ -249,8 +209,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-07-03',
   'k1-mtk-07',
-  'k1-mtk',
-  1,
   'true_false',
   '7 - 2 = 5.',
   '["Benar","Salah"]'::jsonb,
@@ -261,8 +219,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-08-01',
   'k1-mtk-08',
-  'k1-mtk',
-  1,
   'choose_correct',
   '10 - 6 = ?',
   '["3","4","5"]'::jsonb,
@@ -273,8 +229,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-08-02',
   'k1-mtk-08',
-  'k1-mtk',
-  1,
   'fill_blank',
   '8 - ___ = 3',
   '["4","5","6"]'::jsonb,
@@ -285,8 +239,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-08-03',
   'k1-mtk-08',
-  'k1-mtk',
-  1,
   'true_false',
   '6 - 6 = 0.',
   '["Benar","Salah"]'::jsonb,
@@ -297,8 +249,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-09-01',
   'k1-mtk-09',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Berapa sudut pada segitiga?',
   '["2","3","4"]'::jsonb,
@@ -309,8 +259,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-09-02',
   'k1-mtk-09',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Persegi punya ___ sisi.',
   '["3","4","5"]'::jsonb,
@@ -321,8 +269,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-09-03',
   'k1-mtk-09',
-  'k1-mtk',
-  1,
   'true_false',
   'Lingkaran tidak punya sudut.',
   '["Benar","Salah"]'::jsonb,
@@ -333,8 +279,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-10-01',
   'k1-mtk-10',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Bola, kelereng, ember — dikelompokkan berdasarkan...',
   '["bentuk bulat","warna","ukuran"]'::jsonb,
@@ -345,8 +289,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-10-02',
   'k1-mtk-10',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Mengelompokkan benda = melihat ___ yang sama.',
   '["ciri","nama","nomor"]'::jsonb,
@@ -357,8 +299,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-10-03',
   'k1-mtk-10',
-  'k1-mtk',
-  1,
   'true_false',
   'Benda bisa dikelompokkan berdasarkan warna.',
   '["Benar","Salah"]'::jsonb,
@@ -369,8 +309,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-11-01',
   'k1-mtk-11',
-  'k1-mtk',
-  1,
   'choose_correct',
   '12 = 1 puluhan + berapa satuan?',
   '["1","2","3"]'::jsonb,
@@ -381,8 +319,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-11-02',
   'k1-mtk-11',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Setelah 13 adalah ___',
   '["12","14","15"]'::jsonb,
@@ -393,8 +329,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-11-03',
   'k1-mtk-11',
-  'k1-mtk',
-  1,
   'true_false',
   '15 lebih besar dari 11.',
   '["Benar","Salah"]'::jsonb,
@@ -405,8 +339,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-12-01',
   'k1-mtk-12',
-  'k1-mtk',
-  1,
   'choose_correct',
   '20 = ___ puluhan + 0 satuan',
   '["1","2","3"]'::jsonb,
@@ -417,8 +349,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-12-02',
   'k1-mtk-12',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Sebelum 18 adalah ___',
   '["16","17","19"]'::jsonb,
@@ -429,8 +359,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-12-03',
   'k1-mtk-12',
-  'k1-mtk',
-  1,
   'true_false',
   '19 < 20.',
   '["Benar","Salah"]'::jsonb,
@@ -441,8 +369,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-13-01',
   'k1-mtk-13',
-  'k1-mtk',
-  1,
   'choose_correct',
   '12 + 5 = ?',
   '["16","17","18"]'::jsonb,
@@ -453,8 +379,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-13-02',
   'k1-mtk-13',
-  'k1-mtk',
-  1,
   'fill_blank',
   '___ + 6 = 14',
   '["7","8","9"]'::jsonb,
@@ -465,8 +389,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-13-03',
   'k1-mtk-13',
-  'k1-mtk',
-  1,
   'true_false',
   '10 + 10 = 20.',
   '["Benar","Salah"]'::jsonb,
@@ -477,8 +399,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-14-01',
   'k1-mtk-14',
-  'k1-mtk',
-  1,
   'choose_correct',
   '18 - 5 = ?',
   '["12","13","14"]'::jsonb,
@@ -489,8 +409,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-14-02',
   'k1-mtk-14',
-  'k1-mtk',
-  1,
   'fill_blank',
   '20 - ___ = 12',
   '["7","8","9"]'::jsonb,
@@ -501,8 +419,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-14-03',
   'k1-mtk-14',
-  'k1-mtk',
-  1,
   'true_false',
   '15 - 5 = 10.',
   '["Benar","Salah"]'::jsonb,
@@ -513,8 +429,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-15-01',
   'k1-mtk-15',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Selisih 14 dan 9 adalah...',
   '["4","5","6"]'::jsonb,
@@ -525,8 +439,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-15-02',
   'k1-mtk-15',
-  'k1-mtk',
-  1,
   'fill_blank',
   '16 - 9 = ___',
   '["6","7","8"]'::jsonb,
@@ -537,8 +449,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-15-03',
   'k1-mtk-15',
-  'k1-mtk',
-  1,
   'true_false',
   'Selisih 10 dan 6 adalah 4.',
   '["Benar","Salah"]'::jsonb,
@@ -549,8 +459,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-16-01',
   'k1-mtk-16',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Pensil lebih panjang dari penghapus. Penghapus lebih...',
   '["pendek","panjang","sama"]'::jsonb,
@@ -561,8 +469,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-16-02',
   'k1-mtk-16',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Buku ___ dari pensil. (gunakan: lebih panjang / lebih pendek)',
   '["lebih panjang","lebih pendek","sama dengan"]'::jsonb,
@@ -573,8 +479,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-16-03',
   'k1-mtk-16',
-  'k1-mtk',
-  1,
   'true_false',
   'Penggaris 30 cm lebih panjang dari pensil 15 cm.',
   '["Benar","Salah"]'::jsonb,
@@ -585,8 +489,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-17-01',
   'k1-mtk-17',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Meja diukur dengan jengkal = 10 jengkal. Kursi = 6 jengkal. Mana lebih panjang?',
   '["meja","kursi","sama"]'::jsonb,
@@ -597,8 +499,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-17-02',
   'k1-mtk-17',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Mengukur dengan jengkal disebut pengukuran ___.',
   '["tidak baku","baku","tepat"]'::jsonb,
@@ -609,8 +509,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-17-03',
   'k1-mtk-17',
-  'k1-mtk',
-  1,
   'true_false',
   'Penggaris adalah alat ukur baku.',
   '["Benar","Salah"]'::jsonb,
@@ -621,8 +519,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-18-01',
   'k1-mtk-18',
-  'k1-mtk',
-  1,
   'choose_correct',
   'Dari 10 siswa: 4 suka bola, 6 suka lari. Mana paling banyak?',
   '["bola","lari","sama"]'::jsonb,
@@ -633,8 +529,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-18-02',
   'k1-mtk-18',
-  'k1-mtk',
-  1,
   'fill_blank',
   'Diagram gambar menggunakan ___ untuk mewakili data.',
   '["gambar/simbol","angka saja","huruf saja"]'::jsonb,
@@ -645,8 +539,6 @@ INSERT INTO public.questions (
 (
   'k1-mtk-18-03',
   'k1-mtk-18',
-  'k1-mtk',
-  1,
   'true_false',
   'Tabel data membantu kita membandingkan informasi.',
   '["Benar","Salah"]'::jsonb,
@@ -657,8 +549,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-01-01',
   'k2-mtk-01',
-  'k2-mtk',
-  2,
   'choose_correct',
   '35 = ___ puluhan + ___ satuan',
   '["3 puluhan 5 satuan","5 puluhan 3 satuan","3 puluhan 3 satuan"]'::jsonb,
@@ -669,8 +559,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-01-02',
   'k2-mtk-01',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Bilangan setelah 49 adalah ___',
   '["48","50","51"]'::jsonb,
@@ -681,8 +569,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-01-03',
   'k2-mtk-01',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Mana yang TERBESAR: 42, 24, 34?',
   '["42","24","34"]'::jsonb,
@@ -693,8 +579,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-01-04',
   'k2-mtk-01',
-  'k2-mtk',
-  2,
   'true_false',
   '28 < 30.',
   '["Benar","Salah"]'::jsonb,
@@ -705,8 +589,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-01-05',
   'k2-mtk-01',
-  'k2-mtk',
-  2,
   'match',
   'Cocokkan!',
   '["2 puluhan 3 satuan","3 puluhan 1 satuan","4 puluhan 0 satuan"]'::jsonb,
@@ -717,8 +599,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-02-01',
   'k2-mtk-02',
-  'k2-mtk',
-  2,
   'choose_correct',
   '100 = ___ puluhan',
   '["8","9","10"]'::jsonb,
@@ -729,8 +609,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-02-02',
   'k2-mtk-02',
-  'k2-mtk',
-  2,
   'fill_blank',
   '75 = 7 puluhan + ___ satuan',
   '["4","5","6"]'::jsonb,
@@ -741,8 +619,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-02-03',
   'k2-mtk-02',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Bilangan ganjil di antara 60 dan 65 adalah...',
   '["62","61","64"]'::jsonb,
@@ -753,8 +629,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-02-04',
   'k2-mtk-02',
-  'k2-mtk',
-  2,
   'true_false',
   '80 > 79.',
   '["Benar","Salah"]'::jsonb,
@@ -765,8 +639,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-02-05',
   'k2-mtk-02',
-  'k2-mtk',
-  2,
   'match',
   'Cocokkan nilai tempat!',
   '["6 pada 62","2 pada 62","1 pada 100"]'::jsonb,
@@ -777,8 +649,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-03-01',
   'k2-mtk-03',
-  'k2-mtk',
-  2,
   'choose_correct',
   '25 + 13 = ?',
   '["37","38","39"]'::jsonb,
@@ -789,8 +659,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-03-02',
   'k2-mtk-03',
-  'k2-mtk',
-  2,
   'fill_blank',
   '30 + ___ = 47',
   '["15","16","17"]'::jsonb,
@@ -801,8 +669,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-03-03',
   'k2-mtk-03',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Anton punya 12 kelereng. Budi kasih 9. Total?',
   '["20","21","22"]'::jsonb,
@@ -813,8 +679,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-03-04',
   'k2-mtk-03',
-  'k2-mtk',
-  2,
   'true_false',
   '8 + 5 = 5 + 8 (sifat komutatif).',
   '["Benar","Salah"]'::jsonb,
@@ -825,8 +689,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-03-05',
   'k2-mtk-03',
-  'k2-mtk',
-  2,
   'fill_blank',
   '___ + 24 = 50',
   '["24","25","26"]'::jsonb,
@@ -837,8 +699,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-04-01',
   'k2-mtk-04',
-  'k2-mtk',
-  2,
   'choose_correct',
   '45 - 18 = ?',
   '["26","27","28"]'::jsonb,
@@ -849,8 +709,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-04-02',
   'k2-mtk-04',
-  'k2-mtk',
-  2,
   'fill_blank',
   '60 - ___ = 35',
   '["24","25","26"]'::jsonb,
@@ -861,8 +719,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-04-03',
   'k2-mtk-04',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Di keranjang ada 30 apel. Diambil 13. Sisa?',
   '["16","17","18"]'::jsonb,
@@ -873,8 +729,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-04-04',
   'k2-mtk-04',
-  'k2-mtk',
-  2,
   'true_false',
   '40 - 15 = 25.',
   '["Benar","Salah"]'::jsonb,
@@ -885,8 +739,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-04-05',
   'k2-mtk-04',
-  'k2-mtk',
-  2,
   'fill_blank',
   '___ - 22 = 18',
   '["38","40","42"]'::jsonb,
@@ -897,8 +749,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-05-01',
   'k2-mtk-05',
-  'k2-mtk',
-  2,
   'choose_correct',
   '37 + 25 = ?',
   '["61","62","63"]'::jsonb,
@@ -909,8 +759,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-05-02',
   'k2-mtk-05',
-  'k2-mtk',
-  2,
   'fill_blank',
   '48 + ___ = 73',
   '["23","24","25"]'::jsonb,
@@ -921,8 +769,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-05-03',
   'k2-mtk-05',
-  'k2-mtk',
-  2,
   'choose_correct',
   '55 + 28 = ?',
   '["82","83","84"]'::jsonb,
@@ -933,8 +779,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-05-04',
   'k2-mtk-05',
-  'k2-mtk',
-  2,
   'true_false',
   '39 + 41 = 80.',
   '["Benar","Salah"]'::jsonb,
@@ -945,8 +789,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-05-05',
   'k2-mtk-05',
-  'k2-mtk',
-  2,
   'match',
   'Cocokkan hasil penjumlahan!',
   '["17 + 15","28 + 14","35 + 27"]'::jsonb,
@@ -957,8 +799,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-06-01',
   'k2-mtk-06',
-  'k2-mtk',
-  2,
   'choose_correct',
   '53 - 27 = ?',
   '["25","26","27"]'::jsonb,
@@ -969,8 +809,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-06-02',
   'k2-mtk-06',
-  'k2-mtk',
-  2,
   'fill_blank',
   '70 - ___ = 43',
   '["26","27","28"]'::jsonb,
@@ -981,8 +819,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-06-03',
   'k2-mtk-06',
-  'k2-mtk',
-  2,
   'choose_correct',
   '82 - 46 = ?',
   '["35","36","37"]'::jsonb,
@@ -993,8 +829,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-06-04',
   'k2-mtk-06',
-  'k2-mtk',
-  2,
   'true_false',
   '61 - 35 = 26.',
   '["Benar","Salah"]'::jsonb,
@@ -1005,8 +839,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-06-05',
   'k2-mtk-06',
-  'k2-mtk',
-  2,
   'fill_blank',
   '___ - 38 = 24',
   '["60","61","62"]'::jsonb,
@@ -1017,8 +849,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-07-01',
   'k2-mtk-07',
-  'k2-mtk',
-  2,
   'choose_correct',
   '3 × 4 = ?',
   '["10","11","12"]'::jsonb,
@@ -1029,8 +859,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-07-02',
   'k2-mtk-07',
-  'k2-mtk',
-  2,
   'fill_blank',
   '5 × ___ = 25',
   '["4","5","6"]'::jsonb,
@@ -1041,8 +869,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-07-03',
   'k2-mtk-07',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Ada 4 piring, tiap piring 6 kue. Total?',
   '["22","24","26"]'::jsonb,
@@ -1053,8 +879,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-07-04',
   'k2-mtk-07',
-  'k2-mtk',
-  2,
   'true_false',
   '2 × 9 = 18.',
   '["Benar","Salah"]'::jsonb,
@@ -1065,8 +889,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-07-05',
   'k2-mtk-07',
-  'k2-mtk',
-  2,
   'match',
   'Cocokkan perkalian!',
   '["3 × 3","4 × 5","6 × 2"]'::jsonb,
@@ -1077,8 +899,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-08-01',
   'k2-mtk-08',
-  'k2-mtk',
-  2,
   'choose_correct',
   '12 ÷ 4 = ?',
   '["2","3","4"]'::jsonb,
@@ -1089,8 +909,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-08-02',
   'k2-mtk-08',
-  'k2-mtk',
-  2,
   'fill_blank',
   '20 ÷ ___ = 4',
   '["4","5","6"]'::jsonb,
@@ -1101,8 +919,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-08-03',
   'k2-mtk-08',
-  'k2-mtk',
-  2,
   'choose_correct',
   '18 kue dibagi 6 anak sama rata. Tiap anak dapat?',
   '["2","3","4"]'::jsonb,
@@ -1113,8 +929,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-08-04',
   'k2-mtk-08',
-  'k2-mtk',
-  2,
   'true_false',
   '15 ÷ 3 = 5.',
   '["Benar","Salah"]'::jsonb,
@@ -1125,8 +939,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-08-05',
   'k2-mtk-08',
-  'k2-mtk',
-  2,
   'fill_blank',
   '24 ÷ ___ = 8',
   '["2","3","4"]'::jsonb,
@@ -1137,8 +949,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-09-01',
   'k2-mtk-09',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Persegi panjang punya berapa sisi?',
   '["3","4","5"]'::jsonb,
@@ -1149,8 +959,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-09-02',
   'k2-mtk-09',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Segitiga punya ___ sudut.',
   '["2","3","4"]'::jsonb,
@@ -1161,8 +969,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-09-03',
   'k2-mtk-09',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Bangun datar dengan semua sisi sama panjang dan 4 sudut...',
   '["persegi","persegi panjang","segitiga"]'::jsonb,
@@ -1173,8 +979,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-09-04',
   'k2-mtk-09',
-  'k2-mtk',
-  2,
   'true_false',
   'Lingkaran tidak punya sudut.',
   '["Benar","Salah"]'::jsonb,
@@ -1185,8 +989,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-09-05',
   'k2-mtk-09',
-  'k2-mtk',
-  2,
   'match',
   'Cocokkan bangun dengan jumlah sisinya!',
   '["Segitiga","Persegi","Segilima"]'::jsonb,
@@ -1197,8 +999,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-10-01',
   'k2-mtk-10',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Bola es krim berbentuk...',
   '["kubus","bola","tabung"]'::jsonb,
@@ -1209,8 +1009,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-10-02',
   'k2-mtk-10',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Kubus punya ___ sisi.',
   '["4","6","8"]'::jsonb,
@@ -1221,8 +1019,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-10-03',
   'k2-mtk-10',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Kaleng susu berbentuk...',
   '["kubus","bola","tabung"]'::jsonb,
@@ -1233,8 +1029,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-10-04',
   'k2-mtk-10',
-  'k2-mtk',
-  2,
   'true_false',
   'Kotak hadiah berbentuk balok.',
   '["Benar","Salah"]'::jsonb,
@@ -1245,8 +1039,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-10-05',
   'k2-mtk-10',
-  'k2-mtk',
-  2,
   'match',
   'Cocokkan benda dengan bentuknya!',
   '["Dadu","Kelereng","Topi ulang tahun"]'::jsonb,
@@ -1257,8 +1049,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-11-01',
   'k2-mtk-11',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Satuan panjang yang paling umum dipakai...',
   '["cm","kg","liter"]'::jsonb,
@@ -1269,8 +1059,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-11-02',
   'k2-mtk-11',
-  'k2-mtk',
-  2,
   'fill_blank',
   '1 meter = ___ cm',
   '["10","100","1000"]'::jsonb,
@@ -1281,8 +1069,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-11-03',
   'k2-mtk-11',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Meja panjangnya 120 cm = ___ meter lebih 20 cm',
   '["0","1","2"]'::jsonb,
@@ -1293,8 +1079,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-11-04',
   'k2-mtk-11',
-  'k2-mtk',
-  2,
   'true_false',
   'Jengkal adalah satuan tidak baku.',
   '["Benar","Salah"]'::jsonb,
@@ -1305,8 +1089,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-11-05',
   'k2-mtk-11',
-  'k2-mtk',
-  2,
   'fill_blank',
   '200 cm = ___ m',
   '["1","2","3"]'::jsonb,
@@ -1317,8 +1099,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-12-01',
   'k2-mtk-12',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Satuan berat yang umum...',
   '["cm","kg","liter"]'::jsonb,
@@ -1329,8 +1109,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-12-02',
   'k2-mtk-12',
-  'k2-mtk',
-  2,
   'fill_blank',
   '1 kg = ___ gram',
   '["10","100","1000"]'::jsonb,
@@ -1341,8 +1119,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-12-03',
   'k2-mtk-12',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Buku 500 gram + pensil 200 gram = ?',
   '["600 gram","700 gram","800 gram"]'::jsonb,
@@ -1353,8 +1129,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-12-04',
   'k2-mtk-12',
-  'k2-mtk',
-  2,
   'true_false',
   '1 kg lebih berat dari 900 gram.',
   '["Benar","Salah"]'::jsonb,
@@ -1365,8 +1139,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-12-05',
   'k2-mtk-12',
-  'k2-mtk',
-  2,
   'fill_blank',
   '2000 gram = ___ kg',
   '["1","2","3"]'::jsonb,
@@ -1377,8 +1149,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-13-01',
   'k2-mtk-13',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Satuan volume cairan...',
   '["cm","kg","liter"]'::jsonb,
@@ -1389,8 +1159,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-13-02',
   'k2-mtk-13',
-  'k2-mtk',
-  2,
   'fill_blank',
   '1 liter = ___ mililiter',
   '["10","100","1000"]'::jsonb,
@@ -1401,8 +1169,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-13-03',
   'k2-mtk-13',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Ember 5 liter + ember 3 liter = ?',
   '["6 liter","7 liter","8 liter"]'::jsonb,
@@ -1413,8 +1179,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-13-04',
   'k2-mtk-13',
-  'k2-mtk',
-  2,
   'true_false',
   '500 mL = 0,5 liter.',
   '["Benar","Salah"]'::jsonb,
@@ -1425,8 +1189,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-13-05',
   'k2-mtk-13',
-  'k2-mtk',
-  2,
   'fill_blank',
   '2 liter = ___ mL',
   '["200","2000","20000"]'::jsonb,
@@ -1437,8 +1199,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-14-01',
   'k2-mtk-14',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Uang kertas Rp5.000 + koin Rp500 = ?',
   '["Rp5.000","Rp5.500","Rp6.000"]'::jsonb,
@@ -1449,8 +1209,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-14-02',
   'k2-mtk-14',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Beli buku Rp3.000 bayar Rp5.000. Kembalian ___',
   '["Rp1.000","Rp2.000","Rp3.000"]'::jsonb,
@@ -1461,8 +1219,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-14-03',
   'k2-mtk-14',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Ibu punya Rp10.000. Beli sayur Rp4.500. Sisa?',
   '["Rp5.000","Rp5.500","Rp6.000"]'::jsonb,
@@ -1473,8 +1229,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-14-04',
   'k2-mtk-14',
-  'k2-mtk',
-  2,
   'true_false',
   'Rp7.000 lebih dari Rp6.500.',
   '["Benar","Salah"]'::jsonb,
@@ -1485,8 +1239,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-14-05',
   'k2-mtk-14',
-  'k2-mtk',
-  2,
   'fill_blank',
   '2 × Rp2.500 = Rp ___',
   '["4000","5000","6000"]'::jsonb,
@@ -1497,8 +1249,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-15-01',
   'k2-mtk-15',
-  'k2-mtk',
-  2,
   'choose_correct',
   '1 jam = ___ menit',
   '["30","60","120"]'::jsonb,
@@ -1509,8 +1259,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-15-02',
   'k2-mtk-15',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Pukul 08.00 + 2 jam = pukul ___',
   '["09.00","10.00","11.00"]'::jsonb,
@@ -1521,8 +1269,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-15-03',
   'k2-mtk-15',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Sekolah mulai 07.00 dan selesai 12.00. Berapa jam?',
   '["4","5","6"]'::jsonb,
@@ -1533,8 +1279,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-15-04',
   'k2-mtk-15',
-  'k2-mtk',
-  2,
   'true_false',
   'Setengah jam = 30 menit.',
   '["Benar","Salah"]'::jsonb,
@@ -1545,8 +1289,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-15-05',
   'k2-mtk-15',
-  'k2-mtk',
-  2,
   'fill_blank',
   '1 hari = ___ jam',
   '["12","24","48"]'::jsonb,
@@ -1557,8 +1299,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-16-01',
   'k2-mtk-16',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Dari tabel: Apel 8, Pisang 5, Jeruk 7. Buah paling sedikit?',
   '["Apel","Pisang","Jeruk"]'::jsonb,
@@ -1569,8 +1309,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-16-02',
   'k2-mtk-16',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Jumlah total: Apel 8 + Pisang 5 + Jeruk 7 = ___',
   '["18","19","20"]'::jsonb,
@@ -1581,8 +1319,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-16-03',
   'k2-mtk-16',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Berapa lebih banyak Apel dari Pisang?',
   '["2","3","4"]'::jsonb,
@@ -1593,8 +1329,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-16-04',
   'k2-mtk-16',
-  'k2-mtk',
-  2,
   'true_false',
   'Tabel membantu membaca data dengan lebih mudah.',
   '["Benar","Salah"]'::jsonb,
@@ -1605,8 +1339,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-16-05',
   'k2-mtk-16',
-  'k2-mtk',
-  2,
   'match',
   'Cocokkan data dengan nilai!',
   '["Apel","Pisang","Jeruk"]'::jsonb,
@@ -1617,8 +1349,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-17-01',
   'k2-mtk-17',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Diagram batang menunjukkan data dengan menggunakan...',
   '["batang/balok","titik","garis saja"]'::jsonb,
@@ -1629,8 +1359,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-17-02',
   'k2-mtk-17',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Sumbu tegak (Y) biasanya menunjukkan ___.',
   '["nilai/jumlah","nama","warna"]'::jsonb,
@@ -1641,8 +1369,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-17-03',
   'k2-mtk-17',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Batang paling tinggi mewakili data...',
   '["terkecil","terbesar","sama"]'::jsonb,
@@ -1653,8 +1379,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-17-04',
   'k2-mtk-17',
-  'k2-mtk',
-  2,
   'true_false',
   'Diagram batang cocok untuk membandingkan beberapa kategori.',
   '["Benar","Salah"]'::jsonb,
@@ -1665,8 +1389,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-17-05',
   'k2-mtk-17',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Sumbu mendatar (X) biasanya menunjukkan ___.',
   '["kategori/nama","nilai","warna"]'::jsonb,
@@ -1677,8 +1399,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-18-01',
   'k2-mtk-18',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Sifat komutatif: 5 + 3 = 3 + ___',
   '["5","6","7"]'::jsonb,
@@ -1689,8 +1409,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-18-02',
   'k2-mtk-18',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Sifat asosiatif: (2+3)+4 = 2+(3+___)=9',
   '["3","4","5"]'::jsonb,
@@ -1701,8 +1419,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-18-03',
   'k2-mtk-18',
-  'k2-mtk',
-  2,
   'choose_correct',
   '0 + 7 = ?',
   '["0","7","1"]'::jsonb,
@@ -1713,8 +1429,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-18-04',
   'k2-mtk-18',
-  'k2-mtk',
-  2,
   'true_false',
   'a + b = b + a adalah sifat komutatif.',
   '["Benar","Salah"]'::jsonb,
@@ -1725,8 +1439,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-18-05',
   'k2-mtk-18',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Bilangan yang ditambah 0 hasilnya tetap ___',
   '["berubah","0","sama"]'::jsonb,
@@ -1737,8 +1449,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-19-01',
   'k2-mtk-19',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Pola: 2, 4, 6, 8, ___',
   '["9","10","11"]'::jsonb,
@@ -1749,8 +1459,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-19-02',
   'k2-mtk-19',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Pola: 1, 4, 7, 10, ___',
   '["12","13","14"]'::jsonb,
@@ -1761,8 +1469,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-19-03',
   'k2-mtk-19',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Pola: 20, 17, 14, 11, ___',
   '["7","8","9"]'::jsonb,
@@ -1773,8 +1479,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-19-04',
   'k2-mtk-19',
-  'k2-mtk',
-  2,
   'true_false',
   '5, 10, 15, 20 adalah pola bilangan kelipatan 5.',
   '["Benar","Salah"]'::jsonb,
@@ -1785,8 +1489,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-19-05',
   'k2-mtk-19',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Pola ganjil: 1, 3, 5, 7, ___',
   '["8","9","10"]'::jsonb,
@@ -1797,8 +1499,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-20-01',
   'k2-mtk-20',
-  'k2-mtk',
-  2,
   'choose_correct',
   'Mana yang termasuk bilangan genap?',
   '["13","14","15"]'::jsonb,
@@ -1809,8 +1509,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-20-02',
   'k2-mtk-20',
-  'k2-mtk',
-  2,
   'fill_blank',
   'Bilangan ganjil antara 10 dan 14 adalah 11 dan ___',
   '["12","13","14"]'::jsonb,
@@ -1821,8 +1519,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-20-03',
   'k2-mtk-20',
-  'k2-mtk',
-  2,
   'choose_correct',
   '34 + 16 = ___ (ganjil/genap?)',
   '["ganjil","genap","nol"]'::jsonb,
@@ -1833,8 +1529,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-20-04',
   'k2-mtk-20',
-  'k2-mtk',
-  2,
   'true_false',
   'Bilangan genap selalu habis dibagi 2.',
   '["Benar","Salah"]'::jsonb,
@@ -1845,8 +1539,6 @@ INSERT INTO public.questions (
 (
   'k2-mtk-20-05',
   'k2-mtk-20',
-  'k2-mtk',
-  2,
   'match',
   'Kelompokkan!',
   '["12","17","20"]'::jsonb,
@@ -1857,8 +1549,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-01-01',
   'k3-mtk-01',
-  'k3-mtk',
-  3,
   'choose_correct',
   '345 = ___ ratusan + 4 puluhan + 5 satuan',
   '["2","3","4"]'::jsonb,
@@ -1869,8 +1559,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-01-02',
   'k3-mtk-01',
-  'k3-mtk',
-  3,
   'fill_blank',
   '700 + 50 + 8 = ___',
   '["758","785","875"]'::jsonb,
@@ -1881,8 +1569,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-01-03',
   'k3-mtk-01',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Mana terbesar: 678, 786, 687?',
   '["678","786","687"]'::jsonb,
@@ -1893,8 +1579,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-01-04',
   'k3-mtk-01',
-  'k3-mtk',
-  3,
   'true_false',
   '1.000 = sepuluh ratusan.',
   '["Benar","Salah"]'::jsonb,
@@ -1905,8 +1589,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-02-01',
   'k3-mtk-02',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Urutkan dari kecil: 534, 345, 453, 543',
   '["345, 453, 534, 543","543, 534, 453, 345","453, 345, 534, 543"]'::jsonb,
@@ -1917,8 +1599,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-02-02',
   'k3-mtk-02',
-  'k3-mtk',
-  3,
   'fill_blank',
   '567 ___ 576 (isi < atau >)',
   '["<",">","="]'::jsonb,
@@ -1929,8 +1609,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-02-03',
   'k3-mtk-02',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Di antara 400 dan 600, bilangan ratusan yang ada...',
   '["400, 500, 600","400, 500","300, 400, 500"]'::jsonb,
@@ -1941,8 +1619,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-02-04',
   'k3-mtk-02',
-  'k3-mtk',
-  3,
   'true_false',
   '889 < 898.',
   '["Benar","Salah"]'::jsonb,
@@ -1953,8 +1629,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-03-01',
   'k3-mtk-03',
-  'k3-mtk',
-  3,
   'choose_correct',
   '254 + 135 = ?',
   '["378","389","389"]'::jsonb,
@@ -1965,8 +1639,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-03-02',
   'k3-mtk-03',
-  'k3-mtk',
-  3,
   'fill_blank',
   '450 + ___ = 700',
   '["240","250","260"]'::jsonb,
@@ -1977,8 +1649,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-03-03',
   'k3-mtk-03',
-  'k3-mtk',
-  3,
   'choose_correct',
   '365 + 248 = ?',
   '["612","613","614"]'::jsonb,
@@ -1989,8 +1659,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-03-04',
   'k3-mtk-03',
-  'k3-mtk',
-  3,
   'true_false',
   '500 + 500 = 1.000.',
   '["Benar","Salah"]'::jsonb,
@@ -2001,8 +1669,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-04-01',
   'k3-mtk-04',
-  'k3-mtk',
-  3,
   'choose_correct',
   '750 - 235 = ?',
   '["514","515","516"]'::jsonb,
@@ -2013,8 +1679,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-04-02',
   'k3-mtk-04',
-  'k3-mtk',
-  3,
   'fill_blank',
   '900 - ___ = 450',
   '["440","450","460"]'::jsonb,
@@ -2025,8 +1689,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-04-03',
   'k3-mtk-04',
-  'k3-mtk',
-  3,
   'choose_correct',
   '623 - 178 = ?',
   '["444","445","446"]'::jsonb,
@@ -2037,8 +1699,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-04-04',
   'k3-mtk-04',
-  'k3-mtk',
-  3,
   'true_false',
   '1.000 - 250 = 750.',
   '["Benar","Salah"]'::jsonb,
@@ -2049,8 +1709,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-05-01',
   'k3-mtk-05',
-  'k3-mtk',
-  3,
   'choose_correct',
   '6 × 7 = ?',
   '["40","42","44"]'::jsonb,
@@ -2061,8 +1719,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-05-02',
   'k3-mtk-05',
-  'k3-mtk',
-  3,
   'fill_blank',
   '___ × 8 = 56',
   '["6","7","8"]'::jsonb,
@@ -2073,8 +1729,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-05-03',
   'k3-mtk-05',
-  'k3-mtk',
-  3,
   'choose_correct',
   '9 × 9 = ?',
   '["79","80","81"]'::jsonb,
@@ -2085,8 +1739,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-05-04',
   'k3-mtk-05',
-  'k3-mtk',
-  3,
   'true_false',
   '4 × 6 = 6 × 4 (sifat komutatif).',
   '["Benar","Salah"]'::jsonb,
@@ -2097,8 +1749,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-06-01',
   'k3-mtk-06',
-  'k3-mtk',
-  3,
   'choose_correct',
   '54 ÷ 6 = ?',
   '["7","8","9"]'::jsonb,
@@ -2109,8 +1759,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-06-02',
   'k3-mtk-06',
-  'k3-mtk',
-  3,
   'fill_blank',
   '___ ÷ 8 = 7',
   '["54","56","58"]'::jsonb,
@@ -2121,8 +1769,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-06-03',
   'k3-mtk-06',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Pak Guru bagi 24 buku ke 6 meja. Tiap meja?',
   '["3","4","6"]'::jsonb,
@@ -2133,8 +1779,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-06-04',
   'k3-mtk-06',
-  'k3-mtk',
-  3,
   'true_false',
   '6 × 7 = 42 dan 42 ÷ 7 = 6 (hubungan perkalian-pembagian).',
   '["Benar","Salah"]'::jsonb,
@@ -2145,8 +1789,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-07-01',
   'k3-mtk-07',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Di taman ada 35 pohon. Ditanam 27 pohon lagi. Kalimat matematika yang tepat?',
   '["35 - 27 = n","35 + 27 = n","35 × 27 = n"]'::jsonb,
@@ -2157,8 +1799,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-07-02',
   'k3-mtk-07',
-  'k3-mtk',
-  3,
   'fill_blank',
   'n + 15 = 40, maka n = ___',
   '["23","24","25"]'::jsonb,
@@ -2169,8 +1809,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-07-03',
   'k3-mtk-07',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Budi punya 48 kartu + 36 kartu. Total?',
   '["83","84","85"]'::jsonb,
@@ -2181,8 +1819,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-07-04',
   'k3-mtk-07',
-  'k3-mtk',
-  3,
   'true_false',
   'Kalimat matematika membantu memecahkan soal cerita.',
   '["Benar","Salah"]'::jsonb,
@@ -2193,8 +1829,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-08-01',
   'k3-mtk-08',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Di kotak ada 56 kue. Dimakan 23. Sisa?',
   '["32","33","34"]'::jsonb,
@@ -2205,8 +1839,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-08-02',
   'k3-mtk-08',
-  'k3-mtk',
-  3,
   'fill_blank',
   '80 - n = 45, maka n = ___',
   '["34","35","36"]'::jsonb,
@@ -2217,8 +1849,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-08-03',
   'k3-mtk-08',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Ibu punya 120 telur. Dijual 75. Sisa?',
   '["44","45","46"]'::jsonb,
@@ -2229,8 +1859,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-08-04',
   'k3-mtk-08',
-  'k3-mtk',
-  3,
   'true_false',
   '200 - 75 = 125.',
   '["Benar","Salah"]'::jsonb,
@@ -2241,8 +1869,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-09-01',
   'k3-mtk-09',
-  'k3-mtk',
-  3,
   'choose_correct',
   '5 kotak, tiap kotak 8 buku. Total?',
   '["38","40","42"]'::jsonb,
@@ -2253,8 +1879,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-09-02',
   'k3-mtk-09',
-  'k3-mtk',
-  3,
   'fill_blank',
   '7 × n = 63, maka n = ___',
   '["7","8","9"]'::jsonb,
@@ -2265,8 +1889,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-09-03',
   'k3-mtk-09',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Pak Amir punya 4 kebun. Tiap kebun 25 pohon. Total?',
   '["98","99","100"]'::jsonb,
@@ -2277,8 +1899,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-09-04',
   'k3-mtk-09',
-  'k3-mtk',
-  3,
   'true_false',
   '3 × 12 = 36.',
   '["Benar","Salah"]'::jsonb,
@@ -2289,8 +1909,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-10-01',
   'k3-mtk-10',
-  'k3-mtk',
-  3,
   'choose_correct',
   '72 bola dibagi 8 kelompok. Tiap kelompok?',
   '["7","8","9"]'::jsonb,
@@ -2301,8 +1919,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-10-02',
   'k3-mtk-10',
-  'k3-mtk',
-  3,
   'fill_blank',
   'n ÷ 6 = 12, maka n = ___',
   '["60","70","72"]'::jsonb,
@@ -2313,8 +1929,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-10-03',
   'k3-mtk-10',
-  'k3-mtk',
-  3,
   'choose_correct',
   '96 siswa dibagi ke 8 kelas sama rata. Tiap kelas?',
   '["10","11","12"]'::jsonb,
@@ -2325,8 +1939,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-10-04',
   'k3-mtk-10',
-  'k3-mtk',
-  3,
   'true_false',
   '45 ÷ 9 = 5.',
   '["Benar","Salah"]'::jsonb,
@@ -2337,8 +1949,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-11-01',
   'k3-mtk-11',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Kelipatan 4 yang kurang dari 20 adalah...',
   '["4, 8, 12, 16","4, 8, 12, 16, 20","2, 4, 8, 12"]'::jsonb,
@@ -2349,8 +1959,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-11-02',
   'k3-mtk-11',
-  'k3-mtk',
-  3,
   'fill_blank',
   'Faktor dari 12 antara lain: 1, 2, 3, 4, ___, 12',
   '["5","6","7"]'::jsonb,
@@ -2361,8 +1969,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-11-03',
   'k3-mtk-11',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Kelipatan persekutuan terkecil (KPK) dari 2 dan 3 adalah...',
   '["4","5","6"]'::jsonb,
@@ -2373,8 +1979,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-11-04',
   'k3-mtk-11',
-  'k3-mtk',
-  3,
   'true_false',
   '8 adalah faktor dari 24.',
   '["Benar","Salah"]'::jsonb,
@@ -2385,8 +1989,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-12-01',
   'k3-mtk-12',
-  'k3-mtk',
-  3,
   'choose_correct',
   '1/2 = berapa bagian dari 4 bagian sama?',
   '["1","2","3"]'::jsonb,
@@ -2397,8 +1999,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-12-02',
   'k3-mtk-12',
-  'k3-mtk',
-  3,
   'fill_blank',
   '3/4 + 1/4 = ___',
   '["3/4","4/4","1/4"]'::jsonb,
@@ -2409,8 +2009,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-12-03',
   'k3-mtk-12',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Mana yang lebih besar: 2/3 atau 1/3?',
   '["2/3","1/3","sama"]'::jsonb,
@@ -2421,8 +2019,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-12-04',
   'k3-mtk-12',
-  'k3-mtk',
-  3,
   'true_false',
   '1/2 = 2/4.',
   '["Benar","Salah"]'::jsonb,
@@ -2433,8 +2029,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-13-01',
   'k3-mtk-13',
-  'k3-mtk',
-  3,
   'choose_correct',
   '2,5 m = ___ cm',
   '["200","250","255"]'::jsonb,
@@ -2445,8 +2039,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-13-02',
   'k3-mtk-13',
-  'k3-mtk',
-  3,
   'fill_blank',
   '350 cm = ___ m',
   '["3","3.5","35"]'::jsonb,
@@ -2457,8 +2049,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-13-03',
   'k3-mtk-13',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Pita 4 m dipotong 85 cm. Sisa?',
   '["314 cm","315 cm","316 cm"]'::jsonb,
@@ -2469,8 +2059,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-13-04',
   'k3-mtk-13',
-  'k3-mtk',
-  3,
   'true_false',
   '1 km = 1.000 m.',
   '["Benar","Salah"]'::jsonb,
@@ -2481,8 +2069,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-14-01',
   'k3-mtk-14',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Keliling persegi dengan sisi 7 cm?',
   '["24","28","32"]'::jsonb,
@@ -2493,8 +2079,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-14-02',
   'k3-mtk-14',
-  'k3-mtk',
-  3,
   'fill_blank',
   'Keliling persegi panjang 12×5 = ___',
   '["30","34","34"]'::jsonb,
@@ -2505,8 +2089,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-14-03',
   'k3-mtk-14',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Keliling segitiga dengan sisi 5, 7, 8 cm?',
   '["18","19","20"]'::jsonb,
@@ -2517,8 +2099,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-14-04',
   'k3-mtk-14',
-  'k3-mtk',
-  3,
   'true_false',
   'Keliling = jumlah semua sisi.',
   '["Benar","Salah"]'::jsonb,
@@ -2529,8 +2109,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-15-01',
   'k3-mtk-15',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Luas persegi dengan sisi 6 cm?',
   '["24","36","48"]'::jsonb,
@@ -2541,8 +2119,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-15-02',
   'k3-mtk-15',
-  'k3-mtk',
-  3,
   'fill_blank',
   'Luas persegi panjang 8 × 5 = ___ cm²',
   '["36","40","44"]'::jsonb,
@@ -2553,8 +2129,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-15-03',
   'k3-mtk-15',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Jika luas persegi 49 cm², maka panjang sisinya?',
   '["6 cm","7 cm","8 cm"]'::jsonb,
@@ -2565,8 +2139,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-15-04',
   'k3-mtk-15',
-  'k3-mtk',
-  3,
   'true_false',
   'Luas persegi = sisi × sisi.',
   '["Benar","Salah"]'::jsonb,
@@ -2577,8 +2149,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-16-01',
   'k3-mtk-16',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Segiempat punya berapa sudut?',
   '["2","3","4"]'::jsonb,
@@ -2589,8 +2159,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-16-02',
   'k3-mtk-16',
-  'k3-mtk',
-  3,
   'fill_blank',
   'Segitiga punya ___ sisi.',
   '["2","3","4"]'::jsonb,
@@ -2601,8 +2169,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-16-03',
   'k3-mtk-16',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Bangun dengan 5 sisi dan 5 sudut disebut...',
   '["segiempat","segilima","segienam"]'::jsonb,
@@ -2613,8 +2179,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-16-04',
   'k3-mtk-16',
-  'k3-mtk',
-  3,
   'true_false',
   'Sudut siku-siku = 90°.',
   '["Benar","Salah"]'::jsonb,
@@ -2625,8 +2189,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-17-01',
   'k3-mtk-17',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Dari tabel: Senin 12, Selasa 8, Rabu 15. Hari paling sedikit?',
   '["Senin","Selasa","Rabu"]'::jsonb,
@@ -2637,8 +2199,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-17-02',
   'k3-mtk-17',
-  'k3-mtk',
-  3,
   'fill_blank',
   'Rata-rata dari 6, 8, 10 = ___',
   '["7","8","9"]'::jsonb,
@@ -2649,8 +2209,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-17-03',
   'k3-mtk-17',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Selisih data terbesar dan terkecil: 15 dan 8?',
   '["6","7","8"]'::jsonb,
@@ -2661,8 +2219,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-17-04',
   'k3-mtk-17',
-  'k3-mtk',
-  3,
   'true_false',
   'Rata-rata = jumlah data ÷ banyak data.',
   '["Benar","Salah"]'::jsonb,
@@ -2673,8 +2229,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-18-01',
   'k3-mtk-18',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Diagram gambar: 1 simbol = 5 siswa. 4 simbol = berapa siswa?',
   '["15","20","25"]'::jsonb,
@@ -2685,8 +2239,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-18-02',
   'k3-mtk-18',
-  'k3-mtk',
-  3,
   'fill_blank',
   'Batang paling tinggi dalam diagram batang = data ___',
   '["terbesar","terkecil","rata-rata"]'::jsonb,
@@ -2697,8 +2249,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-18-03',
   'k3-mtk-18',
-  'k3-mtk',
-  3,
   'choose_correct',
   'Diagram lingkaran cocok untuk menunjukkan...',
   '["perbandingan bagian","urutan waktu","pengukuran panjang"]'::jsonb,
@@ -2709,8 +2259,6 @@ INSERT INTO public.questions (
 (
   'k3-mtk-18-04',
   'k3-mtk-18',
-  'k3-mtk',
-  3,
   'true_false',
   'Diagram batang menggunakan sumbu X dan Y.',
   '["Benar","Salah"]'::jsonb,
@@ -2721,8 +2269,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-01-01',
   'k6-mtk-01',
-  'k6-mtk',
-  6,
   'choose_correct',
   '2/3 × 9 = ?',
   '["3","6","9","12"]'::jsonb,
@@ -2733,8 +2279,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-01-02',
   'k6-mtk-01',
-  'k6-mtk',
-  6,
   'fill_blank',
   '3/4 × ___ = 15',
   '["18","20","22","24"]'::jsonb,
@@ -2745,8 +2289,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-01-03',
   'k6-mtk-01',
-  'k6-mtk',
-  6,
   'choose_correct',
   '5 × 2/5 = ?',
   '["1","2","5","10"]'::jsonb,
@@ -2757,8 +2299,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-01-04',
   'k6-mtk-01',
-  'k6-mtk',
-  6,
   'true_false',
   '3 × 1/3 = 1.',
   '["Benar","Salah"]'::jsonb,
@@ -2769,8 +2309,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-01-05',
   'k6-mtk-01',
-  'k6-mtk',
-  6,
   'match',
   'Cocokkan!',
   '["2 × 1/2","4 × 3/4","6 × 2/3"]'::jsonb,
@@ -2781,8 +2319,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-02-01',
   'k6-mtk-02',
-  'k6-mtk',
-  6,
   'choose_correct',
   '3/4 × 8 = ?',
   '["4","6","8","10"]'::jsonb,
@@ -2793,8 +2329,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-02-02',
   'k6-mtk-02',
-  'k6-mtk',
-  6,
   'fill_blank',
   '2/5 × 25 = ___',
   '["8","9","10","11"]'::jsonb,
@@ -2805,8 +2339,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-02-03',
   'k6-mtk-02',
-  'k6-mtk',
-  6,
   'choose_correct',
   '5/6 × 12 = ?',
   '["8","9","10","11"]'::jsonb,
@@ -2817,8 +2349,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-02-04',
   'k6-mtk-02',
-  'k6-mtk',
-  6,
   'true_false',
   '1/2 × 10 = 5.',
   '["Benar","Salah"]'::jsonb,
@@ -2829,8 +2359,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-02-05',
   'k6-mtk-02',
-  'k6-mtk',
-  6,
   'fill_blank',
   '3/8 × 24 = ___',
   '["7","8","9","10"]'::jsonb,
@@ -2841,8 +2369,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-03-01',
   'k6-mtk-03',
-  'k6-mtk',
-  6,
   'choose_correct',
   '3/4 ÷ 3 = ?',
   '["1/4","1/3","1/2","3/4"]'::jsonb,
@@ -2853,8 +2379,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-03-02',
   'k6-mtk-03',
-  'k6-mtk',
-  6,
   'fill_blank',
   '2/3 ÷ 2 = ___',
   '["1/3","1/2","2/3","1/6"]'::jsonb,
@@ -2865,8 +2389,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-03-03',
   'k6-mtk-03',
-  'k6-mtk',
-  6,
   'choose_correct',
   '5/6 ÷ 5 = ?',
   '["1/5","1/6","1/3","5/30"]'::jsonb,
@@ -2877,8 +2399,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-03-04',
   'k6-mtk-03',
-  'k6-mtk',
-  6,
   'true_false',
   '4/5 ÷ 4 = 1/5.',
   '["Benar","Salah"]'::jsonb,
@@ -2889,8 +2409,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-03-05',
   'k6-mtk-03',
-  'k6-mtk',
-  6,
   'fill_blank',
   '6/7 ÷ 6 = ___',
   '["1/6","1/7","6/42","1/42"]'::jsonb,
@@ -2901,8 +2419,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-04-01',
   'k6-mtk-04',
-  'k6-mtk',
-  6,
   'choose_correct',
   '6 ÷ 1/2 = ?',
   '["3","6","12","24"]'::jsonb,
@@ -2913,8 +2429,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-04-02',
   'k6-mtk-04',
-  'k6-mtk',
-  6,
   'fill_blank',
   '9 ÷ 1/3 = ___',
   '["3","9","18","27"]'::jsonb,
@@ -2925,8 +2439,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-04-03',
   'k6-mtk-04',
-  'k6-mtk',
-  6,
   'choose_correct',
   '4 ÷ 2/3 = ?',
   '["6","8","12","16"]'::jsonb,
@@ -2937,8 +2449,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-04-04',
   'k6-mtk-04',
-  'k6-mtk',
-  6,
   'true_false',
   '10 ÷ 1/5 = 50.',
   '["Benar","Salah"]'::jsonb,
@@ -2949,8 +2459,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-04-05',
   'k6-mtk-04',
-  'k6-mtk',
-  6,
   'fill_blank',
   '8 ÷ 1/4 = ___',
   '["2","16","32","40"]'::jsonb,
@@ -2961,8 +2469,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-05-01',
   'k6-mtk-05',
-  'k6-mtk',
-  6,
   'choose_correct',
   '3/4 = ?',
   '["0.25","0.50","0.75","0.80"]'::jsonb,
@@ -2973,8 +2479,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-05-02',
   'k6-mtk-05',
-  'k6-mtk',
-  6,
   'fill_blank',
   '1/5 = 0.___',
   '["1","2","5","10"]'::jsonb,
@@ -2985,8 +2489,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-05-03',
   'k6-mtk-05',
-  'k6-mtk',
-  6,
   'choose_correct',
   '0.6 = ?',
   '["3/5","6/10","3/5 atau 6/10","1/6"]'::jsonb,
@@ -2997,8 +2499,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-05-04',
   'k6-mtk-05',
-  'k6-mtk',
-  6,
   'true_false',
   '1/2 = 0.5.',
   '["Benar","Salah"]'::jsonb,
@@ -3009,8 +2509,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-05-05',
   'k6-mtk-05',
-  'k6-mtk',
-  6,
   'match',
   'Cocokkan pecahan dan desimal!',
   '["1/2","3/4","1/4","1/5"]'::jsonb,
@@ -3021,8 +2519,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-06-01',
   'k6-mtk-06',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Nilai ulangan: 70, 80, 90, 60. Rata-rata?',
   '["74","75","76","80"]'::jsonb,
@@ -3033,8 +2529,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-06-02',
   'k6-mtk-06',
-  'k6-mtk',
-  6,
   'fill_blank',
   '5 data: 20, 25, 30, 35, ___. Rata-rata = 28. Missing?',
   '["28","29","30","31"]'::jsonb,
@@ -3045,8 +2539,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-06-03',
   'k6-mtk-06',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Median dari 3, 5, 7, 9, 11 adalah?',
   '["5","6","7","8"]'::jsonb,
@@ -3057,8 +2549,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-06-04',
   'k6-mtk-06',
-  'k6-mtk',
-  6,
   'true_false',
   'Modus adalah data yang paling sering muncul.',
   '["Benar","Salah"]'::jsonb,
@@ -3069,8 +2559,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-06-05',
   'k6-mtk-06',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Rata-rata 4, 6, 8 = ___',
   '["4","6","8","10"]'::jsonb,
@@ -3081,8 +2569,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-07-01',
   'k6-mtk-07',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Rasio 6:10 disederhanakan menjadi...',
   '["2:5","3:5","6:10","1:2"]'::jsonb,
@@ -3093,8 +2579,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-07-02',
   'k6-mtk-07',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Rasio 8:12 = ___:3',
   '["1","2","3","4"]'::jsonb,
@@ -3105,8 +2589,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-07-03',
   'k6-mtk-07',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Perbandingan 2:5. Jika jumlah 35, bagian pertama?',
   '["10","12","14","15"]'::jsonb,
@@ -3117,8 +2599,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-07-04',
   'k6-mtk-07',
-  'k6-mtk',
-  6,
   'true_false',
   'Rasio 4:6 = 2:3.',
   '["Benar","Salah"]'::jsonb,
@@ -3129,8 +2609,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-07-05',
   'k6-mtk-07',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Rasio 1:3 = 5:___',
   '["12","15","18","21"]'::jsonb,
@@ -3141,8 +2619,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-08-01',
   'k6-mtk-08',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Di kelas ada 15 perempuan dan 10 laki-laki. Rasio perempuan:laki-laki?',
   '["2:3","3:2","1:2","2:1"]'::jsonb,
@@ -3153,8 +2629,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-08-02',
   'k6-mtk-08',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Rasio 2:5. Jika bagian kedua = 20, bagian pertama = ___',
   '["6","7","8","9"]'::jsonb,
@@ -3165,8 +2639,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-08-03',
   'k6-mtk-08',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Resep kue: tepung:gula = 3:1. Kalau gula 200g, tepung?',
   '["400g","500g","600g","700g"]'::jsonb,
@@ -3177,8 +2649,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-08-04',
   'k6-mtk-08',
-  'k6-mtk',
-  6,
   'true_false',
   'Rasio ditulis dengan tanda ":".',
   '["Benar","Salah"]'::jsonb,
@@ -3189,8 +2659,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-08-05',
   'k6-mtk-08',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Rasio panjang:lebar = 4:1. Panjang 20, lebar = ___',
   '["4","5","6","7"]'::jsonb,
@@ -3201,8 +2669,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-09-01',
   'k6-mtk-09',
-  'k6-mtk',
-  6,
   'choose_correct',
   '1:3 = 4:___',
   '["8","10","12","15"]'::jsonb,
@@ -3213,8 +2679,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-09-02',
   'k6-mtk-09',
-  'k6-mtk',
-  6,
   'fill_blank',
   '2:5 = ___:20',
   '["6","7","8","9"]'::jsonb,
@@ -3225,8 +2689,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-09-03',
   'k6-mtk-09',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Peta skala 1:100. Jarak peta 5 cm = jarak nyata?',
   '["50 cm","500 cm","5 m","50 m"]'::jsonb,
@@ -3237,8 +2699,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-09-04',
   'k6-mtk-09',
-  'k6-mtk',
-  6,
   'true_false',
   '3:4 = 6:8 adalah rasio senilai.',
   '["Benar","Salah"]'::jsonb,
@@ -3249,8 +2709,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-09-05',
   'k6-mtk-09',
-  'k6-mtk',
-  6,
   'fill_blank',
   '1:4 = 3:___',
   '["9","12","15","16"]'::jsonb,
@@ -3261,8 +2719,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-10-01',
   'k6-mtk-10',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Skala 1:200. Gambar 3 cm = ukuran nyata?',
   '["200 cm","400 cm","600 cm","800 cm"]'::jsonb,
@@ -3273,8 +2729,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-10-02',
   'k6-mtk-10',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Skala 1:1.000. Jarak nyata 5 km = di peta ___ m',
   '["5","50","500","5000"]'::jsonb,
@@ -3285,8 +2739,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-10-03',
   'k6-mtk-10',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Lapangan 50 m × 30 m di gambar skala 1:500 = ?',
   '["10×6 cm","8×6 cm","10×8 cm","12×6 cm"]'::jsonb,
@@ -3297,8 +2749,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-10-04',
   'k6-mtk-10',
-  'k6-mtk',
-  6,
   'true_false',
   'Skala 1:100 berarti 1 cm gambar = 100 cm nyata.',
   '["Benar","Salah"]'::jsonb,
@@ -3309,8 +2759,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-10-05',
   'k6-mtk-10',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Skala 1:250. Gambar 4 cm = ___ cm nyata',
   '["750","1000","1250","1500"]'::jsonb,
@@ -3321,8 +2769,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-11-01',
   'k6-mtk-11',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Volume kubus dengan rusuk 4 cm?',
   '["16","32","64","128"]'::jsonb,
@@ -3333,8 +2779,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-11-02',
   'k6-mtk-11',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Kubus volume 125 cm³. Panjang rusuk = ___ cm',
   '["4","5","6","7"]'::jsonb,
@@ -3345,8 +2789,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-11-03',
   'k6-mtk-11',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Rusuk kubus = 6 cm. Volume?',
   '["36","72","216","432"]'::jsonb,
@@ -3357,8 +2799,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-11-04',
   'k6-mtk-11',
-  'k6-mtk',
-  6,
   'true_false',
   'Volume kubus = rusuk × rusuk × rusuk.',
   '["Benar","Salah"]'::jsonb,
@@ -3369,8 +2809,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-11-05',
   'k6-mtk-11',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Kubus rusuk 3 cm, volume = ___ cm³',
   '["9","18","27","36"]'::jsonb,
@@ -3381,8 +2819,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-12-01',
   'k6-mtk-12',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Volume balok 10×5×4 cm?',
   '["100","150","200","250"]'::jsonb,
@@ -3393,8 +2829,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-12-02',
   'k6-mtk-12',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Balok 8×6×___ = 144 cm³. Tinggi = ___',
   '["2","3","4","5"]'::jsonb,
@@ -3405,8 +2839,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-12-03',
   'k6-mtk-12',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Bak mandi 100×60×50 cm. Volume = ___ liter?',
   '["200","250","300","350"]'::jsonb,
@@ -3417,8 +2849,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-12-04',
   'k6-mtk-12',
-  'k6-mtk',
-  6,
   'true_false',
   'Volume balok = panjang × lebar × tinggi.',
   '["Benar","Salah"]'::jsonb,
@@ -3429,8 +2859,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-12-05',
   'k6-mtk-12',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Balok 5×4×3 = ___ cm³',
   '["40","50","60","70"]'::jsonb,
@@ -3441,8 +2869,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-13-01',
   'k6-mtk-13',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Luas lingkaran jari-jari 7 cm (π=22/7)?',
   '["144","154","164","174"]'::jsonb,
@@ -3453,8 +2879,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-13-02',
   'k6-mtk-13',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Luas segitiga alas 10 cm, tinggi 8 cm = ___ cm²',
   '["35","40","45","50"]'::jsonb,
@@ -3465,8 +2889,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-13-03',
   'k6-mtk-13',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Luas trapesium a=12, b=8, t=5 cm?',
   '["40","45","50","55"]'::jsonb,
@@ -3477,8 +2899,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-13-04',
   'k6-mtk-13',
-  'k6-mtk',
-  6,
   'true_false',
   'Luas segitiga = (alas × tinggi) ÷ 2.',
   '["Benar","Salah"]'::jsonb,
@@ -3489,8 +2909,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-13-05',
   'k6-mtk-13',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Luas persegi panjang 9×7 = ___ cm²',
   '["56","63","72","81"]'::jsonb,
@@ -3501,8 +2919,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-14-01',
   'k6-mtk-14',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Keliling lingkaran jari-jari 14 cm (π=22/7)?',
   '["78","84","88","96"]'::jsonb,
@@ -3513,8 +2929,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-14-02',
   'k6-mtk-14',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Keliling belah ketupat sisi 8 cm = ___ cm',
   '["24","32","36","40"]'::jsonb,
@@ -3525,8 +2939,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-14-03',
   'k6-mtk-14',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Keliling jajargenjang a=12, b=8 cm?',
   '["36","40","44","48"]'::jsonb,
@@ -3537,8 +2949,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-14-04',
   'k6-mtk-14',
-  'k6-mtk',
-  6,
   'true_false',
   'Keliling lingkaran = 2 × π × r.',
   '["Benar","Salah"]'::jsonb,
@@ -3549,8 +2959,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-14-05',
   'k6-mtk-14',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Keliling persegi sisi 11 cm = ___ cm',
   '["40","42","44","48"]'::jsonb,
@@ -3561,8 +2969,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-15-01',
   'k6-mtk-15',
-  'k6-mtk',
-  6,
   'choose_correct',
   '-5 + 8 = ?',
   '["2","3","4","-3"]'::jsonb,
@@ -3573,8 +2979,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-15-02',
   'k6-mtk-15',
-  'k6-mtk',
-  6,
   'fill_blank',
   '-3 - (-7) = ___',
   '["2","3","4","5"]'::jsonb,
@@ -3585,8 +2989,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-15-03',
   'k6-mtk-15',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Suhu -4°C naik 9°C menjadi?',
   '["3°C","4°C","5°C","6°C"]'::jsonb,
@@ -3597,8 +2999,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-15-04',
   'k6-mtk-15',
-  'k6-mtk',
-  6,
   'true_false',
   '-8 < -3 (negatif lebih besar mendekati nol).',
   '["Benar","Salah"]'::jsonb,
@@ -3609,8 +3009,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-15-05',
   'k6-mtk-15',
-  'k6-mtk',
-  6,
   'fill_blank',
   '6 + (-10) = ___',
   '["-3","-4","-5","-6"]'::jsonb,
@@ -3621,8 +3019,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-16-01',
   'k6-mtk-16',
-  'k6-mtk',
-  6,
   'choose_correct',
   '(4 + 6) × 3 = ?',
   '["28","30","32","34"]'::jsonb,
@@ -3633,8 +3029,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-16-02',
   'k6-mtk-16',
-  'k6-mtk',
-  6,
   'fill_blank',
   '20 ÷ (2 + 3) = ___',
   '["2","3","4","5"]'::jsonb,
@@ -3645,8 +3039,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-16-03',
   'k6-mtk-16',
-  'k6-mtk',
-  6,
   'choose_correct',
   '3 × 4 + 5 × 2 = ?',
   '["20","22","24","26"]'::jsonb,
@@ -3657,8 +3049,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-16-04',
   'k6-mtk-16',
-  'k6-mtk',
-  6,
   'true_false',
   'Perkalian dikerjakan sebelum penjumlahan.',
   '["Benar","Salah"]'::jsonb,
@@ -3669,8 +3059,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-16-05',
   'k6-mtk-16',
-  'k6-mtk',
-  6,
   'fill_blank',
   '(8 - 3) × (4 + 2) = ___',
   '["25","28","30","32"]'::jsonb,
@@ -3681,8 +3069,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-17-01',
   'k6-mtk-17',
-  'k6-mtk',
-  6,
   'choose_correct',
   'FPB dari 12 dan 18 adalah?',
   '["4","5","6","8"]'::jsonb,
@@ -3693,8 +3079,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-17-02',
   'k6-mtk-17',
-  'k6-mtk',
-  6,
   'fill_blank',
   'KPK dari 4 dan 6 = ___',
   '["10","12","14","16"]'::jsonb,
@@ -3705,8 +3089,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-17-03',
   'k6-mtk-17',
-  'k6-mtk',
-  6,
   'choose_correct',
   'FPB dari 24 dan 36 = ?',
   '["8","10","12","14"]'::jsonb,
@@ -3717,8 +3099,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-17-04',
   'k6-mtk-17',
-  'k6-mtk',
-  6,
   'true_false',
   'KPK dari 3 dan 5 = 15.',
   '["Benar","Salah"]'::jsonb,
@@ -3729,8 +3109,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-17-05',
   'k6-mtk-17',
-  'k6-mtk',
-  6,
   'fill_blank',
   'KPK dari 6 dan 9 = ___',
   '["12","15","18","21"]'::jsonb,
@@ -3741,8 +3119,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-18-01',
   'k6-mtk-18',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Data: 3, 5, 7, 5, 9, 5. Modusnya?',
   '["3","5","7","9"]'::jsonb,
@@ -3753,8 +3129,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-18-02',
   'k6-mtk-18',
-  'k6-mtk',
-  6,
   'fill_blank',
   'Data: 2, 4, 6, 8, 10. Mediannya = ___',
   '["4","5","6","7"]'::jsonb,
@@ -3765,8 +3139,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-18-03',
   'k6-mtk-18',
-  'k6-mtk',
-  6,
   'choose_correct',
   'Rata-rata dari 10, 20, 30, 40, 50 = ?',
   '["25","28","30","35"]'::jsonb,
@@ -3777,8 +3149,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-18-04',
   'k6-mtk-18',
-  'k6-mtk',
-  6,
   'true_false',
   'Mean (rata-rata) = total data ÷ jumlah data.',
   '["Benar","Salah"]'::jsonb,
@@ -3789,8 +3159,6 @@ INSERT INTO public.questions (
 (
   'k6-mtk-18-05',
   'k6-mtk-18',
-  'k6-mtk',
-  6,
   'match',
   'Cocokkan istilah statistika!',
   '["Rata-rata","Nilai tengah","Nilai sering muncul"]'::jsonb,

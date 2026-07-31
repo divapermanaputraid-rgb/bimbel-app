@@ -4,13 +4,11 @@
 DELETE FROM public.questions WHERE material_id LIKE 'k2-bing-%';
 
 INSERT INTO public.questions (
-  id, material_id, subject_id, kelas, tipe, soal, soal_id, pilihan, jawaban_benar, data, audio_text, penjelasan_id, kalimat, kata, level, xp
+  id, material_id, tipe, soal, soal_id, pilihan, jawaban_benar, data, audio_text, penjelasan_id, kalimat, kata, level, xp
 ) VALUES
 (
   'k2-bing-01-01',
   'k2-bing-01',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan kata dengan gambarnya!',
   NULL,
@@ -27,8 +25,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-01-02',
   'k2-bing-01',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan perasaan dengan kata Inggris!',
   NULL,
@@ -45,8 +41,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-01-03',
   'k2-bing-01',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -63,8 +57,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-01-04',
   'k2-bing-01',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -81,8 +73,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-01-05',
   'k2-bing-01',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -99,8 +89,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-01-06',
   'k2-bing-01',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -117,8 +105,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-01-07',
   'k2-bing-01',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -135,8 +121,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-01-08',
   'k2-bing-01',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -153,8 +137,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-02-01',
   'k2-bing-02',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan angka dengan kata!',
   NULL,
@@ -171,8 +153,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-02-02',
   'k2-bing-02',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan warna dengan kata Inggris!',
   NULL,
@@ -189,8 +169,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-02-03',
   'k2-bing-02',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih gambar yang sesuai!',
   NULL,
@@ -207,8 +185,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-02-04',
   'k2-bing-02',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih angka yang sesuai!',
   NULL,
@@ -225,8 +201,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-02-05',
   'k2-bing-02',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -243,8 +217,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-02-06',
   'k2-bing-02',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -261,8 +233,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-02-07',
   'k2-bing-02',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -279,8 +249,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-02-08',
   'k2-bing-02',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -297,8 +265,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-03-01',
   'k2-bing-03',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan anggota keluarga!',
   NULL,
@@ -315,8 +281,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-03-02',
   'k2-bing-03',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan kata keluarga!',
   NULL,
@@ -333,8 +297,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-03-03',
   'k2-bing-03',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -351,8 +313,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-03-04',
   'k2-bing-03',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -369,8 +329,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-03-05',
   'k2-bing-03',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -387,8 +345,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-03-06',
   'k2-bing-03',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -405,8 +361,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-03-07',
   'k2-bing-03',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -423,8 +377,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-03-08',
   'k2-bing-03',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -441,8 +393,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-04-01',
   'k2-bing-04',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan benda di kelas!',
   NULL,
@@ -459,8 +409,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-04-02',
   'k2-bing-04',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan lagi benda di kelas!',
   NULL,
@@ -477,8 +425,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-04-03',
   'k2-bing-04',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih gambar yang sesuai!',
   NULL,
@@ -495,8 +441,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-04-04',
   'k2-bing-04',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih gambar yang sesuai!',
   NULL,
@@ -513,8 +457,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-04-05',
   'k2-bing-04',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -531,8 +473,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-04-06',
   'k2-bing-04',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -549,8 +489,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-04-07',
   'k2-bing-04',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -567,8 +505,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-04-08',
   'k2-bing-04',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -585,8 +521,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-05-01',
   'k2-bing-05',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan perintah dengan gerakan!',
   NULL,
@@ -603,8 +537,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-05-02',
   'k2-bing-05',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan perintah sekolah!',
   NULL,
@@ -621,8 +553,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-05-03',
   'k2-bing-05',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -639,8 +569,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-05-04',
   'k2-bing-05',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -657,8 +585,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-05-05',
   'k2-bing-05',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -675,8 +601,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-05-06',
   'k2-bing-05',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -693,8 +617,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-05-07',
   'k2-bing-05',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -711,8 +633,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-05-08',
   'k2-bing-05',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -729,8 +649,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-06-01',
   'k2-bing-06',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan bagian tubuh!',
   NULL,
@@ -747,8 +665,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-06-02',
   'k2-bing-06',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan lagi bagian tubuh!',
   NULL,
@@ -765,8 +681,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-06-03',
   'k2-bing-06',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih bagian tubuh!',
   NULL,
@@ -783,8 +697,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-06-04',
   'k2-bing-06',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih bagian tubuh!',
   NULL,
@@ -801,8 +713,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-06-05',
   'k2-bing-06',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -819,8 +729,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-06-06',
   'k2-bing-06',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -837,8 +745,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-06-07',
   'k2-bing-06',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -855,8 +761,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-06-08',
   'k2-bing-06',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -873,8 +777,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-07-01',
   'k2-bing-07',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan aktivitas harian!',
   NULL,
@@ -891,8 +793,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-07-02',
   'k2-bing-07',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan lagi aktivitas!',
   NULL,
@@ -909,8 +809,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-07-03',
   'k2-bing-07',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -927,8 +825,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-07-04',
   'k2-bing-07',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -945,8 +841,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-07-05',
   'k2-bing-07',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -963,8 +857,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-07-06',
   'k2-bing-07',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -981,8 +873,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-07-07',
   'k2-bing-07',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -999,8 +889,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-07-08',
   'k2-bing-07',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -1017,8 +905,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-08-01',
   'k2-bing-08',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan buah dengan kata Inggris!',
   NULL,
@@ -1035,8 +921,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-08-02',
   'k2-bing-08',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan makanan/minuman!',
   NULL,
@@ -1053,8 +937,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-08-03',
   'k2-bing-08',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih gambar yang sesuai!',
   NULL,
@@ -1071,8 +953,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-08-04',
   'k2-bing-08',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih gambar yang sesuai!',
   NULL,
@@ -1089,8 +969,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-08-05',
   'k2-bing-08',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -1107,8 +985,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-08-06',
   'k2-bing-08',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -1125,8 +1001,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-08-07',
   'k2-bing-08',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -1143,8 +1017,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-08-08',
   'k2-bing-08',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -1161,8 +1033,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-09-01',
   'k2-bing-09',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan hewan dengan kata Inggris!',
   NULL,
@@ -1179,8 +1049,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-09-02',
   'k2-bing-09',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan lagi hewan!',
   NULL,
@@ -1197,8 +1065,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-09-03',
   'k2-bing-09',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -1215,8 +1081,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-09-04',
   'k2-bing-09',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -1233,8 +1097,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-09-05',
   'k2-bing-09',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -1251,8 +1113,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-09-06',
   'k2-bing-09',
-  'k2-bing',
-  '2',
   'fill',
   'Lengkapi kalimat ini!',
   NULL,
@@ -1269,8 +1129,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-09-07',
   'k2-bing-09',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -1287,8 +1145,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-09-08',
   'k2-bing-09',
-  'k2-bing',
-  '2',
   'arrange',
   'Susun kata-kata menjadi kalimat yang benar!',
   NULL,
@@ -1305,8 +1161,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-10-01',
   'k2-bing-10',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan ruangan di rumah!',
   NULL,
@@ -1323,8 +1177,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-10-02',
   'k2-bing-10',
-  'k2-bing',
-  '2',
   'match',
   'Cocokkan lagi ruangan/benda rumah!',
   NULL,
@@ -1341,8 +1193,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-10-03',
   'k2-bing-10',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih gambar yang sesuai!',
   NULL,
@@ -1359,8 +1209,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-10-04',
   'k2-bing-10',
-  'k2-bing',
-  '2',
   'listen',
   'Dengar audio, pilih gambar yang sesuai!',
   NULL,
@@ -1377,8 +1225,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-10-05',
   'k2-bing-10',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -1395,8 +1241,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-10-06',
   'k2-bing-10',
-  'k2-bing',
-  '2',
   'choose',
   'Pilih jawaban yang benar!',
   NULL,
@@ -1413,8 +1257,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-10-07',
   'k2-bing-10',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
@@ -1431,8 +1273,6 @@ INSERT INTO public.questions (
 (
   'k2-bing-10-08',
   'k2-bing-10',
-  'k2-bing',
-  '2',
   'true_false',
   'Benar atau Salah?',
   NULL,
