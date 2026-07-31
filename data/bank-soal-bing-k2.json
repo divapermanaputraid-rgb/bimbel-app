@@ -1,0 +1,687 @@
+{
+  "kelas": 2,
+  "pelajaran": "bing",
+  "total_soal": 80,
+  "units": [
+    {
+      "unit_id": "k2-bing-01",
+      "unit_title": "Hello, How Are You?",
+      "soal": [
+        {
+          "id": "k2-bing-01-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan kata dengan gambarnya!",
+          "opsi_kiri": ["👋", "🌅", "🌙"],
+          "opsi_kanan": ["Good morning", "Good night", "Hello"],
+          "jawaban": { "👋": "Hello", "🌅": "Good morning", "🌙": "Good night" }
+        },
+        {
+          "id": "k2-bing-01-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan perasaan dengan kata Inggris!",
+          "opsi_kiri": ["😊", "😢", "😠"],
+          "opsi_kanan": ["sad", "angry", "fine"],
+          "jawaban": { "😊": "fine", "😢": "sad", "😠": "angry" }
+        },
+        {
+          "id": "k2-bing-01-03",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Good morning' dipakai saat...",
+          "pilihan": ["Pagi", "Siang", "Malam"],
+          "jawaban": "Pagi"
+        },
+        {
+          "id": "k2-bing-01-04",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "Jawaban 'How are you?' yang benar...",
+          "pilihan": ["I am fine", "I am five", "I am Cici"],
+          "jawaban": "I am fine"
+        },
+        {
+          "id": "k2-bing-01-05",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "_____ are you?",
+          "pilihan": ["How", "What", "Who"],
+          "jawaban": "How"
+        },
+        {
+          "id": "k2-bing-01-06",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "Good _____. 🌙",
+          "pilihan": ["night", "morning", "afternoon"],
+          "jawaban": "night"
+        },
+        {
+          "id": "k2-bing-01-07",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["am", "I", "fine"],
+          "jawaban": "I am fine"
+        },
+        {
+          "id": "k2-bing-01-08",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["you", "are", "How"],
+          "jawaban": "How are you"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-02",
+      "unit_title": "Numbers and Colors",
+      "soal": [
+        {
+          "id": "k2-bing-02-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan angka dengan kata!",
+          "opsi_kiri": ["1️⃣", "🔟", "5️⃣"],
+          "opsi_kanan": ["ten", "five", "one"],
+          "jawaban": { "1️⃣": "one", "🔟": "ten", "5️⃣": "five" }
+        },
+        {
+          "id": "k2-bing-02-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan warna dengan kata Inggris!",
+          "opsi_kiri": ["🔴", "🔵", "🟢"],
+          "opsi_kanan": ["blue", "green", "red"],
+          "jawaban": { "🔴": "red", "🔵": "blue", "🟢": "green" }
+        },
+        {
+          "id": "k2-bing-02-03",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih gambar yang sesuai!",
+          "audio_text": "blue",
+          "pilihan_gambar": ["🔴", "🔵", "🟢"],
+          "jawaban": "🔵"
+        },
+        {
+          "id": "k2-bing-02-04",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih angka yang sesuai!",
+          "audio_text": "fifteen",
+          "pilihan_gambar": ["1️⃣5️⃣", "5️⃣", "5️⃣0️⃣"],
+          "jawaban": "1️⃣5️⃣"
+        },
+        {
+          "id": "k2-bing-02-05",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Ten' = ...",
+          "pilihan": ["10", "5", "20"],
+          "jawaban": "10"
+        },
+        {
+          "id": "k2-bing-02-06",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Red' artinya...",
+          "pilihan": ["Merah", "Biru", "Hijau"],
+          "jawaban": "Merah"
+        },
+        {
+          "id": "k2-bing-02-07",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Yellow' = kuning.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-bing-02-08",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Twenty' = 12.",
+          "jawaban": false
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-03",
+      "unit_title": "My Family",
+      "soal": [
+        {
+          "id": "k2-bing-03-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan anggota keluarga!",
+          "opsi_kiri": ["👨", "👩", "👶"],
+          "opsi_kanan": ["mother", "baby", "father"],
+          "jawaban": { "👨": "father", "👩": "mother", "👶": "baby" }
+        },
+        {
+          "id": "k2-bing-03-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan kata keluarga!",
+          "opsi_kiri": ["👦", "👧", "👴"],
+          "opsi_kanan": ["sister", "grandfather", "brother"],
+          "jawaban": { "👦": "brother", "👧": "sister", "👴": "grandfather" }
+        },
+        {
+          "id": "k2-bing-03-03",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Father' artinya...",
+          "pilihan": ["Ayah", "Ibu", "Kakak"],
+          "jawaban": "Ayah"
+        },
+        {
+          "id": "k2-bing-03-04",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Sister' artinya...",
+          "pilihan": ["Adik/kakak perempuan", "Ayah", "Kakek"],
+          "jawaban": "Adik/kakak perempuan"
+        },
+        {
+          "id": "k2-bing-03-05",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "This is my _____. 👨",
+          "pilihan": ["father", "mother", "sister"],
+          "jawaban": "father"
+        },
+        {
+          "id": "k2-bing-03-06",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "I love my _____. 👩",
+          "pilihan": ["mother", "brother", "car"],
+          "jawaban": "mother"
+        },
+        {
+          "id": "k2-bing-03-07",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["my", "This", "is", "family"],
+          "jawaban": "This is my family"
+        },
+        {
+          "id": "k2-bing-03-08",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["brother", "is", "He", "my"],
+          "jawaban": "He is my brother"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-04",
+      "unit_title": "My Classroom",
+      "soal": [
+        {
+          "id": "k2-bing-04-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan benda di kelas!",
+          "opsi_kiri": ["📚", "✏️", "🪑"],
+          "opsi_kanan": ["pencil", "chair", "book"],
+          "jawaban": { "📚": "book", "✏️": "pencil", "🪑": "chair" }
+        },
+        {
+          "id": "k2-bing-04-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan lagi benda di kelas!",
+          "opsi_kiri": ["🚪", "🪟", "🎒"],
+          "opsi_kanan": ["window", "bag", "door"],
+          "jawaban": { "🚪": "door", "🪟": "window", "🎒": "bag" }
+        },
+        {
+          "id": "k2-bing-04-03",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih gambar yang sesuai!",
+          "audio_text": "book",
+          "pilihan_gambar": ["📚", "✏️", "🪑"],
+          "jawaban": "📚"
+        },
+        {
+          "id": "k2-bing-04-04",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih gambar yang sesuai!",
+          "audio_text": "chair",
+          "pilihan_gambar": ["🚪", "🪑", "🪟"],
+          "jawaban": "🪑"
+        },
+        {
+          "id": "k2-bing-04-05",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Table' artinya...",
+          "pilihan": ["Meja", "Kursi", "Pintu"],
+          "jawaban": "Meja"
+        },
+        {
+          "id": "k2-bing-04-06",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Bag' artinya...",
+          "pilihan": ["Papan tulis", "Buku", "Pensil"],
+          "jawaban": "Papan tulis"
+        },
+        {
+          "id": "k2-bing-04-07",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Chair' artinya kursi.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-bing-04-08",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Door' artinya jendela.",
+          "jawaban": false
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-05",
+      "unit_title": "Stand Up, Please!",
+      "soal": [
+        {
+          "id": "k2-bing-05-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan perintah dengan gerakan!",
+          "opsi_kiri": ["🧍", "🪑", "✋"],
+          "opsi_kanan": ["Sit down", "Raise your hand", "Stand up"],
+          "jawaban": { "🧍": "Stand up", "🪑": "Sit down", "✋": "Raise your hand" }
+        },
+        {
+          "id": "k2-bing-05-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan perintah sekolah!",
+          "opsi_kiri": ["🚪➡️", "🤫", "📖"],
+          "opsi_kanan": ["Be quiet", "Open your book", "Come in"],
+          "jawaban": { "🚪➡️": "Come in", "🤫": "Be quiet", "📖": "Open your book" }
+        },
+        {
+          "id": "k2-bing-05-03",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Stand up' artinya...",
+          "pilihan": ["Berdiri", "Duduk", "Lari"],
+          "jawaban": "Berdiri"
+        },
+        {
+          "id": "k2-bing-05-04",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Please' membuat perintah lebih...",
+          "pilihan": ["Sopan", "Marah", "Cepat"],
+          "jawaban": "Sopan"
+        },
+        {
+          "id": "k2-bing-05-05",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "_____ down, please. 🪑",
+          "pilihan": ["Sit", "Stand", "Run"],
+          "jawaban": "Sit"
+        },
+        {
+          "id": "k2-bing-05-06",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "Open your _____. 📖",
+          "pilihan": ["book", "door", "mouth"],
+          "jawaban": "book"
+        },
+        {
+          "id": "k2-bing-05-07",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["up", "Stand", "please"],
+          "jawaban": "Stand up please"
+        },
+        {
+          "id": "k2-bing-05-08",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["quiet", "Be", "please"],
+          "jawaban": "Be quiet please"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-06",
+      "unit_title": "Head, Shoulders, Knees",
+      "soal": [
+        {
+          "id": "k2-bing-06-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan bagian tubuh!",
+          "opsi_kiri": ["🗣️", "👁️", "👃"],
+          "opsi_kanan": ["eye", "nose", "head"],
+          "jawaban": { "🗣️": "head", "👁️": "eye", "👃": "nose" }
+        },
+        {
+          "id": "k2-bing-06-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan lagi bagian tubuh!",
+          "opsi_kiri": ["👂", "✋", "🦵"],
+          "opsi_kanan": ["hand", "leg", "ear"],
+          "jawaban": { "👂": "ear", "✋": "hand", "🦵": "leg" }
+        },
+        {
+          "id": "k2-bing-06-03",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih bagian tubuh!",
+          "audio_text": "head",
+          "pilihan_gambar": ["🗣️", "🦶", "✋"],
+          "jawaban": "🗣️"
+        },
+        {
+          "id": "k2-bing-06-04",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih bagian tubuh!",
+          "audio_text": "knee",
+          "pilihan_gambar": ["👁️", "🦵", "👂"],
+          "jawaban": "🦵"
+        },
+        {
+          "id": "k2-bing-06-05",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Shoulders' artinya...",
+          "pilihan": ["Bahu", "Lutut", "Jari"],
+          "jawaban": "Bahu"
+        },
+        {
+          "id": "k2-bing-06-06",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Knees' artinya...",
+          "pilihan": ["Lutut", "Siku", "Leher"],
+          "jawaban": "Lutut"
+        },
+        {
+          "id": "k2-bing-06-07",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Mouth' artinya mulut.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-bing-06-08",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Toes' artinya jari tangan.",
+          "jawaban": false
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-07",
+      "unit_title": "My Daily Activities",
+      "soal": [
+        {
+          "id": "k2-bing-07-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan aktivitas harian!",
+          "opsi_kiri": ["🌅🛏️", "🪥", "🏫"],
+          "opsi_kanan": ["brush my teeth", "go to school", "wake up"],
+          "jawaban": { "🌅🛏️": "wake up", "🪥": "brush my teeth", "🏫": "go to school" }
+        },
+        {
+          "id": "k2-bing-07-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan lagi aktivitas!",
+          "opsi_kiri": ["🍚", "📚", "😴"],
+          "opsi_kanan": ["study", "sleep", "eat breakfast"],
+          "jawaban": { "🍚": "eat breakfast", "📚": "study", "😴": "sleep" }
+        },
+        {
+          "id": "k2-bing-07-03",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Wake up' artinya...",
+          "pilihan": ["Bangun tidur", "Tidur", "Makan"],
+          "jawaban": "Bangun tidur"
+        },
+        {
+          "id": "k2-bing-07-04",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "Di pagi hari kita biasanya...",
+          "pilihan": ["Wake up and brush teeth", "Sleep all day", "Say good night only"],
+          "jawaban": "Wake up and brush teeth"
+        },
+        {
+          "id": "k2-bing-07-05",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "I _____ to school. 🏫",
+          "pilihan": ["go", "sleep", "fly"],
+          "jawaban": "go"
+        },
+        {
+          "id": "k2-bing-07-06",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "I _____ breakfast. 🍚",
+          "pilihan": ["eat", "drink", "wear"],
+          "jawaban": "eat"
+        },
+        {
+          "id": "k2-bing-07-07",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["up", "I", "wake"],
+          "jawaban": "I wake up"
+        },
+        {
+          "id": "k2-bing-07-08",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["my", "I", "brush", "teeth"],
+          "jawaban": "I brush my teeth"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-08",
+      "unit_title": "Do You Like Apples?",
+      "soal": [
+        {
+          "id": "k2-bing-08-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan buah dengan kata Inggris!",
+          "opsi_kiri": ["🍎", "🍌", "🍊"],
+          "opsi_kanan": ["banana", "orange", "apple"],
+          "jawaban": { "🍎": "apple", "🍌": "banana", "🍊": "orange" }
+        },
+        {
+          "id": "k2-bing-08-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan makanan/minuman!",
+          "opsi_kiri": ["🥛", "🍞", "🍇"],
+          "opsi_kanan": ["bread", "grapes", "milk"],
+          "jawaban": { "🥛": "milk", "🍞": "bread", "🍇": "grapes" }
+        },
+        {
+          "id": "k2-bing-08-03",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih gambar yang sesuai!",
+          "audio_text": "apple",
+          "pilihan_gambar": ["🍎", "🍌", "🍊"],
+          "jawaban": "🍎"
+        },
+        {
+          "id": "k2-bing-08-04",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih gambar yang sesuai!",
+          "audio_text": "banana",
+          "pilihan_gambar": ["🍇", "🍌", "🥛"],
+          "jawaban": "🍌"
+        },
+        {
+          "id": "k2-bing-08-05",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Do you like apples?' jawaban positif...",
+          "pilihan": ["Yes, I do", "Yes, I am", "No, I is"],
+          "jawaban": "Yes, I do"
+        },
+        {
+          "id": "k2-bing-08-06",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Orange' artinya...",
+          "pilihan": ["Jeruk", "Apel", "Pisang"],
+          "jawaban": "Jeruk"
+        },
+        {
+          "id": "k2-bing-08-07",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'I like bananas' = Saya suka pisang.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-bing-08-08",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Grapes' artinya roti.",
+          "jawaban": false
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-09",
+      "unit_title": "Animals Around Me",
+      "soal": [
+        {
+          "id": "k2-bing-09-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan hewan dengan kata Inggris!",
+          "opsi_kiri": ["🐱", "🐶", "🐦"],
+          "opsi_kanan": ["dog", "bird", "cat"],
+          "jawaban": { "🐱": "cat", "🐶": "dog", "🐦": "bird" }
+        },
+        {
+          "id": "k2-bing-09-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan lagi hewan!",
+          "opsi_kiri": ["🐟", "🐰", "🐄"],
+          "opsi_kanan": ["rabbit", "cow", "fish"],
+          "jawaban": { "🐟": "fish", "🐰": "rabbit", "🐄": "cow" }
+        },
+        {
+          "id": "k2-bing-09-03",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Cat' artinya...",
+          "pilihan": ["Kucing", "Anjing", "Burung"],
+          "jawaban": "Kucing"
+        },
+        {
+          "id": "k2-bing-09-04",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "Hewan yang bisa terbang...",
+          "pilihan": ["Bird", "Fish", "Cow"],
+          "jawaban": "Bird"
+        },
+        {
+          "id": "k2-bing-09-05",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "This is a _____. 🐶",
+          "pilihan": ["dog", "cat", "fish"],
+          "jawaban": "dog"
+        },
+        {
+          "id": "k2-bing-09-06",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi kalimat ini!",
+          "kalimat": "I see a _____. 🐰",
+          "pilihan": ["rabbit", "cow", "bird"],
+          "jawaban": "rabbit"
+        },
+        {
+          "id": "k2-bing-09-07",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["a", "is", "It", "cat"],
+          "jawaban": "It is a cat"
+        },
+        {
+          "id": "k2-bing-09-08",
+          "tipe": "arrange",
+          "pertanyaan": "Susun kata-kata menjadi kalimat yang benar!",
+          "kata_acak": ["dog", "I", "a", "have"],
+          "jawaban": "I have a dog"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bing-10",
+      "unit_title": "My House",
+      "soal": [
+        {
+          "id": "k2-bing-10-01",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan ruangan di rumah!",
+          "opsi_kiri": ["🛏️", "🍳", "🚿"],
+          "opsi_kanan": ["kitchen", "bathroom", "bedroom"],
+          "jawaban": { "🛏️": "bedroom", "🍳": "kitchen", "🚿": "bathroom" }
+        },
+        {
+          "id": "k2-bing-10-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan lagi ruangan/benda rumah!",
+          "opsi_kiri": ["🛋️", "🚪", "🏡"],
+          "opsi_kanan": ["door", "house", "living room"],
+          "jawaban": { "🛋️": "living room", "🚪": "door", "🏡": "house" }
+        },
+        {
+          "id": "k2-bing-10-03",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih gambar yang sesuai!",
+          "audio_text": "kitchen",
+          "pilihan_gambar": ["🍳", "🛏️", "🚿"],
+          "jawaban": "🍳"
+        },
+        {
+          "id": "k2-bing-10-04",
+          "tipe": "listen",
+          "pertanyaan": "Dengar audio, pilih gambar yang sesuai!",
+          "audio_text": "bedroom",
+          "pilihan_gambar": ["🛋️", "🛏️", "🏡"],
+          "jawaban": "🛏️"
+        },
+        {
+          "id": "k2-bing-10-05",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "'Kitchen' artinya...",
+          "pilihan": ["Dapur", "Kamar tidur", "Kamar mandi"],
+          "jawaban": "Dapur"
+        },
+        {
+          "id": "k2-bing-10-06",
+          "tipe": "choose",
+          "pertanyaan": "Pilih jawaban yang benar!",
+          "soal": "Tempat kita tidur adalah...",
+          "pilihan": ["Bedroom", "Kitchen", "Bathroom"],
+          "jawaban": "Bedroom"
+        },
+        {
+          "id": "k2-bing-10-07",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Living room' = ruang tamu/keluarga.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-bing-10-08",
+          "tipe": "truefalse",
+          "pertanyaan": "Benar atau Salah?",
+          "pernyataan": "'Bathroom' artinya dapur.",
+          "jawaban": false
+        }
+      ]
+    }
+  ]
+}
