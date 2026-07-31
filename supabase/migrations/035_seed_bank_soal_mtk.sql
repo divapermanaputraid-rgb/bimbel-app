@@ -5,7 +5,6 @@ DELETE FROM public.questions WHERE material_id LIKE 'k1-mtk-%' OR material_id LI
 
 INSERT INTO public.questions (
   id, material_id, subject_id, kelas, tipe, soal, pilihan, jawaban_benar, level, xp
-  id, material_id, tipe, soal, pilihan, jawaban_benar, level, xp
 ) VALUES
 (
   'k1-mtk-01-01',

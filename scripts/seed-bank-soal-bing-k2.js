@@ -24,7 +24,7 @@ for (const unit of data.units) {
   ${escapeSql(soal.id)},
   ${escapeSql(unit.unit_id)},
   ${escapeSql(subjectId)},
-  ${data.kelas},
+  ${escapeSql(data.kelas)},
   ${escapeSql(tipe)},
   ${escapeSql(soal.pertanyaan)},
   ${escapeSql(soal.soal_id)},
@@ -35,8 +35,8 @@ for (const unit of data.units) {
   ${escapeSql(soal.penjelasan_id)},
   ${escapeSql(soal.kalimat)},
   ${escapeJson(soal.kata)},
-  ${soal.level || 1},
-  ${soal.xp || 10}
+  ${soal.level ?? 1},
+  ${soal.xp ?? 10}
 )`);
   }
 }

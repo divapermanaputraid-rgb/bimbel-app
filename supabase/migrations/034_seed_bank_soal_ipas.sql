@@ -5,7 +5,6 @@ DELETE FROM public.questions WHERE material_id LIKE 'k3-ipas-%' OR material_id L
 
 INSERT INTO public.questions (
   id, material_id, subject_id, kelas, tipe, soal, pilihan, jawaban_benar, audio_text, level, xp
-  id, material_id, tipe, soal, pilihan, jawaban_benar, audio_text, level, xp
 ) VALUES
 (
   'k3-ipas-01-01',
