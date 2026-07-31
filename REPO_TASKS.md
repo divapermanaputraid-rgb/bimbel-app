@@ -198,13 +198,14 @@
 |-------|------|--------|------------|--------|
 | **IPAS** | `public/buku/kelas5/ipas/` | **5** | `k5-ipas-01` … `k5-ipas-05` | **SELESAI** (commit `85e8e3c`) |
 
-#### Kelas 6 — **34 buku** — STATUS: **LENGKAP 3 MAPEL**
+#### Kelas 6 — **42 buku** — STATUS: **LENGKAP 4 MAPEL (IPAS selesai)**
 
 | Mapel | Path | Jumlah | ID pattern | Status |
 |-------|------|--------|------------|--------|
 | Matematika | `public/buku/kelas6/matematika/` | 18 | `k6-mtk-01` … `k6-mtk-18` | **SELESAI** |
 | Bahasa Indonesia | `public/buku/kelas6/bahasa-indonesia/` | 6 | `k6-bind-01` … `k6-bind-06` | **SELESAI** (commit `1ff5013`) |
 | Bahasa Inggris | `public/buku/kelas6/bahasa-inggris/` | 10 | `k6-bing-01` … `k6-bing-10` | **SELESAI** (commit `e4c7ced`) |
+| **IPAS** | `public/buku/kelas6/ipas/` | **8** | `k6-ipas-01` … `k6-ipas-08` | **SELESAI** |
 | IPA / IPS / PPKn / Seni / PJOK | — | 0 | — | **BELUM ADA** |
 
 ### 1.8 Generator scripts — `bimbel-app/scripts/`
@@ -230,6 +231,7 @@
 | `generate-books-ipas-k3.js` | ~550 | K3 IPAS 8 | **ADA** (commit `42a37bd`) |
 | `generate-books-ipas-k4.js` | ~650 | K4 IPAS 8 | **ADA** (commit `cc3f643`) |
 | `generate-books-ipas-k5.js` | ~580 | K5 IPAS 5 | **ADA** (commit `85e8e3c`) |
+| `generate-books-ipas-k6.js` | ~1140 | K6 IPAS 8 | **ADA** |
 
 ### 1.9 Supabase migrations — `bimbel-app/supabase/migrations/`
 
@@ -268,6 +270,7 @@
 | `030_seed_k3_ipas.sql` | Seed K3 IPAS (8 materials + 32 questions) | **ADA** (commit `42a37bd`) |
 | `031_seed_k4_ipas.sql` | Seed K4 IPAS (8 materials + 32 questions) | **ADA** (commit `cc3f643`) |
 | `032_seed_k5_ipas.sql` | Seed K5 IPAS (5 materials + 25 questions) | **ADA** (commit `85e8e3c`) |
+| `033_seed_k6_ipas.sql` | Seed K6 IPAS (8 materials + 40 questions) | **ADA** |
 
 **Catatan penerapan DB:** file migrasi **ADA di repo**; status “sudah di-apply ke project Supabase production/staging” **TIDAK bisa diverifikasi dari filesystem saja** — harus dicek di Supabase SQL history / CLI.
 
@@ -665,8 +668,8 @@ kelas2: 30  (mtk 12 termasuk 2 eval + bind 8 + bing 10)
 kelas3: 44  (mtk 18 + bind 8 + bing 10 + ipas 8)
 kelas4:  8  (ipas 8)
 kelas5:  5  (ipas 5)
-kelas6: 34  (mtk 18 + bind 6 + bing 10)
-TOTAL:  164 HTML books
+kelas6: 42  (mtk 18 + bind 6 + bing 10 + ipas 8)
+TOTAL:  172 HTML books
 ```
 
 ---

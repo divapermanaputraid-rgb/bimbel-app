@@ -1,0 +1,224 @@
+- generic [ref=f19e1]:
+  - generic [ref=f19e3]:
+    - generic [ref=f19e170]:
+      - link "Skip to content" [ref=f19e172] [cursor=pointer]:
+        - /url: "#main"
+      - banner [ref=f19e175]:
+        - generic [ref=f19e176]:
+          - generic [ref=f19e177]:
+            - link "Supabase Back to organization home" [ref=f19e178] [cursor=pointer]:
+              - /url: /dashboard/org/icpkvljkexjdqrhnmtro
+              - img "Supabase" [ref=f19e179]
+              - generic [ref=f19e180]: Back to organization home
+            - generic [ref=f19e181]:
+              - generic [ref=f19e185]:
+                - link "queenzamobile18-cmd's Org Free" [ref=f19e186] [cursor=pointer]:
+                  - /url: /dashboard/org/icpkvljkexjdqrhnmtro
+                  - generic [ref=f19e197]: queenzamobile18-cmd's Org
+                  - generic [ref=f19e198]: Free
+                - button "Show organizations" [ref=f19e199] [cursor=pointer]
+              - generic [ref=f19e204]:
+                - generic [ref=f19e208]:
+                  - link "bimbel" [ref=f19e209] [cursor=pointer]:
+                    - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+                  - button "Show organization projects" [ref=f19e214] [cursor=pointer]
+                - generic [ref=f19e222]:
+                  - link "main Production" [ref=f19e223] [cursor=pointer]:
+                    - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+                    - generic "main" [ref=f19e224]
+                    - generic [ref=f19e225]: Production
+                  - button "Show project branches" [ref=f19e226] [cursor=pointer]
+            - button "Connect" [ref=f19e232] [cursor=pointer]
+          - generic [ref=f19e237]:
+            - button "Feedback" [ref=f19e238] [cursor=pointer]
+            - generic [ref=f19e240]:
+              - button [ref=f19e241] [cursor=pointer]:
+                - paragraph [ref=f19e246]: Search...
+                - generic [ref=f19e247]: ⌘K
+              - button "Help" [ref=f19e736] [cursor=pointer]
+              - button "Advisor Center" [ref=f19e737] [cursor=pointer]
+              - button "SQL Editor" [ref=f19e738] [cursor=pointer]
+              - button "AI Assistant" [ref=f19e739] [cursor=pointer]
+            - button [ref=f19e740] [cursor=pointer]:
+              - img "queenzamobile18-cmd" [ref=f19e741]
+      - generic [ref=f19e278]:
+        - generic [ref=f19e282]:
+          - navigation [ref=f19e284]:
+            - list [ref=f19e286]:
+              - listitem [ref=f19e287]:
+                - link "Project Overview" [ref=f19e288] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+              - listitem [ref=f19e291]:
+                - link "Table Editor" [ref=f19e292] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/editor
+              - listitem [ref=f19e295]:
+                - link "SQL Editor" [ref=f19e296] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql
+            - list [ref=f19e300]:
+              - listitem [ref=f19e301]:
+                - link "Database" [ref=f19e302] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/database/schemas
+              - listitem [ref=f19e307]:
+                - link "Authentication" [ref=f19e308] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/auth/users
+              - listitem [ref=f19e311]:
+                - link "Storage" [ref=f19e312] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/storage/files
+              - listitem [ref=f19e315]:
+                - link "Edge Functions" [ref=f19e316] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/functions
+              - listitem [ref=f19e322]:
+                - link "Realtime" [ref=f19e323] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/realtime/inspector
+            - list [ref=f19e327]:
+              - listitem [ref=f19e328]:
+                - link "Advisors" [ref=f19e329] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/advisors/security
+              - listitem [ref=f19e333]:
+                - link "Observability" [ref=f19e334] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/observability
+              - listitem [ref=f19e343]:
+                - link "Logs" [ref=f19e344] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/logs
+              - listitem [ref=f19e346]:
+                - link "Integrations" [ref=f19e347] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/integrations
+            - list [ref=f19e352]:
+              - listitem [ref=f19e353]:
+                - link "Project Settings" [ref=f19e354] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/settings/general
+          - button "Sidebar control" [ref=f19e360] [cursor=pointer]
+        - main [ref=f19e367]:
+          - generic [ref=f19e369]:
+            - generic [ref=f19e373]:
+              - heading "SQL Editor" [level=4] [ref=f19e375]
+              - generic [ref=f19e377]:
+                - generic [ref=f19e378]:
+                  - generic [ref=f19e379]:
+                    - generic [ref=f19e381]:
+                      - generic [ref=f19e382]: Search queries
+                      - textbox "Search queries..." [ref=f19e383]
+                      - button [ref=f19e384]
+                    - button "Create a new query" [ref=f19e391] [cursor=pointer]
+                  - button "Shared" [ref=f19e396]
+                  - button "Favorites" [ref=f19e402]
+                  - generic [ref=f19e407]:
+                    - button "PRIVATE (3)" [expanded] [ref=f19e717]
+                    - tree "private-snippets" [ref=f19e413]:
+                      - generic "Untitled query" [ref=f19e589] [cursor=pointer]
+                      - generic "Untitled query" [ref=f19e414] [cursor=pointer]
+                      - generic "Untitled query" [ref=f19e423] [cursor=pointer]
+                  - generic [ref=f19e433]:
+                    - button "Reference" [expanded] [ref=f19e434]
+                    - generic [ref=f19e438]:
+                      - link "templates" [ref=f19e439] [cursor=pointer]:
+                        - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql/templates
+                      - link "examples" [ref=f19e442] [cursor=pointer]:
+                        - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql/examples
+                - button "View running queries" [ref=f19e447] [cursor=pointer]
+            - separator [ref=f19e449]
+            - main [ref=f19e460]:
+              - generic [ref=f19e461]:
+                - generic [ref=f19e462]:
+                  - generic [ref=f19e463]:
+                    - button "Collapse sidebar" [ref=f19e464]
+                    - tablist [ref=f19e469]:
+                      - generic [ref=f19e599]:
+                        - generic [ref=f19e600]:
+                          - tab "Untitled query" [selected] [ref=f19e601] [cursor=pointer]
+                          - button "Close tab" [ref=f19e613] [cursor=pointer]
+                        - separator [ref=f19e617]
+                      - button [ref=f19e618]
+                  - status [ref=f19e482]
+                - generic [ref=f19e484]:
+                  - generic [ref=f19e485]:
+                    - generic [ref=f19e486]:
+                      - generic [ref=f19e487]: Autosave enabled
+                      - button "Disable autosave" [ref=f19e488] [cursor=pointer]
+                    - button "More actions" [ref=f19e494] [cursor=pointer]
+                    - generic [ref=f19e500]:
+                      - generic [ref=f19e501]:
+                        - generic [ref=f19e502] [cursor=pointer]:
+                          - generic [ref=f19e503]: Source
+                          - button "Primary database" [ref=f19e504]
+                        - button "Role postgres" [ref=f19e509] [cursor=pointer]:
+                          - generic [ref=f19e511]:
+                            - generic [ref=f19e512]: Role
+                            - generic [ref=f19e513]: postgres
+                      - button "Limit 100 rows" [ref=f19e516] [cursor=pointer]
+                      - button "Run" [ref=f19e742] [cursor=pointer]:
+                        - generic [ref=f19e524]: ⌘↵
+                  - generic [ref=f19e526]:
+                    - code [ref=f19e533]:
+                      - generic [ref=f19e534]:
+                        - generic [ref=f19e544]:
+                          - generic [ref=f19e886]: table_name IN ('questions','users','notifications','unit_progress','latihan_results','xp_logs') ORDER BY
+                          - generic [ref=f19e888]: table_name, ordinal_position;
+                        - textbox "Editor content" [active] [ref=f19e547]: SELECT table_name, column_name FROM information_schema.columns WHERE table_schema='public' AND table_name IN ('questions','users','notifications','unit_progress','latihan_results','xp_logs') ORDER BY table_name, ordinal_position;
+                    - separator [ref=f19e548]
+                    - generic [ref=f19e559]:
+                      - tablist [ref=f19e560]:
+                        - generic [ref=f19e561]:
+                          - tab "Results" [selected] [ref=f19e562] [cursor=pointer]
+                          - tab "Chart" [ref=f19e564] [cursor=pointer]
+                        - generic [ref=f19e775]:
+                          - button "58 rows(Limited to only 100 rows)" [ref=f19e891]:
+                            - paragraph [ref=f19e892]:
+                              - generic [ref=f19e893]: 58 rows
+                              - text: (Limited to only 100 rows)
+                          - button "Export" [ref=f19e814] [cursor=pointer]
+                      - grid [ref=f19e894]:
+                        - row [ref=f19e895]:
+                          - columnheader "table_name" [ref=f19e896]
+                          - columnheader "column_name" [ref=f19e899]
+                        - row [ref=f19e902]:
+                          - gridcell "latihan_results" [ref=f19e903]
+                          - gridcell "id" [ref=f19e905]
+                        - row [ref=f19e907]:
+                          - gridcell "latihan_results" [ref=f19e908]
+                          - gridcell "student_id" [ref=f19e910]
+                        - row [ref=f19e912]:
+                          - gridcell "latihan_results" [ref=f19e913]
+                          - gridcell "material_id" [ref=f19e915]
+                        - row [ref=f19e917]:
+                          - gridcell "latihan_results" [ref=f19e918]
+                          - gridcell "skor" [ref=f19e920]
+                        - row [ref=f19e922]:
+                          - gridcell "latihan_results" [ref=f19e923]
+                          - gridcell "created_at" [ref=f19e925]
+                        - row [ref=f19e927]:
+                          - gridcell "latihan_results" [ref=f19e928]
+                          - gridcell "stars_earned" [ref=f19e930]
+                        - row [ref=f19e932]:
+                          - gridcell "latihan_results" [ref=f19e933]
+                          - gridcell "subject_id" [ref=f19e935]
+                        - row [ref=f19e937]:
+                          - gridcell "notifications" [ref=f19e938]
+                          - gridcell "id" [ref=f19e940]
+                        - row [ref=f19e942]:
+                          - gridcell "notifications" [ref=f19e943]
+                          - gridcell "student_id" [ref=f19e945]
+                        - row [ref=f19e947]:
+                          - gridcell "notifications" [ref=f19e948]
+                          - gridcell "title" [ref=f19e950]
+                        - row [ref=f19e952]:
+                          - gridcell "notifications" [ref=f19e953]
+                          - gridcell "message" [ref=f19e955]
+                        - row [ref=f19e957]:
+                          - gridcell "notifications" [ref=f19e958]
+                          - gridcell "type" [ref=f19e960]
+    - generic [ref=f19e573]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=f19e574]:
+        - button "Close banner" [ref=f19e576] [cursor=pointer]
+        - generic [ref=f19e581]:
+          - generic [ref=f19e582]: Notice
+          - generic [ref=f19e583]:
+            - paragraph [ref=f19e584]: We're updating our Terms of Service
+            - paragraph [ref=f19e585]: Our Data Processing Addendum is now built into the Terms, effective August 1, 2026.
+          - button "Learn more" [ref=f19e586] [cursor=pointer]
+  - alert [ref=f19e169]: SQL Editor | bimbel | queenzamobile18-cmd's Org | Supabase
+  - generic [ref=f19e588]:
+    - alert
+    - alert

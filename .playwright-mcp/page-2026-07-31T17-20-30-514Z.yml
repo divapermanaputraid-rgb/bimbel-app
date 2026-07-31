@@ -1,0 +1,292 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: "#main"
+            - generic: Skip to content
+        - generic:
+          - banner:
+            - generic:
+              - generic:
+                - link:
+                  - /url: /dashboard/org/icpkvljkexjdqrhnmtro
+                  - generic: Back to organization home
+                - generic:
+                  - generic:
+                    - link:
+                      - /url: /dashboard/org/icpkvljkexjdqrhnmtro
+                      - generic: queenzamobile18-cmd's Org
+                      - generic: Free
+                    - button
+                  - generic:
+                    - generic:
+                      - link:
+                        - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+                        - generic: bimbel
+                      - button
+                    - generic:
+                      - link:
+                        - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+                        - generic: main
+                        - generic: Production
+                      - button
+                - generic:
+                  - button:
+                    - generic: Connect
+              - generic:
+                - button:
+                  - generic: Feedback
+                - generic:
+                  - button:
+                    - generic:
+                      - paragraph: Search...
+                    - generic: ⌘K
+                  - button [ref=f19e718] [cursor=pointer]:
+                    - generic [ref=f19e250]: Help
+                  - button [ref=f19e719] [cursor=pointer]:
+                    - generic [ref=f19e257]: Advisor Center
+                  - button [ref=f19e720] [cursor=pointer]:
+                    - generic [ref=f19e263]: SQL Editor
+                  - button [ref=f19e721] [cursor=pointer]:
+                    - generic [ref=f19e268]: AI Assistant
+                - button [ref=f19e722] [cursor=pointer]
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - navigation:
+                    - generic:
+                      - list:
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/editor
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql
+                    - generic:
+                      - list:
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/database/schemas
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/auth/users
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/storage/files
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/functions
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/realtime/inspector
+                    - generic:
+                      - list:
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/advisors/security
+                            - generic: Advisors
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/observability
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/logs
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/integrations
+                    - generic:
+                      - list:
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/settings/general
+                - generic:
+                  - generic:
+                    - button
+          - generic:
+            - generic:
+              - generic:
+                - main:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - heading [level=4]: SQL Editor
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: Search queries
+                                          - textbox:
+                                            - /placeholder: Search queries...
+                                          - button
+                                      - button
+                                    - generic:
+                                      - button:
+                                        - generic: Shared
+                                    - generic:
+                                      - button:
+                                        - generic: Favorites
+                                    - generic:
+                                      - button [expanded]:
+                                        - generic: PRIVATE (3)
+                                      - generic:
+                                        - tree:
+                                          - generic: Untitled query
+                                          - generic: Untitled query
+                                          - generic: Untitled query
+                                    - generic:
+                                      - button [expanded]:
+                                        - generic: Reference
+                                      - generic:
+                                        - link:
+                                          - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql/templates
+                                          - text: templates
+                                        - link:
+                                          - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql/examples
+                                          - text: examples
+                                  - generic:
+                                    - button:
+                                      - generic: View running queries
+                      - separator
+                      - generic:
+                        - generic:
+                          - main:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button:
+                                    - generic: Collapse sidebar
+                                  - tablist:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - tab [selected]:
+                                            - generic: Untitled query
+                                          - button
+                                        - separator
+                                    - button
+                                - status
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: Autosave enabled
+                                      - button
+                                    - button
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: Source
+                                          - button:
+                                            - generic: Primary database
+                                        - button:
+                                          - generic:
+                                            - generic:
+                                              - generic: Role
+                                              - generic: postgres
+                                      - button:
+                                        - generic: Limit 100 rows
+                                      - button [ref=f19e724] [cursor=pointer]:
+                                        - generic [ref=f19e523]: Run
+                                        - generic [ref=f19e524]: ⌘↵
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - generic:
+                                                - code:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - generic: "1"
+                                                        - generic: "2"
+                                                        - generic: "3"
+                                                        - generic: "4"
+                                                        - generic: "5"
+                                                        - generic: "6"
+                                                        - generic: "7"
+                                                        - generic: "8"
+                                                        - generic: "9"
+                                                        - generic: "10"
+                                                        - generic: "11"
+                                                        - generic: "12"
+                                                        - generic: "13"
+                                                        - generic: "14"
+                                                        - generic: "15"
+                                                        - generic: "16"
+                                                        - generic: "17"
+                                                    - generic:
+                                                      - generic:
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_users_role ON public.users(role);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_users_kelas ON public.users(kelas);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_materials_subject_kelas ON public.materials(subject_id, kelas);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_materials_active ON public.materials(is_active) WHERE is_active = true;
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_unit_progress_user_unit ON public.unit_progress(user_id, unit_id);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_unit_progress_stars ON public.unit_progress(stars);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_questions_tipe ON public.questions(tipe);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_latihan_results_created ON public.latihan_results(student_id, created_at);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_notifications_student_read ON public.notifications(student_id, is_read);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_notifications_created ON public.notifications(created_at);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_student_achievements_student ON public.student_achievements(student_id);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_xp_logs_student ON public.xp_logs(student_id, created_at);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_daily_streaks_student ON public.daily_streaks(student_id);
+                                                        - generic: CREATE INDEX IF NOT EXISTS idx_achievements_kelas ON public.achievements(kelas);
+                                                        - generic: ALTER TABLE public.notifications ENABLE ROW LEVEL SECURITY;
+                                                        - generic: DROP POLICY IF EXISTS "notifications_select_own" ON public.notifications;
+                                                        - generic: CREATE POLICY "notifications_select_own" ON public.notifications FOR SELECT USING (student_id = auth.uid
+                                                        - generic: () OR public.is_guru());
+                                                    - textbox: CREATE INDEX IF NOT EXISTS idx_users_role ON public.users(role); CREATE INDEX IF NOT EXISTS idx_users_kelas ON public.users(kelas); CREATE INDEX IF NOT EXISTS idx_materials_subject_kelas ON public.materials(subject_id, kelas); CREATE INDEX IF NOT EXISTS idx_materials_active ON public.materials(is_active) WHERE is_active = true; CREATE INDEX IF NOT EXISTS idx_unit_progress_user_unit ON public.unit_progress(user_id, unit_id); CREATE INDEX IF NOT EXISTS idx_unit_progress_stars ON public.unit_progre
+                                    - separator
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - tablist:
+                                            - generic:
+                                              - tab [selected]:
+                                                - generic: Results
+                                              - tab:
+                                                - generic: Chart
+                                          - generic:
+                                            - paragraph:
+                                              - text: Click
+                                              - code: Run
+                                              - text: to execute your query
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - button
+                - generic:
+                  - generic: Notice
+                  - generic:
+                    - paragraph: We're updating our Terms of Service
+                    - paragraph: Our Data Processing Addendum is now built into the Terms, effective August 1, 2026.
+                  - button:
+                    - generic: Learn more
+  - generic:
+    - alert: SQL Editor | bimbel | queenzamobile18-cmd's Org | Supabase
+  - alertdialog [ref=f19e726]:
+    - generic [ref=f19e727]:
+      - heading "Potential issue detected" [level=2] [ref=f19e728]
+      - generic [ref=f19e729]:
+        - paragraph [ref=f19e730]: This query includes destructive operations. It may permanently change or remove data, tables, schemas, or other objects.
+        - paragraph [ref=f19e731]: Run this query only if you intend these changes and understand the risks.
+    - generic [ref=f19e732]:
+      - button "Cancel" [active] [ref=f19e733] [cursor=pointer]
+      - button "Run query" [ref=f19e734] [cursor=pointer]

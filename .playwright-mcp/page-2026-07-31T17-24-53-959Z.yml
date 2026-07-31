@@ -1,0 +1,228 @@
+- generic [ref=f19e1]:
+  - generic [ref=f19e3]:
+    - generic [ref=f19e170]:
+      - link "Skip to content" [ref=f19e172] [cursor=pointer]:
+        - /url: "#main"
+      - banner [ref=f19e175]:
+        - generic [ref=f19e176]:
+          - generic [ref=f19e177]:
+            - link "Supabase Back to organization home" [ref=f19e178] [cursor=pointer]:
+              - /url: /dashboard/org/icpkvljkexjdqrhnmtro
+              - img "Supabase" [ref=f19e179]
+              - generic [ref=f19e180]: Back to organization home
+            - generic [ref=f19e181]:
+              - generic [ref=f19e185]:
+                - link "queenzamobile18-cmd's Org Free" [ref=f19e186] [cursor=pointer]:
+                  - /url: /dashboard/org/icpkvljkexjdqrhnmtro
+                  - generic [ref=f19e197]: queenzamobile18-cmd's Org
+                  - generic [ref=f19e198]: Free
+                - button "Show organizations" [ref=f19e199] [cursor=pointer]
+              - generic [ref=f19e204]:
+                - generic [ref=f19e208]:
+                  - link "bimbel" [ref=f19e209] [cursor=pointer]:
+                    - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+                  - button "Show organization projects" [ref=f19e214] [cursor=pointer]
+                - generic [ref=f19e222]:
+                  - link "main Production" [ref=f19e223] [cursor=pointer]:
+                    - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+                    - generic "main" [ref=f19e224]
+                    - generic [ref=f19e225]: Production
+                  - button "Show project branches" [ref=f19e226] [cursor=pointer]
+            - button "Connect" [ref=f19e232] [cursor=pointer]
+          - generic [ref=f19e237]:
+            - button "Feedback" [ref=f19e238] [cursor=pointer]
+            - generic [ref=f19e240]:
+              - button [ref=f19e241] [cursor=pointer]:
+                - paragraph [ref=f19e246]: Search...
+                - generic [ref=f19e247]: ⌘K
+              - button "Help" [ref=f19e736] [cursor=pointer]
+              - button "Advisor Center" [ref=f19e737] [cursor=pointer]
+              - button "SQL Editor" [ref=f19e738] [cursor=pointer]
+              - button "AI Assistant" [ref=f19e739] [cursor=pointer]
+            - button [ref=f19e740] [cursor=pointer]:
+              - img "queenzamobile18-cmd" [ref=f19e741]
+      - generic [ref=f19e278]:
+        - generic [ref=f19e282]:
+          - navigation [ref=f19e284]:
+            - list [ref=f19e286]:
+              - listitem [ref=f19e287]:
+                - link "Project Overview" [ref=f19e288] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw
+              - listitem [ref=f19e291]:
+                - link "Table Editor" [ref=f19e292] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/editor
+              - listitem [ref=f19e295]:
+                - link "SQL Editor" [ref=f19e296] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql
+            - list [ref=f19e300]:
+              - listitem [ref=f19e301]:
+                - link "Database" [ref=f19e302] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/database/schemas
+              - listitem [ref=f19e307]:
+                - link "Authentication" [ref=f19e308] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/auth/users
+              - listitem [ref=f19e311]:
+                - link "Storage" [ref=f19e312] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/storage/files
+              - listitem [ref=f19e315]:
+                - link "Edge Functions" [ref=f19e316] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/functions
+              - listitem [ref=f19e322]:
+                - link "Realtime" [ref=f19e323] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/realtime/inspector
+            - list [ref=f19e327]:
+              - listitem [ref=f19e328]:
+                - link "Advisors" [ref=f19e329] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/advisors/security
+              - listitem [ref=f19e333]:
+                - link "Observability" [ref=f19e334] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/observability
+              - listitem [ref=f19e343]:
+                - link "Logs" [ref=f19e344] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/logs
+              - listitem [ref=f19e346]:
+                - link "Integrations" [ref=f19e347] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/integrations
+            - list [ref=f19e352]:
+              - listitem [ref=f19e353]:
+                - link "Project Settings" [ref=f19e354] [cursor=pointer]:
+                  - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/settings/general
+          - button "Sidebar control" [ref=f19e360] [cursor=pointer]
+        - main [ref=f19e367]:
+          - generic [ref=f19e369]:
+            - generic [ref=f19e373]:
+              - heading "SQL Editor" [level=4] [ref=f19e375]
+              - generic [ref=f19e377]:
+                - generic [ref=f19e378]:
+                  - generic [ref=f19e379]:
+                    - generic [ref=f19e381]:
+                      - generic [ref=f19e382]: Search queries
+                      - textbox "Search queries..." [ref=f19e383]
+                      - button [ref=f19e384]
+                    - button "Create a new query" [ref=f19e391] [cursor=pointer]
+                  - button "Shared" [ref=f19e396]
+                  - button "Favorites" [ref=f19e402]
+                  - generic [ref=f19e407]:
+                    - button "PRIVATE (3)" [expanded] [ref=f19e717]
+                    - tree "private-snippets" [ref=f19e413]:
+                      - generic "Untitled query" [ref=f19e589] [cursor=pointer]
+                      - generic "Untitled query" [ref=f19e414] [cursor=pointer]
+                      - generic "Untitled query" [ref=f19e423] [cursor=pointer]
+                  - generic [ref=f19e433]:
+                    - button "Reference" [expanded] [ref=f19e434]
+                    - generic [ref=f19e438]:
+                      - link "templates" [ref=f19e439] [cursor=pointer]:
+                        - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql/templates
+                      - link "examples" [ref=f19e442] [cursor=pointer]:
+                        - /url: /dashboard/project/hgbuxujlfyuxqzcvgbiw/sql/examples
+                - button "View running queries" [ref=f19e447] [cursor=pointer]
+            - separator [ref=f19e449]
+            - main [ref=f19e460]:
+              - generic [ref=f19e461]:
+                - generic [ref=f19e462]:
+                  - generic [ref=f19e463]:
+                    - button "Collapse sidebar" [ref=f19e464]
+                    - tablist [ref=f19e469]:
+                      - generic [ref=f19e599]:
+                        - generic [ref=f19e600]:
+                          - tab "Untitled query" [selected] [ref=f19e601] [cursor=pointer]
+                          - button "Close tab" [ref=f19e613] [cursor=pointer]
+                        - separator [ref=f19e617]
+                      - button [ref=f19e618]
+                  - status [ref=f19e482]
+                - generic [ref=f19e484]:
+                  - generic [ref=f19e485]:
+                    - generic [ref=f19e486]:
+                      - generic [ref=f19e487]: Autosave enabled
+                      - button "Disable autosave" [ref=f19e488] [cursor=pointer]
+                    - button "More actions" [ref=f19e494] [cursor=pointer]
+                    - generic [ref=f19e500]:
+                      - generic [ref=f19e501]:
+                        - generic [ref=f19e502] [cursor=pointer]:
+                          - generic [ref=f19e503]: Source
+                          - button "Primary database" [ref=f19e504]
+                        - button "Role postgres" [ref=f19e509] [cursor=pointer]:
+                          - generic [ref=f19e511]:
+                            - generic [ref=f19e512]: Role
+                            - generic [ref=f19e513]: postgres
+                      - button "Limit 100 rows" [ref=f19e516] [cursor=pointer]
+                      - button "Run" [ref=f19e742] [cursor=pointer]:
+                        - generic [ref=f19e524]: ⌘↵
+                  - generic [ref=f19e526]:
+                    - code [ref=f19e533]:
+                      - generic [ref=f19e534]:
+                        - generic [ref=f19e536]:
+                          - generic [ref=f19e624]: "1"
+                          - generic [ref=f19e627]: "2"
+                          - generic [ref=f19e629]: "3"
+                          - generic [ref=f19e631]: "4"
+                          - generic [ref=f19e633]: "5"
+                          - generic [ref=f19e635]: "6"
+                          - generic [ref=f19e637]: "7"
+                          - generic [ref=f19e639]: "8"
+                          - generic [ref=f19e641]: "9"
+                          - generic [ref=f19e643]: "10"
+                          - generic [ref=f19e645]: "11"
+                          - generic [ref=f19e647]: "12"
+                          - generic [ref=f19e649]: "13"
+                          - generic [ref=f19e651]: "14"
+                          - generic [ref=f19e653]: "15"
+                          - generic [ref=f19e655]: "16"
+                          - generic [ref=f19e657]: "17"
+                        - generic [ref=f19e544]:
+                          - generic [ref=f19e679]: CREATE INDEX IF NOT EXISTS idx_users_role ON public.users(role);
+                          - generic [ref=f19e681]: CREATE INDEX IF NOT EXISTS idx_users_kelas ON public.users(kelas);
+                          - generic [ref=f19e683]: CREATE INDEX IF NOT EXISTS idx_materials_subject_kelas ON public.materials(subject_id, kelas);
+                          - generic [ref=f19e685]: CREATE INDEX IF NOT EXISTS idx_materials_active ON public.materials(is_active) WHERE is_active = true;
+                          - generic [ref=f19e687]: CREATE INDEX IF NOT EXISTS idx_unit_progress_user_unit ON public.unit_progress(user_id, unit_id);
+                          - generic [ref=f19e689]: CREATE INDEX IF NOT EXISTS idx_unit_progress_stars ON public.unit_progress(stars);
+                          - generic [ref=f19e691]: CREATE INDEX IF NOT EXISTS idx_questions_tipe ON public.questions(tipe);
+                          - generic [ref=f19e693]: CREATE INDEX IF NOT EXISTS idx_latihan_results_created ON public.latihan_results(student_id, created_at);
+                          - generic [ref=f19e695]: CREATE INDEX IF NOT EXISTS idx_notifications_student_read ON public.notifications(student_id, is_read);
+                          - generic [ref=f19e697]: CREATE INDEX IF NOT EXISTS idx_notifications_created ON public.notifications(created_at);
+                          - generic [ref=f19e699]: CREATE INDEX IF NOT EXISTS idx_student_achievements_student ON public.student_achievements(student_id);
+                          - generic [ref=f19e701]: CREATE INDEX IF NOT EXISTS idx_xp_logs_student ON public.xp_logs(student_id, created_at);
+                          - generic [ref=f19e703]: CREATE INDEX IF NOT EXISTS idx_daily_streaks_student ON public.daily_streaks(student_id);
+                          - generic [ref=f19e705]: CREATE INDEX IF NOT EXISTS idx_achievements_kelas ON public.achievements(kelas);
+                          - generic [ref=f19e707]: ALTER TABLE public.notifications ENABLE ROW LEVEL SECURITY;
+                          - generic [ref=f19e709]: DROP POLICY IF EXISTS "notifications_select_own" ON public.notifications;
+                          - generic [ref=f19e711]: CREATE POLICY "notifications_select_own" ON public.notifications FOR SELECT USING (student_id = auth.uid
+                          - generic [ref=f19e713]: () OR public.is_guru());
+                        - textbox "Editor content" [active] [ref=f19e547]: CREATE INDEX IF NOT EXISTS idx_users_role ON public.users(role); CREATE INDEX IF NOT EXISTS idx_users_kelas ON public.users(kelas); CREATE INDEX IF NOT EXISTS idx_materials_subject_kelas ON public.materials(subject_id, kelas); CREATE INDEX IF NOT EXISTS idx_materials_active ON public.materials(is_active) WHERE is_active = true; CREATE INDEX IF NOT EXISTS idx_unit_progress_user_unit ON public.unit_progress(user_id, unit_id); CREATE INDEX IF NOT EXISTS idx_unit_progress_stars ON public.unit_progre
+                    - separator [ref=f19e548]
+                    - generic [ref=f19e559]:
+                      - tablist [ref=f19e560]:
+                        - generic [ref=f19e561]:
+                          - tab "Results" [selected] [ref=f19e562] [cursor=pointer]
+                          - tab "Chart" [ref=f19e564] [cursor=pointer]
+                        - generic [ref=f19e775]:
+                          - button "0 rows" [ref=f19e776]:
+                            - paragraph [ref=f19e777]:
+                              - generic [ref=f19e778]: 0 rows
+                          - button "Export" [disabled]
+                      - generic [ref=f19e779]:
+                        - generic [ref=f19e780]:
+                          - generic [ref=f19e781]: "Failed to run sql query: ERROR: 42703: column \"is_active\" does not exist"
+                          - generic [ref=f19e782]: "LINE 4: CREATE INDEX IF NOT EXISTS idx_materials_active ON public.materials(is_active) WHERE is_active = true;"
+                          - generic [ref=f19e783]: ^
+                        - generic [ref=f19e784]:
+                          - button [ref=f19e785]:
+                            - button [ref=f19e786] [cursor=pointer]
+                          - generic [ref=f19e791]:
+                            - button "Debug with Assistant" [ref=f19e792] [cursor=pointer]
+                            - button "More actions" [ref=f19e800] [cursor=pointer]
+    - generic [ref=f19e573]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=f19e574]:
+        - button "Close banner" [ref=f19e576] [cursor=pointer]
+        - generic [ref=f19e581]:
+          - generic [ref=f19e582]: Notice
+          - generic [ref=f19e583]:
+            - paragraph [ref=f19e584]: We're updating our Terms of Service
+            - paragraph [ref=f19e585]: Our Data Processing Addendum is now built into the Terms, effective August 1, 2026.
+          - button "Learn more" [ref=f19e586] [cursor=pointer]
+  - alert [ref=f19e169]: SQL Editor | bimbel | queenzamobile18-cmd's Org | Supabase
+  - generic [ref=f19e588]:
+    - alert
+    - alert
