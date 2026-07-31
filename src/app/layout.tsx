@@ -4,6 +4,7 @@ import "./globals.css";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { OfflineIndicator } from "@/components/offline-indicator";
 import { CapacitorNativeShell } from "@/components/capacitor-native-shell";
+import { QueryProvider } from "@/components/providers/QueryProvider";
 
 export default function RootLayout({
   children,
@@ -24,10 +25,12 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
       </head>
       <body className="min-h-screen bg-slate-50 text-slate-900 antialiased pt-[env(safe-area-inset-top)]">
-        <CapacitorNativeShell />
-        <OfflineIndicator />
-        <ServiceWorkerRegister />
-        {children}
+        <QueryProvider>
+          <CapacitorNativeShell />
+          <OfflineIndicator />
+          <ServiceWorkerRegister />
+          {children}
+        </QueryProvider>
       </body>
     </html>
   );
