@@ -5,36 +5,40 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 /**
- * Hitung pertemuan aktif berdasarkan jumlah pertemuan yang sudah 'selesai'
+ * Hitung pertemuan aktif (pertemuan berikutnya yang belum 'selesai')
  */
 export async function getPertemuanAktif(templateId: string): Promise<number> {
   const { data, error } = await supabase
     .from('pertemuan_schedule')
-    .select('id')
+    .select('pertemuan_ke')
     .eq('template_id', templateId)
-    .eq('status', 'selesai');
+    .eq('status', 'terjadwal')
+    .order('pertemuan_ke', { ascending: true })
+    .limit(1);
 
-  if (error || !data) return 1;
-  return data.length + 1;
+  if (error || !data?.[0]) return 1;
+  return data[0].pertemuan_ke;
 }
 
 /**
- * Ambil materi untuk pertemuan tertentu (termasuk review otomatis)
+ * Ambil materi hari ini (baru + review otomatis Make It Stick)
  */
-export async function getMateriHariIni(templateId: string, pertemuanKe: number) {
-  const { data, error } = await supabase
+export async function getMateriHariIni(templateId: string) {
+  const pertemuanKe = await getPertemuanAktif(templateId);
+
+  const { data: items, error } = await supabase
     .from('template_items')
     .select('*')
     .eq('template_id', templateId)
     .eq('pertemuan_ke', pertemuanKe)
     .order('urutan', { ascending: true });
 
-  if (error || !data) return { baru: [], review: [] };
+  if (error || !items) return { baru: [], review: [], pertemuanKe };
 
-  const baru = data.filter((item: any) => item.tipe === 'baru');
-  const review = data.filter((item: any) => item.tipe === 'review');
+  const baru = items.filter((item: any) => item.tipe === 'baru');
+  const review = items.filter((item: any) => item.tipe === 'review');
 
-  return { baru, review };
+  return { baru, review, pertemuanKe };
 }
 
 /**
@@ -58,7 +62,7 @@ export function getMateriReviewOtomatis(pertemuanKe: number): number[] {
 }
 
 /**
- * Tandai pertemuan selesai
+ * Tandai pertemuan sebagai selesai
  */
 export async function tandaiPertemuanSelesai(templateId: string, pertemuanKe: number) {
   const { error } = await supabase
