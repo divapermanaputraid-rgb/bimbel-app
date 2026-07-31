@@ -31,7 +31,7 @@ export default async function SiswaLearnPage() {
 
   const { data: materials } = await supabase
     .from("materials")
-    .select("id, kelas, subject_id, judul, deskripsi, file_path, urutan")
+    .select("id, kelas, subject_id, judul, deskripsi, file_path, urutan, badge_name, badge_emoji, bab")
     .order("urutan", { ascending: true });
 
   const { data: progress } = await supabase

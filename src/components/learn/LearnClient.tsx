@@ -23,6 +23,9 @@ export type MaterialRow = {
   deskripsi: string | null;
   file_path: string;
   urutan: number;
+  badge_name?: string | null;
+  badge_emoji?: string | null;
+  bab?: number;
 };
 
 export type ProgressRow = {
@@ -55,38 +58,7 @@ const COMING_SOON: GroupedSubject[] = [
   // IPAS removed — seed migration 030 provides real data from DB
 ];
 
-function unitEmoji(m: MaterialRow): string {
-  const d = `${m.deskripsi ?? ""} ${m.judul}`.toLowerCase();
-  if (d.includes("food") || d.includes("makanan") || d.includes("mi aceh")) return "🍜";
-  if (d.includes("like") && d.includes("dislike")) return "👍";
-  if (d.includes("breakfast") || d.includes("meal")) return "🍳";
-  if (d.includes("swimming") || d.includes("hobb")) return "🏊";
-  if (d.includes("sunday") || d.includes("days")) return "📅";
-  if (d.includes("canteen") || d.includes("school place")) return "🏫";
-  if (d.includes("preposition") || d.includes("behind")) return "🧭";
-  if (d.includes("activity") || d.includes("juice")) return "🧃";
-  if (d.includes("adjective") || d.includes("clean")) return "✨";
-  if (d.includes("number") || d.includes("twenty") || d.includes("shelf")) return "🔢";
-  if (d.includes("bilangan") || d.includes("angka")) return "🔢";
-  if (d.includes("tambah") || d.includes("penjumlahan")) return "➕";
-  if (d.includes("kurang") || d.includes("pengurangan")) return "➖";
-  if (d.includes("kali") || d.includes("perkalian")) return "✖️";
-  if (d.includes("bagi") || d.includes("pembagian")) return "➗";
-  if (d.includes("ukur") || d.includes("panjang") || d.includes("berat")) return "📏";
-  if (d.includes("bangun") || d.includes("sudut") || d.includes("sisi")) return "📐";
-  if (d.includes("data") || d.includes("tabel") || d.includes("diagram")) return "📊";
-  if (d.includes("pecahan") || d.includes("desimal")) return "🍕";
-  if (d.includes("rasio")) return "⚖️";
-  if (d.includes("rangka") || d.includes("otot") || d.includes("tulang") || d.includes("bergerak")) return "🦴";
-  if (d.includes("kemerdekaan") || d.includes("sejarah") || d.includes("proklamasi") || d.includes("indonesia kita")) return "🇮🇩";
-  if (d.includes("benua") || d.includes("pelesir") || d.includes("ibu kota") || d.includes("keliling dunia")) return "🌍";
-  if (d.includes("asean") || d.includes("pbb") || d.includes("masyarakat dunia") || d.includes("perdagangan")) return "🤝";
-  if (d.includes("antariksa") || d.includes("tata surya") || d.includes("planet") || d.includes("bulan")) return "🚀";
-  if (d.includes("energi") || d.includes("panel surya") || d.includes("terbarukan")) return "⚡";
-  if (d.includes("pemanasan") || d.includes("polusi") || d.includes("deforestasi") || d.includes("terancam")) return "🌡️";
-  if (d.includes("proyek akhir") || d.includes("proyek sederhana") || d.includes("refleksi")) return "🎓";
-  return "📖";
-}
+
 
 function deriveStatus(
   material: MaterialRow,
@@ -169,7 +141,7 @@ export function LearnClient({ subjects, materials, progress }: LearnClientProps)
       return {
         id: m.id,
         judul: m.judul,
-        emoji: unitEmoji(m),
+        emoji: m.badge_emoji || "📖",
         urutan: m.urutan,
         file_path: m.file_path,
         status: deriveStatus(m, mats, progressMap),
