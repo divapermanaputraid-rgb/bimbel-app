@@ -53,6 +53,14 @@ const BADGE_BY_UNIT: Record<string, string> = {
   "k3-bing-08": "🧃 Activity Ace",
   "k3-bing-09": "✨ Adjective Artist",
   "k3-bing-10": "🔢 Number Ninja",
+  "k6-ipas-01": "🦴 Ahli Anatomi",
+  "k6-ipas-02": "🇮🇩 Sejarawan Muda",
+  "k6-ipas-03": "🌍 Duta Dunia",
+  "k6-ipas-04": "🤝 Diplomat Muda",
+  "k6-ipas-05": "🚀 Astronot Muda",
+  "k6-ipas-06": "♻️ Juru Energi",
+  "k6-ipas-07": "🌱 Penyelamat Bumi",
+  "k6-ipas-08": "🎓 Ilmuwan Proyek",
 };
 
 function deriveStatus(
@@ -135,16 +143,7 @@ export function PracticeClient({
     });
 
     list.sort((a, b) => a.nama.localeCompare(b.nama));
-    list.push({
-      kode: "ipas",
-      nama: "IPAS",
-      icon: "🌿",
-      kelasList: [],
-      subjectIds: [],
-      totalUnits: 0,
-      completedUnits: 0,
-      locked: true,
-    });
+    // IPAS from DB seeds (030–033); no locked placeholder
     return list;
   }, [subjects, materials, progressMap]);
 

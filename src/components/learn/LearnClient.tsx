@@ -77,6 +77,14 @@ function unitEmoji(m: MaterialRow): string {
   if (d.includes("data") || d.includes("tabel") || d.includes("diagram")) return "📊";
   if (d.includes("pecahan") || d.includes("desimal")) return "🍕";
   if (d.includes("rasio")) return "⚖️";
+  if (d.includes("rangka") || d.includes("otot") || d.includes("tulang") || d.includes("bergerak")) return "🦴";
+  if (d.includes("kemerdekaan") || d.includes("sejarah") || d.includes("proklamasi") || d.includes("indonesia kita")) return "🇮🇩";
+  if (d.includes("benua") || d.includes("pelesir") || d.includes("ibu kota") || d.includes("keliling dunia")) return "🌍";
+  if (d.includes("asean") || d.includes("pbb") || d.includes("masyarakat dunia") || d.includes("perdagangan")) return "🤝";
+  if (d.includes("antariksa") || d.includes("tata surya") || d.includes("planet") || d.includes("bulan")) return "🚀";
+  if (d.includes("energi") || d.includes("panel surya") || d.includes("terbarukan")) return "⚡";
+  if (d.includes("pemanasan") || d.includes("polusi") || d.includes("deforestasi") || d.includes("terancam")) return "🌡️";
+  if (d.includes("proyek akhir") || d.includes("proyek sederhana") || d.includes("refleksi")) return "🎓";
   return "📖";
 }
 
