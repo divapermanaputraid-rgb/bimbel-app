@@ -1,0 +1,817 @@
+{
+  "kelas": 3,
+  "pelajaran": "mtk",
+  "total_soal": 72,
+  "units": [
+    {
+      "unit_id": "k3-mtk-01",
+      "unit_title": "Bilangan sampai 1.000",
+      "soal": [
+        {
+          "id": "k3-mtk-01-01",
+          "tipe": "choose",
+          "pertanyaan": "345 = ___ ratusan + 4 puluhan + 5 satuan",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k3-mtk-01-02",
+          "tipe": "fill",
+          "pertanyaan": "700 + 50 + 8 = ___",
+          "pilihan": [
+            "758",
+            "785",
+            "875"
+          ],
+          "jawaban": "758"
+        },
+        {
+          "id": "k3-mtk-01-03",
+          "tipe": "choose",
+          "pertanyaan": "Mana terbesar: 678, 786, 687?",
+          "pilihan": [
+            "678",
+            "786",
+            "687"
+          ],
+          "jawaban": "786"
+        },
+        {
+          "id": "k3-mtk-01-04",
+          "tipe": "truefalse",
+          "pertanyaan": "1.000 = sepuluh ratusan.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-02",
+      "unit_title": "Membandingkan dan Mengurutkan Bilangan",
+      "soal": [
+        {
+          "id": "k3-mtk-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Urutkan dari kecil: 534, 345, 453, 543",
+          "pilihan": [
+            "345, 453, 534, 543",
+            "543, 534, 453, 345",
+            "453, 345, 534, 543"
+          ],
+          "jawaban": "345, 453, 534, 543"
+        },
+        {
+          "id": "k3-mtk-02-02",
+          "tipe": "fill",
+          "pertanyaan": "567 ___ 576 (isi < atau >)",
+          "pilihan": [
+            "<",
+            ">",
+            "="
+          ],
+          "jawaban": "<"
+        },
+        {
+          "id": "k3-mtk-02-03",
+          "tipe": "choose",
+          "pertanyaan": "Di antara 400 dan 600, bilangan ratusan yang ada...",
+          "pilihan": [
+            "400, 500, 600",
+            "400, 500",
+            "300, 400, 500"
+          ],
+          "jawaban": "400, 500, 600"
+        },
+        {
+          "id": "k3-mtk-02-04",
+          "tipe": "truefalse",
+          "pertanyaan": "889 < 898.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-03",
+      "unit_title": "Penjumlahan sampai 1.000",
+      "soal": [
+        {
+          "id": "k3-mtk-03-01",
+          "tipe": "choose",
+          "pertanyaan": "254 + 135 = ?",
+          "pilihan": [
+            "378",
+            "389",
+            "389"
+          ],
+          "jawaban": "389"
+        },
+        {
+          "id": "k3-mtk-03-02",
+          "tipe": "fill",
+          "pertanyaan": "450 + ___ = 700",
+          "pilihan": [
+            "240",
+            "250",
+            "260"
+          ],
+          "jawaban": "250"
+        },
+        {
+          "id": "k3-mtk-03-03",
+          "tipe": "choose",
+          "pertanyaan": "365 + 248 = ?",
+          "pilihan": [
+            "612",
+            "613",
+            "614"
+          ],
+          "jawaban": "613"
+        },
+        {
+          "id": "k3-mtk-03-04",
+          "tipe": "truefalse",
+          "pertanyaan": "500 + 500 = 1.000.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-04",
+      "unit_title": "Pengurangan sampai 1.000",
+      "soal": [
+        {
+          "id": "k3-mtk-04-01",
+          "tipe": "choose",
+          "pertanyaan": "750 - 235 = ?",
+          "pilihan": [
+            "514",
+            "515",
+            "516"
+          ],
+          "jawaban": "515"
+        },
+        {
+          "id": "k3-mtk-04-02",
+          "tipe": "fill",
+          "pertanyaan": "900 - ___ = 450",
+          "pilihan": [
+            "440",
+            "450",
+            "460"
+          ],
+          "jawaban": "450"
+        },
+        {
+          "id": "k3-mtk-04-03",
+          "tipe": "choose",
+          "pertanyaan": "623 - 178 = ?",
+          "pilihan": [
+            "444",
+            "445",
+            "446"
+          ],
+          "jawaban": "445"
+        },
+        {
+          "id": "k3-mtk-04-04",
+          "tipe": "truefalse",
+          "pertanyaan": "1.000 - 250 = 750.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-05",
+      "unit_title": "Perkalian Bilangan Cacah",
+      "soal": [
+        {
+          "id": "k3-mtk-05-01",
+          "tipe": "choose",
+          "pertanyaan": "6 × 7 = ?",
+          "pilihan": [
+            "40",
+            "42",
+            "44"
+          ],
+          "jawaban": "42"
+        },
+        {
+          "id": "k3-mtk-05-02",
+          "tipe": "fill",
+          "pertanyaan": "___ × 8 = 56",
+          "pilihan": [
+            "6",
+            "7",
+            "8"
+          ],
+          "jawaban": "7"
+        },
+        {
+          "id": "k3-mtk-05-03",
+          "tipe": "choose",
+          "pertanyaan": "9 × 9 = ?",
+          "pilihan": [
+            "79",
+            "80",
+            "81"
+          ],
+          "jawaban": "81"
+        },
+        {
+          "id": "k3-mtk-05-04",
+          "tipe": "truefalse",
+          "pertanyaan": "4 × 6 = 6 × 4 (sifat komutatif).",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-06",
+      "unit_title": "Pembagian Bilangan Cacah",
+      "soal": [
+        {
+          "id": "k3-mtk-06-01",
+          "tipe": "choose",
+          "pertanyaan": "54 ÷ 6 = ?",
+          "pilihan": [
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "9"
+        },
+        {
+          "id": "k3-mtk-06-02",
+          "tipe": "fill",
+          "pertanyaan": "___ ÷ 8 = 7",
+          "pilihan": [
+            "54",
+            "56",
+            "58"
+          ],
+          "jawaban": "56"
+        },
+        {
+          "id": "k3-mtk-06-03",
+          "tipe": "choose",
+          "pertanyaan": "Pak Guru bagi 24 buku ke 6 meja. Tiap meja?",
+          "pilihan": [
+            "3",
+            "4",
+            "6"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k3-mtk-06-04",
+          "tipe": "truefalse",
+          "pertanyaan": "6 × 7 = 42 dan 42 ÷ 7 = 6 (hubungan perkalian-pembagian).",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-07",
+      "unit_title": "Kalimat Matematika Penjumlahan",
+      "soal": [
+        {
+          "id": "k3-mtk-07-01",
+          "tipe": "choose",
+          "pertanyaan": "Di taman ada 35 pohon. Ditanam 27 pohon lagi. Kalimat matematika yang tepat?",
+          "pilihan": [
+            "35 - 27 = n",
+            "35 + 27 = n",
+            "35 × 27 = n"
+          ],
+          "jawaban": "35 + 27 = n"
+        },
+        {
+          "id": "k3-mtk-07-02",
+          "tipe": "fill",
+          "pertanyaan": "n + 15 = 40, maka n = ___",
+          "pilihan": [
+            "23",
+            "24",
+            "25"
+          ],
+          "jawaban": "25"
+        },
+        {
+          "id": "k3-mtk-07-03",
+          "tipe": "choose",
+          "pertanyaan": "Budi punya 48 kartu + 36 kartu. Total?",
+          "pilihan": [
+            "83",
+            "84",
+            "85"
+          ],
+          "jawaban": "84"
+        },
+        {
+          "id": "k3-mtk-07-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Kalimat matematika membantu memecahkan soal cerita.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-08",
+      "unit_title": "Kalimat Matematika Pengurangan",
+      "soal": [
+        {
+          "id": "k3-mtk-08-01",
+          "tipe": "choose",
+          "pertanyaan": "Di kotak ada 56 kue. Dimakan 23. Sisa?",
+          "pilihan": [
+            "32",
+            "33",
+            "34"
+          ],
+          "jawaban": "33"
+        },
+        {
+          "id": "k3-mtk-08-02",
+          "tipe": "fill",
+          "pertanyaan": "80 - n = 45, maka n = ___",
+          "pilihan": [
+            "34",
+            "35",
+            "36"
+          ],
+          "jawaban": "35"
+        },
+        {
+          "id": "k3-mtk-08-03",
+          "tipe": "choose",
+          "pertanyaan": "Ibu punya 120 telur. Dijual 75. Sisa?",
+          "pilihan": [
+            "44",
+            "45",
+            "46"
+          ],
+          "jawaban": "45"
+        },
+        {
+          "id": "k3-mtk-08-04",
+          "tipe": "truefalse",
+          "pertanyaan": "200 - 75 = 125.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-09",
+      "unit_title": "Kalimat Matematika Perkalian",
+      "soal": [
+        {
+          "id": "k3-mtk-09-01",
+          "tipe": "choose",
+          "pertanyaan": "5 kotak, tiap kotak 8 buku. Total?",
+          "pilihan": [
+            "38",
+            "40",
+            "42"
+          ],
+          "jawaban": "40"
+        },
+        {
+          "id": "k3-mtk-09-02",
+          "tipe": "fill",
+          "pertanyaan": "7 × n = 63, maka n = ___",
+          "pilihan": [
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "9"
+        },
+        {
+          "id": "k3-mtk-09-03",
+          "tipe": "choose",
+          "pertanyaan": "Pak Amir punya 4 kebun. Tiap kebun 25 pohon. Total?",
+          "pilihan": [
+            "98",
+            "99",
+            "100"
+          ],
+          "jawaban": "100"
+        },
+        {
+          "id": "k3-mtk-09-04",
+          "tipe": "truefalse",
+          "pertanyaan": "3 × 12 = 36.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-10",
+      "unit_title": "Kalimat Matematika Pembagian",
+      "soal": [
+        {
+          "id": "k3-mtk-10-01",
+          "tipe": "choose",
+          "pertanyaan": "72 bola dibagi 8 kelompok. Tiap kelompok?",
+          "pilihan": [
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "9"
+        },
+        {
+          "id": "k3-mtk-10-02",
+          "tipe": "fill",
+          "pertanyaan": "n ÷ 6 = 12, maka n = ___",
+          "pilihan": [
+            "60",
+            "70",
+            "72"
+          ],
+          "jawaban": "72"
+        },
+        {
+          "id": "k3-mtk-10-03",
+          "tipe": "choose",
+          "pertanyaan": "96 siswa dibagi ke 8 kelas sama rata. Tiap kelas?",
+          "pilihan": [
+            "10",
+            "11",
+            "12"
+          ],
+          "jawaban": "12"
+        },
+        {
+          "id": "k3-mtk-10-04",
+          "tipe": "truefalse",
+          "pertanyaan": "45 ÷ 9 = 5.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-11",
+      "unit_title": "Kelipatan dan Faktor",
+      "soal": [
+        {
+          "id": "k3-mtk-11-01",
+          "tipe": "choose",
+          "pertanyaan": "Kelipatan 4 yang kurang dari 20 adalah...",
+          "pilihan": [
+            "4, 8, 12, 16",
+            "4, 8, 12, 16, 20",
+            "2, 4, 8, 12"
+          ],
+          "jawaban": "4, 8, 12, 16"
+        },
+        {
+          "id": "k3-mtk-11-02",
+          "tipe": "fill",
+          "pertanyaan": "Faktor dari 12 antara lain: 1, 2, 3, 4, ___, 12",
+          "pilihan": [
+            "5",
+            "6",
+            "7"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k3-mtk-11-03",
+          "tipe": "choose",
+          "pertanyaan": "Kelipatan persekutuan terkecil (KPK) dari 2 dan 3 adalah...",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k3-mtk-11-04",
+          "tipe": "truefalse",
+          "pertanyaan": "8 adalah faktor dari 24.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-12",
+      "unit_title": "Pecahan Sederhana",
+      "soal": [
+        {
+          "id": "k3-mtk-12-01",
+          "tipe": "choose",
+          "pertanyaan": "1/2 = berapa bagian dari 4 bagian sama?",
+          "pilihan": [
+            "1",
+            "2",
+            "3"
+          ],
+          "jawaban": "2"
+        },
+        {
+          "id": "k3-mtk-12-02",
+          "tipe": "fill",
+          "pertanyaan": "3/4 + 1/4 = ___",
+          "pilihan": [
+            "3/4",
+            "4/4",
+            "1/4"
+          ],
+          "jawaban": "4/4"
+        },
+        {
+          "id": "k3-mtk-12-03",
+          "tipe": "choose",
+          "pertanyaan": "Mana yang lebih besar: 2/3 atau 1/3?",
+          "pilihan": [
+            "2/3",
+            "1/3",
+            "sama"
+          ],
+          "jawaban": "2/3"
+        },
+        {
+          "id": "k3-mtk-12-04",
+          "tipe": "truefalse",
+          "pertanyaan": "1/2 = 2/4.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-13",
+      "unit_title": "Pengukuran Panjang",
+      "soal": [
+        {
+          "id": "k3-mtk-13-01",
+          "tipe": "choose",
+          "pertanyaan": "2,5 m = ___ cm",
+          "pilihan": [
+            "200",
+            "250",
+            "255"
+          ],
+          "jawaban": "250"
+        },
+        {
+          "id": "k3-mtk-13-02",
+          "tipe": "fill",
+          "pertanyaan": "350 cm = ___ m",
+          "pilihan": [
+            "3",
+            "3.5",
+            "35"
+          ],
+          "jawaban": "3.5"
+        },
+        {
+          "id": "k3-mtk-13-03",
+          "tipe": "choose",
+          "pertanyaan": "Pita 4 m dipotong 85 cm. Sisa?",
+          "pilihan": [
+            "314 cm",
+            "315 cm",
+            "316 cm"
+          ],
+          "jawaban": "315 cm"
+        },
+        {
+          "id": "k3-mtk-13-04",
+          "tipe": "truefalse",
+          "pertanyaan": "1 km = 1.000 m.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-14",
+      "unit_title": "Keliling Bangun Datar",
+      "soal": [
+        {
+          "id": "k3-mtk-14-01",
+          "tipe": "choose",
+          "pertanyaan": "Keliling persegi dengan sisi 7 cm?",
+          "pilihan": [
+            "24",
+            "28",
+            "32"
+          ],
+          "jawaban": "28"
+        },
+        {
+          "id": "k3-mtk-14-02",
+          "tipe": "fill",
+          "pertanyaan": "Keliling persegi panjang 12×5 = ___",
+          "pilihan": [
+            "30",
+            "34",
+            "34"
+          ],
+          "jawaban": "34"
+        },
+        {
+          "id": "k3-mtk-14-03",
+          "tipe": "choose",
+          "pertanyaan": "Keliling segitiga dengan sisi 5, 7, 8 cm?",
+          "pilihan": [
+            "18",
+            "19",
+            "20"
+          ],
+          "jawaban": "20"
+        },
+        {
+          "id": "k3-mtk-14-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Keliling = jumlah semua sisi.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-15",
+      "unit_title": "Luas Bangun Datar",
+      "soal": [
+        {
+          "id": "k3-mtk-15-01",
+          "tipe": "choose",
+          "pertanyaan": "Luas persegi dengan sisi 6 cm?",
+          "pilihan": [
+            "24",
+            "36",
+            "48"
+          ],
+          "jawaban": "36"
+        },
+        {
+          "id": "k3-mtk-15-02",
+          "tipe": "fill",
+          "pertanyaan": "Luas persegi panjang 8 × 5 = ___ cm²",
+          "pilihan": [
+            "36",
+            "40",
+            "44"
+          ],
+          "jawaban": "40"
+        },
+        {
+          "id": "k3-mtk-15-03",
+          "tipe": "choose",
+          "pertanyaan": "Jika luas persegi 49 cm², maka panjang sisinya?",
+          "pilihan": [
+            "6 cm",
+            "7 cm",
+            "8 cm"
+          ],
+          "jawaban": "7 cm"
+        },
+        {
+          "id": "k3-mtk-15-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Luas persegi = sisi × sisi.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-16",
+      "unit_title": "Sisi dan Sudut Bangun Datar",
+      "soal": [
+        {
+          "id": "k3-mtk-16-01",
+          "tipe": "choose",
+          "pertanyaan": "Segiempat punya berapa sudut?",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k3-mtk-16-02",
+          "tipe": "fill",
+          "pertanyaan": "Segitiga punya ___ sisi.",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k3-mtk-16-03",
+          "tipe": "choose",
+          "pertanyaan": "Bangun dengan 5 sisi dan 5 sudut disebut...",
+          "pilihan": [
+            "segiempat",
+            "segilima",
+            "segienam"
+          ],
+          "jawaban": "segilima"
+        },
+        {
+          "id": "k3-mtk-16-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Sudut siku-siku = 90°.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-17",
+      "unit_title": "Data dan Tabel",
+      "soal": [
+        {
+          "id": "k3-mtk-17-01",
+          "tipe": "choose",
+          "pertanyaan": "Dari tabel: Senin 12, Selasa 8, Rabu 15. Hari paling sedikit?",
+          "pilihan": [
+            "Senin",
+            "Selasa",
+            "Rabu"
+          ],
+          "jawaban": "Selasa"
+        },
+        {
+          "id": "k3-mtk-17-02",
+          "tipe": "fill",
+          "pertanyaan": "Rata-rata dari 6, 8, 10 = ___",
+          "pilihan": [
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "8"
+        },
+        {
+          "id": "k3-mtk-17-03",
+          "tipe": "choose",
+          "pertanyaan": "Selisih data terbesar dan terkecil: 15 dan 8?",
+          "pilihan": [
+            "6",
+            "7",
+            "8"
+          ],
+          "jawaban": "7"
+        },
+        {
+          "id": "k3-mtk-17-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Rata-rata = jumlah data ÷ banyak data.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-mtk-18",
+      "unit_title": "Diagram Batang dan Gambar",
+      "soal": [
+        {
+          "id": "k3-mtk-18-01",
+          "tipe": "choose",
+          "pertanyaan": "Diagram gambar: 1 simbol = 5 siswa. 4 simbol = berapa siswa?",
+          "pilihan": [
+            "15",
+            "20",
+            "25"
+          ],
+          "jawaban": "20"
+        },
+        {
+          "id": "k3-mtk-18-02",
+          "tipe": "fill",
+          "pertanyaan": "Batang paling tinggi dalam diagram batang = data ___",
+          "pilihan": [
+            "terbesar",
+            "terkecil",
+            "rata-rata"
+          ],
+          "jawaban": "terbesar"
+        },
+        {
+          "id": "k3-mtk-18-03",
+          "tipe": "choose",
+          "pertanyaan": "Diagram lingkaran cocok untuk menunjukkan...",
+          "pilihan": [
+            "perbandingan bagian",
+            "urutan waktu",
+            "pengukuran panjang"
+          ],
+          "jawaban": "perbandingan bagian"
+        },
+        {
+          "id": "k3-mtk-18-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Diagram batang menggunakan sumbu X dan Y.",
+          "jawaban": true
+        }
+      ]
+    }
+  ]
+}

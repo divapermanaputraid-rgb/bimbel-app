@@ -1,0 +1,383 @@
+{
+  "kelas": 3,
+  "pelajaran": "ipas",
+  "total_soal": 32,
+  "units": [
+    {
+      "unit_id": "k3-ipas-01",
+      "unit_title": "Hewan di Sekitar Kita",
+      "soal": [
+        {
+          "id": "k3-ipas-01-01",
+          "tipe": "choose",
+          "pertanyaan": "Kucing adalah hewan...",
+          "pilihan": [
+            "karnivora",
+            "herbivora",
+            "omnivora"
+          ],
+          "jawaban": "karnivora"
+        },
+        {
+          "id": "k3-ipas-01-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan hewan dengan makanannya!",
+          "pasangan": {
+            "🐱": "daging",
+            "🐰": "sayur",
+            "🐔": "biji-bijian"
+          },
+          "jawaban": {
+            "🐱": "daging",
+            "🐰": "sayur",
+            "🐔": "biji-bijian"
+          }
+        },
+        {
+          "id": "k3-ipas-01-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Ayam bertelur dan berkaki dua.",
+          "jawaban": true
+        },
+        {
+          "id": "k3-ipas-01-04",
+          "tipe": "fill",
+          "pertanyaan": "Kupu-kupu mengalami: telur → ulat → _____ → kupu-kupu.",
+          "pilihan": [
+            "kepompong",
+            "telur",
+            "ikan"
+          ],
+          "jawaban": "kepompong"
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-ipas-02",
+      "unit_title": "Siklus Hidup Hewan",
+      "soal": [
+        {
+          "id": "k3-ipas-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Katak mengalami metamorfosis. Urutan yang benar...",
+          "pilihan": [
+            "telur → berudu → katak",
+            "telur → katak → berudu",
+            "katak → berudu → telur"
+          ],
+          "jawaban": "telur → berudu → katak"
+        },
+        {
+          "id": "k3-ipas-02-02",
+          "tipe": "truefalse",
+          "pertanyaan": "Belalang mengalami metamorfosis sempurna.",
+          "jawaban": false
+        },
+        {
+          "id": "k3-ipas-02-03",
+          "tipe": "fill",
+          "pertanyaan": "Nyamuk mengalami: telur → jentik → _____ → nyamuk.",
+          "pilihan": [
+            "kepompong",
+            "ulat",
+            "cacing"
+          ],
+          "jawaban": "kepompong"
+        },
+        {
+          "id": "k3-ipas-02-04",
+          "tipe": "choose",
+          "pertanyaan": "Hewan yang langsung menjadi dewasa tanpa fase larva adalah...",
+          "pilihan": [
+            "kucing",
+            "kupu-kupu",
+            "katak"
+          ],
+          "jawaban": "kucing"
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-ipas-03",
+      "unit_title": "Tumbuhan di Sekitar Kita",
+      "soal": [
+        {
+          "id": "k3-ipas-03-01",
+          "tipe": "choose",
+          "pertanyaan": "Tumbuhan membuat makanan sendiri lewat proses...",
+          "pilihan": [
+            "fotosintesis",
+            "respirasi",
+            "transpirasi"
+          ],
+          "jawaban": "fotosintesis"
+        },
+        {
+          "id": "k3-ipas-03-02",
+          "tipe": "fill",
+          "pertanyaan": "Fotosintesis menghasilkan _____ yang kita hirup.",
+          "pilihan": [
+            "oksigen",
+            "karbondioksida",
+            "nitrogen"
+          ],
+          "jawaban": "oksigen"
+        },
+        {
+          "id": "k3-ipas-03-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Akar tumbuhan menyerap air dari tanah.",
+          "jawaban": true
+        },
+        {
+          "id": "k3-ipas-03-04",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan bagian tumbuhan dengan fungsinya!",
+          "pasangan": {
+            "Akar": "Menyerap air",
+            "Daun": "Fotosintesis",
+            "Bunga": "Reproduksi"
+          },
+          "jawaban": {
+            "Akar": "Menyerap air",
+            "Daun": "Fotosintesis",
+            "Bunga": "Reproduksi"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-ipas-04",
+      "unit_title": "Wujud Benda",
+      "soal": [
+        {
+          "id": "k3-ipas-04-01",
+          "tipe": "choose",
+          "pertanyaan": "Es batu yang dipanaskan mengalami perubahan...",
+          "pilihan": [
+            "mencair",
+            "membeku",
+            "menguap"
+          ],
+          "jawaban": "mencair"
+        },
+        {
+          "id": "k3-ipas-04-02",
+          "tipe": "fill",
+          "pertanyaan": "Air dipanaskan berubah menjadi _____.",
+          "pilihan": [
+            "uap",
+            "es",
+            "batu"
+          ],
+          "jawaban": "uap"
+        },
+        {
+          "id": "k3-ipas-04-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Benda gas tidak memiliki bentuk tetap.",
+          "jawaban": true
+        },
+        {
+          "id": "k3-ipas-04-04",
+          "tipe": "choose",
+          "pertanyaan": "Kapur barus yang habis sendiri menunjukkan perubahan wujud...",
+          "pilihan": [
+            "menyublim",
+            "mencair",
+            "membeku"
+          ],
+          "jawaban": "menyublim"
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-ipas-05",
+      "unit_title": "Cuaca dan Iklim",
+      "soal": [
+        {
+          "id": "k3-ipas-05-01",
+          "tipe": "choose",
+          "pertanyaan": "Alat ukur suhu udara disebut...",
+          "pilihan": [
+            "termometer",
+            "barometer",
+            "higrometer"
+          ],
+          "jawaban": "termometer"
+        },
+        {
+          "id": "k3-ipas-05-02",
+          "tipe": "truefalse",
+          "pertanyaan": "Indonesia beriklim tropis karena dekat khatulistiwa.",
+          "jawaban": true
+        },
+        {
+          "id": "k3-ipas-05-03",
+          "tipe": "fill",
+          "pertanyaan": "Angin terjadi karena perbedaan _____ udara.",
+          "pilihan": [
+            "tekanan",
+            "warna",
+            "rasa"
+          ],
+          "jawaban": "tekanan"
+        },
+        {
+          "id": "k3-ipas-05-04",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan cuaca dengan tanda-tandanya!",
+          "pasangan": {
+            "Hujan": "Awan gelap",
+            "Cerah": "Matahari bersinar",
+            "Berangin": "Pohon bergoyang"
+          },
+          "jawaban": {
+            "Hujan": "Awan gelap",
+            "Cerah": "Matahari bersinar",
+            "Berangin": "Pohon bergoyang"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-ipas-06",
+      "unit_title": "Energi Sehari-hari",
+      "soal": [
+        {
+          "id": "k3-ipas-06-01",
+          "tipe": "choose",
+          "pertanyaan": "Sumber energi utama di Bumi adalah...",
+          "pilihan": [
+            "Matahari",
+            "Bulan",
+            "Bintang"
+          ],
+          "jawaban": "Matahari"
+        },
+        {
+          "id": "k3-ipas-06-02",
+          "tipe": "fill",
+          "pertanyaan": "Kincir angin mengubah energi _____ menjadi energi gerak.",
+          "pilihan": [
+            "angin",
+            "air",
+            "panas"
+          ],
+          "jawaban": "angin"
+        },
+        {
+          "id": "k3-ipas-06-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Baterai menghasilkan energi listrik.",
+          "jawaban": true
+        },
+        {
+          "id": "k3-ipas-06-04",
+          "tipe": "choose",
+          "pertanyaan": "Energi yang dihasilkan saat kita membakar kayu adalah...",
+          "pilihan": [
+            "panas dan cahaya",
+            "listrik",
+            "magnet"
+          ],
+          "jawaban": "panas dan cahaya"
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-ipas-07",
+      "unit_title": "Sumber Daya Alam",
+      "soal": [
+        {
+          "id": "k3-ipas-07-01",
+          "tipe": "choose",
+          "pertanyaan": "Air, tanah, dan hutan adalah contoh sumber daya alam...",
+          "pilihan": [
+            "hayati",
+            "mineral",
+            "buatan"
+          ],
+          "jawaban": "hayati"
+        },
+        {
+          "id": "k3-ipas-07-02",
+          "tipe": "truefalse",
+          "pertanyaan": "Minyak bumi bisa diperbaharui dalam waktu singkat.",
+          "jawaban": false
+        },
+        {
+          "id": "k3-ipas-07-03",
+          "tipe": "fill",
+          "pertanyaan": "Hemat air termasuk usaha _____ sumber daya alam.",
+          "pilihan": [
+            "melestarikan",
+            "merusak",
+            "menghabiskan"
+          ],
+          "jawaban": "melestarikan"
+        },
+        {
+          "id": "k3-ipas-07-04",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan sumber daya dengan kegunaannya!",
+          "pasangan": {
+            "Air": "Minum & mandi",
+            "Tanah": "Bercocok tanam",
+            "Hutan": "Paru-paru dunia"
+          },
+          "jawaban": {
+            "Air": "Minum & mandi",
+            "Tanah": "Bercocok tanam",
+            "Hutan": "Paru-paru dunia"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-ipas-08",
+      "unit_title": "Lingkungan Sehat",
+      "soal": [
+        {
+          "id": "k3-ipas-08-01",
+          "tipe": "choose",
+          "pertanyaan": "Membuang sampah sembarangan dapat menyebabkan...",
+          "pilihan": [
+            "banjir",
+            "hujan",
+            "angin"
+          ],
+          "jawaban": "banjir"
+        },
+        {
+          "id": "k3-ipas-08-02",
+          "tipe": "truefalse",
+          "pertanyaan": "Menanam pohon membantu menjaga lingkungan tetap bersih.",
+          "jawaban": true
+        },
+        {
+          "id": "k3-ipas-08-03",
+          "tipe": "fill",
+          "pertanyaan": "Sampah organik seperti daun dapat dijadikan _____.",
+          "pilihan": [
+            "kompos",
+            "plastik",
+            "besi"
+          ],
+          "jawaban": "kompos"
+        },
+        {
+          "id": "k3-ipas-08-04",
+          "tipe": "choose",
+          "pertanyaan": "Yang termasuk polusi udara adalah...",
+          "pilihan": [
+            "asap kendaraan",
+            "air bersih",
+            "tanah subur"
+          ],
+          "jawaban": "asap kendaraan"
+        }
+      ]
+    }
+  ]
+}

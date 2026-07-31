@@ -1,0 +1,1098 @@
+{
+  "kelas": 6,
+  "pelajaran": "mtk",
+  "total_soal": 90,
+  "units": [
+    {
+      "unit_id": "k6-mtk-01",
+      "unit_title": "Perkalian Bilangan Asli × Pecahan",
+      "soal": [
+        {
+          "id": "k6-mtk-01-01",
+          "tipe": "choose",
+          "pertanyaan": "2/3 × 9 = ?",
+          "pilihan": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k6-mtk-01-02",
+          "tipe": "fill",
+          "pertanyaan": "3/4 × ___ = 15",
+          "pilihan": [
+            "18",
+            "20",
+            "22",
+            "24"
+          ],
+          "jawaban": "20"
+        },
+        {
+          "id": "k6-mtk-01-03",
+          "tipe": "choose",
+          "pertanyaan": "5 × 2/5 = ?",
+          "pilihan": [
+            "1",
+            "2",
+            "5",
+            "10"
+          ],
+          "jawaban": "2"
+        },
+        {
+          "id": "k6-mtk-01-04",
+          "tipe": "truefalse",
+          "pertanyaan": "3 × 1/3 = 1.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-01-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan!",
+          "pasangan": {
+            "2 × 1/2": "1",
+            "4 × 3/4": "3",
+            "6 × 2/3": "4"
+          },
+          "jawaban": {
+            "2 × 1/2": "1",
+            "4 × 3/4": "3",
+            "6 × 2/3": "4"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-02",
+      "unit_title": "Perkalian Pecahan × Bilangan Asli",
+      "soal": [
+        {
+          "id": "k6-mtk-02-01",
+          "tipe": "choose",
+          "pertanyaan": "3/4 × 8 = ?",
+          "pilihan": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k6-mtk-02-02",
+          "tipe": "fill",
+          "pertanyaan": "2/5 × 25 = ___",
+          "pilihan": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "jawaban": "10"
+        },
+        {
+          "id": "k6-mtk-02-03",
+          "tipe": "choose",
+          "pertanyaan": "5/6 × 12 = ?",
+          "pilihan": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "jawaban": "10"
+        },
+        {
+          "id": "k6-mtk-02-04",
+          "tipe": "truefalse",
+          "pertanyaan": "1/2 × 10 = 5.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-02-05",
+          "tipe": "fill",
+          "pertanyaan": "3/8 × 24 = ___",
+          "pilihan": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "jawaban": "9"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-03",
+      "unit_title": "Pembagian Pecahan ÷ Bilangan Asli",
+      "soal": [
+        {
+          "id": "k6-mtk-03-01",
+          "tipe": "choose",
+          "pertanyaan": "3/4 ÷ 3 = ?",
+          "pilihan": [
+            "1/4",
+            "1/3",
+            "1/2",
+            "3/4"
+          ],
+          "jawaban": "1/4"
+        },
+        {
+          "id": "k6-mtk-03-02",
+          "tipe": "fill",
+          "pertanyaan": "2/3 ÷ 2 = ___",
+          "pilihan": [
+            "1/3",
+            "1/2",
+            "2/3",
+            "1/6"
+          ],
+          "jawaban": "1/3"
+        },
+        {
+          "id": "k6-mtk-03-03",
+          "tipe": "choose",
+          "pertanyaan": "5/6 ÷ 5 = ?",
+          "pilihan": [
+            "1/5",
+            "1/6",
+            "1/3",
+            "5/30"
+          ],
+          "jawaban": "1/6"
+        },
+        {
+          "id": "k6-mtk-03-04",
+          "tipe": "truefalse",
+          "pertanyaan": "4/5 ÷ 4 = 1/5.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-03-05",
+          "tipe": "fill",
+          "pertanyaan": "6/7 ÷ 6 = ___",
+          "pilihan": [
+            "1/6",
+            "1/7",
+            "6/42",
+            "1/42"
+          ],
+          "jawaban": "1/7"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-04",
+      "unit_title": "Pembagian Bilangan Asli ÷ Pecahan",
+      "soal": [
+        {
+          "id": "k6-mtk-04-01",
+          "tipe": "choose",
+          "pertanyaan": "6 ÷ 1/2 = ?",
+          "pilihan": [
+            "3",
+            "6",
+            "12",
+            "24"
+          ],
+          "jawaban": "12"
+        },
+        {
+          "id": "k6-mtk-04-02",
+          "tipe": "fill",
+          "pertanyaan": "9 ÷ 1/3 = ___",
+          "pilihan": [
+            "3",
+            "9",
+            "18",
+            "27"
+          ],
+          "jawaban": "27"
+        },
+        {
+          "id": "k6-mtk-04-03",
+          "tipe": "choose",
+          "pertanyaan": "4 ÷ 2/3 = ?",
+          "pilihan": [
+            "6",
+            "8",
+            "12",
+            "16"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k6-mtk-04-04",
+          "tipe": "truefalse",
+          "pertanyaan": "10 ÷ 1/5 = 50.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-04-05",
+          "tipe": "fill",
+          "pertanyaan": "8 ÷ 1/4 = ___",
+          "pilihan": [
+            "2",
+            "16",
+            "32",
+            "40"
+          ],
+          "jawaban": "32"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-05",
+      "unit_title": "Mengubah Pecahan ke Desimal",
+      "soal": [
+        {
+          "id": "k6-mtk-05-01",
+          "tipe": "choose",
+          "pertanyaan": "3/4 = ?",
+          "pilihan": [
+            "0.25",
+            "0.50",
+            "0.75",
+            "0.80"
+          ],
+          "jawaban": "0.75"
+        },
+        {
+          "id": "k6-mtk-05-02",
+          "tipe": "fill",
+          "pertanyaan": "1/5 = 0.___",
+          "pilihan": [
+            "1",
+            "2",
+            "5",
+            "10"
+          ],
+          "jawaban": "2"
+        },
+        {
+          "id": "k6-mtk-05-03",
+          "tipe": "choose",
+          "pertanyaan": "0.6 = ?",
+          "pilihan": [
+            "3/5",
+            "6/10",
+            "3/5 atau 6/10",
+            "1/6"
+          ],
+          "jawaban": "3/5 atau 6/10"
+        },
+        {
+          "id": "k6-mtk-05-04",
+          "tipe": "truefalse",
+          "pertanyaan": "1/2 = 0.5.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-05-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan pecahan dan desimal!",
+          "pasangan": {
+            "1/2": "0.5",
+            "3/4": "0.75",
+            "1/4": "0.25",
+            "1/5": "0.2"
+          },
+          "jawaban": {
+            "1/2": "0.5",
+            "3/4": "0.75",
+            "1/4": "0.25",
+            "1/5": "0.2"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-06",
+      "unit_title": "Data dan Rata-rata",
+      "soal": [
+        {
+          "id": "k6-mtk-06-01",
+          "tipe": "choose",
+          "pertanyaan": "Nilai ulangan: 70, 80, 90, 60. Rata-rata?",
+          "pilihan": [
+            "74",
+            "75",
+            "76",
+            "80"
+          ],
+          "jawaban": "75"
+        },
+        {
+          "id": "k6-mtk-06-02",
+          "tipe": "fill",
+          "pertanyaan": "5 data: 20, 25, 30, 35, ___. Rata-rata = 28. Missing?",
+          "pilihan": [
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          "jawaban": "30"
+        },
+        {
+          "id": "k6-mtk-06-03",
+          "tipe": "choose",
+          "pertanyaan": "Median dari 3, 5, 7, 9, 11 adalah?",
+          "pilihan": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "jawaban": "7"
+        },
+        {
+          "id": "k6-mtk-06-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Modus adalah data yang paling sering muncul.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-06-05",
+          "tipe": "fill",
+          "pertanyaan": "Rata-rata 4, 6, 8 = ___",
+          "pilihan": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "jawaban": "6"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-07",
+      "unit_title": "Membandingkan Benda (Rasio)",
+      "soal": [
+        {
+          "id": "k6-mtk-07-01",
+          "tipe": "choose",
+          "pertanyaan": "Rasio 6:10 disederhanakan menjadi...",
+          "pilihan": [
+            "2:5",
+            "3:5",
+            "6:10",
+            "1:2"
+          ],
+          "jawaban": "3:5"
+        },
+        {
+          "id": "k6-mtk-07-02",
+          "tipe": "fill",
+          "pertanyaan": "Rasio 8:12 = ___:3",
+          "pilihan": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "2"
+        },
+        {
+          "id": "k6-mtk-07-03",
+          "tipe": "choose",
+          "pertanyaan": "Perbandingan 2:5. Jika jumlah 35, bagian pertama?",
+          "pilihan": [
+            "10",
+            "12",
+            "14",
+            "15"
+          ],
+          "jawaban": "10"
+        },
+        {
+          "id": "k6-mtk-07-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Rasio 4:6 = 2:3.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-07-05",
+          "tipe": "fill",
+          "pertanyaan": "Rasio 1:3 = 5:___",
+          "pilihan": [
+            "12",
+            "15",
+            "18",
+            "21"
+          ],
+          "jawaban": "15"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-08",
+      "unit_title": "Pengertian Rasio",
+      "soal": [
+        {
+          "id": "k6-mtk-08-01",
+          "tipe": "choose",
+          "pertanyaan": "Di kelas ada 15 perempuan dan 10 laki-laki. Rasio perempuan:laki-laki?",
+          "pilihan": [
+            "2:3",
+            "3:2",
+            "1:2",
+            "2:1"
+          ],
+          "jawaban": "3:2"
+        },
+        {
+          "id": "k6-mtk-08-02",
+          "tipe": "fill",
+          "pertanyaan": "Rasio 2:5. Jika bagian kedua = 20, bagian pertama = ___",
+          "pilihan": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "8"
+        },
+        {
+          "id": "k6-mtk-08-03",
+          "tipe": "choose",
+          "pertanyaan": "Resep kue: tepung:gula = 3:1. Kalau gula 200g, tepung?",
+          "pilihan": [
+            "400g",
+            "500g",
+            "600g",
+            "700g"
+          ],
+          "jawaban": "600g"
+        },
+        {
+          "id": "k6-mtk-08-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Rasio ditulis dengan tanda \":\".",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-08-05",
+          "tipe": "fill",
+          "pertanyaan": "Rasio panjang:lebar = 4:1. Panjang 20, lebar = ___",
+          "pilihan": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "jawaban": "5"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-09",
+      "unit_title": "Kesamaan Rasio (Rasio Senilai)",
+      "soal": [
+        {
+          "id": "k6-mtk-09-01",
+          "tipe": "choose",
+          "pertanyaan": "1:3 = 4:___",
+          "pilihan": [
+            "8",
+            "10",
+            "12",
+            "15"
+          ],
+          "jawaban": "12"
+        },
+        {
+          "id": "k6-mtk-09-02",
+          "tipe": "fill",
+          "pertanyaan": "2:5 = ___:20",
+          "pilihan": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "8"
+        },
+        {
+          "id": "k6-mtk-09-03",
+          "tipe": "choose",
+          "pertanyaan": "Peta skala 1:100. Jarak peta 5 cm = jarak nyata?",
+          "pilihan": [
+            "50 cm",
+            "500 cm",
+            "5 m",
+            "50 m"
+          ],
+          "jawaban": "500 cm"
+        },
+        {
+          "id": "k6-mtk-09-04",
+          "tipe": "truefalse",
+          "pertanyaan": "3:4 = 6:8 adalah rasio senilai.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-09-05",
+          "tipe": "fill",
+          "pertanyaan": "1:4 = 3:___",
+          "pilihan": [
+            "9",
+            "12",
+            "15",
+            "16"
+          ],
+          "jawaban": "12"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-10",
+      "unit_title": "Skala dan Denah",
+      "soal": [
+        {
+          "id": "k6-mtk-10-01",
+          "tipe": "choose",
+          "pertanyaan": "Skala 1:200. Gambar 3 cm = ukuran nyata?",
+          "pilihan": [
+            "200 cm",
+            "400 cm",
+            "600 cm",
+            "800 cm"
+          ],
+          "jawaban": "600 cm"
+        },
+        {
+          "id": "k6-mtk-10-02",
+          "tipe": "fill",
+          "pertanyaan": "Skala 1:1.000. Jarak nyata 5 km = di peta ___ m",
+          "pilihan": [
+            "5",
+            "50",
+            "500",
+            "5000"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k6-mtk-10-03",
+          "tipe": "choose",
+          "pertanyaan": "Lapangan 50 m × 30 m di gambar skala 1:500 = ?",
+          "pilihan": [
+            "10×6 cm",
+            "8×6 cm",
+            "10×8 cm",
+            "12×6 cm"
+          ],
+          "jawaban": "10×6 cm"
+        },
+        {
+          "id": "k6-mtk-10-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Skala 1:100 berarti 1 cm gambar = 100 cm nyata.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-10-05",
+          "tipe": "fill",
+          "pertanyaan": "Skala 1:250. Gambar 4 cm = ___ cm nyata",
+          "pilihan": [
+            "750",
+            "1000",
+            "1250",
+            "1500"
+          ],
+          "jawaban": "1000"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-11",
+      "unit_title": "Volume Bangun Ruang - Kubus",
+      "soal": [
+        {
+          "id": "k6-mtk-11-01",
+          "tipe": "choose",
+          "pertanyaan": "Volume kubus dengan rusuk 4 cm?",
+          "pilihan": [
+            "16",
+            "32",
+            "64",
+            "128"
+          ],
+          "jawaban": "64"
+        },
+        {
+          "id": "k6-mtk-11-02",
+          "tipe": "fill",
+          "pertanyaan": "Kubus volume 125 cm³. Panjang rusuk = ___ cm",
+          "pilihan": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k6-mtk-11-03",
+          "tipe": "choose",
+          "pertanyaan": "Rusuk kubus = 6 cm. Volume?",
+          "pilihan": [
+            "36",
+            "72",
+            "216",
+            "432"
+          ],
+          "jawaban": "216"
+        },
+        {
+          "id": "k6-mtk-11-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Volume kubus = rusuk × rusuk × rusuk.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-11-05",
+          "tipe": "fill",
+          "pertanyaan": "Kubus rusuk 3 cm, volume = ___ cm³",
+          "pilihan": [
+            "9",
+            "18",
+            "27",
+            "36"
+          ],
+          "jawaban": "27"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-12",
+      "unit_title": "Volume Balok",
+      "soal": [
+        {
+          "id": "k6-mtk-12-01",
+          "tipe": "choose",
+          "pertanyaan": "Volume balok 10×5×4 cm?",
+          "pilihan": [
+            "100",
+            "150",
+            "200",
+            "250"
+          ],
+          "jawaban": "200"
+        },
+        {
+          "id": "k6-mtk-12-02",
+          "tipe": "fill",
+          "pertanyaan": "Balok 8×6×___ = 144 cm³. Tinggi = ___",
+          "pilihan": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k6-mtk-12-03",
+          "tipe": "choose",
+          "pertanyaan": "Bak mandi 100×60×50 cm. Volume = ___ liter?",
+          "pilihan": [
+            "200",
+            "250",
+            "300",
+            "350"
+          ],
+          "jawaban": "300"
+        },
+        {
+          "id": "k6-mtk-12-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Volume balok = panjang × lebar × tinggi.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-12-05",
+          "tipe": "fill",
+          "pertanyaan": "Balok 5×4×3 = ___ cm³",
+          "pilihan": [
+            "40",
+            "50",
+            "60",
+            "70"
+          ],
+          "jawaban": "60"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-13",
+      "unit_title": "Luas Bangun Datar (K6)",
+      "soal": [
+        {
+          "id": "k6-mtk-13-01",
+          "tipe": "choose",
+          "pertanyaan": "Luas lingkaran jari-jari 7 cm (π=22/7)?",
+          "pilihan": [
+            "144",
+            "154",
+            "164",
+            "174"
+          ],
+          "jawaban": "154"
+        },
+        {
+          "id": "k6-mtk-13-02",
+          "tipe": "fill",
+          "pertanyaan": "Luas segitiga alas 10 cm, tinggi 8 cm = ___ cm²",
+          "pilihan": [
+            "35",
+            "40",
+            "45",
+            "50"
+          ],
+          "jawaban": "40"
+        },
+        {
+          "id": "k6-mtk-13-03",
+          "tipe": "choose",
+          "pertanyaan": "Luas trapesium a=12, b=8, t=5 cm?",
+          "pilihan": [
+            "40",
+            "45",
+            "50",
+            "55"
+          ],
+          "jawaban": "50"
+        },
+        {
+          "id": "k6-mtk-13-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Luas segitiga = (alas × tinggi) ÷ 2.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-13-05",
+          "tipe": "fill",
+          "pertanyaan": "Luas persegi panjang 9×7 = ___ cm²",
+          "pilihan": [
+            "56",
+            "63",
+            "72",
+            "81"
+          ],
+          "jawaban": "63"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-14",
+      "unit_title": "Keliling Bangun Datar (K6)",
+      "soal": [
+        {
+          "id": "k6-mtk-14-01",
+          "tipe": "choose",
+          "pertanyaan": "Keliling lingkaran jari-jari 14 cm (π=22/7)?",
+          "pilihan": [
+            "78",
+            "84",
+            "88",
+            "96"
+          ],
+          "jawaban": "88"
+        },
+        {
+          "id": "k6-mtk-14-02",
+          "tipe": "fill",
+          "pertanyaan": "Keliling belah ketupat sisi 8 cm = ___ cm",
+          "pilihan": [
+            "24",
+            "32",
+            "36",
+            "40"
+          ],
+          "jawaban": "32"
+        },
+        {
+          "id": "k6-mtk-14-03",
+          "tipe": "choose",
+          "pertanyaan": "Keliling jajargenjang a=12, b=8 cm?",
+          "pilihan": [
+            "36",
+            "40",
+            "44",
+            "48"
+          ],
+          "jawaban": "40"
+        },
+        {
+          "id": "k6-mtk-14-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Keliling lingkaran = 2 × π × r.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-14-05",
+          "tipe": "fill",
+          "pertanyaan": "Keliling persegi sisi 11 cm = ___ cm",
+          "pilihan": [
+            "40",
+            "42",
+            "44",
+            "48"
+          ],
+          "jawaban": "44"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-15",
+      "unit_title": "Bilangan Bulat Positif dan Negatif",
+      "soal": [
+        {
+          "id": "k6-mtk-15-01",
+          "tipe": "choose",
+          "pertanyaan": "-5 + 8 = ?",
+          "pilihan": [
+            "2",
+            "3",
+            "4",
+            "-3"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k6-mtk-15-02",
+          "tipe": "fill",
+          "pertanyaan": "-3 - (-7) = ___",
+          "pilihan": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k6-mtk-15-03",
+          "tipe": "choose",
+          "pertanyaan": "Suhu -4°C naik 9°C menjadi?",
+          "pilihan": [
+            "3°C",
+            "4°C",
+            "5°C",
+            "6°C"
+          ],
+          "jawaban": "5°C"
+        },
+        {
+          "id": "k6-mtk-15-04",
+          "tipe": "truefalse",
+          "pertanyaan": "-8 < -3 (negatif lebih besar mendekati nol).",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-15-05",
+          "tipe": "fill",
+          "pertanyaan": "6 + (-10) = ___",
+          "pilihan": [
+            "-3",
+            "-4",
+            "-5",
+            "-6"
+          ],
+          "jawaban": "-4"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-16",
+      "unit_title": "Operasi Hitung Campuran",
+      "soal": [
+        {
+          "id": "k6-mtk-16-01",
+          "tipe": "choose",
+          "pertanyaan": "(4 + 6) × 3 = ?",
+          "pilihan": [
+            "28",
+            "30",
+            "32",
+            "34"
+          ],
+          "jawaban": "30"
+        },
+        {
+          "id": "k6-mtk-16-02",
+          "tipe": "fill",
+          "pertanyaan": "20 ÷ (2 + 3) = ___",
+          "pilihan": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k6-mtk-16-03",
+          "tipe": "choose",
+          "pertanyaan": "3 × 4 + 5 × 2 = ?",
+          "pilihan": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ],
+          "jawaban": "22"
+        },
+        {
+          "id": "k6-mtk-16-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Perkalian dikerjakan sebelum penjumlahan.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-16-05",
+          "tipe": "fill",
+          "pertanyaan": "(8 - 3) × (4 + 2) = ___",
+          "pilihan": [
+            "25",
+            "28",
+            "30",
+            "32"
+          ],
+          "jawaban": "30"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-17",
+      "unit_title": "FPB dan KPK",
+      "soal": [
+        {
+          "id": "k6-mtk-17-01",
+          "tipe": "choose",
+          "pertanyaan": "FPB dari 12 dan 18 adalah?",
+          "pilihan": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k6-mtk-17-02",
+          "tipe": "fill",
+          "pertanyaan": "KPK dari 4 dan 6 = ___",
+          "pilihan": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          "jawaban": "12"
+        },
+        {
+          "id": "k6-mtk-17-03",
+          "tipe": "choose",
+          "pertanyaan": "FPB dari 24 dan 36 = ?",
+          "pilihan": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "jawaban": "12"
+        },
+        {
+          "id": "k6-mtk-17-04",
+          "tipe": "truefalse",
+          "pertanyaan": "KPK dari 3 dan 5 = 15.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-17-05",
+          "tipe": "fill",
+          "pertanyaan": "KPK dari 6 dan 9 = ___",
+          "pilihan": [
+            "12",
+            "15",
+            "18",
+            "21"
+          ],
+          "jawaban": "18"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-mtk-18",
+      "unit_title": "Statistika Sederhana",
+      "soal": [
+        {
+          "id": "k6-mtk-18-01",
+          "tipe": "choose",
+          "pertanyaan": "Data: 3, 5, 7, 5, 9, 5. Modusnya?",
+          "pilihan": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k6-mtk-18-02",
+          "tipe": "fill",
+          "pertanyaan": "Data: 2, 4, 6, 8, 10. Mediannya = ___",
+          "pilihan": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k6-mtk-18-03",
+          "tipe": "choose",
+          "pertanyaan": "Rata-rata dari 10, 20, 30, 40, 50 = ?",
+          "pilihan": [
+            "25",
+            "28",
+            "30",
+            "35"
+          ],
+          "jawaban": "30"
+        },
+        {
+          "id": "k6-mtk-18-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Mean (rata-rata) = total data ÷ jumlah data.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-mtk-18-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan istilah statistika!",
+          "pasangan": {
+            "Rata-rata": "Mean",
+            "Nilai tengah": "Median",
+            "Nilai sering muncul": "Modus"
+          },
+          "jawaban": {
+            "Rata-rata": "Mean",
+            "Nilai tengah": "Median",
+            "Nilai sering muncul": "Modus"
+          }
+        }
+      ]
+    }
+  ]
+}

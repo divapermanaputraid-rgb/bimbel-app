@@ -1,0 +1,513 @@
+{
+  "kelas": 6,
+  "pelajaran": "ipas",
+  "total_soal": 40,
+  "units": [
+    {
+      "unit_id": "k6-ipas-01",
+      "unit_title": "Bagaimana Tubuh Kita Bergerak?",
+      "soal": [
+        {
+          "id": "k6-ipas-01-01",
+          "tipe": "choose",
+          "pertanyaan": "Jumlah tulang pada tubuh orang dewasa sekitar...",
+          "pilihan": [
+            "206",
+            "106",
+            "306",
+            "406"
+          ],
+          "jawaban": "206"
+        },
+        {
+          "id": "k6-ipas-01-02",
+          "tipe": "fill",
+          "pertanyaan": "Otot bekerja dengan cara _____ dan relaksasi.",
+          "pilihan": [
+            "kontraksi",
+            "pertumbuhan",
+            "pembelahan",
+            "fotosintesis"
+          ],
+          "jawaban": "kontraksi"
+        },
+        {
+          "id": "k6-ipas-01-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Persendian menghubungkan antara dua tulang.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-ipas-01-04",
+          "tipe": "choose",
+          "pertanyaan": "Tulang rusuk berfungsi melindungi...",
+          "pilihan": [
+            "jantung dan paru-paru",
+            "otak",
+            "lambung dan usus",
+            "ginjal"
+          ],
+          "jawaban": "jantung dan paru-paru"
+        },
+        {
+          "id": "k6-ipas-01-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan jenis sendi!",
+          "pasangan": {
+            "Sendi engsel": "Siku & lutut",
+            "Sendi peluru": "Bahu & pinggul",
+            "Sendi putar": "Leher"
+          },
+          "jawaban": {
+            "Sendi engsel": "Siku & lutut",
+            "Sendi peluru": "Bahu & pinggul",
+            "Sendi putar": "Leher"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-ipas-02",
+      "unit_title": "Cerita tentang Indonesia Kita",
+      "soal": [
+        {
+          "id": "k6-ipas-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Proklamasi kemerdekaan Indonesia dibacakan oleh...",
+          "pilihan": [
+            "Soekarno-Hatta",
+            "Sudirman",
+            "Diponegoro",
+            "Kartini"
+          ],
+          "jawaban": "Soekarno-Hatta"
+        },
+        {
+          "id": "k6-ipas-02-02",
+          "tipe": "fill",
+          "pertanyaan": "Kemerdekaan Indonesia diproklamasikan pada _____ Agustus 1945.",
+          "pilihan": [
+            "17",
+            "16",
+            "18",
+            "19"
+          ],
+          "jawaban": "17"
+        },
+        {
+          "id": "k6-ipas-02-03",
+          "tipe": "truefalse",
+          "pertanyaan": "RA Kartini berjuang untuk pendidikan perempuan Indonesia.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-ipas-02-04",
+          "tipe": "choose",
+          "pertanyaan": "Dasar negara Indonesia adalah...",
+          "pilihan": [
+            "Pancasila",
+            "UUD 1945",
+            "Bhinneka Tunggal Ika",
+            "GBHN"
+          ],
+          "jawaban": "Pancasila"
+        },
+        {
+          "id": "k6-ipas-02-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan pahlawan dengan daerahnya!",
+          "pasangan": {
+            "Cut Nyak Dien": "Aceh",
+            "Pattimura": "Maluku",
+            "Diponegoro": "Jawa"
+          },
+          "jawaban": {
+            "Cut Nyak Dien": "Aceh",
+            "Pattimura": "Maluku",
+            "Diponegoro": "Jawa"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-ipas-03",
+      "unit_title": "Pelesir Keliling Dunia",
+      "soal": [
+        {
+          "id": "k6-ipas-03-01",
+          "tipe": "choose",
+          "pertanyaan": "Jumlah benua di dunia adalah...",
+          "pilihan": [
+            "7",
+            "5",
+            "6",
+            "8"
+          ],
+          "jawaban": "7"
+        },
+        {
+          "id": "k6-ipas-03-02",
+          "tipe": "fill",
+          "pertanyaan": "Ibu kota Jepang adalah _____.",
+          "pilihan": [
+            "Tokyo",
+            "Beijing",
+            "Seoul",
+            "Bangkok"
+          ],
+          "jawaban": "Tokyo"
+        },
+        {
+          "id": "k6-ipas-03-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Indonesia berada di Benua Asia.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-ipas-03-04",
+          "tipe": "choose",
+          "pertanyaan": "Benua terluas di dunia adalah...",
+          "pilihan": [
+            "Asia",
+            "Afrika",
+            "Eropa",
+            "Amerika"
+          ],
+          "jawaban": "Asia"
+        },
+        {
+          "id": "k6-ipas-03-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan negara dengan ibu kotanya!",
+          "pasangan": {
+            "Prancis": "Paris",
+            "Mesir": "Kairo",
+            "Brasil": "Brasilia"
+          },
+          "jawaban": {
+            "Prancis": "Paris",
+            "Mesir": "Kairo",
+            "Brasil": "Brasilia"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-ipas-04",
+      "unit_title": "Indonesia dan Masyarakat Dunia",
+      "soal": [
+        {
+          "id": "k6-ipas-04-01",
+          "tipe": "choose",
+          "pertanyaan": "ASEAN adalah organisasi negara-negara di...",
+          "pilihan": [
+            "Asia Tenggara",
+            "Asia Timur",
+            "Eropa",
+            "Afrika"
+          ],
+          "jawaban": "Asia Tenggara"
+        },
+        {
+          "id": "k6-ipas-04-02",
+          "tipe": "fill",
+          "pertanyaan": "PBB singkatan dari Perserikatan _____ Bangsa.",
+          "pilihan": [
+            "Bangsa-",
+            "Bangsa",
+            "Negara-",
+            "Rakyat"
+          ],
+          "jawaban": "Bangsa-"
+        },
+        {
+          "id": "k6-ipas-04-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Indonesia adalah anggota ASEAN dan PBB.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-ipas-04-04",
+          "tipe": "choose",
+          "pertanyaan": "Jumlah negara anggota ASEAN saat ini...",
+          "pilihan": [
+            "10",
+            "8",
+            "12",
+            "15"
+          ],
+          "jawaban": "10"
+        },
+        {
+          "id": "k6-ipas-04-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan organisasi dengan tujuannya!",
+          "pasangan": {
+            "ASEAN": "Kerja sama Asia Tenggara",
+            "PBB": "Perdamaian dunia",
+            "WHO": "Kesehatan dunia"
+          },
+          "jawaban": {
+            "ASEAN": "Kerja sama Asia Tenggara",
+            "PBB": "Perdamaian dunia",
+            "WHO": "Kesehatan dunia"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-ipas-05",
+      "unit_title": "Menjelajahi Bumi dan Antariksa",
+      "soal": [
+        {
+          "id": "k6-ipas-05-01",
+          "tipe": "choose",
+          "pertanyaan": "Planet terbesar di tata surya adalah...",
+          "pilihan": [
+            "Jupiter",
+            "Mars",
+            "Bumi",
+            "Venus"
+          ],
+          "jawaban": "Jupiter"
+        },
+        {
+          "id": "k6-ipas-05-02",
+          "tipe": "fill",
+          "pertanyaan": "Bumi memiliki _____ satelit alami.",
+          "pilihan": [
+            "1",
+            "2",
+            "3",
+            "0"
+          ],
+          "jawaban": "1"
+        },
+        {
+          "id": "k6-ipas-05-03",
+          "tipe": "choose",
+          "pertanyaan": "Planet yang paling dekat dengan Matahari adalah...",
+          "pilihan": [
+            "Merkurius",
+            "Venus",
+            "Bumi",
+            "Mars"
+          ],
+          "jawaban": "Merkurius"
+        },
+        {
+          "id": "k6-ipas-05-04",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan bencana dengan penyebabnya!",
+          "pasangan": {
+            "Gempa bumi": "Lempeng bertabrakan",
+            "Gunung berapi": "Tekanan magma",
+            "Banjir": "Hujan deras & deforestasi"
+          },
+          "jawaban": {
+            "Gempa bumi": "Lempeng bertabrakan",
+            "Gunung berapi": "Tekanan magma",
+            "Banjir": "Hujan deras & deforestasi"
+          }
+        },
+        {
+          "id": "k6-ipas-05-05",
+          "tipe": "truefalse",
+          "pertanyaan": "Tata surya kita memiliki 8 planet.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-ipas-06",
+      "unit_title": "Energi di Bumi akan Habis?",
+      "soal": [
+        {
+          "id": "k6-ipas-06-01",
+          "tipe": "choose",
+          "pertanyaan": "Energi terbarukan yang tidak akan habis adalah...",
+          "pilihan": [
+            "matahari",
+            "minyak bumi",
+            "batu bara",
+            "gas alam"
+          ],
+          "jawaban": "matahari"
+        },
+        {
+          "id": "k6-ipas-06-02",
+          "tipe": "fill",
+          "pertanyaan": "Panel surya mengubah energi matahari menjadi energi _____.",
+          "pilihan": [
+            "listrik",
+            "panas",
+            "gerak",
+            "kimia"
+          ],
+          "jawaban": "listrik"
+        },
+        {
+          "id": "k6-ipas-06-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Batu bara termasuk energi tidak terbarukan.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-ipas-06-04",
+          "tipe": "choose",
+          "pertanyaan": "PLTA menghasilkan listrik dari energi...",
+          "pilihan": [
+            "air",
+            "angin",
+            "matahari",
+            "panas bumi"
+          ],
+          "jawaban": "air"
+        },
+        {
+          "id": "k6-ipas-06-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan energi dengan jenisnya!",
+          "pasangan": {
+            "Matahari": "Terbarukan",
+            "Minyak bumi": "Tak terbarukan",
+            "Angin": "Terbarukan",
+            "Batu bara": "Tak terbarukan"
+          },
+          "jawaban": {
+            "Matahari": "Terbarukan",
+            "Minyak bumi": "Tak terbarukan",
+            "Angin": "Terbarukan",
+            "Batu bara": "Tak terbarukan"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-ipas-07",
+      "unit_title": "Bumi Kita Terancam Bahaya",
+      "soal": [
+        {
+          "id": "k6-ipas-07-01",
+          "tipe": "choose",
+          "pertanyaan": "Gas utama penyebab pemanasan global adalah...",
+          "pilihan": [
+            "CO₂ (karbon dioksida)",
+            "O₂ (oksigen)",
+            "N₂ (nitrogen)",
+            "H₂ (hidrogen)"
+          ],
+          "jawaban": "CO₂ (karbon dioksida)"
+        },
+        {
+          "id": "k6-ipas-07-02",
+          "tipe": "fill",
+          "pertanyaan": "Penebangan hutan berlebihan disebut _____.",
+          "pilihan": [
+            "deforestasi",
+            "irigasi",
+            "urbanisasi",
+            "industrialisasi"
+          ],
+          "jawaban": "deforestasi"
+        },
+        {
+          "id": "k6-ipas-07-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Pemanasan global menyebabkan es kutub mencair.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-ipas-07-04",
+          "tipe": "choose",
+          "pertanyaan": "Cara terbaik mengurangi polusi udara di kota adalah...",
+          "pilihan": [
+            "naik transportasi umum",
+            "bakar sampah",
+            "tambah pabrik",
+            "kurangi pohon"
+          ],
+          "jawaban": "naik transportasi umum"
+        },
+        {
+          "id": "k6-ipas-07-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan masalah lingkungan dengan dampaknya!",
+          "pasangan": {
+            "Polusi udara": "Penyakit pernapasan",
+            "Deforestasi": "Banjir & erosi",
+            "Pemanasan global": "Es kutub mencair"
+          },
+          "jawaban": {
+            "Polusi udara": "Penyakit pernapasan",
+            "Deforestasi": "Banjir & erosi",
+            "Pemanasan global": "Es kutub mencair"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-ipas-08",
+      "unit_title": "Proyek Akhir IPAS",
+      "soal": [
+        {
+          "id": "k6-ipas-08-01",
+          "tipe": "choose",
+          "pertanyaan": "Langkah pertama dalam metode ilmiah adalah...",
+          "pilihan": [
+            "observasi/pengamatan",
+            "percobaan",
+            "kesimpulan",
+            "hipotesis"
+          ],
+          "jawaban": "observasi/pengamatan"
+        },
+        {
+          "id": "k6-ipas-08-02",
+          "tipe": "fill",
+          "pertanyaan": "Hipotesis adalah dugaan _____ sebelum percobaan.",
+          "pilihan": [
+            "sementara",
+            "akhir",
+            "pasti",
+            "random"
+          ],
+          "jawaban": "sementara"
+        },
+        {
+          "id": "k6-ipas-08-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Data percobaan harus dicatat apa adanya, tidak direkayasa.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-ipas-08-04",
+          "tipe": "choose",
+          "pertanyaan": "Kompos organik dibuat dari...",
+          "pilihan": [
+            "sampah daun/sisa makanan",
+            "plastik",
+            "logam",
+            "kaca"
+          ],
+          "jawaban": "sampah daun/sisa makanan"
+        },
+        {
+          "id": "k6-ipas-08-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan tahap metode ilmiah!",
+          "pasangan": {
+            "1. Observasi": "Amati masalah",
+            "2. Hipotesis": "Dugaan sementara",
+            "3. Percobaan": "Uji hipotesis"
+          },
+          "jawaban": {
+            "1. Observasi": "Amati masalah",
+            "2. Hipotesis": "Dugaan sementara",
+            "3. Percobaan": "Uji hipotesis"
+          }
+        }
+      ]
+    }
+  ]
+}

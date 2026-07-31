@@ -1,0 +1,283 @@
+{
+  "kelas": 1,
+  "pelajaran": "bind",
+  "total_soal": 24,
+  "units": [
+    {
+      "unit_id": "k1-bind-01",
+      "unit_title": "Mengenal Perasaan",
+      "soal": [
+        {
+          "id": "k1-bind-01-01",
+          "tipe": "choose",
+          "pertanyaan": "Anton menang lomba. Dia merasa...",
+          "pilihan": [
+            "senang",
+            "sedih",
+            "marah"
+          ],
+          "jawaban": "senang"
+        },
+        {
+          "id": "k1-bind-01-02",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan perasaan!",
+          "pasangan": {
+            "😊": "senang",
+            "😢": "sedih",
+            "😠": "marah"
+          },
+          "jawaban": {
+            "😊": "senang",
+            "😢": "sedih",
+            "😠": "marah"
+          }
+        },
+        {
+          "id": "k1-bind-01-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Kalau jatuh dari sepeda, kita merasa senang.",
+          "jawaban": false
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-bind-02",
+      "unit_title": "Aku dan Teman Baru",
+      "soal": [
+        {
+          "id": "k1-bind-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Cara berteman yang baik adalah...",
+          "pilihan": [
+            "berbagi dan ramah",
+            "mengejek",
+            "tidak mau bermain"
+          ],
+          "jawaban": "berbagi dan ramah"
+        },
+        {
+          "id": "k1-bind-02-02",
+          "tipe": "fill",
+          "pertanyaan": "Kita harus ___ dengan teman baru.",
+          "pilihan": [
+            "bertengkar",
+            "bersahabat",
+            "mengabaikan"
+          ],
+          "jawaban": "bersahabat"
+        },
+        {
+          "id": "k1-bind-02-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Bertengkar adalah cara berteman yang baik.",
+          "jawaban": false
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-bind-03",
+      "unit_title": "Tubuhku",
+      "soal": [
+        {
+          "id": "k1-bind-03-01",
+          "tipe": "choose",
+          "pertanyaan": "Bagian tubuh yang digunakan untuk melihat...",
+          "pilihan": [
+            "mata",
+            "hidung",
+            "telinga"
+          ],
+          "jawaban": "mata"
+        },
+        {
+          "id": "k1-bind-03-02",
+          "tipe": "fill",
+          "pertanyaan": "Kita mencium bau dengan ___",
+          "pilihan": [
+            "hidung",
+            "mata",
+            "mulut"
+          ],
+          "jawaban": "hidung"
+        },
+        {
+          "id": "k1-bind-03-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Telinga digunakan untuk mendengar.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-bind-04",
+      "unit_title": "Keluargaku",
+      "soal": [
+        {
+          "id": "k1-bind-04-01",
+          "tipe": "choose",
+          "pertanyaan": "Orang tua laki-laki kita disebut...",
+          "pilihan": [
+            "ayah",
+            "ibu",
+            "kakak"
+          ],
+          "jawaban": "ayah"
+        },
+        {
+          "id": "k1-bind-04-02",
+          "tipe": "fill",
+          "pertanyaan": "Adik perempuan dari ibu kita disebut ___",
+          "pilihan": [
+            "tante",
+            "nenek",
+            "kakak"
+          ],
+          "jawaban": "tante"
+        },
+        {
+          "id": "k1-bind-04-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Nenek adalah ibu dari ayah atau ibu kita.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-bind-05",
+      "unit_title": "Hewan Peliharaanku",
+      "soal": [
+        {
+          "id": "k1-bind-05-01",
+          "tipe": "choose",
+          "pertanyaan": "Hewan yang sering dipelihara di rumah...",
+          "pilihan": [
+            "kucing",
+            "harimau",
+            "gajah"
+          ],
+          "jawaban": "kucing"
+        },
+        {
+          "id": "k1-bind-05-02",
+          "tipe": "fill",
+          "pertanyaan": "Memelihara hewan harus memberi ___ dan minum.",
+          "pilihan": [
+            "makan",
+            "batu",
+            "pasir"
+          ],
+          "jawaban": "makan"
+        },
+        {
+          "id": "k1-bind-05-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Ikan adalah hewan peliharaan.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-bind-06",
+      "unit_title": "Lingkungan Rumahku",
+      "soal": [
+        {
+          "id": "k1-bind-06-01",
+          "tipe": "choose",
+          "pertanyaan": "Tetangga yang baik harus saling...",
+          "pilihan": [
+            "membantu",
+            "mengabaikan",
+            "bertengkar"
+          ],
+          "jawaban": "membantu"
+        },
+        {
+          "id": "k1-bind-06-02",
+          "tipe": "fill",
+          "pertanyaan": "Menjaga kebersihan lingkungan adalah ___ kita bersama.",
+          "pilihan": [
+            "tanggung jawab",
+            "mainan",
+            "pekerjaan orang lain"
+          ],
+          "jawaban": "tanggung jawab"
+        },
+        {
+          "id": "k1-bind-06-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Membuang sampah sembarangan membuat lingkungan kotor.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-bind-07",
+      "unit_title": "Bermain dan Berolahraga",
+      "soal": [
+        {
+          "id": "k1-bind-07-01",
+          "tipe": "choose",
+          "pertanyaan": "Olahraga yang baik untuk tubuh kita adalah...",
+          "pilihan": [
+            "berlari",
+            "rebahan saja",
+            "makan terus"
+          ],
+          "jawaban": "berlari"
+        },
+        {
+          "id": "k1-bind-07-02",
+          "tipe": "fill",
+          "pertanyaan": "Bermain bersama teman membuat kita merasa ___",
+          "pilihan": [
+            "senang",
+            "sedih",
+            "marah"
+          ],
+          "jawaban": "senang"
+        },
+        {
+          "id": "k1-bind-07-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Olahraga membuat tubuh kita sehat.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-bind-08",
+      "unit_title": "Ayo ke Sekolah",
+      "soal": [
+        {
+          "id": "k1-bind-08-01",
+          "tipe": "choose",
+          "pertanyaan": "Sikap yang benar saat guru mengajar adalah...",
+          "pilihan": [
+            "mendengarkan dengan baik",
+            "bermain sendiri",
+            "berbicara dengan teman"
+          ],
+          "jawaban": "mendengarkan dengan baik"
+        },
+        {
+          "id": "k1-bind-08-02",
+          "tipe": "fill",
+          "pertanyaan": "Di sekolah kita belajar bersama ___ dan teman.",
+          "pilihan": [
+            "guru",
+            "pedagang",
+            "dokter"
+          ],
+          "jawaban": "guru"
+        },
+        {
+          "id": "k1-bind-08-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Kita harus menghormati guru di sekolah.",
+          "jawaban": true
+        }
+      ]
+    }
+  ]
+}

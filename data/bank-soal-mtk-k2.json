@@ -1,0 +1,1159 @@
+{
+  "kelas": 2,
+  "pelajaran": "mtk",
+  "total_soal": 100,
+  "units": [
+    {
+      "unit_id": "k2-mtk-01",
+      "unit_title": "Bermain dengan Bilangan 1–50",
+      "soal": [
+        {
+          "id": "k2-mtk-01-01",
+          "tipe": "choose",
+          "pertanyaan": "35 = ___ puluhan + ___ satuan",
+          "pilihan": [
+            "3 puluhan 5 satuan",
+            "5 puluhan 3 satuan",
+            "3 puluhan 3 satuan"
+          ],
+          "jawaban": "3 puluhan 5 satuan"
+        },
+        {
+          "id": "k2-mtk-01-02",
+          "tipe": "fill",
+          "pertanyaan": "Bilangan setelah 49 adalah ___",
+          "pilihan": [
+            "48",
+            "50",
+            "51"
+          ],
+          "jawaban": "50"
+        },
+        {
+          "id": "k2-mtk-01-03",
+          "tipe": "choose",
+          "pertanyaan": "Mana yang TERBESAR: 42, 24, 34?",
+          "pilihan": [
+            "42",
+            "24",
+            "34"
+          ],
+          "jawaban": "42"
+        },
+        {
+          "id": "k2-mtk-01-04",
+          "tipe": "truefalse",
+          "pertanyaan": "28 < 30.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-01-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan!",
+          "pasangan": {
+            "2 puluhan 3 satuan": "23",
+            "3 puluhan 1 satuan": "31",
+            "4 puluhan 0 satuan": "40"
+          },
+          "jawaban": {
+            "2 puluhan 3 satuan": "23",
+            "3 puluhan 1 satuan": "31",
+            "4 puluhan 0 satuan": "40"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-02",
+      "unit_title": "Bilangan sampai 100",
+      "soal": [
+        {
+          "id": "k2-mtk-02-01",
+          "tipe": "choose",
+          "pertanyaan": "100 = ___ puluhan",
+          "pilihan": [
+            "8",
+            "9",
+            "10"
+          ],
+          "jawaban": "10"
+        },
+        {
+          "id": "k2-mtk-02-02",
+          "tipe": "fill",
+          "pertanyaan": "75 = 7 puluhan + ___ satuan",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k2-mtk-02-03",
+          "tipe": "choose",
+          "pertanyaan": "Bilangan ganjil di antara 60 dan 65 adalah...",
+          "pilihan": [
+            "62",
+            "61",
+            "64"
+          ],
+          "jawaban": "61"
+        },
+        {
+          "id": "k2-mtk-02-04",
+          "tipe": "truefalse",
+          "pertanyaan": "80 > 79.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-02-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan nilai tempat!",
+          "pasangan": {
+            "6 pada 62": "puluhan",
+            "2 pada 62": "satuan",
+            "1 pada 100": "ratusan"
+          },
+          "jawaban": {
+            "6 pada 62": "puluhan",
+            "2 pada 62": "satuan",
+            "1 pada 100": "ratusan"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-03",
+      "unit_title": "Penjumlahan dua angka",
+      "soal": [
+        {
+          "id": "k2-mtk-03-01",
+          "tipe": "choose",
+          "pertanyaan": "25 + 13 = ?",
+          "pilihan": [
+            "37",
+            "38",
+            "39"
+          ],
+          "jawaban": "38"
+        },
+        {
+          "id": "k2-mtk-03-02",
+          "tipe": "fill",
+          "pertanyaan": "30 + ___ = 47",
+          "pilihan": [
+            "15",
+            "16",
+            "17"
+          ],
+          "jawaban": "17"
+        },
+        {
+          "id": "k2-mtk-03-03",
+          "tipe": "choose",
+          "pertanyaan": "Anton punya 12 kelereng. Budi kasih 9. Total?",
+          "pilihan": [
+            "20",
+            "21",
+            "22"
+          ],
+          "jawaban": "21"
+        },
+        {
+          "id": "k2-mtk-03-04",
+          "tipe": "truefalse",
+          "pertanyaan": "8 + 5 = 5 + 8 (sifat komutatif).",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-03-05",
+          "tipe": "fill",
+          "pertanyaan": "___ + 24 = 50",
+          "pilihan": [
+            "24",
+            "25",
+            "26"
+          ],
+          "jawaban": "26"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-04",
+      "unit_title": "Pengurangan dua angka",
+      "soal": [
+        {
+          "id": "k2-mtk-04-01",
+          "tipe": "choose",
+          "pertanyaan": "45 - 18 = ?",
+          "pilihan": [
+            "26",
+            "27",
+            "28"
+          ],
+          "jawaban": "27"
+        },
+        {
+          "id": "k2-mtk-04-02",
+          "tipe": "fill",
+          "pertanyaan": "60 - ___ = 35",
+          "pilihan": [
+            "24",
+            "25",
+            "26"
+          ],
+          "jawaban": "25"
+        },
+        {
+          "id": "k2-mtk-04-03",
+          "tipe": "choose",
+          "pertanyaan": "Di keranjang ada 30 apel. Diambil 13. Sisa?",
+          "pilihan": [
+            "16",
+            "17",
+            "18"
+          ],
+          "jawaban": "17"
+        },
+        {
+          "id": "k2-mtk-04-04",
+          "tipe": "truefalse",
+          "pertanyaan": "40 - 15 = 25.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-04-05",
+          "tipe": "fill",
+          "pertanyaan": "___ - 22 = 18",
+          "pilihan": [
+            "38",
+            "40",
+            "42"
+          ],
+          "jawaban": "40"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-05",
+      "unit_title": "Penjumlahan dengan simpan",
+      "soal": [
+        {
+          "id": "k2-mtk-05-01",
+          "tipe": "choose",
+          "pertanyaan": "37 + 25 = ?",
+          "pilihan": [
+            "61",
+            "62",
+            "63"
+          ],
+          "jawaban": "62"
+        },
+        {
+          "id": "k2-mtk-05-02",
+          "tipe": "fill",
+          "pertanyaan": "48 + ___ = 73",
+          "pilihan": [
+            "23",
+            "24",
+            "25"
+          ],
+          "jawaban": "25"
+        },
+        {
+          "id": "k2-mtk-05-03",
+          "tipe": "choose",
+          "pertanyaan": "55 + 28 = ?",
+          "pilihan": [
+            "82",
+            "83",
+            "84"
+          ],
+          "jawaban": "83"
+        },
+        {
+          "id": "k2-mtk-05-04",
+          "tipe": "truefalse",
+          "pertanyaan": "39 + 41 = 80.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-05-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan hasil penjumlahan!",
+          "pasangan": {
+            "17 + 15": "32",
+            "28 + 14": "42",
+            "35 + 27": "62"
+          },
+          "jawaban": {
+            "17 + 15": "32",
+            "28 + 14": "42",
+            "35 + 27": "62"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-06",
+      "unit_title": "Pengurangan dengan meminjam",
+      "soal": [
+        {
+          "id": "k2-mtk-06-01",
+          "tipe": "choose",
+          "pertanyaan": "53 - 27 = ?",
+          "pilihan": [
+            "25",
+            "26",
+            "27"
+          ],
+          "jawaban": "26"
+        },
+        {
+          "id": "k2-mtk-06-02",
+          "tipe": "fill",
+          "pertanyaan": "70 - ___ = 43",
+          "pilihan": [
+            "26",
+            "27",
+            "28"
+          ],
+          "jawaban": "27"
+        },
+        {
+          "id": "k2-mtk-06-03",
+          "tipe": "choose",
+          "pertanyaan": "82 - 46 = ?",
+          "pilihan": [
+            "35",
+            "36",
+            "37"
+          ],
+          "jawaban": "36"
+        },
+        {
+          "id": "k2-mtk-06-04",
+          "tipe": "truefalse",
+          "pertanyaan": "61 - 35 = 26.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-06-05",
+          "tipe": "fill",
+          "pertanyaan": "___ - 38 = 24",
+          "pilihan": [
+            "60",
+            "61",
+            "62"
+          ],
+          "jawaban": "62"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-07",
+      "unit_title": "Perkalian dasar",
+      "soal": [
+        {
+          "id": "k2-mtk-07-01",
+          "tipe": "choose",
+          "pertanyaan": "3 × 4 = ?",
+          "pilihan": [
+            "10",
+            "11",
+            "12"
+          ],
+          "jawaban": "12"
+        },
+        {
+          "id": "k2-mtk-07-02",
+          "tipe": "fill",
+          "pertanyaan": "5 × ___ = 25",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k2-mtk-07-03",
+          "tipe": "choose",
+          "pertanyaan": "Ada 4 piring, tiap piring 6 kue. Total?",
+          "pilihan": [
+            "22",
+            "24",
+            "26"
+          ],
+          "jawaban": "24"
+        },
+        {
+          "id": "k2-mtk-07-04",
+          "tipe": "truefalse",
+          "pertanyaan": "2 × 9 = 18.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-07-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan perkalian!",
+          "pasangan": {
+            "3 × 3": "9",
+            "4 × 5": "20",
+            "6 × 2": "12"
+          },
+          "jawaban": {
+            "3 × 3": "9",
+            "4 × 5": "20",
+            "6 × 2": "12"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-08",
+      "unit_title": "Pembagian dasar",
+      "soal": [
+        {
+          "id": "k2-mtk-08-01",
+          "tipe": "choose",
+          "pertanyaan": "12 ÷ 4 = ?",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k2-mtk-08-02",
+          "tipe": "fill",
+          "pertanyaan": "20 ÷ ___ = 4",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k2-mtk-08-03",
+          "tipe": "choose",
+          "pertanyaan": "18 kue dibagi 6 anak sama rata. Tiap anak dapat?",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k2-mtk-08-04",
+          "tipe": "truefalse",
+          "pertanyaan": "15 ÷ 3 = 5.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-08-05",
+          "tipe": "fill",
+          "pertanyaan": "24 ÷ ___ = 8",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-09",
+      "unit_title": "Bangun Datar",
+      "soal": [
+        {
+          "id": "k2-mtk-09-01",
+          "tipe": "choose",
+          "pertanyaan": "Persegi panjang punya berapa sisi?",
+          "pilihan": [
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k2-mtk-09-02",
+          "tipe": "fill",
+          "pertanyaan": "Segitiga punya ___ sudut.",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k2-mtk-09-03",
+          "tipe": "choose",
+          "pertanyaan": "Bangun datar dengan semua sisi sama panjang dan 4 sudut...",
+          "pilihan": [
+            "persegi",
+            "persegi panjang",
+            "segitiga"
+          ],
+          "jawaban": "persegi"
+        },
+        {
+          "id": "k2-mtk-09-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Lingkaran tidak punya sudut.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-09-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan bangun dengan jumlah sisinya!",
+          "pasangan": {
+            "Segitiga": "3",
+            "Persegi": "4",
+            "Segilima": "5"
+          },
+          "jawaban": {
+            "Segitiga": "3",
+            "Persegi": "4",
+            "Segilima": "5"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-10",
+      "unit_title": "Bangun Ruang",
+      "soal": [
+        {
+          "id": "k2-mtk-10-01",
+          "tipe": "choose",
+          "pertanyaan": "Bola es krim berbentuk...",
+          "pilihan": [
+            "kubus",
+            "bola",
+            "tabung"
+          ],
+          "jawaban": "bola"
+        },
+        {
+          "id": "k2-mtk-10-02",
+          "tipe": "fill",
+          "pertanyaan": "Kubus punya ___ sisi.",
+          "pilihan": [
+            "4",
+            "6",
+            "8"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k2-mtk-10-03",
+          "tipe": "choose",
+          "pertanyaan": "Kaleng susu berbentuk...",
+          "pilihan": [
+            "kubus",
+            "bola",
+            "tabung"
+          ],
+          "jawaban": "tabung"
+        },
+        {
+          "id": "k2-mtk-10-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Kotak hadiah berbentuk balok.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-10-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan benda dengan bentuknya!",
+          "pasangan": {
+            "Dadu": "Kubus",
+            "Kelereng": "Bola",
+            "Topi ulang tahun": "Kerucut"
+          },
+          "jawaban": {
+            "Dadu": "Kubus",
+            "Kelereng": "Bola",
+            "Topi ulang tahun": "Kerucut"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-11",
+      "unit_title": "Pengukuran Panjang",
+      "soal": [
+        {
+          "id": "k2-mtk-11-01",
+          "tipe": "choose",
+          "pertanyaan": "Satuan panjang yang paling umum dipakai...",
+          "pilihan": [
+            "cm",
+            "kg",
+            "liter"
+          ],
+          "jawaban": "cm"
+        },
+        {
+          "id": "k2-mtk-11-02",
+          "tipe": "fill",
+          "pertanyaan": "1 meter = ___ cm",
+          "pilihan": [
+            "10",
+            "100",
+            "1000"
+          ],
+          "jawaban": "100"
+        },
+        {
+          "id": "k2-mtk-11-03",
+          "tipe": "choose",
+          "pertanyaan": "Meja panjangnya 120 cm = ___ meter lebih 20 cm",
+          "pilihan": [
+            "0",
+            "1",
+            "2"
+          ],
+          "jawaban": "1"
+        },
+        {
+          "id": "k2-mtk-11-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Jengkal adalah satuan tidak baku.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-11-05",
+          "tipe": "fill",
+          "pertanyaan": "200 cm = ___ m",
+          "pilihan": [
+            "1",
+            "2",
+            "3"
+          ],
+          "jawaban": "2"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-12",
+      "unit_title": "Pengukuran Berat",
+      "soal": [
+        {
+          "id": "k2-mtk-12-01",
+          "tipe": "choose",
+          "pertanyaan": "Satuan berat yang umum...",
+          "pilihan": [
+            "cm",
+            "kg",
+            "liter"
+          ],
+          "jawaban": "kg"
+        },
+        {
+          "id": "k2-mtk-12-02",
+          "tipe": "fill",
+          "pertanyaan": "1 kg = ___ gram",
+          "pilihan": [
+            "10",
+            "100",
+            "1000"
+          ],
+          "jawaban": "1000"
+        },
+        {
+          "id": "k2-mtk-12-03",
+          "tipe": "choose",
+          "pertanyaan": "Buku 500 gram + pensil 200 gram = ?",
+          "pilihan": [
+            "600 gram",
+            "700 gram",
+            "800 gram"
+          ],
+          "jawaban": "700 gram"
+        },
+        {
+          "id": "k2-mtk-12-04",
+          "tipe": "truefalse",
+          "pertanyaan": "1 kg lebih berat dari 900 gram.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-12-05",
+          "tipe": "fill",
+          "pertanyaan": "2000 gram = ___ kg",
+          "pilihan": [
+            "1",
+            "2",
+            "3"
+          ],
+          "jawaban": "2"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-13",
+      "unit_title": "Pengukuran Volume",
+      "soal": [
+        {
+          "id": "k2-mtk-13-01",
+          "tipe": "choose",
+          "pertanyaan": "Satuan volume cairan...",
+          "pilihan": [
+            "cm",
+            "kg",
+            "liter"
+          ],
+          "jawaban": "liter"
+        },
+        {
+          "id": "k2-mtk-13-02",
+          "tipe": "fill",
+          "pertanyaan": "1 liter = ___ mililiter",
+          "pilihan": [
+            "10",
+            "100",
+            "1000"
+          ],
+          "jawaban": "1000"
+        },
+        {
+          "id": "k2-mtk-13-03",
+          "tipe": "choose",
+          "pertanyaan": "Ember 5 liter + ember 3 liter = ?",
+          "pilihan": [
+            "6 liter",
+            "7 liter",
+            "8 liter"
+          ],
+          "jawaban": "8 liter"
+        },
+        {
+          "id": "k2-mtk-13-04",
+          "tipe": "truefalse",
+          "pertanyaan": "500 mL = 0,5 liter.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-13-05",
+          "tipe": "fill",
+          "pertanyaan": "2 liter = ___ mL",
+          "pilihan": [
+            "200",
+            "2000",
+            "20000"
+          ],
+          "jawaban": "2000"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-14",
+      "unit_title": "Mengenal Uang",
+      "soal": [
+        {
+          "id": "k2-mtk-14-01",
+          "tipe": "choose",
+          "pertanyaan": "Uang kertas Rp5.000 + koin Rp500 = ?",
+          "pilihan": [
+            "Rp5.000",
+            "Rp5.500",
+            "Rp6.000"
+          ],
+          "jawaban": "Rp5.500"
+        },
+        {
+          "id": "k2-mtk-14-02",
+          "tipe": "fill",
+          "pertanyaan": "Beli buku Rp3.000 bayar Rp5.000. Kembalian ___",
+          "pilihan": [
+            "Rp1.000",
+            "Rp2.000",
+            "Rp3.000"
+          ],
+          "jawaban": "Rp2.000"
+        },
+        {
+          "id": "k2-mtk-14-03",
+          "tipe": "choose",
+          "pertanyaan": "Ibu punya Rp10.000. Beli sayur Rp4.500. Sisa?",
+          "pilihan": [
+            "Rp5.000",
+            "Rp5.500",
+            "Rp6.000"
+          ],
+          "jawaban": "Rp5.500"
+        },
+        {
+          "id": "k2-mtk-14-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Rp7.000 lebih dari Rp6.500.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-14-05",
+          "tipe": "fill",
+          "pertanyaan": "2 × Rp2.500 = Rp ___",
+          "pilihan": [
+            "4000",
+            "5000",
+            "6000"
+          ],
+          "jawaban": "5000"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-15",
+      "unit_title": "Waktu dan Jam",
+      "soal": [
+        {
+          "id": "k2-mtk-15-01",
+          "tipe": "choose",
+          "pertanyaan": "1 jam = ___ menit",
+          "pilihan": [
+            "30",
+            "60",
+            "120"
+          ],
+          "jawaban": "60"
+        },
+        {
+          "id": "k2-mtk-15-02",
+          "tipe": "fill",
+          "pertanyaan": "Pukul 08.00 + 2 jam = pukul ___",
+          "pilihan": [
+            "09.00",
+            "10.00",
+            "11.00"
+          ],
+          "jawaban": "10.00"
+        },
+        {
+          "id": "k2-mtk-15-03",
+          "tipe": "choose",
+          "pertanyaan": "Sekolah mulai 07.00 dan selesai 12.00. Berapa jam?",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k2-mtk-15-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Setengah jam = 30 menit.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-15-05",
+          "tipe": "fill",
+          "pertanyaan": "1 hari = ___ jam",
+          "pilihan": [
+            "12",
+            "24",
+            "48"
+          ],
+          "jawaban": "24"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-16",
+      "unit_title": "Data dan Tabel Sederhana",
+      "soal": [
+        {
+          "id": "k2-mtk-16-01",
+          "tipe": "choose",
+          "pertanyaan": "Dari tabel: Apel 8, Pisang 5, Jeruk 7. Buah paling sedikit?",
+          "pilihan": [
+            "Apel",
+            "Pisang",
+            "Jeruk"
+          ],
+          "jawaban": "Pisang"
+        },
+        {
+          "id": "k2-mtk-16-02",
+          "tipe": "fill",
+          "pertanyaan": "Jumlah total: Apel 8 + Pisang 5 + Jeruk 7 = ___",
+          "pilihan": [
+            "18",
+            "19",
+            "20"
+          ],
+          "jawaban": "20"
+        },
+        {
+          "id": "k2-mtk-16-03",
+          "tipe": "choose",
+          "pertanyaan": "Berapa lebih banyak Apel dari Pisang?",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k2-mtk-16-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Tabel membantu membaca data dengan lebih mudah.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-16-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan data dengan nilai!",
+          "pasangan": {
+            "Apel": "8",
+            "Pisang": "5",
+            "Jeruk": "7"
+          },
+          "jawaban": {
+            "Apel": "8",
+            "Pisang": "5",
+            "Jeruk": "7"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-17",
+      "unit_title": "Diagram Batang",
+      "soal": [
+        {
+          "id": "k2-mtk-17-01",
+          "tipe": "choose",
+          "pertanyaan": "Diagram batang menunjukkan data dengan menggunakan...",
+          "pilihan": [
+            "batang/balok",
+            "titik",
+            "garis saja"
+          ],
+          "jawaban": "batang/balok"
+        },
+        {
+          "id": "k2-mtk-17-02",
+          "tipe": "fill",
+          "pertanyaan": "Sumbu tegak (Y) biasanya menunjukkan ___.",
+          "pilihan": [
+            "nilai/jumlah",
+            "nama",
+            "warna"
+          ],
+          "jawaban": "nilai/jumlah"
+        },
+        {
+          "id": "k2-mtk-17-03",
+          "tipe": "choose",
+          "pertanyaan": "Batang paling tinggi mewakili data...",
+          "pilihan": [
+            "terkecil",
+            "terbesar",
+            "sama"
+          ],
+          "jawaban": "terbesar"
+        },
+        {
+          "id": "k2-mtk-17-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Diagram batang cocok untuk membandingkan beberapa kategori.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-17-05",
+          "tipe": "fill",
+          "pertanyaan": "Sumbu mendatar (X) biasanya menunjukkan ___.",
+          "pilihan": [
+            "kategori/nama",
+            "nilai",
+            "warna"
+          ],
+          "jawaban": "kategori/nama"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-18",
+      "unit_title": "Sifat-sifat Operasi Hitung",
+      "soal": [
+        {
+          "id": "k2-mtk-18-01",
+          "tipe": "choose",
+          "pertanyaan": "Sifat komutatif: 5 + 3 = 3 + ___",
+          "pilihan": [
+            "5",
+            "6",
+            "7"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k2-mtk-18-02",
+          "tipe": "fill",
+          "pertanyaan": "Sifat asosiatif: (2+3)+4 = 2+(3+___)=9",
+          "pilihan": [
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k2-mtk-18-03",
+          "tipe": "choose",
+          "pertanyaan": "0 + 7 = ?",
+          "pilihan": [
+            "0",
+            "7",
+            "1"
+          ],
+          "jawaban": "7"
+        },
+        {
+          "id": "k2-mtk-18-04",
+          "tipe": "truefalse",
+          "pertanyaan": "a + b = b + a adalah sifat komutatif.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-18-05",
+          "tipe": "fill",
+          "pertanyaan": "Bilangan yang ditambah 0 hasilnya tetap ___",
+          "pilihan": [
+            "berubah",
+            "0",
+            "sama"
+          ],
+          "jawaban": "sama"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-19",
+      "unit_title": "Pola Bilangan",
+      "soal": [
+        {
+          "id": "k2-mtk-19-01",
+          "tipe": "choose",
+          "pertanyaan": "Pola: 2, 4, 6, 8, ___",
+          "pilihan": [
+            "9",
+            "10",
+            "11"
+          ],
+          "jawaban": "10"
+        },
+        {
+          "id": "k2-mtk-19-02",
+          "tipe": "fill",
+          "pertanyaan": "Pola: 1, 4, 7, 10, ___",
+          "pilihan": [
+            "12",
+            "13",
+            "14"
+          ],
+          "jawaban": "13"
+        },
+        {
+          "id": "k2-mtk-19-03",
+          "tipe": "choose",
+          "pertanyaan": "Pola: 20, 17, 14, 11, ___",
+          "pilihan": [
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "8"
+        },
+        {
+          "id": "k2-mtk-19-04",
+          "tipe": "truefalse",
+          "pertanyaan": "5, 10, 15, 20 adalah pola bilangan kelipatan 5.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-19-05",
+          "tipe": "fill",
+          "pertanyaan": "Pola ganjil: 1, 3, 5, 7, ___",
+          "pilihan": [
+            "8",
+            "9",
+            "10"
+          ],
+          "jawaban": "9"
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-mtk-20",
+      "unit_title": "Bilangan Ganjil dan Genap",
+      "soal": [
+        {
+          "id": "k2-mtk-20-01",
+          "tipe": "choose",
+          "pertanyaan": "Mana yang termasuk bilangan genap?",
+          "pilihan": [
+            "13",
+            "14",
+            "15"
+          ],
+          "jawaban": "14"
+        },
+        {
+          "id": "k2-mtk-20-02",
+          "tipe": "fill",
+          "pertanyaan": "Bilangan ganjil antara 10 dan 14 adalah 11 dan ___",
+          "pilihan": [
+            "12",
+            "13",
+            "14"
+          ],
+          "jawaban": "13"
+        },
+        {
+          "id": "k2-mtk-20-03",
+          "tipe": "choose",
+          "pertanyaan": "34 + 16 = ___ (ganjil/genap?)",
+          "pilihan": [
+            "ganjil",
+            "genap",
+            "nol"
+          ],
+          "jawaban": "genap"
+        },
+        {
+          "id": "k2-mtk-20-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Bilangan genap selalu habis dibagi 2.",
+          "jawaban": true
+        },
+        {
+          "id": "k2-mtk-20-05",
+          "tipe": "match",
+          "pertanyaan": "Kelompokkan!",
+          "pasangan": {
+            "12": "genap",
+            "17": "ganjil",
+            "20": "genap"
+          },
+          "jawaban": {
+            "12": "genap",
+            "17": "ganjil",
+            "20": "genap"
+          }
+        }
+      ]
+    }
+  ]
+}

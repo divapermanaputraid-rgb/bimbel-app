@@ -1,0 +1,307 @@
+{
+  "kelas": 5,
+  "pelajaran": "ipas",
+  "total_soal": 25,
+  "units": [
+    {
+      "unit_id": "k5-ipas-01",
+      "unit_title": "Melihat karena Cahaya, Mendengar karena Bunyi",
+      "soal": [
+        {
+          "id": "k5-ipas-01-01",
+          "tipe": "choose",
+          "pertanyaan": "Cahaya merambat secara...",
+          "pilihan": [
+            "lurus",
+            "berbelok",
+            "melingkar"
+          ],
+          "jawaban": "lurus"
+        },
+        {
+          "id": "k5-ipas-01-02",
+          "tipe": "fill",
+          "pertanyaan": "Pemantulan cahaya di cermin menghasilkan _____.",
+          "pilihan": [
+            "bayangan",
+            "suara",
+            "panas"
+          ],
+          "jawaban": "bayangan"
+        },
+        {
+          "id": "k5-ipas-01-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Bunyi dapat merambat di ruang hampa udara.",
+          "jawaban": false
+        },
+        {
+          "id": "k5-ipas-01-04",
+          "tipe": "choose",
+          "pertanyaan": "Gema terjadi karena bunyi...",
+          "pilihan": [
+            "dipantulkan",
+            "diserap",
+            "diperkuat"
+          ],
+          "jawaban": "dipantulkan"
+        },
+        {
+          "id": "k5-ipas-01-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan sifat cahaya!",
+          "pasangan": {
+            "Cermin": "Memantulkan",
+            "Kaca bening": "Meneruskan",
+            "Tembok": "Menyerap"
+          },
+          "jawaban": {
+            "Cermin": "Memantulkan",
+            "Kaca bening": "Meneruskan",
+            "Tembok": "Menyerap"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k5-ipas-02",
+      "unit_title": "Harmoni dalam Ekosistem",
+      "soal": [
+        {
+          "id": "k5-ipas-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Produsen dalam rantai makanan adalah...",
+          "pilihan": [
+            "tumbuhan",
+            "harimau",
+            "rusa"
+          ],
+          "jawaban": "tumbuhan"
+        },
+        {
+          "id": "k5-ipas-02-02",
+          "tipe": "fill",
+          "pertanyaan": "Simbiosis mutualisme menguntungkan _____ pihak.",
+          "pilihan": [
+            "kedua",
+            "satu",
+            "tidak ada"
+          ],
+          "jawaban": "kedua"
+        },
+        {
+          "id": "k5-ipas-02-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Lebah dan bunga menjalin simbiosis mutualisme.",
+          "jawaban": true
+        },
+        {
+          "id": "k5-ipas-02-04",
+          "tipe": "choose",
+          "pertanyaan": "Jika kelinci punah, populasi rumput akan...",
+          "pilihan": [
+            "bertambah",
+            "berkurang",
+            "tetap"
+          ],
+          "jawaban": "bertambah"
+        },
+        {
+          "id": "k5-ipas-02-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan jenis simbiosis!",
+          "pasangan": {
+            "Kutu di rambut": "Parasitisme",
+            "Lebah & bunga": "Mutualisme",
+            "Ikan remora & hiu": "Komensalisme"
+          },
+          "jawaban": {
+            "Kutu di rambut": "Parasitisme",
+            "Lebah & bunga": "Mutualisme",
+            "Ikan remora & hiu": "Komensalisme"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k5-ipas-03",
+      "unit_title": "Magnet, Listrik, dan Teknologi",
+      "soal": [
+        {
+          "id": "k5-ipas-03-01",
+          "tipe": "choose",
+          "pertanyaan": "Magnet hanya menarik benda yang mengandung...",
+          "pilihan": [
+            "besi/logam feromagnetik",
+            "plastik",
+            "kayu"
+          ],
+          "jawaban": "besi/logam feromagnetik"
+        },
+        {
+          "id": "k5-ipas-03-02",
+          "tipe": "fill",
+          "pertanyaan": "Rangkaian listrik sederhana butuh baterai, kabel, dan _____.",
+          "pilihan": [
+            "lampu",
+            "kertas",
+            "kayu"
+          ],
+          "jawaban": "lampu"
+        },
+        {
+          "id": "k5-ipas-03-03",
+          "tipe": "choose",
+          "pertanyaan": "Kutub senama magnet akan...",
+          "pilihan": [
+            "tolak-menolak",
+            "tarik-menarik",
+            "diam"
+          ],
+          "jawaban": "tolak-menolak"
+        },
+        {
+          "id": "k5-ipas-03-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Matahari adalah sumber energi terbesar di bumi.",
+          "jawaban": true
+        },
+        {
+          "id": "k5-ipas-03-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan lapisan bumi!",
+          "pasangan": {
+            "Kerak": "Lapisan paling luar",
+            "Mantel": "Lapisan tengah",
+            "Inti": "Lapisan paling dalam"
+          },
+          "jawaban": {
+            "Kerak": "Lapisan paling luar",
+            "Mantel": "Lapisan tengah",
+            "Inti": "Lapisan paling dalam"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k5-ipas-04",
+      "unit_title": "Ayo Berkenalan dengan Bumi Kita",
+      "soal": [
+        {
+          "id": "k5-ipas-04-01",
+          "tipe": "choose",
+          "pertanyaan": "Bumi terdiri dari berapa lapisan utama?",
+          "pilihan": [
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k5-ipas-04-02",
+          "tipe": "truefalse",
+          "pertanyaan": "Tsunami dapat terjadi akibat gempa di dasar laut.",
+          "jawaban": true
+        },
+        {
+          "id": "k5-ipas-04-03",
+          "tipe": "fill",
+          "pertanyaan": "Indonesia banyak gunung berapi karena berada di _____ Pasifik.",
+          "pilihan": [
+            "Cincin Api",
+            "Laut Tengah",
+            "Palung Dalam"
+          ],
+          "jawaban": "Cincin Api"
+        },
+        {
+          "id": "k5-ipas-04-04",
+          "tipe": "choose",
+          "pertanyaan": "Lempeng tektonik yang bergerak dapat menyebabkan...",
+          "pilihan": [
+            "gempa dan gunung berapi",
+            "hujan",
+            "angin topan"
+          ],
+          "jawaban": "gempa dan gunung berapi"
+        },
+        {
+          "id": "k5-ipas-04-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan lapisan bumi dengan isinya!",
+          "pasangan": {
+            "Kerak": "Batuan keras",
+            "Mantel": "Batuan cair (magma)",
+            "Inti": "Besi & nikel"
+          },
+          "jawaban": {
+            "Kerak": "Batuan keras",
+            "Mantel": "Batuan cair (magma)",
+            "Inti": "Besi & nikel"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k5-ipas-05",
+      "unit_title": "Bagaimana Kita Hidup dan Bertumbuh",
+      "soal": [
+        {
+          "id": "k5-ipas-05-01",
+          "tipe": "choose",
+          "pertanyaan": "Organ yang memompa darah ke seluruh tubuh adalah...",
+          "pilihan": [
+            "jantung",
+            "paru-paru",
+            "hati"
+          ],
+          "jawaban": "jantung"
+        },
+        {
+          "id": "k5-ipas-05-02",
+          "tipe": "fill",
+          "pertanyaan": "Proses pernapasan menggunakan organ _____.",
+          "pilihan": [
+            "paru-paru",
+            "jantung",
+            "lambung"
+          ],
+          "jawaban": "paru-paru"
+        },
+        {
+          "id": "k5-ipas-05-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Sistem pencernaan dimulai dari mulut.",
+          "jawaban": true
+        },
+        {
+          "id": "k5-ipas-05-04",
+          "tipe": "choose",
+          "pertanyaan": "Vitamin C banyak terdapat pada...",
+          "pilihan": [
+            "jeruk dan sayuran",
+            "nasi",
+            "daging sapi"
+          ],
+          "jawaban": "jeruk dan sayuran"
+        },
+        {
+          "id": "k5-ipas-05-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan organ dengan fungsinya!",
+          "pasangan": {
+            "Jantung": "Memompa darah",
+            "Paru-paru": "Pernapasan",
+            "Lambung": "Mencerna makanan"
+          },
+          "jawaban": {
+            "Jantung": "Memompa darah",
+            "Paru-paru": "Pernapasan",
+            "Lambung": "Mencerna makanan"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "kelas": 3,
+  "pelajaran": "bind",
+  "total_soal": 32,
+  "units": [
+    {
+      "unit_id": "k3-bind-01",
+      "unit_title": "Berbagi dengan Sesama",
+      "soal": [
+        {
+          "id": "k3-bind-01-01",
+          "tipe": "choose",
+          "pertanyaan": "Berbagi kepada orang lain menunjukkan sikap...",
+          "pilihan": [
+            "peduli",
+            "egois",
+            "pelit"
+          ],
+          "jawaban": "peduli"
+        },
+        {
+          "id": "k3-bind-01-02",
+          "tipe": "fill",
+          "pertanyaan": "Tindakan berbagi membuat hati kita merasa ___",
+          "pilihan": [
+            "senang",
+            "sedih",
+            "kesal"
+          ],
+          "jawaban": "senang"
+        },
+        {
+          "id": "k3-bind-01-03",
+          "tipe": "choose",
+          "pertanyaan": "\"Berbagi\" berarti...",
+          "pilihan": [
+            "memberi sebagian kepada orang lain",
+            "mengambil milik orang lain",
+            "menyimpan semuanya"
+          ],
+          "jawaban": "memberi sebagian kepada orang lain"
+        },
+        {
+          "id": "k3-bind-01-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Orang yang suka berbagi memiliki banyak teman.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bind-02",
+      "unit_title": "Sahabat Sejati",
+      "soal": [
+        {
+          "id": "k3-bind-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Ciri sahabat sejati adalah...",
+          "pilihan": [
+            "selalu ada di saat susah",
+            "hanya ada saat senang",
+            "suka mengambil untung"
+          ],
+          "jawaban": "selalu ada di saat susah"
+        },
+        {
+          "id": "k3-bind-02-02",
+          "tipe": "fill",
+          "pertanyaan": "Persahabatan yang baik didasari rasa ___ dan pengertian.",
+          "pilihan": [
+            "saling percaya",
+            "iri hati",
+            "persaingan"
+          ],
+          "jawaban": "saling percaya"
+        },
+        {
+          "id": "k3-bind-02-03",
+          "tipe": "choose",
+          "pertanyaan": "Alfa dan Galih bekerja bersama untuk menang. Ini menunjukkan...",
+          "pilihan": [
+            "kerja sama",
+            "persaingan",
+            "iri hati"
+          ],
+          "jawaban": "kerja sama"
+        },
+        {
+          "id": "k3-bind-02-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Meutia dan Andi berbeda suku tapi tetap berteman. Ini toleransi.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bind-03",
+      "unit_title": "Tokoh Pahlawan Kita",
+      "soal": [
+        {
+          "id": "k3-bind-03-01",
+          "tipe": "choose",
+          "pertanyaan": "Jenderal Sudirman tetap berjuang meski sakit. Ini menunjukkan...",
+          "pilihan": [
+            "pantang menyerah",
+            "mudah menyerah",
+            "malas"
+          ],
+          "jawaban": "pantang menyerah"
+        },
+        {
+          "id": "k3-bind-03-02",
+          "tipe": "fill",
+          "pertanyaan": "\"Pengobar semangat\" artinya orang yang ___.",
+          "pilihan": [
+            "memberi semangat",
+            "melemahkan",
+            "menghalangi"
+          ],
+          "jawaban": "memberi semangat"
+        },
+        {
+          "id": "k3-bind-03-03",
+          "tipe": "choose",
+          "pertanyaan": "RA Kartini dikenal sebagai pahlawan...",
+          "pilihan": [
+            "emansipasi wanita",
+            "kemerdekaan di laut",
+            "teknologi"
+          ],
+          "jawaban": "emansipasi wanita"
+        },
+        {
+          "id": "k3-bind-03-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Pahlawan berjuang demi kepentingan bangsa, bukan diri sendiri.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bind-04",
+      "unit_title": "Merawat Lingkungan",
+      "soal": [
+        {
+          "id": "k3-bind-04-01",
+          "tipe": "choose",
+          "pertanyaan": "Cara merawat lingkungan agar tetap hijau adalah...",
+          "pilihan": [
+            "menanam pohon",
+            "menebang hutan",
+            "membakar sampah"
+          ],
+          "jawaban": "menanam pohon"
+        },
+        {
+          "id": "k3-bind-04-02",
+          "tipe": "fill",
+          "pertanyaan": "Lingkungan yang bersih membuat kita ___ dan nyaman.",
+          "pilihan": [
+            "sehat",
+            "sakit",
+            "sedih"
+          ],
+          "jawaban": "sehat"
+        },
+        {
+          "id": "k3-bind-04-03",
+          "tipe": "choose",
+          "pertanyaan": "Sampah plastik berbahaya karena...",
+          "pilihan": [
+            "sulit terurai",
+            "mudah hilang",
+            "tidak berbahaya"
+          ],
+          "jawaban": "sulit terurai"
+        },
+        {
+          "id": "k3-bind-04-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Membuang sampah di sungai dapat menyebabkan banjir.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bind-05",
+      "unit_title": "Cerita Dongeng",
+      "soal": [
+        {
+          "id": "k3-bind-05-01",
+          "tipe": "choose",
+          "pertanyaan": "Dongeng biasanya mengandung...",
+          "pilihan": [
+            "pesan moral",
+            "fakta ilmiah",
+            "berita terkini"
+          ],
+          "jawaban": "pesan moral"
+        },
+        {
+          "id": "k3-bind-05-02",
+          "tipe": "fill",
+          "pertanyaan": "Tokoh utama dalam cerita disebut ___.",
+          "pilihan": [
+            "protagonis",
+            "setting",
+            "alur"
+          ],
+          "jawaban": "protagonis"
+        },
+        {
+          "id": "k3-bind-05-03",
+          "tipe": "choose",
+          "pertanyaan": "Latar cerita (setting) meliputi...",
+          "pilihan": [
+            "tempat, waktu, suasana",
+            "tokoh dan watak",
+            "awal dan akhir saja"
+          ],
+          "jawaban": "tempat, waktu, suasana"
+        },
+        {
+          "id": "k3-bind-05-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Antagonis adalah tokoh jahat dalam cerita.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bind-06",
+      "unit_title": "Kosakata dan Kalimat",
+      "soal": [
+        {
+          "id": "k3-bind-06-01",
+          "tipe": "choose",
+          "pertanyaan": "Kalimat yang benar dimulai dengan...",
+          "pilihan": [
+            "huruf kapital",
+            "huruf kecil",
+            "angka"
+          ],
+          "jawaban": "huruf kapital"
+        },
+        {
+          "id": "k3-bind-06-02",
+          "tipe": "fill",
+          "pertanyaan": "Kalimat yang menyatakan pertanyaan diakhiri tanda ___.",
+          "pilihan": [
+            "tanya (?)",
+            "titik (.)",
+            "seru (!)"
+          ],
+          "jawaban": "tanya (?)"
+        },
+        {
+          "id": "k3-bind-06-03",
+          "tipe": "choose",
+          "pertanyaan": "Sinonim dari kata \"besar\" adalah...",
+          "pilihan": [
+            "luas",
+            "kecil",
+            "sempit"
+          ],
+          "jawaban": "luas"
+        },
+        {
+          "id": "k3-bind-06-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Antonim adalah lawan kata.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bind-07",
+      "unit_title": "Puisi Anak",
+      "soal": [
+        {
+          "id": "k3-bind-07-01",
+          "tipe": "choose",
+          "pertanyaan": "Ciri khas puisi dibandingkan prosa adalah...",
+          "pilihan": [
+            "menggunakan baris dan bait",
+            "paragraf panjang",
+            "kalimat biasa"
+          ],
+          "jawaban": "menggunakan baris dan bait"
+        },
+        {
+          "id": "k3-bind-07-02",
+          "tipe": "fill",
+          "pertanyaan": "Persajakan atau rima membuat puisi terdengar lebih ___",
+          "pilihan": [
+            "indah",
+            "membosankan",
+            "susah"
+          ],
+          "jawaban": "indah"
+        },
+        {
+          "id": "k3-bind-07-03",
+          "tipe": "choose",
+          "pertanyaan": "Puisi berisi ungkapan...",
+          "pilihan": [
+            "perasaan dan pikiran penyair",
+            "berita terkini",
+            "laporan ilmiah"
+          ],
+          "jawaban": "perasaan dan pikiran penyair"
+        },
+        {
+          "id": "k3-bind-07-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Puisi umumnya lebih pendek dari cerpen.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k3-bind-08",
+      "unit_title": "Surat dan Pengumuman",
+      "soal": [
+        {
+          "id": "k3-bind-08-01",
+          "tipe": "choose",
+          "pertanyaan": "Bagian surat pribadi yang paling utama adalah...",
+          "pilihan": [
+            "isi surat",
+            "amplop",
+            "perangko"
+          ],
+          "jawaban": "isi surat"
+        },
+        {
+          "id": "k3-bind-08-02",
+          "tipe": "fill",
+          "pertanyaan": "Pengumuman ditujukan kepada ___ orang banyak.",
+          "pilihan": [
+            "banyak/umum",
+            "satu",
+            "dua"
+          ],
+          "jawaban": "banyak/umum"
+        },
+        {
+          "id": "k3-bind-08-03",
+          "tipe": "choose",
+          "pertanyaan": "Bagian awal surat biasanya berisi...",
+          "pilihan": [
+            "salam pembuka",
+            "tanda tangan",
+            "isi pesan"
+          ],
+          "jawaban": "salam pembuka"
+        },
+        {
+          "id": "k3-bind-08-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Surat pribadi lebih formal dibanding surat resmi.",
+          "jawaban": false
+        }
+      ]
+    }
+  ]
+}

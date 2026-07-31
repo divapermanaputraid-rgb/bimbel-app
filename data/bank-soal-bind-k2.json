@@ -1,0 +1,279 @@
+{
+  "kelas": 2,
+  "pelajaran": "bind",
+  "total_soal": 24,
+  "units": [
+    {
+      "unit_id": "k2-bind-01",
+      "unit_title": "Aku Anak yang Jujur",
+      "soal": [
+        {
+          "id": "k2-bind-01-01",
+          "tipe": "choose",
+          "pertanyaan": "Jujur artinya...",
+          "pilihan": [
+            "berkata benar",
+            "berbohong",
+            "menipu"
+          ],
+          "jawaban": "berkata benar"
+        },
+        {
+          "id": "k2-bind-01-02",
+          "tipe": "fill",
+          "pertanyaan": "Anak yang jujur tidak pernah ___",
+          "pilihan": [
+            "berbohong",
+            "belajar",
+            "bermain"
+          ],
+          "jawaban": "berbohong"
+        },
+        {
+          "id": "k2-bind-01-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Anak yang jujur dipercaya oleh teman dan orang tua.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bind-02",
+      "unit_title": "Menjaga Kesehatan",
+      "soal": [
+        {
+          "id": "k2-bind-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Agar tubuh sehat, kita harus...",
+          "pilihan": [
+            "makan teratur dan olahraga",
+            "tidur terus",
+            "makan jajan saja"
+          ],
+          "jawaban": "makan teratur dan olahraga"
+        },
+        {
+          "id": "k2-bind-02-02",
+          "tipe": "fill",
+          "pertanyaan": "Mencuci tangan sebelum makan agar tidak ___.",
+          "pilihan": [
+            "sakit",
+            "kuat",
+            "besar"
+          ],
+          "jawaban": "sakit"
+        },
+        {
+          "id": "k2-bind-02-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Mandi dua kali sehari membuat tubuh bersih dan sehat.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bind-03",
+      "unit_title": "Berhati-hati di Jalan",
+      "soal": [
+        {
+          "id": "k2-bind-03-01",
+          "tipe": "choose",
+          "pertanyaan": "Sebelum menyeberang jalan, kita harus...",
+          "pilihan": [
+            "lihat kiri-kanan",
+            "lari cepat",
+            "tutup mata"
+          ],
+          "jawaban": "lihat kiri-kanan"
+        },
+        {
+          "id": "k2-bind-03-02",
+          "tipe": "fill",
+          "pertanyaan": "Kita tidak boleh menerima permen dari orang ___.",
+          "pilihan": [
+            "teman",
+            "guru",
+            "asing"
+          ],
+          "jawaban": "asing"
+        },
+        {
+          "id": "k2-bind-03-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Berhati-hati artinya waspada dan teliti.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bind-04",
+      "unit_title": "Aku Suka Membaca",
+      "soal": [
+        {
+          "id": "k2-bind-04-01",
+          "tipe": "choose",
+          "pertanyaan": "Manfaat membaca buku adalah...",
+          "pilihan": [
+            "menambah pengetahuan",
+            "membuat mengantuk",
+            "membuang waktu"
+          ],
+          "jawaban": "menambah pengetahuan"
+        },
+        {
+          "id": "k2-bind-04-02",
+          "tipe": "fill",
+          "pertanyaan": "Membaca harus dengan ___ yang cukup agar mata tidak lelah.",
+          "pilihan": [
+            "cahaya/penerangan",
+            "kegelapan",
+            "musik keras"
+          ],
+          "jawaban": "cahaya/penerangan"
+        },
+        {
+          "id": "k2-bind-04-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Membaca bisa meningkatkan kemampuan bahasa.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bind-05",
+      "unit_title": "Keragaman di Sekitarku",
+      "soal": [
+        {
+          "id": "k2-bind-05-01",
+          "tipe": "choose",
+          "pertanyaan": "Meskipun berbeda suku, kita harus...",
+          "pilihan": [
+            "saling menghargai",
+            "saling mengejek",
+            "menghindari"
+          ],
+          "jawaban": "saling menghargai"
+        },
+        {
+          "id": "k2-bind-05-02",
+          "tipe": "fill",
+          "pertanyaan": "Indonesia kaya akan keragaman budaya dan ___",
+          "pilihan": [
+            "suku bangsa",
+            "kekacauan",
+            "konflik"
+          ],
+          "jawaban": "suku bangsa"
+        },
+        {
+          "id": "k2-bind-05-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Perbedaan membuat kita saling melengkapi.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bind-06",
+      "unit_title": "Mengenal Uang",
+      "soal": [
+        {
+          "id": "k2-bind-06-01",
+          "tipe": "choose",
+          "pertanyaan": "Menabung adalah kebiasaan...",
+          "pilihan": [
+            "baik untuk masa depan",
+            "membuang uang",
+            "boros"
+          ],
+          "jawaban": "baik untuk masa depan"
+        },
+        {
+          "id": "k2-bind-06-02",
+          "tipe": "fill",
+          "pertanyaan": "Sebelum membeli sesuatu, kita harus ___ apakah perlu atau tidak.",
+          "pilihan": [
+            "memikirkan",
+            "langsung beli",
+            "meminjam"
+          ],
+          "jawaban": "memikirkan"
+        },
+        {
+          "id": "k2-bind-06-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Membeli barang yang tidak perlu adalah pemborosan.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bind-07",
+      "unit_title": "Lingkungan Sekolahku",
+      "soal": [
+        {
+          "id": "k2-bind-07-01",
+          "tipe": "choose",
+          "pertanyaan": "Cara menjaga kebersihan kelas adalah...",
+          "pilihan": [
+            "membuang sampah di tempat sampah",
+            "mencoret dinding",
+            "membuang sampah di lantai"
+          ],
+          "jawaban": "membuang sampah di tempat sampah"
+        },
+        {
+          "id": "k2-bind-07-02",
+          "tipe": "fill",
+          "pertanyaan": "Piket kelas dilakukan secara ___ dan bergantian.",
+          "pilihan": [
+            "bersama",
+            "sendiri",
+            "terpaksa"
+          ],
+          "jawaban": "bersama"
+        },
+        {
+          "id": "k2-bind-07-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Sekolah yang bersih membuat nyaman belajar.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k2-bind-08",
+      "unit_title": "Cerita Fabel Sederhana",
+      "soal": [
+        {
+          "id": "k2-bind-08-01",
+          "tipe": "choose",
+          "pertanyaan": "Fabel adalah cerita tentang...",
+          "pilihan": [
+            "hewan yang berperilaku seperti manusia",
+            "manusia biasa",
+            "benda mati"
+          ],
+          "jawaban": "hewan yang berperilaku seperti manusia"
+        },
+        {
+          "id": "k2-bind-08-02",
+          "tipe": "fill",
+          "pertanyaan": "Dari fabel, kita bisa mengambil ___ atau pelajaran.",
+          "pilihan": [
+            "pesan moral",
+            "kebingungan",
+            "masalah"
+          ],
+          "jawaban": "pesan moral"
+        },
+        {
+          "id": "k2-bind-08-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Kura-kura dan kelinci adalah contoh cerita fabel.",
+          "jawaban": true
+        }
+      ]
+    }
+  ]
+}

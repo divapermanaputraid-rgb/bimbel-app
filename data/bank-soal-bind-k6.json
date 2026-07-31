@@ -1,0 +1,381 @@
+{
+  "kelas": 6,
+  "pelajaran": "bind",
+  "total_soal": 30,
+  "units": [
+    {
+      "unit_id": "k6-bind-01",
+      "unit_title": "Rasa Nasionalisme",
+      "soal": [
+        {
+          "id": "k6-bind-01-01",
+          "tipe": "choose",
+          "pertanyaan": "Nasionalisme berarti...",
+          "pilihan": [
+            "cinta tanah air",
+            "mencari untung sendiri",
+            "tidak peduli negara",
+            "melarikan diri"
+          ],
+          "jawaban": "cinta tanah air"
+        },
+        {
+          "id": "k6-bind-01-02",
+          "tipe": "fill",
+          "pertanyaan": "Salah satu cara menunjukkan nasionalisme adalah ___ produk dalam negeri.",
+          "pilihan": [
+            "mencintai/menggunakan",
+            "merusak",
+            "mengimpor semua",
+            "mengabaikan"
+          ],
+          "jawaban": "mencintai/menggunakan"
+        },
+        {
+          "id": "k6-bind-01-03",
+          "tipe": "choose",
+          "pertanyaan": "Lagu Indonesia Raya diciptakan oleh...",
+          "pilihan": [
+            "WR Supratman",
+            "Ibu Soed",
+            "AT Mahmud",
+            "C Simanjuntak"
+          ],
+          "jawaban": "WR Supratman"
+        },
+        {
+          "id": "k6-bind-01-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Mengibarkan bendera Merah Putih pada hari nasional adalah wujud nasionalisme.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-bind-01-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan simbol nasional!",
+          "pasangan": {
+            "Burung Garuda": "Lambang negara",
+            "Merah Putih": "Bendera",
+            "Indonesia Raya": "Lagu kebangsaan"
+          },
+          "jawaban": {
+            "Burung Garuda": "Lambang negara",
+            "Merah Putih": "Bendera",
+            "Indonesia Raya": "Lagu kebangsaan"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-bind-02",
+      "unit_title": "Tokoh Inspiratif",
+      "soal": [
+        {
+          "id": "k6-bind-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Habibie dikenal sebagai tokoh Indonesia di bidang...",
+          "pilihan": [
+            "teknologi/penerbangan",
+            "seni musik",
+            "olahraga",
+            "kuliner"
+          ],
+          "jawaban": "teknologi/penerbangan"
+        },
+        {
+          "id": "k6-bind-02-02",
+          "tipe": "fill",
+          "pertanyaan": "Seorang tokoh inspiratif memiliki sikap ___ dan tidak mudah menyerah.",
+          "pilihan": [
+            "gigih/pantang menyerah",
+            "pemalas",
+            "egois",
+            "sombong"
+          ],
+          "jawaban": "gigih/pantang menyerah"
+        },
+        {
+          "id": "k6-bind-02-03",
+          "tipe": "choose",
+          "pertanyaan": "Kita bisa meneladani tokoh inspiratif dengan...",
+          "pilihan": [
+            "mengambil nilai positifnya",
+            "meniru semua gayanya",
+            "hanya mengagumi",
+            "tidak peduli"
+          ],
+          "jawaban": "mengambil nilai positifnya"
+        },
+        {
+          "id": "k6-bind-02-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Ibu Soed dikenal sebagai komponis lagu anak Indonesia.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-bind-02-05",
+          "tipe": "fill",
+          "pertanyaan": "Biografi adalah tulisan tentang ___ seseorang.",
+          "pilihan": [
+            "riwayat hidup",
+            "hobi",
+            "resep masakan",
+            "jadwal kegiatan"
+          ],
+          "jawaban": "riwayat hidup"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-bind-03",
+      "unit_title": "Cerita Legenda",
+      "soal": [
+        {
+          "id": "k6-bind-03-01",
+          "tipe": "choose",
+          "pertanyaan": "Legenda adalah cerita yang...",
+          "pilihan": [
+            "dianggap benar-benar terjadi di masa lalu",
+            "fiksi murni",
+            "berita aktual",
+            "dongeng binatang"
+          ],
+          "jawaban": "dianggap benar-benar terjadi di masa lalu"
+        },
+        {
+          "id": "k6-bind-03-02",
+          "tipe": "fill",
+          "pertanyaan": "Legenda biasanya berkaitan dengan asal-usul suatu ___ atau tempat.",
+          "pilihan": [
+            "nama/tempat",
+            "matematika",
+            "sains",
+            "teknologi"
+          ],
+          "jawaban": "nama/tempat"
+        },
+        {
+          "id": "k6-bind-03-03",
+          "tipe": "choose",
+          "pertanyaan": "Pesan moral legenda Malin Kundang adalah...",
+          "pilihan": [
+            "jangan durhaka pada orang tua",
+            "jangan berlayar",
+            "jangan menjadi kaya",
+            "jangan berkelana"
+          ],
+          "jawaban": "jangan durhaka pada orang tua"
+        },
+        {
+          "id": "k6-bind-03-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Rawa Pening dan Sangkuriang adalah contoh legenda Indonesia.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-bind-03-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan legenda dengan asalnya!",
+          "pasangan": {
+            "Sangkuriang": "Jawa Barat",
+            "Malin Kundang": "Sumatera Barat",
+            "Timun Mas": "Jawa Tengah"
+          },
+          "jawaban": {
+            "Sangkuriang": "Jawa Barat",
+            "Malin Kundang": "Sumatera Barat",
+            "Timun Mas": "Jawa Tengah"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-bind-04",
+      "unit_title": "Majas dalam Bahasa Indonesia",
+      "soal": [
+        {
+          "id": "k6-bind-04-01",
+          "tipe": "choose",
+          "pertanyaan": "\"Pulau Komodo berdiri gagah\" adalah majas...",
+          "pilihan": [
+            "personifikasi",
+            "hiperbola",
+            "metafora",
+            "simile"
+          ],
+          "jawaban": "personifikasi"
+        },
+        {
+          "id": "k6-bind-04-02",
+          "tipe": "fill",
+          "pertanyaan": "Majas yang melebih-lebihkan fakta disebut ___",
+          "pilihan": [
+            "hiperbola",
+            "personifikasi",
+            "metafora",
+            "simile"
+          ],
+          "jawaban": "hiperbola"
+        },
+        {
+          "id": "k6-bind-04-03",
+          "tipe": "choose",
+          "pertanyaan": "Dari legenda Putri Komodo, kita belajar menghargai...",
+          "pilihan": [
+            "alam dan keberanian",
+            "kekayaan",
+            "kekuasaan",
+            "kemalasan"
+          ],
+          "jawaban": "alam dan keberanian"
+        },
+        {
+          "id": "k6-bind-04-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Anggun C. Sasmi adalah musisi Indonesia yang go internasional.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-bind-04-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan majas dengan contohnya!",
+          "pasangan": {
+            "Personifikasi": "Pohon melambai",
+            "Hiperbola": "Rumah sebesar gunung",
+            "Metafora": "Dia adalah singa",
+            "Simile": "Wajahnya seperti bunga"
+          },
+          "jawaban": {
+            "Personifikasi": "Pohon melambai",
+            "Hiperbola": "Rumah sebesar gunung",
+            "Metafora": "Dia adalah singa",
+            "Simile": "Wajahnya seperti bunga"
+          }
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-bind-05",
+      "unit_title": "Laporan dan Teks Eksplanasi",
+      "soal": [
+        {
+          "id": "k6-bind-05-01",
+          "tipe": "choose",
+          "pertanyaan": "Teks eksplanasi menjelaskan tentang...",
+          "pilihan": [
+            "proses atau fenomena",
+            "cerita fiksi",
+            "iklan produk",
+            "surat pribadi"
+          ],
+          "jawaban": "proses atau fenomena"
+        },
+        {
+          "id": "k6-bind-05-02",
+          "tipe": "fill",
+          "pertanyaan": "Struktur teks eksplanasi: pernyataan umum, ___, dan interpretasi.",
+          "pilihan": [
+            "deretan penjelas",
+            "penutup biasa",
+            "kata sandang",
+            "majas"
+          ],
+          "jawaban": "deretan penjelas"
+        },
+        {
+          "id": "k6-bind-05-03",
+          "tipe": "choose",
+          "pertanyaan": "Laporan hasil pengamatan harus berisi data yang...",
+          "pilihan": [
+            "faktual dan objektif",
+            "imajinatif",
+            "bersifat opini",
+            "tidak terstruktur"
+          ],
+          "jawaban": "faktual dan objektif"
+        },
+        {
+          "id": "k6-bind-05-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Kata hubung sebab-akibat antara lain \"karena\", \"sehingga\", \"akibatnya\".",
+          "jawaban": true
+        },
+        {
+          "id": "k6-bind-05-05",
+          "tipe": "fill",
+          "pertanyaan": "Kata baku yang benar: \"ijin\" atau \"___\"?",
+          "pilihan": [
+            "izin",
+            "idzin",
+            "isin",
+            "ezin"
+          ],
+          "jawaban": "izin"
+        }
+      ]
+    },
+    {
+      "unit_id": "k6-bind-06",
+      "unit_title": "Pidato dan Presentasi",
+      "soal": [
+        {
+          "id": "k6-bind-06-01",
+          "tipe": "choose",
+          "pertanyaan": "Bagian pembuka pidato biasanya berisi...",
+          "pilihan": [
+            "salam dan ucapan terima kasih",
+            "penutup",
+            "isi utama",
+            "kesimpulan"
+          ],
+          "jawaban": "salam dan ucapan terima kasih"
+        },
+        {
+          "id": "k6-bind-06-02",
+          "tipe": "fill",
+          "pertanyaan": "Saat berpidato, kita harus berbicara dengan suara yang ___ dan jelas.",
+          "pilihan": [
+            "lantang/keras",
+            "pelan sekali",
+            "bergumam",
+            "tidak terdengar"
+          ],
+          "jawaban": "lantang/keras"
+        },
+        {
+          "id": "k6-bind-06-03",
+          "tipe": "choose",
+          "pertanyaan": "Agar pidato menarik, pembicara harus...",
+          "pilihan": [
+            "menatap pendengar dan percaya diri",
+            "membaca teks terus",
+            "menunduk",
+            "berbisik"
+          ],
+          "jawaban": "menatap pendengar dan percaya diri"
+        },
+        {
+          "id": "k6-bind-06-04",
+          "tipe": "truefalse",
+          "pertanyaan": "Pidato perpisahan sekolah termasuk pidato dalam acara resmi.",
+          "jawaban": true
+        },
+        {
+          "id": "k6-bind-06-05",
+          "tipe": "match",
+          "pertanyaan": "Cocokkan bagian pidato!",
+          "pasangan": {
+            "Pembuka": "Salam & perkenalan",
+            "Isi": "Pokok pembicaraan",
+            "Penutup": "Kesimpulan & harapan"
+          },
+          "jawaban": {
+            "Pembuka": "Salam & perkenalan",
+            "Isi": "Pokok pembicaraan",
+            "Penutup": "Kesimpulan & harapan"
+          }
+        }
+      ]
+    }
+  ]
+}

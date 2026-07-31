@@ -1,0 +1,619 @@
+{
+  "kelas": 1,
+  "pelajaran": "mtk",
+  "total_soal": 54,
+  "units": [
+    {
+      "unit_id": "k1-mtk-01",
+      "unit_title": "Mengenal Bilangan 1–5",
+      "soal": [
+        {
+          "id": "k1-mtk-01-01",
+          "tipe": "choose",
+          "pertanyaan": "Ada berapa 🍎? 🍎🍎🍎",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k1-mtk-01-02",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi: 1, 2, ___, 4, 5",
+          "pilihan": [
+            "2",
+            "3",
+            "6"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k1-mtk-01-03",
+          "tipe": "truefalse",
+          "pertanyaan": "4 lebih besar dari 2.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-02",
+      "unit_title": "Mengenal Bilangan 6–10",
+      "soal": [
+        {
+          "id": "k1-mtk-02-01",
+          "tipe": "choose",
+          "pertanyaan": "Berapa jumlah 🐟🐟🐟🐟🐟🐟🐟?",
+          "pilihan": [
+            "6",
+            "7",
+            "8"
+          ],
+          "jawaban": "7"
+        },
+        {
+          "id": "k1-mtk-02-02",
+          "tipe": "fill",
+          "pertanyaan": "Lengkapi: 6, 7, ___, 9, 10",
+          "pilihan": [
+            "7",
+            "8",
+            "11"
+          ],
+          "jawaban": "8"
+        },
+        {
+          "id": "k1-mtk-02-03",
+          "tipe": "truefalse",
+          "pertanyaan": "10 lebih besar dari 9.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-03",
+      "unit_title": "Pasangan Bilangan",
+      "soal": [
+        {
+          "id": "k1-mtk-03-01",
+          "tipe": "choose",
+          "pertanyaan": "Pasangan 3 supaya jadi 5 adalah...",
+          "pilihan": [
+            "1",
+            "2",
+            "3"
+          ],
+          "jawaban": "2"
+        },
+        {
+          "id": "k1-mtk-03-02",
+          "tipe": "fill",
+          "pertanyaan": "4 + ___ = 5",
+          "pilihan": [
+            "0",
+            "1",
+            "2"
+          ],
+          "jawaban": "1"
+        },
+        {
+          "id": "k1-mtk-03-03",
+          "tipe": "truefalse",
+          "pertanyaan": "2 + 3 = 5.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-04",
+      "unit_title": "Membandingkan Bilangan",
+      "soal": [
+        {
+          "id": "k1-mtk-04-01",
+          "tipe": "choose",
+          "pertanyaan": "Mana yang LEBIH BESAR: 7 atau 3?",
+          "pilihan": [
+            "7",
+            "3",
+            "sama"
+          ],
+          "jawaban": "7"
+        },
+        {
+          "id": "k1-mtk-04-02",
+          "tipe": "fill",
+          "pertanyaan": "5 ___ 8 (isi: < atau >)",
+          "pilihan": [
+            "<",
+            ">",
+            "="
+          ],
+          "jawaban": "<"
+        },
+        {
+          "id": "k1-mtk-04-03",
+          "tipe": "truefalse",
+          "pertanyaan": "6 lebih kecil dari 9.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-05",
+      "unit_title": "Cerita Penjumlahan",
+      "soal": [
+        {
+          "id": "k1-mtk-05-01",
+          "tipe": "choose",
+          "pertanyaan": "Upe punya 3 apel 🍎. Dapat lagi 2. Total?",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k1-mtk-05-02",
+          "tipe": "fill",
+          "pertanyaan": "2 + 4 = ___",
+          "pilihan": [
+            "5",
+            "6",
+            "7"
+          ],
+          "jawaban": "6"
+        },
+        {
+          "id": "k1-mtk-05-03",
+          "tipe": "truefalse",
+          "pertanyaan": "3 + 3 = 6.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-06",
+      "unit_title": "Cara Menjumlahkan",
+      "soal": [
+        {
+          "id": "k1-mtk-06-01",
+          "tipe": "choose",
+          "pertanyaan": "4 + 5 = ?",
+          "pilihan": [
+            "8",
+            "9",
+            "10"
+          ],
+          "jawaban": "9"
+        },
+        {
+          "id": "k1-mtk-06-02",
+          "tipe": "fill",
+          "pertanyaan": "___ + 3 = 7",
+          "pilihan": [
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k1-mtk-06-03",
+          "tipe": "truefalse",
+          "pertanyaan": "5 + 0 = 5.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-07",
+      "unit_title": "Cerita Pengurangan",
+      "soal": [
+        {
+          "id": "k1-mtk-07-01",
+          "tipe": "choose",
+          "pertanyaan": "Ada 8 🍪, dimakan 3. Sisa?",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k1-mtk-07-02",
+          "tipe": "fill",
+          "pertanyaan": "9 - 4 = ___",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k1-mtk-07-03",
+          "tipe": "truefalse",
+          "pertanyaan": "7 - 2 = 5.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-08",
+      "unit_title": "Cara Mengurangi",
+      "soal": [
+        {
+          "id": "k1-mtk-08-01",
+          "tipe": "choose",
+          "pertanyaan": "10 - 6 = ?",
+          "pilihan": [
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k1-mtk-08-02",
+          "tipe": "fill",
+          "pertanyaan": "8 - ___ = 3",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k1-mtk-08-03",
+          "tipe": "truefalse",
+          "pertanyaan": "6 - 6 = 0.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-09",
+      "unit_title": "Bangun Datar di Sekitar Kita",
+      "soal": [
+        {
+          "id": "k1-mtk-09-01",
+          "tipe": "choose",
+          "pertanyaan": "Berapa sudut pada segitiga?",
+          "pilihan": [
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": "3"
+        },
+        {
+          "id": "k1-mtk-09-02",
+          "tipe": "fill",
+          "pertanyaan": "Persegi punya ___ sisi.",
+          "pilihan": [
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": "4"
+        },
+        {
+          "id": "k1-mtk-09-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Lingkaran tidak punya sudut.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-10",
+      "unit_title": "Mengelompokkan Benda",
+      "soal": [
+        {
+          "id": "k1-mtk-10-01",
+          "tipe": "choose",
+          "pertanyaan": "Bola, kelereng, ember — dikelompokkan berdasarkan...",
+          "pilihan": [
+            "bentuk bulat",
+            "warna",
+            "ukuran"
+          ],
+          "jawaban": "bentuk bulat"
+        },
+        {
+          "id": "k1-mtk-10-02",
+          "tipe": "fill",
+          "pertanyaan": "Mengelompokkan benda = melihat ___ yang sama.",
+          "pilihan": [
+            "ciri",
+            "nama",
+            "nomor"
+          ],
+          "jawaban": "ciri"
+        },
+        {
+          "id": "k1-mtk-10-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Benda bisa dikelompokkan berdasarkan warna.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-11",
+      "unit_title": "Bilangan 11–15",
+      "soal": [
+        {
+          "id": "k1-mtk-11-01",
+          "tipe": "choose",
+          "pertanyaan": "12 = 1 puluhan + berapa satuan?",
+          "pilihan": [
+            "1",
+            "2",
+            "3"
+          ],
+          "jawaban": "2"
+        },
+        {
+          "id": "k1-mtk-11-02",
+          "tipe": "fill",
+          "pertanyaan": "Setelah 13 adalah ___",
+          "pilihan": [
+            "12",
+            "14",
+            "15"
+          ],
+          "jawaban": "14"
+        },
+        {
+          "id": "k1-mtk-11-03",
+          "tipe": "truefalse",
+          "pertanyaan": "15 lebih besar dari 11.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-12",
+      "unit_title": "Bilangan 16–20",
+      "soal": [
+        {
+          "id": "k1-mtk-12-01",
+          "tipe": "choose",
+          "pertanyaan": "20 = ___ puluhan + 0 satuan",
+          "pilihan": [
+            "1",
+            "2",
+            "3"
+          ],
+          "jawaban": "2"
+        },
+        {
+          "id": "k1-mtk-12-02",
+          "tipe": "fill",
+          "pertanyaan": "Sebelum 18 adalah ___",
+          "pilihan": [
+            "16",
+            "17",
+            "19"
+          ],
+          "jawaban": "17"
+        },
+        {
+          "id": "k1-mtk-12-03",
+          "tipe": "truefalse",
+          "pertanyaan": "19 < 20.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-13",
+      "unit_title": "Penjumlahan sampai 20",
+      "soal": [
+        {
+          "id": "k1-mtk-13-01",
+          "tipe": "choose",
+          "pertanyaan": "12 + 5 = ?",
+          "pilihan": [
+            "16",
+            "17",
+            "18"
+          ],
+          "jawaban": "17"
+        },
+        {
+          "id": "k1-mtk-13-02",
+          "tipe": "fill",
+          "pertanyaan": "___ + 6 = 14",
+          "pilihan": [
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "8"
+        },
+        {
+          "id": "k1-mtk-13-03",
+          "tipe": "truefalse",
+          "pertanyaan": "10 + 10 = 20.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-14",
+      "unit_title": "Pengurangan sampai 20",
+      "soal": [
+        {
+          "id": "k1-mtk-14-01",
+          "tipe": "choose",
+          "pertanyaan": "18 - 5 = ?",
+          "pilihan": [
+            "12",
+            "13",
+            "14"
+          ],
+          "jawaban": "13"
+        },
+        {
+          "id": "k1-mtk-14-02",
+          "tipe": "fill",
+          "pertanyaan": "20 - ___ = 12",
+          "pilihan": [
+            "7",
+            "8",
+            "9"
+          ],
+          "jawaban": "8"
+        },
+        {
+          "id": "k1-mtk-14-03",
+          "tipe": "truefalse",
+          "pertanyaan": "15 - 5 = 10.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-15",
+      "unit_title": "Lebih, Kurang, dan Selisih",
+      "soal": [
+        {
+          "id": "k1-mtk-15-01",
+          "tipe": "choose",
+          "pertanyaan": "Selisih 14 dan 9 adalah...",
+          "pilihan": [
+            "4",
+            "5",
+            "6"
+          ],
+          "jawaban": "5"
+        },
+        {
+          "id": "k1-mtk-15-02",
+          "tipe": "fill",
+          "pertanyaan": "16 - 9 = ___",
+          "pilihan": [
+            "6",
+            "7",
+            "8"
+          ],
+          "jawaban": "7"
+        },
+        {
+          "id": "k1-mtk-15-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Selisih 10 dan 6 adalah 4.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-16",
+      "unit_title": "Membandingkan Panjang Benda",
+      "soal": [
+        {
+          "id": "k1-mtk-16-01",
+          "tipe": "choose",
+          "pertanyaan": "Pensil lebih panjang dari penghapus. Penghapus lebih...",
+          "pilihan": [
+            "pendek",
+            "panjang",
+            "sama"
+          ],
+          "jawaban": "pendek"
+        },
+        {
+          "id": "k1-mtk-16-02",
+          "tipe": "fill",
+          "pertanyaan": "Buku ___ dari pensil. (gunakan: lebih panjang / lebih pendek)",
+          "pilihan": [
+            "lebih panjang",
+            "lebih pendek",
+            "sama dengan"
+          ],
+          "jawaban": "lebih panjang"
+        },
+        {
+          "id": "k1-mtk-16-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Penggaris 30 cm lebih panjang dari pensil 15 cm.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-17",
+      "unit_title": "Mengukur dengan Benda Tidak Baku",
+      "soal": [
+        {
+          "id": "k1-mtk-17-01",
+          "tipe": "choose",
+          "pertanyaan": "Meja diukur dengan jengkal = 10 jengkal. Kursi = 6 jengkal. Mana lebih panjang?",
+          "pilihan": [
+            "meja",
+            "kursi",
+            "sama"
+          ],
+          "jawaban": "meja"
+        },
+        {
+          "id": "k1-mtk-17-02",
+          "tipe": "fill",
+          "pertanyaan": "Mengukur dengan jengkal disebut pengukuran ___.",
+          "pilihan": [
+            "tidak baku",
+            "baku",
+            "tepat"
+          ],
+          "jawaban": "tidak baku"
+        },
+        {
+          "id": "k1-mtk-17-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Penggaris adalah alat ukur baku.",
+          "jawaban": true
+        }
+      ]
+    },
+    {
+      "unit_id": "k1-mtk-18",
+      "unit_title": "Mengelompokkan Data dan Diagram Gambar",
+      "soal": [
+        {
+          "id": "k1-mtk-18-01",
+          "tipe": "choose",
+          "pertanyaan": "Dari 10 siswa: 4 suka bola, 6 suka lari. Mana paling banyak?",
+          "pilihan": [
+            "bola",
+            "lari",
+            "sama"
+          ],
+          "jawaban": "lari"
+        },
+        {
+          "id": "k1-mtk-18-02",
+          "tipe": "fill",
+          "pertanyaan": "Diagram gambar menggunakan ___ untuk mewakili data.",
+          "pilihan": [
+            "gambar/simbol",
+            "angka saja",
+            "huruf saja"
+          ],
+          "jawaban": "gambar/simbol"
+        },
+        {
+          "id": "k1-mtk-18-03",
+          "tipe": "truefalse",
+          "pertanyaan": "Tabel data membantu kita membandingkan informasi.",
+          "jawaban": true
+        }
+      ]
+    }
+  ]
+}
