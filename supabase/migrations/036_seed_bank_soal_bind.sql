@@ -4,6 +4,7 @@
 DELETE FROM public.questions WHERE material_id LIKE 'k1-bind-%' OR material_id LIKE 'k2-bind-%' OR material_id LIKE 'k3-bind-%' OR material_id LIKE 'k6-bind-%';
 
 INSERT INTO public.questions (
+  id, material_id, subject_id, kelas, tipe, soal, pilihan, jawaban_benar, level, xp
   id, material_id, tipe, soal, pilihan, jawaban_benar, level, xp
 ) VALUES
 (
