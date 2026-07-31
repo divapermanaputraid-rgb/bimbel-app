@@ -5,6 +5,7 @@ import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { OfflineIndicator } from "@/components/offline-indicator";
 import { CapacitorNativeShell } from "@/components/capacitor-native-shell";
 import { QueryProvider } from "@/components/providers/QueryProvider";
+import { ErrorBoundary } from "@/components/error/ErrorBoundary";
 
 export default function RootLayout({
   children,
@@ -26,10 +27,12 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-slate-50 text-slate-900 antialiased pt-[env(safe-area-inset-top)]">
         <QueryProvider>
-          <CapacitorNativeShell />
-          <OfflineIndicator />
-          <ServiceWorkerRegister />
-          {children}
+          <ErrorBoundary>
+            <CapacitorNativeShell />
+            <OfflineIndicator />
+            <ServiceWorkerRegister />
+            {children}
+          </ErrorBoundary>
         </QueryProvider>
       </body>
     </html>
