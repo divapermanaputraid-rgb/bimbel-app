@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import RuangKelasCard from '@/components/guru/RuangKelasCard';
+import Link from 'next/link';
 
 export default function GuruMeetingPage() {
   const params = useParams();
@@ -43,7 +44,15 @@ export default function GuruMeetingPage() {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-6">🗺️ Meeting Hari Ini (Pertemuan {materi.pertemuanKe})</h1>
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-2xl font-bold">🗺️ Meeting Hari Ini (Pertemuan {materi.pertemuanKe})</h1>
+        <Link
+          href={`/dashboard/guru/roadmap/${templateId}/teach`}
+          className="bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 text-sm flex items-center gap-2"
+        >
+          🎓 Mulai Mengajar
+        </Link>
+      </div>
 
       {loading ? (
         <p className="text-center text-gray-500">Loading...</p>
