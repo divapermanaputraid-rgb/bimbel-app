@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import RuangKelasCard from '@/components/guru/RuangKelasCard';
 
 export default function GuruMeetingPage() {
   const params = useParams();
@@ -48,6 +49,23 @@ export default function GuruMeetingPage() {
         <p className="text-center text-gray-500">Loading...</p>
       ) : (
         <div className="space-y-8">
+          {/* Review Otomatis (Make It Stick) */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-amber-700">Review Otomatis (Make It Stick)</h3>
+            {materi.review.length === 0 ? (
+              <p className="text-gray-500 italic">Tidak ada review untuk pertemuan ini.</p>
+            ) : (
+              <div className="space-y-4">
+                {materi.review.map((item: any) => (
+                  <div key={item.id} className="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                    <p className="font-medium text-amber-800">{item.unit_title}</p>
+                    <p className="text-sm text-amber-700 mt-1">Review dari pertemuan sebelumnya</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
           {/* Materi Baru */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Materi Baru</h3>
@@ -65,22 +83,8 @@ export default function GuruMeetingPage() {
             )}
           </div>
 
-          {/* Review Otomatis (Make It Stick) */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-amber-700">Review Otomatis (Make It Stick)</h3>
-            {materi.review.length === 0 ? (
-              <p className="text-gray-500 italic">Tidak ada review untuk pertemuan ini.</p>
-            ) : (
-              <div className="space-y-4">
-                {materi.review.map((item: any) => (
-                  <div key={item.id} className="bg-amber-50 p-4 rounded-xl border border-amber-200">
-                    <p className="font-medium text-amber-800">{item.unit_title}</p>
-                    <p className="text-sm text-amber-700 mt-1">Review dari pertemuan sebelumnya</p>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+          {/* Ruang Kelas (Absensi & Catatan) */}
+          <RuangKelasCard templateId={templateId} pertemuanKe={materi.pertemuanKe} />
 
           <button
             onClick={handleSelesai}
