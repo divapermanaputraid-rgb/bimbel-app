@@ -72,13 +72,14 @@ export default async function GuruDashboardPage() {
         </div>
       </div>
 
-      <div className="mb-8 rounded-xl border border-indigo-100 bg-indigo-50 p-6 flex justify-between items-center">
+      <div className="mb-8 rounded-xl border border-indigo-100 bg-indigo-50 p-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <div>
           <h3 className="text-lg font-bold text-indigo-900 mb-1">🚀 Aksi Cepat</h3>
-          <p className="text-sm text-indigo-700">Akses laporan lengkap kelas.</p>
+          <p className="text-sm text-indigo-700">Akses laporan lengkap kelas dan alat pengajaran.</p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex flex-wrap justify-end gap-3">
           <Link href="/dashboard/guru/reports" className="bg-indigo-600 text-white px-5 py-2 rounded-lg font-bold text-sm shadow-sm hover:bg-indigo-700">📊 Lihat Laporan</Link>
+          <Link href="/dashboard/guru/absensi" className="bg-emerald-600 text-white px-5 py-2 rounded-lg font-bold text-sm shadow-sm hover:bg-emerald-700">📋 Rekap Absensi</Link>
           <Link href="/dashboard/guru/students" className="bg-white border border-indigo-200 text-indigo-700 px-5 py-2 rounded-lg font-bold text-sm shadow-sm hover:bg-indigo-50">👥 Daftar Siswa</Link>
         </div>
       </div>
