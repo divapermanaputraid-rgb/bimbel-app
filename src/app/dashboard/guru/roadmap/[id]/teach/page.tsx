@@ -44,10 +44,38 @@ export default function GuruTeachPage() {
     setLoading(false);
   };
 
-  if (loading) return <div className="fixed inset-0 bg-black flex items-center justify-center">Loading...</div>;
-  if (!data) return <div>Belum ada data</div>;
+  if (loading) return (
+    <div className="fixed inset-0 bg-gray-950 flex items-center justify-center">
+      <p className="text-white text-lg">Memuat sesi mengajar...</p>
+    </div>
+  );
 
-  const active = data.materi[activeIdx];
+  if (!data) return (
+    <div className="fixed inset-0 bg-gray-950 flex items-center justify-center">
+      <div className="text-center text-white space-y-3">
+        <p className="text-4xl">⚠️</p>
+        <p>Gagal memuat data roadmap.</p>
+        <button onClick={() => router.back()} className="px-4 py-2 bg-white text-gray-900 rounded-lg">← Kembali</button>
+      </div>
+    </div>
+  );
+
+  // Materi belum diisi di roadmap ini
+  if (!data.materi || data.materi.length === 0) return (
+    <div className="fixed inset-0 bg-gray-950 flex items-center justify-center">
+      <div className="text-center text-white space-y-4 max-w-md px-6">
+        <p className="text-5xl">📭</p>
+        <h2 className="text-xl font-bold">Belum ada materi untuk pertemuan ini</h2>
+        <p className="text-gray-400 text-sm">
+          Roadmap berhasil dibuat, tapi materi per pertemuan belum diisi.
+          Isi dulu materi di halaman edit roadmap sebelum mulai mengajar.
+        </p>
+        <button onClick={() => router.back()} className="px-5 py-2 bg-white text-gray-900 rounded-lg font-semibold">← Kembali</button>
+      </div>
+    </div>
+  );
+
+  const active = data.materi[activeIdx] ?? data.materi[0];
 
   return (
     <div className="fixed inset-0 bg-gray-950 flex flex-col">
