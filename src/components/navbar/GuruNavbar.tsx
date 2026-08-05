@@ -12,6 +12,7 @@ type Tab = {
 
 const TABS: Tab[] = [
   { key: "home", icon: "🏠", label: "Beranda", path: "/dashboard/guru" },
+  { key: "mengajar", icon: "📚", label: "Mengajar", path: "/dashboard/guru/mengajar" },
   { key: "students", icon: "👥", label: "Siswa", path: "/dashboard/guru/students" },
   { key: "reports", icon: "📊", label: "Laporan", path: "/dashboard/guru/reports" },
   { key: "profile", icon: "👤", label: "Saya", path: "/dashboard/guru/profile" },

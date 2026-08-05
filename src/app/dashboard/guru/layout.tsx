@@ -14,6 +14,9 @@ export default function GuruLayout({ children }: { children: React.ReactNode }) 
           <Link href="/dashboard/guru" className="block rounded px-4 py-2 transition hover:bg-indigo-800">
             🏠 Beranda
           </Link>
+          <Link href="/dashboard/guru/mengajar" className="block rounded px-4 py-2 transition hover:bg-indigo-800">
+            📚 Mengajar
+          </Link>
           <Link href="/dashboard/guru/students" className="block rounded px-4 py-2 transition hover:bg-indigo-800">
             👥 Siswa
           </Link>
